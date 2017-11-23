@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PtzSdk.Win.Samples.Console.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="GatewayKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Gateway Systems</Value>
+    </Setting>
+    <Setting Name="PowerTranzId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">99901049</Value>
+    </Setting>
+    <Setting Name="PowerTranzPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">a4wmADUYv*AQ</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

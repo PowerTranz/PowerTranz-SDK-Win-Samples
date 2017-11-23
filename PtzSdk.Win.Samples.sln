@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PtzSdk.Win.Samples.Console", "PtzSdk.Win.Samples.Console\PtzSdk.Win.Samples.Console.csproj", "{D14FD2CB-7F92-4BC6-83AC-08EECE1CFDAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PtzSdk.Win.Samples.Library", "PtzSdk.Win.Samples.Library\PtzSdk.Win.Samples.Library.csproj", "{1C359280-5B7B-4740-B279-4A171097ADC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerTranzSDK", "..\PowerTranz-SDK-Win\PowerTranzSDK\PowerTranzSDK\PowerTranzSDK.csproj", "{97244809-4B49-4EC4-9DE5-8DCE1B6EFCEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerTranzSDK.Miura", "..\PowerTranz-SDK-Win\PowerTranzSDK\PowerTranzSDK.Miura\PowerTranzSDK.Miura.csproj", "{215F9324-7D03-443D-A7FC-C07B703FBDEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D14FD2CB-7F92-4BC6-83AC-08EECE1CFDAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D14FD2CB-7F92-4BC6-83AC-08EECE1CFDAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D14FD2CB-7F92-4BC6-83AC-08EECE1CFDAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D14FD2CB-7F92-4BC6-83AC-08EECE1CFDAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C359280-5B7B-4740-B279-4A171097ADC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C359280-5B7B-4740-B279-4A171097ADC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C359280-5B7B-4740-B279-4A171097ADC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C359280-5B7B-4740-B279-4A171097ADC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97244809-4B49-4EC4-9DE5-8DCE1B6EFCEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97244809-4B49-4EC4-9DE5-8DCE1B6EFCEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97244809-4B49-4EC4-9DE5-8DCE1B6EFCEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97244809-4B49-4EC4-9DE5-8DCE1B6EFCEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{215F9324-7D03-443D-A7FC-C07B703FBDEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{215F9324-7D03-443D-A7FC-C07B703FBDEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{215F9324-7D03-443D-A7FC-C07B703FBDEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{215F9324-7D03-443D-A7FC-C07B703FBDEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DA2054C-FCF2-40E0-948F-632341A3A1DB}
+	EndGlobalSection
+EndGlobal
