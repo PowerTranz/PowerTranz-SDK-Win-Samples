@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace PtzSdk.Win.Samples.Library
@@ -108,12 +109,12 @@ namespace PtzSdk.Win.Samples.Library
             if (terminalConnected) Terminal.Driver.SoftResetDevice();
         }
 
-
-
+        
         public void ClearScreen()
         {
             if (terminalConnected) Terminal.DisplayText(TerminalIdleMessage);
         }
+
         public List<PtzTransactionResponse> SearchTransactions(DateTime startDate, DateTime endDate, bool approved)
         {
 
@@ -123,12 +124,8 @@ namespace PtzSdk.Win.Samples.Library
             req.StartDateTime = startDate;
             if (endDate != null) req.EndDateTime = endDate;
 
-            //var parameters = new Dictionary<string, string>();
-            //parameters.Add("StartDateTime", startDate.ToString());
-
             req.Approved = approved;
-
-
+            
             var trxns = ptzapi.TransactionSearch(req);
             return trxns.Transactions.ToList();
         }
@@ -237,6 +234,7 @@ namespace PtzSdk.Win.Samples.Library
                 CommonUtility.LogInfo($"Transaction complete\r\n{responseString}");
 
                 CurrentTransactionId = response.TransactionIdentifier;
+
             }
             catch (Exception x)
             {

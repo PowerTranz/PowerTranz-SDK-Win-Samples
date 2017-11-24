@@ -1,64 +1,76 @@
-﻿using PowerTranzSDK.DataModel;
-using PowerTranzSDK.Requests;
+﻿using PowerTranzSDK.Requests;
+using PowerTranzSDK.Responses;
 using PtzSdk.Win.Samples.Library;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace PtzSdk.Win.Samples.Console
 {
     class Program
     {
+        static PtzSdkLibrary sdk;
+        static ManualResetEventSlim quit = new ManualResetEventSlim(false);
 
         static void Main(string[] args)
         {
+
+
             try
             {
 
-
-                var sdk = new PtzSdkLibrary();
+                sdk = new PtzSdkLibrary();
                 sdk.ApplicationId = "9eb64949-2fbc-4ef0-947f-c148469d37bb"; //dedicated ApplicationId for PtzSdk.Win.Samples.Console
                 sdk.GatewayKey = Properties.Settings.Default.GatewayKey;
                 sdk.PowerTranzId = Properties.Settings.Default.PowerTranzId;
                 sdk.PowerTranzPassword = Properties.Settings.Default.PowerTranzPassword;
-                sdk.TerminalIdleMessage = "Gateway Systems";
+                sdk.TerminalIdleMessage = "   Gateway Systems";
                 sdk.TerminalAddress = "Miura 676";
 
-                sdk.ConnectBluetooth();
 
                 var request = new PtzPaymentAuth
                 {
-                    OrderId = "11111",
-                    TotalAmount = 14.51m,
+                    OrderId = "123456789",
+                    TotalAmount = 10.00m,
                     TipAmount = 1.56m,
                     TaxAmount = 2.13m,
-                    OtherAmount = 1.99m,
                     CurrencyCode = "840",
-                    Source = new PtzPaymentSource
-                    {
-                        CardPresent = true,
-                        CardEmvFallback = true,
-                        Contactless = false,
-                        CardPan = string.Empty,
-                        MaskedPan = "476173******0119",
-                        CardCvv = string.Empty,
-                        CardExpiration = "2212",
-                        EncryptedCardTrackData = "cd2920ada07667e69dbda8a23773ec06774e7ce1bc34bed7cf7eee9f1ce412804d754bbae555feb196e38e45d44e93836e230b3ff5161f3f1f7b51503f885f6df35a493faac1d5346653e6b0b80584c3a1765ed94245ac83f975e8419890de6a4c010659056a14799ec54efffa876a088e9fe8386a2bda19cb5760328ebbe041",
-                        Ksn = "000002027c6124e00019",
-                    },
                     TerminalId = "01249102",
-                    TerminalCode = "MiuraM010",
+                    //etc...
                 };
 
-                sdk.Terminal.DidConnectTerminal += () => sdk.StartTransaction(request);
+                sdk.ConnectBluetooth();  //Connect the terminal
 
-                System.Console.WriteLine("Press any key to exit");
-                System.Console.ReadKey();
+                sdk.Terminal.DidConnectTerminal += () =>
+                {
+                    //We are connected
+                    sdk.ClearScreen();
+                    System.Console.Write("\r\nTerminal Connected.  Press any key to start a transaction...");
+                    System.Console.ReadKey();
+                    sdk.StartTransaction(request);  //Send the transaction
+                };
 
+                sdk.Terminal.DidFinishTransactionWithResponse += (PtzPaymentResponse r) =>
+                {
+                    //Transaction is complete. Note that the other error events should also be checked as this event may not fire. 
+
+                    //Need another thread here so we don't block the thread on which the terminal screen is updated
+                    //This is not necessary - just demonstrates clearing the screen after a transaction
+                    var tsk = Task.Run(async () =>
+                    {
+                        await Task.Delay(1000); //just to allow logging to finish before prompting
+                        System.Console.Write($"\r\n\r\n{r.ResponseMessage}.  Press any key...\r\n");
+                        System.Console.ReadKey();
+                        sdk.ClearScreen();
+                        System.Console.ReadKey();
+                        quit.Set();
+                    });
+                };
+
+
+                quit.Wait();
             }
-            catch(Exception x)
+            catch (Exception x)
             {
                 System.Console.Write(x.ToString());
             }
@@ -67,3 +79,5 @@ namespace PtzSdk.Win.Samples.Console
 
     }
 }
+
+
