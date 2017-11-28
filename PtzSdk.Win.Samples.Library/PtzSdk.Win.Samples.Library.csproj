@@ -30,6 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PowerTranzSDK, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\sdk\PowerTranzSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="PowerTranzSDK_Miura, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\sdk\PowerTranzSDK_Miura.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,16 +50,6 @@
   <ItemGroup>
     <Compile Include="PtzSdkLibrary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\PowerTranz-SDK-Win\PowerTranzSDK\PowerTranzSDK.Miura\PowerTranzSDK.Miura.csproj">
-      <Project>{215F9324-7D03-443D-A7FC-C07B703FBDEE}</Project>
-      <Name>PowerTranzSDK.Miura</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\PowerTranz-SDK-Win\PowerTranzSDK\PowerTranzSDK\PowerTranzSDK.csproj">
-      <Project>{97244809-4B49-4EC4-9DE5-8DCE1B6EFCEB}</Project>
-      <Name>PowerTranzSDK</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json">

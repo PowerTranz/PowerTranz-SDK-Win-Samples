@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PowerTranzSDK, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\sdk\PowerTranzSDK.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -58,10 +62,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\PowerTranz-SDK-Win\PowerTranzSDK\PowerTranzSDK\PowerTranzSDK.csproj">
-      <Project>{97244809-4B49-4EC4-9DE5-8DCE1B6EFCEB}</Project>
-      <Name>PowerTranzSDK</Name>
-    </ProjectReference>
     <ProjectReference Include="..\PtzSdk.Win.Samples.Library\PtzSdk.Win.Samples.Library.csproj">
       <Project>{1C359280-5B7B-4740-B279-4A171097ADC2}</Project>
       <Name>PtzSdk.Win.Samples.Library</Name>
