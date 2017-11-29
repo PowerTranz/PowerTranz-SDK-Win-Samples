@@ -30,13 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PowerTranzSDK, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\sdk\PowerTranzSDK.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="PowerTranzSDK_Miura, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\sdk\PowerTranzSDK_Miura.dll</HintPath>
+    <Reference Include="PowerTranzSDK, Version=1.0.6.0, Culture=neutral, PublicKeyToken=8cef24e50b4b2c6e, processorArchitecture=MSIL">
+      <HintPath>..\packages\PowerTranz.SDK.1.0.6-rc04\lib\net45\PowerTranzSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="PowerTranzSDK_Miura, Version=1.0.6.0, Culture=neutral, PublicKeyToken=8cef24e50b4b2c6e, processorArchitecture=MSIL">
+      <HintPath>..\packages\PowerTranz.SDK.1.0.6-rc04\lib\net45\PowerTranzSDK_Miura.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,9 +53,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>10.0.3</Version>
-    </PackageReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

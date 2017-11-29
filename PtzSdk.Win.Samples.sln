@@ -7,12 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PtzSdk.Win.Samples.Console"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PtzSdk.Win.Samples.Library", "PtzSdk.Win.Samples.Library\PtzSdk.Win.Samples.Library.csproj", "{1C359280-5B7B-4740-B279-4A171097ADC2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sdk", "sdk", "{7D07D0C4-DA39-4088-9970-1E99EF6FE16D}"
-	ProjectSection(SolutionItems) = preProject
-		sdk\PowerTranzSDK.dll = sdk\PowerTranzSDK.dll
-		sdk\PowerTranzSDK_Miura.dll = sdk\PowerTranzSDK_Miura.dll
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
