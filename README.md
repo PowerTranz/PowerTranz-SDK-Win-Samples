@@ -2,4 +2,4 @@
 
 # PowerTranz-SDK-Win-Samples
 
-These samples illustrate use of the PowerTranz SDK for Windows NuGet package.
+These samples illustrate use of the PowerTranz.SDK for Windows NuGet package.
