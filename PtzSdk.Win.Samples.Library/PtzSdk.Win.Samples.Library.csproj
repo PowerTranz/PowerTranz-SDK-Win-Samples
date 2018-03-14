@@ -30,14 +30,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BerTlv, Version=1.0.1.0, Culture=neutral, PublicKeyToken=2644eac6ca676d4f, processorArchitecture=MSIL">
+      <HintPath>..\packages\PowerTranz.SDK.2.0.0-rc1\lib\net45\BerTlv.dll</HintPath>
+    </Reference>
+    <Reference Include="InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499, processorArchitecture=MSIL">
+      <HintPath>..\packages\PowerTranz.SDK.2.0.0-rc1\lib\net45\InTheHand.Net.Personal.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="PowerTranzSDK, Version=1.0.6.0, Culture=neutral, PublicKeyToken=8cef24e50b4b2c6e, processorArchitecture=MSIL">
-      <HintPath>..\packages\PowerTranz.SDK.1.0.6-rc06\lib\net45\PowerTranzSDK.dll</HintPath>
+    <Reference Include="PowerTranzSDK, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8cef24e50b4b2c6e, processorArchitecture=MSIL">
+      <HintPath>..\packages\PowerTranz.SDK.2.0.0-rc1\lib\net45\PowerTranzSDK.dll</HintPath>
     </Reference>
-    <Reference Include="PowerTranzSDK_Miura, Version=1.0.6.0, Culture=neutral, PublicKeyToken=8cef24e50b4b2c6e, processorArchitecture=MSIL">
-      <HintPath>..\packages\PowerTranz.SDK.1.0.6-rc06\lib\net45\PowerTranzSDK_Miura.dll</HintPath>
+    <Reference Include="PowerTranzSDK_Miura, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8cef24e50b4b2c6e, processorArchitecture=MSIL">
+      <HintPath>..\packages\PowerTranz.SDK.2.0.0-rc1\lib\net45\PowerTranzSDK_Miura.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="PowerTranzSDK.dll.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

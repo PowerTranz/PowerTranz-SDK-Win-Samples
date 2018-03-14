@@ -26,14 +26,15 @@ namespace PtzSdk.Win.Samples.Console
                     GatewayKey = Properties.Settings.Default.GatewayKey,
                     PowerTranzId = Properties.Settings.Default.PowerTranzId,
                     PowerTranzPassword = Properties.Settings.Default.PowerTranzPassword,
-                    TerminalIdleMessage = "   Gateway Systems",
-                    TerminalAddress = "Miura 676"
+                    TerminalIdleMessage = "   ACME Widgets Co"
                 };
+
+                sdk.TerminalAddress = "COM6";  //Set this to the correct COM port if using USB, or to the Bluetooth paired name if using bluetooth
 
 
                 var request = new PtzPaymentAuth
                 {
-                    OrderId = "123456789",
+                    OrderIdentifier = "123456789",
                     TotalAmount = 10.00m,
                     TipAmount = 1.56m,
                     TaxAmount = 2.13m,
@@ -43,7 +44,7 @@ namespace PtzSdk.Win.Samples.Console
                 };
 
                 var sw = new Stopwatch(); sw.Start();
-                sdk.ConnectBluetooth();  //Connect the terminal
+                sdk.Connect();  //Connect the terminal
              
 
                 //Event handling. Note that  the PtzSdkLibrary handles all the events and for demonstration purposes just logs the event data.  
@@ -72,7 +73,9 @@ namespace PtzSdk.Win.Samples.Console
                         System.Console.Write($"\r\n\r\n{r.ResponseMessage}.  Press any key...\r\n");
                         System.Console.ReadKey();
                         sdk.ClearScreen();
+                        System.Console.Write($"\r\n\r\nPress any key to exit...\r\n");
                         System.Console.ReadKey();
+                        sdk.Disconnect();
                         quit.Set();
                     });
                 };

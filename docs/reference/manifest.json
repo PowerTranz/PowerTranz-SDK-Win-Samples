@@ -1,0 +1,1016 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/GitHub/PowerTranz/PowerTranz-SDK-Win/PowerTranzSDK/PowerTranzSDK.Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "CpApZzRiQXEsz7Zs7HCjGA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "D543fTnp0H86FEkXrZ53Jw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.DeviceTextCompletion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.DeviceTextCompletion.html",
+          "hash": "3aaDSFDd1Cr4e+EuE0Dm3A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.DidConnectTerminal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.DidConnectTerminal.html",
+          "hash": "7+pEVGogBjSUTAqH3par3w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.DidDisconnectTerminal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.DidDisconnectTerminal.html",
+          "hash": "pEFj84Zeh1FgCSxXVEUX6Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.DidFailToConnectTerminal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.DidFailToConnectTerminal.html",
+          "hash": "Cl90CL/FBZw3zkoW5AefnA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.DidFailWithError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.DidFailWithError.html",
+          "hash": "O/65QkcS01WIDBWBiS3wMA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.DidFailWithReversal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.DidFailWithReversal.html",
+          "hash": "zVTNu2R7QmKi+hNDsD9MvA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.DidFinishTransactionWithResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.DidFinishTransactionWithResponse.html",
+          "hash": "uKgSTMc02NUkmeXJjZ7rlw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.DidReceiveCardEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.DidReceiveCardEvent.html",
+          "hash": "KnwDiM3C0fndnWOEbcFU3g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.DidReceiveResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.DidReceiveResponse.html",
+          "hash": "eash2M9fH03g7PihndwgRw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.DidRequestAccountTypeSelection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.DidRequestAccountTypeSelection.html",
+          "hash": "9PrQYmQFQTtuiWYH1jrs7A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.DidRequestDevicePromptText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.DidRequestDevicePromptText.html",
+          "hash": "bvkOBR9bdh/O92RxHkxc7Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.DidRequestSelectEMVApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.DidRequestSelectEMVApplication.html",
+          "hash": "Z3UX9+SRXiz4PRf0RDxpag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.DidReturnAmountConfirmation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.DidReturnAmountConfirmation.html",
+          "hash": "yZniaVAc2enUJ+FPzKEIJw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.IPTZCardTerminal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.IPTZCardTerminal.html",
+          "hash": "36JczERaphc6P/okURoGhA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html",
+          "hash": "30DXnOXS0d34Jvoc8YcoOg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.Miura.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.html",
+          "hash": "GpyTkcBHMdGEFNn9FjuCZw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.OnBatteryLow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.OnBatteryLow.html",
+          "hash": "szXAlZoAdNWCzfZ7ePV52g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.PTZCardTerminal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.PTZCardTerminal.html",
+          "hash": "mzQrC0sXdIkA36tDmDdgqg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.PaymentCompletion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.PaymentCompletion.html",
+          "hash": "RgJPnXmmtU79wWy7ZXs2ag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.PromptCanceled.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.PromptCanceled.html",
+          "hash": "uDpLp/iu/GD0H0cH2N4wSg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.SelectDevice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.SelectDevice.html",
+          "hash": "OKJ3aaMX3WKKBCt99BlLlw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.TerminalDidReceiveKeypadInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.TerminalDidReceiveKeypadInput.html",
+          "hash": "ZIGUPUf8N6UhkqiXjIh0rQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.TerminalDidRequestFinalConfirmation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.TerminalDidRequestFinalConfirmation.html",
+          "hash": "bDCp2GEoMtJM2STFe32h4g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.TerminalDidRequestTransactionAmount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.TerminalDidRequestTransactionAmount.html",
+          "hash": "rdD/uXoeKedv1ovXxiPCbQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.TerminalPaymentFailed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.TerminalPaymentFailed.html",
+          "hash": "xGHBwh9IZmIxmvcnVK9aKQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.WillConnectTerminal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.WillConnectTerminal.html",
+          "hash": "1KMiTqTbvnySuJI+qTfUyA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.WillSendRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.WillSendRequest.html",
+          "hash": "BcHIdUz3lr4vGFz1+XzmIw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTerminals.html",
+          "hash": "QGYJWeLMTky7paXsAlIveg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.DataModel.PtzAddress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.DataModel.PtzAddress.html",
+          "hash": "TD9co9PXnHMzT4qNN9Shcw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.DataModel.PtzErrors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.DataModel.PtzErrors.html",
+          "hash": "M8PvGS7Hm6H1EWuAiDrBBg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.DataModel.PtzExtendedData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.DataModel.PtzExtendedData.html",
+          "hash": "B+CU6bH6h98KHduIp4N0lg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.DataModel.PtzPaymentSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.DataModel.PtzPaymentSource.html",
+          "hash": "s0I203feOprSIcRWK+4f8A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.DataModel.PtzReceipt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.DataModel.PtzReceipt.html",
+          "hash": "Vub5mIwqk9HrYM5HdNwViQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.DataModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.DataModel.html",
+          "hash": "IxZG9JeX2ndpeh0w+ZeoSQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Enumerations.APIRequestTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Enumerations.APIRequestTypes.html",
+          "hash": "5BDCWyM0B2FFfE0qjeMoHA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Enumerations.CardAccountType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Enumerations.CardAccountType.html",
+          "hash": "8F3Fr/Gwrtn2r4M3Ndsirg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Enumerations.CardEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Enumerations.CardEvent.html",
+          "hash": "K4ddmyD/g5/vQhNiqc55lw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Enumerations.CardSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Enumerations.CardSource.html",
+          "hash": "bolClKdnVyXWdpb895lVMA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Enumerations.CardTerminalBatteryStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Enumerations.CardTerminalBatteryStatus.html",
+          "hash": "SNvbQ9ueowKXfP69eZtpbA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Enumerations.CardTerminalInputType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Enumerations.CardTerminalInputType.html",
+          "hash": "aTRf2tzEZMqHrZNab8ngvA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Enumerations.CardType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Enumerations.CardType.html",
+          "hash": "4IwhaIRxxgGyGvLWxnBoIg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Enumerations.DevicePrompt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Enumerations.DevicePrompt.html",
+          "hash": "v7/0FQuOUik6eZajtB04IQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Enumerations.EMVTransactionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Enumerations.EMVTransactionType.html",
+          "hash": "lZef23jwrtfwFLzIyldI1w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Enumerations.OnlineProcessType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Enumerations.OnlineProcessType.html",
+          "hash": "OMYYc9BxQSzzZnO/j80o1Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Enumerations.ReversalReason.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Enumerations.ReversalReason.html",
+          "hash": "jtJ9OAQ5wO1mcpYaMdmY4g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Enumerations.TerminalCommands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Enumerations.TerminalCommands.html",
+          "hash": "ccRjYqtNMpY9QCWdVuNrWA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Enumerations.TerminalState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Enumerations.TerminalState.html",
+          "hash": "mB9X5MSuuVw1RsecChfsvQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Enumerations.TerminalType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Enumerations.TerminalType.html",
+          "hash": "jXh7GJgK25SM1l0YatyDTg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Enumerations.TransactionResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Enumerations.TransactionResult.html",
+          "hash": "BqS3bgJIsFZBDW520mVoIw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Enumerations.TransactionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Enumerations.TransactionType.html",
+          "hash": "sIi1O7yUhS5PEw9gYZ+2uA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Enumerations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Enumerations.html",
+          "hash": "cfiEJQV8jmG/F6fhCILR2Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Exceptions.InvalidRequestException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Exceptions.InvalidRequestException.html",
+          "hash": "+6FZlfMz6jrwzn5TZRuDSA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Exceptions.PtzApiException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Exceptions.PtzApiException.html",
+          "hash": "9m8IMjHGpSoN2YwakVynJg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Exceptions.SredException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Exceptions.SredException.html",
+          "hash": "FxfjHxQtC+Nuc7Yv4qgoug=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Exceptions.TransactionInProgressException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Exceptions.TransactionInProgressException.html",
+          "hash": "mu0c7Zs09zOp00qeBZAOeA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Exceptions.html",
+          "hash": "jv3POTrPPSHFMoTerhkLag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.PtzApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.PtzApi.html",
+          "hash": "QS1HA3Ty5UYMSJ+s1m2mjQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Requests.PtzPaymentAuth.PTZTipType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Requests.PtzPaymentAuth.PTZTipType.html",
+          "hash": "1dFXFLN4E1sZARPyxMsFow=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Requests.PtzPaymentAuth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Requests.PtzPaymentAuth.html",
+          "hash": "HMwVD6wOBbZGs3IJfz4mnQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Requests.PtzPaymentCapture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Requests.PtzPaymentCapture.html",
+          "hash": "HNCTLE4d/RLy36NLTGlhVA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Requests.PtzPaymentCredit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Requests.PtzPaymentCredit.html",
+          "hash": "3ztw5kVm7r/0QT76vjxiRw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Requests.PtzPaymentRefund.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Requests.PtzPaymentRefund.html",
+          "hash": "BLAup54SEEwzrgnwO4poeQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Requests.PtzPaymentRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Requests.PtzPaymentRequest.html",
+          "hash": "zLx0gDSw4N6NLibHq5H+CQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Requests.PtzPaymentVoid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Requests.PtzPaymentVoid.html",
+          "hash": "NWHiYFMcrI/YLoTum3rdEg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Requests.PtzTransactionRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Requests.PtzTransactionRequest.html",
+          "hash": "w5VCRlzLHws2ud/xjUsM8A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Requests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Requests.html",
+          "hash": "wErYdwhxwEWMhmxRbgJIPw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Responses.PtzOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Responses.PtzOrder.html",
+          "hash": "jR/1TBQctIEf05H6vYgaFw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Responses.PtzOrderResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Responses.PtzOrderResponse.html",
+          "hash": "Uyoe2Uen1kIppviVeO2mpg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Responses.PtzOrderTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Responses.PtzOrderTransaction.html",
+          "hash": "NZw+OwJRpxwVRbt+GoZ/ww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Responses.PtzPaymentResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Responses.PtzPaymentResponse.html",
+          "hash": "9RGVD0CQUI2mqqkSib5uwQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Responses.PtzTransactionResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Responses.PtzTransactionResponse.html",
+          "hash": "P3pYRzAGNvpi3asfKt57OA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Responses.PtzTransactionsResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Responses.PtzTransactionsResponse.html",
+          "hash": "VsMtKDvmI7AN7pkkOzITeA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Responses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Responses.html",
+          "hash": "UXXBu2A0qBMyRGiWvIUckA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Utilities.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Utilities.Extensions.html",
+          "hash": "0L0RJLtQDoRYnEQKPdlUvw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Utilities.Info.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Utilities.Info.html",
+          "hash": "LdIPg0NMaQHCL2miZU8NWw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.Utilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.Utilities.html",
+          "hash": "/Q0O1lOLyJqnW3L/ejrvkw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.html",
+          "hash": "GI8AC33Nd/+e8xPEag6ywQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "AqHO5qhN61JPHCKf+MYG5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "eEtljMTyZqrWizVxxaXgCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

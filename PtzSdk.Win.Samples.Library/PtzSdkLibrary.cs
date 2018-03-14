@@ -41,19 +41,30 @@ namespace PtzSdk.Win.Samples.Library
         #region "Connection"
 
 
-        public void ConnectBluetooth()
+        public void Connect()
         {
             try
             {
-                PtzApi = new PtzApi(ApplicationId, GatewayKey, PowerTranzId, PowerTranzPassword, false, 20);
+                //Note that the url is specified in the PowerTranzSDK.dll.config file in this example
+                PtzApi = new PtzApi(ApplicationId, GatewayKey, PowerTranzId, PowerTranzPassword, null, 20);
 
                 Terminal = new PTZMiuraTerminal(PtzApi, 20);
 
                 RegisterListeners(Terminal);
 
-                var tsk = Terminal.ConnectTerminalWithInputTypeAsync(Enumerations.CardTerminalInputType.CardTerminalTypeBluetooth, TerminalAddress);
+                if (TerminalAddress.StartsWith("COM"))
+                {
+                    CommonUtility.LogInfo("Connecting via USB");
+                    var tsk = Terminal.ConnectTerminalWithInputTypeAsync(Enumerations.CardTerminalInputType.CardTerminalTypeUsb, TerminalAddress);
+                }
+                else
+                {
+                    CommonUtility.LogInfo("Connecting via BlueTooth");
+                    var tsk = Terminal.ConnectTerminalWithInputTypeAsync(Enumerations.CardTerminalInputType.CardTerminalTypeBluetooth, TerminalAddress);
+                }
+                
 
-                CommonUtility.LogInfo("Connecting via BlueTooth");
+                
             }
             catch (Exception x)
             {
@@ -99,14 +110,11 @@ namespace PtzSdk.Win.Samples.Library
             if (terminalConnected) Terminal.CancelTransaction();
         }
 
-        public void HardReset()
-        {
-            if (terminalConnected) Terminal.Driver.HardResetDevice();
-        }
+        
 
         public void SoftReset()
         {
-            if (terminalConnected) Terminal.Driver.SoftResetDevice();
+            if (terminalConnected) Terminal.ResetDevice();
         }
 
         
@@ -115,10 +123,11 @@ namespace PtzSdk.Win.Samples.Library
             if (terminalConnected) Terminal.DisplayText(TerminalIdleMessage);
         }
 
-        public List<PtzTransactionResponse> SearchTransactions(DateTime startDate, DateTime endDate, bool approved)
+        public async Task<List<PtzTransactionResponse>> SearchTransactions(DateTime startDate, DateTime endDate, bool approved)
         {
 
-            var ptzapi = new PtzApi(ApplicationId, GatewayKey, PowerTranzId, PowerTranzPassword, false, 20);
+            //Note that the url is specified in the PowerTranzSDK.dll.config file in this example
+            var ptzapi = new PtzApi(ApplicationId, GatewayKey, PowerTranzId, PowerTranzPassword, null, 20);
 
             var req = new PtzTransactionRequest();
             req.StartDateTime = startDate;
@@ -126,7 +135,7 @@ namespace PtzSdk.Win.Samples.Library
 
             req.Approved = approved;
             
-            var trxns = ptzapi.TransactionSearch(req);
+            var trxns = await ptzapi.TransactionSearchAsync(req);
             return trxns.Transactions.ToList();
         }
 

@@ -1,0 +1,851 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PtzApi
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PtzApi
+   ">
+    <meta name="generator" content="docfx 2.32.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PowerTranzSDK.PtzApi">
+  
+  
+  <h1 id="PowerTranzSDK_PtzApi" data-uid="PowerTranzSDK.PtzApi" class="text-break">Class PtzApi
+  </h1>
+  <div class="markdown level0 summary"><p>Methods for communication to the PowerTranz Gateway Api</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PtzApi</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PowerTranzSDK.html">PowerTranzSDK</a></h6>
+  <h6><strong>Assembly</strong>: PowerTranzSDK.dll</h6>
+  <h5 id="PowerTranzSDK_PtzApi_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PtzApi</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="PowerTranzSDK_PtzApi__ctor_" data-uid="PowerTranzSDK.PtzApi.#ctor*"></a>
+  <h4 id="PowerTranzSDK_PtzApi__ctor_System_String_System_String_System_String_System_String_System_String_System_Int32_" data-uid="PowerTranzSDK.PtzApi.#ctor(System.String,System.String,System.String,System.String,System.String,System.Int32)">PtzApi(String, String, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>The API constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PtzApi(string applicationId, string gatewayKey, string powerTranzId, string powerTranzPassword, string powerTranzUrl, int timeoutInterval)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">applicationId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gatewayKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">powerTranzId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">powerTranzPassword</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">powerTranzUrl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeoutInterval</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PowerTranzSDK_PtzApi_OrderDetailsAsync_" data-uid="PowerTranzSDK.PtzApi.OrderDetailsAsync*"></a>
+  <h4 id="PowerTranzSDK_PtzApi_OrderDetailsAsync_System_String_" data-uid="PowerTranzSDK.PtzApi.OrderDetailsAsync(System.String)">OrderDetailsAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Retrieve details of a single order asynchronously</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PtzOrderResponse&gt; OrderDetailsAsync(string transactionIdentifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">transactionIdentifier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="PowerTranzSDK.Responses.PtzOrderResponse.html">PtzOrderResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_PtzApi_PaymentAuthorize_" data-uid="PowerTranzSDK.PtzApi.PaymentAuthorize*"></a>
+  <h4 id="PowerTranzSDK_PtzApi_PaymentAuthorize_PowerTranzSDK_Requests_PtzPaymentAuth_" data-uid="PowerTranzSDK.PtzApi.PaymentAuthorize(PowerTranzSDK.Requests.PtzPaymentAuth)">PaymentAuthorize(PtzPaymentAuth)</h4>
+  <div class="markdown level1 summary"><p>Perform an auth  (ASYNC VERSION RECOMMENDED)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PtzPaymentResponse PaymentAuthorize(PtzPaymentAuth ptzPaymentRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentAuth.html">PtzPaymentAuth</a></td>
+        <td><span class="parametername">ptzPaymentRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_PtzApi_PaymentAuthorizeAsync_" data-uid="PowerTranzSDK.PtzApi.PaymentAuthorizeAsync*"></a>
+  <h4 id="PowerTranzSDK_PtzApi_PaymentAuthorizeAsync_PowerTranzSDK_Requests_PtzPaymentAuth_" data-uid="PowerTranzSDK.PtzApi.PaymentAuthorizeAsync(PowerTranzSDK.Requests.PtzPaymentAuth)">PaymentAuthorizeAsync(PtzPaymentAuth)</h4>
+  <div class="markdown level1 summary"><p>Perform an auth asynchronously</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PtzPaymentResponse&gt; PaymentAuthorizeAsync(PtzPaymentAuth ptzPaymentRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentAuth.html">PtzPaymentAuth</a></td>
+        <td><span class="parametername">ptzPaymentRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_PtzApi_PaymentCapture_" data-uid="PowerTranzSDK.PtzApi.PaymentCapture*"></a>
+  <h4 id="PowerTranzSDK_PtzApi_PaymentCapture_PowerTranzSDK_Requests_PtzPaymentCapture_" data-uid="PowerTranzSDK.PtzApi.PaymentCapture(PowerTranzSDK.Requests.PtzPaymentCapture)">PaymentCapture(PtzPaymentCapture)</h4>
+  <div class="markdown level1 summary"><p>Perform a capture  (ASYNC VERSION RECOMMENDED)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PtzPaymentResponse PaymentCapture(PtzPaymentCapture ptzPaymentRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentCapture.html">PtzPaymentCapture</a></td>
+        <td><span class="parametername">ptzPaymentRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_PtzApi_PaymentCaptureAsync_" data-uid="PowerTranzSDK.PtzApi.PaymentCaptureAsync*"></a>
+  <h4 id="PowerTranzSDK_PtzApi_PaymentCaptureAsync_PowerTranzSDK_Requests_PtzPaymentCapture_" data-uid="PowerTranzSDK.PtzApi.PaymentCaptureAsync(PowerTranzSDK.Requests.PtzPaymentCapture)">PaymentCaptureAsync(PtzPaymentCapture)</h4>
+  <div class="markdown level1 summary"><p>Perform a capture asynchronously</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PtzPaymentResponse&gt; PaymentCaptureAsync(PtzPaymentCapture ptzPaymentRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentCapture.html">PtzPaymentCapture</a></td>
+        <td><span class="parametername">ptzPaymentRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_PtzApi_PaymentCredit_" data-uid="PowerTranzSDK.PtzApi.PaymentCredit*"></a>
+  <h4 id="PowerTranzSDK_PtzApi_PaymentCredit_PowerTranzSDK_Requests_PtzPaymentCredit_" data-uid="PowerTranzSDK.PtzApi.PaymentCredit(PowerTranzSDK.Requests.PtzPaymentCredit)">PaymentCredit(PtzPaymentCredit)</h4>
+  <div class="markdown level1 summary"><p>Perform a credit.  Internal to the SDK only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PtzPaymentResponse PaymentCredit(PtzPaymentCredit ptzPaymentRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentCredit.html">PtzPaymentCredit</a></td>
+        <td><span class="parametername">ptzPaymentRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_PtzApi_PaymentCreditAsync_" data-uid="PowerTranzSDK.PtzApi.PaymentCreditAsync*"></a>
+  <h4 id="PowerTranzSDK_PtzApi_PaymentCreditAsync_PowerTranzSDK_Requests_PtzPaymentCredit_" data-uid="PowerTranzSDK.PtzApi.PaymentCreditAsync(PowerTranzSDK.Requests.PtzPaymentCredit)">PaymentCreditAsync(PtzPaymentCredit)</h4>
+  <div class="markdown level1 summary"><p>Perform a credit.  Internal to the SDK only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PtzPaymentResponse&gt; PaymentCreditAsync(PtzPaymentCredit ptzPaymentRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentCredit.html">PtzPaymentCredit</a></td>
+        <td><span class="parametername">ptzPaymentRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_PtzApi_PaymentRefund_" data-uid="PowerTranzSDK.PtzApi.PaymentRefund*"></a>
+  <h4 id="PowerTranzSDK_PtzApi_PaymentRefund_PowerTranzSDK_Requests_PtzPaymentRefund_" data-uid="PowerTranzSDK.PtzApi.PaymentRefund(PowerTranzSDK.Requests.PtzPaymentRefund)">PaymentRefund(PtzPaymentRefund)</h4>
+  <div class="markdown level1 summary"><p>Perform a refund  (ASYNC VERSION RECOMMENDED)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PtzPaymentResponse PaymentRefund(PtzPaymentRefund ptzPaymentRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentRefund.html">PtzPaymentRefund</a></td>
+        <td><span class="parametername">ptzPaymentRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_PtzApi_PaymentRefundAsync_" data-uid="PowerTranzSDK.PtzApi.PaymentRefundAsync*"></a>
+  <h4 id="PowerTranzSDK_PtzApi_PaymentRefundAsync_PowerTranzSDK_Requests_PtzPaymentRefund_" data-uid="PowerTranzSDK.PtzApi.PaymentRefundAsync(PowerTranzSDK.Requests.PtzPaymentRefund)">PaymentRefundAsync(PtzPaymentRefund)</h4>
+  <div class="markdown level1 summary"><p>Perform a refund</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PtzPaymentResponse&gt; PaymentRefundAsync(PtzPaymentRefund ptzPaymentRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentRefund.html">PtzPaymentRefund</a></td>
+        <td><span class="parametername">ptzPaymentRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_PtzApi_PaymentSale_" data-uid="PowerTranzSDK.PtzApi.PaymentSale*"></a>
+  <h4 id="PowerTranzSDK_PtzApi_PaymentSale_PowerTranzSDK_Requests_PtzPaymentAuth_" data-uid="PowerTranzSDK.PtzApi.PaymentSale(PowerTranzSDK.Requests.PtzPaymentAuth)">PaymentSale(PtzPaymentAuth)</h4>
+  <div class="markdown level1 summary"><p>Perform a sale  (ASYNC VERSION RECOMMENDED)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PtzPaymentResponse PaymentSale(PtzPaymentAuth ptzPaymentRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentAuth.html">PtzPaymentAuth</a></td>
+        <td><span class="parametername">ptzPaymentRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_PtzApi_PaymentSaleAsync_" data-uid="PowerTranzSDK.PtzApi.PaymentSaleAsync*"></a>
+  <h4 id="PowerTranzSDK_PtzApi_PaymentSaleAsync_PowerTranzSDK_Requests_PtzPaymentAuth_" data-uid="PowerTranzSDK.PtzApi.PaymentSaleAsync(PowerTranzSDK.Requests.PtzPaymentAuth)">PaymentSaleAsync(PtzPaymentAuth)</h4>
+  <div class="markdown level1 summary"><p>Perform a sale asynchronously</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PtzPaymentResponse&gt; PaymentSaleAsync(PtzPaymentAuth ptzPaymentRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentAuth.html">PtzPaymentAuth</a></td>
+        <td><span class="parametername">ptzPaymentRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_PtzApi_PaymentVoid_" data-uid="PowerTranzSDK.PtzApi.PaymentVoid*"></a>
+  <h4 id="PowerTranzSDK_PtzApi_PaymentVoid_PowerTranzSDK_Requests_PtzPaymentVoid_" data-uid="PowerTranzSDK.PtzApi.PaymentVoid(PowerTranzSDK.Requests.PtzPaymentVoid)">PaymentVoid(PtzPaymentVoid)</h4>
+  <div class="markdown level1 summary"><p>Perform a void (ASYNC VERSION RECOMMENDED)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PtzPaymentResponse PaymentVoid(PtzPaymentVoid ptzPaymentRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentVoid.html">PtzPaymentVoid</a></td>
+        <td><span class="parametername">ptzPaymentRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_PtzApi_PaymentVoidAsync_" data-uid="PowerTranzSDK.PtzApi.PaymentVoidAsync*"></a>
+  <h4 id="PowerTranzSDK_PtzApi_PaymentVoidAsync_PowerTranzSDK_Requests_PtzPaymentVoid_" data-uid="PowerTranzSDK.PtzApi.PaymentVoidAsync(PowerTranzSDK.Requests.PtzPaymentVoid)">PaymentVoidAsync(PtzPaymentVoid)</h4>
+  <div class="markdown level1 summary"><p>Perform a void asynchronously</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PtzPaymentResponse&gt; PaymentVoidAsync(PtzPaymentVoid ptzPaymentRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentVoid.html">PtzPaymentVoid</a></td>
+        <td><span class="parametername">ptzPaymentRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_PtzApi_TransactionDetailsAsync_" data-uid="PowerTranzSDK.PtzApi.TransactionDetailsAsync*"></a>
+  <h4 id="PowerTranzSDK_PtzApi_TransactionDetailsAsync_System_String_" data-uid="PowerTranzSDK.PtzApi.TransactionDetailsAsync(System.String)">TransactionDetailsAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Retrieve details of a single transaction asynchronously</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PtzTransactionResponse&gt; TransactionDetailsAsync(string transactionIdentifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">transactionIdentifier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="PowerTranzSDK.Responses.PtzTransactionResponse.html">PtzTransactionResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_PtzApi_TransactionSearchAsync_" data-uid="PowerTranzSDK.PtzApi.TransactionSearchAsync*"></a>
+  <h4 id="PowerTranzSDK_PtzApi_TransactionSearchAsync_PowerTranzSDK_Requests_PtzTransactionRequest_" data-uid="PowerTranzSDK.PtzApi.TransactionSearchAsync(PowerTranzSDK.Requests.PtzTransactionRequest)">TransactionSearchAsync(PtzTransactionRequest)</h4>
+  <div class="markdown level1 summary"><p>Search for transactions asynchronously</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PtzTransactionsResponse&gt; TransactionSearchAsync(PtzTransactionRequest ptzTransactionRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Requests.PtzTransactionRequest.html">PtzTransactionRequest</a></td>
+        <td><span class="parametername">ptzTransactionRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="PowerTranzSDK.Responses.PtzTransactionsResponse.html">PtzTransactionsResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

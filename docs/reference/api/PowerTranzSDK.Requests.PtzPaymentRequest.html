@@ -1,0 +1,640 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PtzPaymentRequest
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PtzPaymentRequest
+   ">
+    <meta name="generator" content="docfx 2.32.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest">
+  
+  
+  <h1 id="PowerTranzSDK_Requests_PtzPaymentRequest" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest" class="text-break">Class PtzPaymentRequest
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for a payment request. Contains all of the parameters that must be specified for the child classes
+associated with this base class.  This class should not be used directly for making a payment request.A specific
+payment child class type should be used.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PtzPaymentRequest</span></div>
+      <div class="level2"><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentAuth.html">PtzPaymentAuth</a></div>
+      <div class="level2"><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentCapture.html">PtzPaymentCapture</a></div>
+      <div class="level2"><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentCredit.html">PtzPaymentCredit</a></div>
+      <div class="level2"><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentRefund.html">PtzPaymentRefund</a></div>
+      <div class="level2"><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentVoid.html">PtzPaymentVoid</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PowerTranzSDK.Requests.html">PowerTranzSDK.Requests</a></h6>
+  <h6><strong>Assembly</strong>: PowerTranzSDK.dll</h6>
+  <h5 id="PowerTranzSDK_Requests_PtzPaymentRequest_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PtzPaymentRequest</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest__ctor_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.#ctor*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest__ctor" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.#ctor">PtzPaymentRequest()</h4>
+  <div class="markdown level1 summary"><p>Default constructor for a payment request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PtzPaymentRequest()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_BillingAddress_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.BillingAddress*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_BillingAddress" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.BillingAddress">BillingAddress</h4>
+  <div class="markdown level1 summary"><p>Billing Address</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PtzAddress BillingAddress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.DataModel.PtzAddress.html">PtzAddress</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_CurrencyCode_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.CurrencyCode*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_CurrencyCode" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.CurrencyCode">CurrencyCode</h4>
+  <div class="markdown level1 summary"><p>ISO Currency Code for this transaction (@&quot;840&quot; for USD, @&quot;826&quot; for GBP, etc)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CurrencyCode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_CurrencyExponent_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.CurrencyExponent*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_CurrencyExponent" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.CurrencyExponent">CurrencyExponent</h4>
+  <div class="markdown level1 summary"><p>Currency Exponent representing the number of places to the right of the decimal place. For instance 2 would represent 0.00 while 3 would be 0.000</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrencyExponent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_EmvData_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.EmvData*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_EmvData" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.EmvData">EmvData</h4>
+  <div class="markdown level1 summary"><p>EMV Data returned by the card terminal in the case of a card reversal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EmvData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_ExtendedData_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.ExtendedData*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_ExtendedData" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.ExtendedData">ExtendedData</h4>
+  <div class="markdown level1 summary"><p>Extended data that the merchant can add to a transaction prior to processing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PtzExtendedData ExtendedData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.DataModel.PtzExtendedData.html">PtzExtendedData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_ExternalBatchIdentifier_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.ExternalBatchIdentifier*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_ExternalBatchIdentifier" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.ExternalBatchIdentifier">ExternalBatchIdentifier</h4>
+  <div class="markdown level1 summary"><p>External Batch Identifier supplied by the merchant</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ExternalBatchIdentifier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_ExternalGroupIdentifier_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.ExternalGroupIdentifier*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_ExternalGroupIdentifier" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.ExternalGroupIdentifier">ExternalGroupIdentifier</h4>
+  <div class="markdown level1 summary"><p>External group identifier supplied by the merchant</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ExternalGroupIdentifier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_ExternalIdentifier_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.ExternalIdentifier*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_ExternalIdentifier" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.ExternalIdentifier">ExternalIdentifier</h4>
+  <div class="markdown level1 summary"><p>External Identifier supplied by the merchant for use in retrieving this transaction information later</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ExternalIdentifier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_OrderIdentifier_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.OrderIdentifier*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_OrderIdentifier" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.OrderIdentifier">OrderIdentifier</h4>
+  <div class="markdown level1 summary"><p>Optional Order Identifier for the transaction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OrderIdentifier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_OtherAmount_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.OtherAmount*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_OtherAmount" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.OtherAmount">OtherAmount</h4>
+  <div class="markdown level1 summary"><p>Other Amount that is included in the transaction total</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal OtherAmount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_Source_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.Source*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_Source" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.Source">Source</h4>
+  <div class="markdown level1 summary"><p>Data Object containing information about the associated payment source.  If the payment source is acquired via the card terminal,
+the SDK will automatically populate this object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PtzPaymentSource Source { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.DataModel.PtzPaymentSource.html">PtzPaymentSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_TaxAmount_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TaxAmount*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_TaxAmount" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TaxAmount">TaxAmount</h4>
+  <div class="markdown level1 summary"><p>Tax amount included with the transaction total</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal TaxAmount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_TerminalCode_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TerminalCode*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_TerminalCode" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TerminalCode">TerminalCode</h4>
+  <div class="markdown level1 summary"><p>Terminal Code associated with the transaction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TerminalCode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_TerminalId_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TerminalId*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_TerminalId" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TerminalId">TerminalId</h4>
+  <div class="markdown level1 summary"><p>Terminal ID used to capture the specified payment. This should be specified prior to requesting the terminal to process a transaction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TerminalId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_TerminalSerialNumber_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TerminalSerialNumber*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_TerminalSerialNumber" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TerminalSerialNumber">TerminalSerialNumber</h4>
+  <div class="markdown level1 summary"><p>Terminal Serial Number (not TerminalId).  Required for all terminal transactions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TerminalSerialNumber { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_TipAmount_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TipAmount*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_TipAmount" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TipAmount">TipAmount</h4>
+  <div class="markdown level1 summary"><p>Tip amount included with the transaction total</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal TipAmount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_TotalAmount_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TotalAmount*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_TotalAmount" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TotalAmount">TotalAmount</h4>
+  <div class="markdown level1 summary"><p>Total amount for the transaction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal TotalAmount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_Requests_PtzPaymentRequest_TransactionIdentifier_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TransactionIdentifier*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_TransactionIdentifier" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TransactionIdentifier">TransactionIdentifier</h4>
+  <div class="markdown level1 summary"><p>Unique Transaction Identifier used to specify the transaction that should be captured</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TransactionIdentifier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

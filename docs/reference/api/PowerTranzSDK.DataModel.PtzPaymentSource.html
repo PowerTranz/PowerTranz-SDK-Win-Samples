@@ -1,0 +1,886 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PtzPaymentSource
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PtzPaymentSource
+   ">
+    <meta name="generator" content="docfx 2.32.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource">
+  
+  
+  <h1 id="PowerTranzSDK_DataModel_PtzPaymentSource" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource" class="text-break">Class PtzPaymentSource
+  </h1>
+  <div class="markdown level0 summary"><p>Payment Source associated with a transaction. This contains all the information needed to process a payment from the requested source</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PtzPaymentSource</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PowerTranzSDK.DataModel.html">PowerTranzSDK.DataModel</a></h6>
+  <h6><strong>Assembly</strong>: PowerTranzSDK.dll</h6>
+  <h5 id="PowerTranzSDK_DataModel_PtzPaymentSource_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PtzPaymentSource</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_ApplicationId_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.ApplicationId*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_ApplicationId" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.ApplicationId">ApplicationId</h4>
+  <div class="markdown level1 summary"><p>The Application ID associated with an EMV transaction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public string ApplicationId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_CardCvv_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardCvv*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_CardCvv" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardCvv">CardCvv</h4>
+  <div class="markdown level1 summary"><p>Card verification value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CardCvv { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_CardEMVCapable_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardEMVCapable*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_CardEMVCapable" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardEMVCapable">CardEMVCapable</h4>
+  <div class="markdown level1 summary"><p>Flag indicating the card is EMV capable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public bool CardEMVCapable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_CardEmvData_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardEmvData*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_CardEmvData" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardEmvData">CardEmvData</h4>
+  <div class="markdown level1 summary"><p>TLV object containing EMV data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CardEmvData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_CardEmvFallback_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardEmvFallback*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_CardEmvFallback" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardEmvFallback">CardEmvFallback</h4>
+  <div class="markdown level1 summary"><p>Flag indicating whether or not a swipe was allowed on a chip enabled card</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CardEmvFallback { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_CardExpiration_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardExpiration*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_CardExpiration" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardExpiration">CardExpiration</h4>
+  <div class="markdown level1 summary"><p>Card expiration date</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CardExpiration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_CardHolderName_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardHolderName*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_CardHolderName" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardHolderName">CardHolderName</h4>
+  <div class="markdown level1 summary"><p>Card Holder Name associated with a card</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CardHolderName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_CardMaskedTrack2_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardMaskedTrack2*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_CardMaskedTrack2" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardMaskedTrack2">CardMaskedTrack2</h4>
+  <div class="markdown level1 summary"><p>Masked track 2 used internally for online pin commands</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public string CardMaskedTrack2 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_CardPan_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardPan*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_CardPan" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardPan">CardPan</h4>
+  <div class="markdown level1 summary"><p>Primary Account Number for the associated card</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CardPan { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_CardPresent_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardPresent*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_CardPresent" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardPresent">CardPresent</h4>
+  <div class="markdown level1 summary"><p>Flag indicating whether or not a credit card was present at the time of a credit transaction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CardPresent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_CardSource_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardSource*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_CardSource" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardSource">CardSource</h4>
+  <div class="markdown level1 summary"><p>his enumeration is used by the SDK to determine whether or not the payment source read from a card terminal
+has had an account type selected.If a card has been read from a terminal and the type has not been set, the
+terminal will prompt for the card type as appropriate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public Enumerations.CardSource CardSource { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerTranzSDK.Enumerations.CardSource.html">Enumerations.CardSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_CardSwiped_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardSwiped*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_CardSwiped" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardSwiped">CardSwiped</h4>
+  <div class="markdown level1 summary"><p>Flag indicating th card was swiped</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public bool CardSwiped { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_CardTrack1Data_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardTrack1Data*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_CardTrack1Data" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardTrack1Data">CardTrack1Data</h4>
+  <div class="markdown level1 summary"><p>Track 1 data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CardTrack1Data { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_CardTrack2Data_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardTrack2Data*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_CardTrack2Data" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardTrack2Data">CardTrack2Data</h4>
+  <div class="markdown level1 summary"><p>Track 2 data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CardTrack2Data { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_CardTrack3Data_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardTrack3Data*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_CardTrack3Data" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardTrack3Data">CardTrack3Data</h4>
+  <div class="markdown level1 summary"><p>Track 3 data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CardTrack3Data { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_CardTrackData_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardTrackData*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_CardTrackData" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.CardTrackData">CardTrackData</h4>
+  <div class="markdown level1 summary"><p>Card track data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CardTrackData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_Contactless_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.Contactless*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_Contactless" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.Contactless">Contactless</h4>
+  <div class="markdown level1 summary"><p>Flag indicating whether the card data was captured by the contactless interface</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contactless { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_Debit_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.Debit*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_Debit" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.Debit">Debit</h4>
+  <div class="markdown level1 summary"><p>Flag indicating whether the selected account type is debit or credit</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Debit { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_EncryptedCardTrack1Data_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrack1Data*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_EncryptedCardTrack1Data" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrack1Data">EncryptedCardTrack1Data</h4>
+  <div class="markdown level1 summary"><p>Encryped track 1 data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EncryptedCardTrack1Data { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_EncryptedCardTrack2Data_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrack2Data*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_EncryptedCardTrack2Data" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrack2Data">EncryptedCardTrack2Data</h4>
+  <div class="markdown level1 summary"><p>Encryped track 2 data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EncryptedCardTrack2Data { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_EncryptedCardTrack3Data_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrack3Data*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_EncryptedCardTrack3Data" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrack3Data">EncryptedCardTrack3Data</h4>
+  <div class="markdown level1 summary"><p>Encryped track 3 data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EncryptedCardTrack3Data { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_EncryptedCardTrackData_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrackData*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_EncryptedCardTrackData" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrackData">EncryptedCardTrackData</h4>
+  <div class="markdown level1 summary"><p>Encryped track data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EncryptedCardTrackData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_EncryptedPinBlock_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedPinBlock*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_EncryptedPinBlock" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedPinBlock">EncryptedPinBlock</h4>
+  <div class="markdown level1 summary"><p>Encrypted PIN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EncryptedPinBlock { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_Ksn_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.Ksn*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_Ksn" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.Ksn">Ksn</h4>
+  <div class="markdown level1 summary"><p>Key serial number</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Ksn { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_MaskedPan_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.MaskedPan*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_MaskedPan" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.MaskedPan">MaskedPan</h4>
+  <div class="markdown level1 summary"><p>Masked Primary Account Number for the associated card</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MaskedPan { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_PinBlockKsn_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.PinBlockKsn*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_PinBlockKsn" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.PinBlockKsn">PinBlockKsn</h4>
+  <div class="markdown level1 summary"><p>Encrypted PIN key serial number</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PinBlockKsn { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_Token_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.Token*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_Token" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.Token">Token</h4>
+  <div class="markdown level1 summary"><p>Payment Token used to process a stored payment method</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Token { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerTranzSDK_DataModel_PtzPaymentSource_TokenType_" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.TokenType*"></a>
+  <h4 id="PowerTranzSDK_DataModel_PtzPaymentSource_TokenType" data-uid="PowerTranzSDK.DataModel.PtzPaymentSource.TokenType">TokenType</h4>
+  <div class="markdown level1 summary"><p>The type of token referenced by the token</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TokenType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
