@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Delegate SelectDevice
-   | PowerTranz SDK 2.0.0 Reference Documentation </title>
+    <title>Release Notes | PowerTranz SDK 2.0.0 Reference Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Delegate SelectDevice
-   | PowerTranz SDK 2.0.0 Reference Documentation ">
+    <meta name="title" content="Release Notes | PowerTranz SDK 2.0.0 Reference Documentation ">
     <meta name="generator" content="docfx 2.32.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -68,38 +66,19 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PowerTranzSDK.CardTerminals.SelectDevice">
-  
-  
-  <h1 id="PowerTranzSDK_CardTerminals_SelectDevice" data-uid="PowerTranzSDK.CardTerminals.SelectDevice" class="text-break">Delegate SelectDevice
-  </h1>
-  <div class="markdown level0 summary"><p>This method is called when a bluetooth connection attempt is made and there may be one or more devices that are available to be paired with.</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PowerTranzSDK.CardTerminals.html">PowerTranzSDK.CardTerminals</a></h6>
-  <h6><strong>Assembly</strong>: PowerTranzSDK.dll</h6>
-  <h5 id="PowerTranzSDK_CardTerminals_SelectDevice_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void SelectDevice(List&lt;string&gt; devices);</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">devices</span></td>
-        <td><p>List of the names of all the devices visible</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="release-notes">Release Notes</h1>
+
+<h2 id="version-200">Version 2.0.0</h2>
+<p>Note that as there are breaking changes, this version is not backwards compatible with 1.0.6.</p>
+<h4 id="model-changes">Model changes</h4>
+<p><em>ExternalBatchId</em> has been changed to <strong>ExternalBatchIdentifier</strong>.
+<em>OrderId</em> has been changed to <strong>OrderIdentifier</strong>.</p>
+<h4 id="miscellaneous">Miscellaneous</h4>
+<p>Terminal <em>HardReset</em> has been removed.
+Terminal <em>SoftReset</em> has been changed to <strong>ResetDevice</strong> and is accessed directly from the terminal instance.</p>
+<h2 id="version-106">Version 1.0.6</h2>
+<p>First release.</p>
 </article>
           </div>
           

@@ -9,10 +9,46 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "CpApZzRiQXEsz7Zs7HCjGA=="
+          "hash": "Smp8akpWE2K3YrXst7nLGA=="
         }
       },
       "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "zwnfID8O7dqKYc93RAgBxg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/releasenotes.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/releasenotes.html",
+          "hash": "35gIYRf5E0RtKfNMk0SgCA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "2eaJvdQE054bFUop+BfC1Q=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "D543fTnp0H86FEkXrZ53Jw=="
+          "hash": "kybu0vXRx+hUi0ypvBwZnw=="
         }
       },
       "is_incremental": true,
@@ -33,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.DeviceTextCompletion.html",
-          "hash": "3aaDSFDd1Cr4e+EuE0Dm3A=="
+          "hash": "OvgzR+JcVcz9PjGT1I9CHg=="
         }
       },
       "is_incremental": true,
@@ -45,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.DidConnectTerminal.html",
-          "hash": "7+pEVGogBjSUTAqH3par3w=="
+          "hash": "lqb88Tyyca/Ec/ud8dFG8A=="
         }
       },
       "is_incremental": true,
@@ -57,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.DidDisconnectTerminal.html",
-          "hash": "pEFj84Zeh1FgCSxXVEUX6Q=="
+          "hash": "Iojk301j34Lld8nwpT9H0w=="
         }
       },
       "is_incremental": true,
@@ -69,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.DidFailToConnectTerminal.html",
-          "hash": "Cl90CL/FBZw3zkoW5AefnA=="
+          "hash": "bBcoQYhojltuRRJSASM/9A=="
         }
       },
       "is_incremental": true,
@@ -81,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.DidFailWithError.html",
-          "hash": "O/65QkcS01WIDBWBiS3wMA=="
+          "hash": "kLMYF8YA3hdQDx0jR1DpQw=="
         }
       },
       "is_incremental": true,
@@ -93,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.DidFailWithReversal.html",
-          "hash": "zVTNu2R7QmKi+hNDsD9MvA=="
+          "hash": "n3ffQWNBuBSHVEjrOL1GaA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.DidFinishTransactionWithResponse.html",
-          "hash": "uKgSTMc02NUkmeXJjZ7rlw=="
+          "hash": "uxu0yiSw23Pk0vwD2Vb+nQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -117,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.DidReceiveCardEvent.html",
-          "hash": "KnwDiM3C0fndnWOEbcFU3g=="
+          "hash": "H3nYWYZMp+qJHIu94eAohQ=="
         }
       },
       "is_incremental": true,
@@ -129,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.DidReceiveResponse.html",
-          "hash": "eash2M9fH03g7PihndwgRw=="
+          "hash": "bUuB6y/qN2H39TQZO3aLUg=="
         }
       },
       "is_incremental": true,
@@ -141,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.DidRequestAccountTypeSelection.html",
-          "hash": "9PrQYmQFQTtuiWYH1jrs7A=="
+          "hash": "RvmCrwEo+m9qEBQyQzzSVg=="
         }
       },
       "is_incremental": true,
@@ -153,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.DidRequestDevicePromptText.html",
-          "hash": "bvkOBR9bdh/O92RxHkxc7Q=="
+          "hash": "eEHLWIrX7PpWp8ZzNowPtw=="
         }
       },
       "is_incremental": true,
@@ -165,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.DidRequestSelectEMVApplication.html",
-          "hash": "Z3UX9+SRXiz4PRf0RDxpag=="
+          "hash": "UlNrjRGANGiw3YcOm2ykAA=="
         }
       },
       "is_incremental": true,
@@ -177,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.DidReturnAmountConfirmation.html",
-          "hash": "yZniaVAc2enUJ+FPzKEIJw=="
+          "hash": "c6GmvMYxrAwdo2SjhdvlYQ=="
         }
       },
       "is_incremental": true,
@@ -189,10 +225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.IPTZCardTerminal.html",
-          "hash": "36JczERaphc6P/okURoGhA=="
+          "hash": "gKqV99iKeJuf7pzy67NpZA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -201,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html",
-          "hash": "30DXnOXS0d34Jvoc8YcoOg=="
+          "hash": "e3wBwTCBYBmFqks3A+O2ww=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -213,10 +249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.html",
-          "hash": "GpyTkcBHMdGEFNn9FjuCZw=="
+          "hash": "+xlJKWWP/aNgIQb+zFvi6w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -225,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.OnBatteryLow.html",
-          "hash": "szXAlZoAdNWCzfZ7ePV52g=="
+          "hash": "5gr3kGeSufmrc1r//av0JQ=="
         }
       },
       "is_incremental": true,
@@ -237,10 +273,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.PTZCardTerminal.html",
-          "hash": "mzQrC0sXdIkA36tDmDdgqg=="
+          "hash": "fi4ZdQmzo5+Oq4dZZUdTng=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -249,10 +285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.PaymentCompletion.html",
-          "hash": "RgJPnXmmtU79wWy7ZXs2ag=="
+          "hash": "HCxy+77ol3dWFoQrDlRR2A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -261,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.PromptCanceled.html",
-          "hash": "uDpLp/iu/GD0H0cH2N4wSg=="
+          "hash": "Oi5tcnxFrIrvJeaWom3yWQ=="
         }
       },
       "is_incremental": true,
@@ -273,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.SelectDevice.html",
-          "hash": "OKJ3aaMX3WKKBCt99BlLlw=="
+          "hash": "Zpbs8Ca1JxDdsnBb08qqsQ=="
         }
       },
       "is_incremental": true,
@@ -285,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.TerminalDidReceiveKeypadInput.html",
-          "hash": "ZIGUPUf8N6UhkqiXjIh0rQ=="
+          "hash": "a7aEt7VeqnKfyu4f10ykvQ=="
         }
       },
       "is_incremental": true,
@@ -297,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.TerminalDidRequestFinalConfirmation.html",
-          "hash": "bDCp2GEoMtJM2STFe32h4g=="
+          "hash": "1fDjJXmFjZBOO6UpcmyTmw=="
         }
       },
       "is_incremental": true,
@@ -309,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.TerminalDidRequestTransactionAmount.html",
-          "hash": "rdD/uXoeKedv1ovXxiPCbQ=="
+          "hash": "w8KjZ2tGuPtGH2B8tPtfRA=="
         }
       },
       "is_incremental": true,
@@ -321,10 +357,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.TerminalPaymentFailed.html",
-          "hash": "xGHBwh9IZmIxmvcnVK9aKQ=="
+          "hash": "HoTOix539dMv+Fcom0YZJA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -333,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.WillConnectTerminal.html",
-          "hash": "1KMiTqTbvnySuJI+qTfUyA=="
+          "hash": "dNB0+RhFIBCmZkvHcsfrzA=="
         }
       },
       "is_incremental": true,
@@ -345,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.WillSendRequest.html",
-          "hash": "BcHIdUz3lr4vGFz1+XzmIw=="
+          "hash": "D/Pdfi/C98WToLCSAUegpw=="
         }
       },
       "is_incremental": true,
@@ -357,10 +393,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.html",
-          "hash": "QGYJWeLMTky7paXsAlIveg=="
+          "hash": "LKsMYlCjjx7YiVixLgSMLg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -369,10 +405,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.DataModel.PtzAddress.html",
-          "hash": "TD9co9PXnHMzT4qNN9Shcw=="
+          "hash": "Od+Q5zreUjaJA5YX4hK6Yg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -381,10 +417,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.DataModel.PtzErrors.html",
-          "hash": "M8PvGS7Hm6H1EWuAiDrBBg=="
+          "hash": "YXEa+/01PcbI3/axnXKNGA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -393,10 +429,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.DataModel.PtzExtendedData.html",
-          "hash": "B+CU6bH6h98KHduIp4N0lg=="
+          "hash": "vbtM/3XFCJPJNAYPUWesEA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -405,10 +441,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.DataModel.PtzPaymentSource.html",
-          "hash": "s0I203feOprSIcRWK+4f8A=="
+          "hash": "tGloGvyUr5xGYVl5O7XyxA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -417,10 +453,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.DataModel.PtzReceipt.html",
-          "hash": "Vub5mIwqk9HrYM5HdNwViQ=="
+          "hash": "kHZ6hloI9xgTs9m4kLdvuQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -429,10 +465,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.DataModel.html",
-          "hash": "IxZG9JeX2ndpeh0w+ZeoSQ=="
+          "hash": "eX7QIJimAMLTEbkTER/84g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -441,10 +477,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Enumerations.APIRequestTypes.html",
-          "hash": "5BDCWyM0B2FFfE0qjeMoHA=="
+          "hash": "QKZ3vaClAqSBtYJh64XLbQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -453,10 +489,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Enumerations.CardAccountType.html",
-          "hash": "8F3Fr/Gwrtn2r4M3Ndsirg=="
+          "hash": "cCMP4sKCUA5JSu8C+tf1Bg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -465,10 +501,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Enumerations.CardEvent.html",
-          "hash": "K4ddmyD/g5/vQhNiqc55lw=="
+          "hash": "3kCXiER9Kks5k7lOV860TQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -477,10 +513,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Enumerations.CardSource.html",
-          "hash": "bolClKdnVyXWdpb895lVMA=="
+          "hash": "1Ks4PINmGHBagMFUJSI+QA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -489,10 +525,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Enumerations.CardTerminalBatteryStatus.html",
-          "hash": "SNvbQ9ueowKXfP69eZtpbA=="
+          "hash": "V71lR5nOp6TZSvYqw4rhHA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -501,10 +537,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Enumerations.CardTerminalInputType.html",
-          "hash": "aTRf2tzEZMqHrZNab8ngvA=="
+          "hash": "4MDvYfdyj9/H+IB+ZUU+Rg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -513,10 +549,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Enumerations.CardType.html",
-          "hash": "4IwhaIRxxgGyGvLWxnBoIg=="
+          "hash": "kX7RoFj6+HnAwOfSsHEO3g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -525,10 +561,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Enumerations.DevicePrompt.html",
-          "hash": "v7/0FQuOUik6eZajtB04IQ=="
+          "hash": "Vub5vBcsmXMCaBr63x6uDw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -537,10 +573,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Enumerations.EMVTransactionType.html",
-          "hash": "lZef23jwrtfwFLzIyldI1w=="
+          "hash": "aHojCDa8KuGQWSrlROJT3A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -549,10 +585,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Enumerations.OnlineProcessType.html",
-          "hash": "OMYYc9BxQSzzZnO/j80o1Q=="
+          "hash": "aL8/q30I8KyU5JVlLCphXQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -561,10 +597,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Enumerations.ReversalReason.html",
-          "hash": "jtJ9OAQ5wO1mcpYaMdmY4g=="
+          "hash": "uTPcp4BrJQp/EQKKunDmRQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -573,10 +609,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Enumerations.TerminalCommands.html",
-          "hash": "ccRjYqtNMpY9QCWdVuNrWA=="
+          "hash": "Hs3rize8UCHXojkwbPs8Zg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -585,10 +621,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Enumerations.TerminalState.html",
-          "hash": "mB9X5MSuuVw1RsecChfsvQ=="
+          "hash": "istN/Ui1DhKZ/ZZYCEQe6w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -597,10 +633,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Enumerations.TerminalType.html",
-          "hash": "jXh7GJgK25SM1l0YatyDTg=="
+          "hash": "DJgxrp5AbJLUW8Piyjq5OQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -609,10 +645,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Enumerations.TransactionResult.html",
-          "hash": "BqS3bgJIsFZBDW520mVoIw=="
+          "hash": "D6xzDUcYDqMEy+7nMcbFrA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -621,10 +657,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Enumerations.TransactionType.html",
-          "hash": "sIi1O7yUhS5PEw9gYZ+2uA=="
+          "hash": "19jfr7z7BgOB4hE1mHNqRA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -633,10 +669,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Enumerations.html",
-          "hash": "cfiEJQV8jmG/F6fhCILR2Q=="
+          "hash": "MQTjgxKTi+MwJKWYdF3TJg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -645,10 +681,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Exceptions.InvalidRequestException.html",
-          "hash": "+6FZlfMz6jrwzn5TZRuDSA=="
+          "hash": "3a1B45Fp8ZGvhviCpZvamQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -657,10 +693,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Exceptions.PtzApiException.html",
-          "hash": "9m8IMjHGpSoN2YwakVynJg=="
+          "hash": "YapCg5epkA7k6mtTsC/KwQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -669,10 +705,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Exceptions.SredException.html",
-          "hash": "FxfjHxQtC+Nuc7Yv4qgoug=="
+          "hash": "Zk/ch2FQWerXs+2jIty0Kw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -681,10 +717,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Exceptions.TransactionInProgressException.html",
-          "hash": "mu0c7Zs09zOp00qeBZAOeA=="
+          "hash": "1dBXjZcwo4uxv9vgQfglNQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -693,10 +729,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Exceptions.html",
-          "hash": "jv3POTrPPSHFMoTerhkLag=="
+          "hash": "OfnQs+Zyzdf9tg3jpDATiA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -705,10 +741,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.PtzApi.html",
-          "hash": "QS1HA3Ty5UYMSJ+s1m2mjQ=="
+          "hash": "2XftjVGF1Vr4guxl/7ijaQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -717,10 +753,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Requests.PtzPaymentAuth.PTZTipType.html",
-          "hash": "1dFXFLN4E1sZARPyxMsFow=="
+          "hash": "iV8lDGDQrSM7XA0RK8GbcA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -729,10 +765,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Requests.PtzPaymentAuth.html",
-          "hash": "HMwVD6wOBbZGs3IJfz4mnQ=="
+          "hash": "3Kw+WZcIv/WLtd14TuKoUA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -741,10 +777,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Requests.PtzPaymentCapture.html",
-          "hash": "HNCTLE4d/RLy36NLTGlhVA=="
+          "hash": "K1gLATWM3rTjDFF7+qLuhw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -753,10 +789,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Requests.PtzPaymentCredit.html",
-          "hash": "3ztw5kVm7r/0QT76vjxiRw=="
+          "hash": "CIlzGX3ZEop2kJ+nxeziTQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -765,10 +801,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Requests.PtzPaymentRefund.html",
-          "hash": "BLAup54SEEwzrgnwO4poeQ=="
+          "hash": "/MG1UlOjKHLvFuH+kI2Ofg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -777,10 +813,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Requests.PtzPaymentRequest.html",
-          "hash": "zLx0gDSw4N6NLibHq5H+CQ=="
+          "hash": "PhBdl2ri/gsiQE5zkRqEOg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -789,10 +825,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Requests.PtzPaymentVoid.html",
-          "hash": "NWHiYFMcrI/YLoTum3rdEg=="
+          "hash": "4kzhv28Nd3OLGvg4tnhSig=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -801,10 +837,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Requests.PtzTransactionRequest.html",
-          "hash": "w5VCRlzLHws2ud/xjUsM8A=="
+          "hash": "JTXRR97FIiHtRZkkwzWMWg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -813,10 +849,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Requests.html",
-          "hash": "wErYdwhxwEWMhmxRbgJIPw=="
+          "hash": "HXc0Zdpkpl9th/YBPmBrIw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -825,10 +861,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Responses.PtzOrder.html",
-          "hash": "jR/1TBQctIEf05H6vYgaFw=="
+          "hash": "V6vNCFqnH5JNgSR2jpjAjQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -837,10 +873,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Responses.PtzOrderResponse.html",
-          "hash": "Uyoe2Uen1kIppviVeO2mpg=="
+          "hash": "5Hv+dWE7wvomDjuHvqHa5Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -849,10 +885,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Responses.PtzOrderTransaction.html",
-          "hash": "NZw+OwJRpxwVRbt+GoZ/ww=="
+          "hash": "C8GxSjymcPR0FC9w8R/HZQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -861,10 +897,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Responses.PtzPaymentResponse.html",
-          "hash": "9RGVD0CQUI2mqqkSib5uwQ=="
+          "hash": "34e2JHmEfBbhXAbrAEuxaA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -873,10 +909,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Responses.PtzTransactionResponse.html",
-          "hash": "P3pYRzAGNvpi3asfKt57OA=="
+          "hash": "iPqt4FHYRW8+xdn/ZNY6dw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -885,10 +921,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Responses.PtzTransactionsResponse.html",
-          "hash": "VsMtKDvmI7AN7pkkOzITeA=="
+          "hash": "veQeVTzbYWzR0+RVeLMagw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -897,10 +933,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Responses.html",
-          "hash": "UXXBu2A0qBMyRGiWvIUckA=="
+          "hash": "aLKmneMy/HWzRVieJZXHvQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -909,10 +945,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Utilities.Extensions.html",
-          "hash": "0L0RJLtQDoRYnEQKPdlUvw=="
+          "hash": "ypGpKDO7+Rnvvajom2kbsA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -921,10 +957,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Utilities.Info.html",
-          "hash": "LdIPg0NMaQHCL2miZU8NWw=="
+          "hash": "2iiKI7BJK5NO8PUlPHRa9A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -933,10 +969,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Utilities.html",
-          "hash": "/Q0O1lOLyJqnW3L/ejrvkw=="
+          "hash": "xLVnZ7A7ex5dD4vp29JUdg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -945,10 +981,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.html",
-          "hash": "GI8AC33Nd/+e8xPEag6ywQ=="
+          "hash": "Rsb+kBfMDEr9+c7CqNEeyg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -969,7 +1005,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "eEtljMTyZqrWizVxxaXgCQ=="
+          "hash": "Rgq3sdkfXfRkVccu5zlJig=="
         }
       },
       "is_incremental": false,
