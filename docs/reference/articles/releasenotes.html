@@ -71,12 +71,91 @@
 
 <h2 id="version-200">Version 2.0.0</h2>
 <p>Note that as there are breaking changes, this version is not backwards compatible with 1.0.6.</p>
+<h3 id="breaking-changes">Breaking Changes</h3>
 <h4 id="model-changes">Model changes</h4>
-<p><em>ExternalBatchId</em> has been changed to <strong>ExternalBatchIdentifier</strong>.
-<em>OrderId</em> has been changed to <strong>OrderIdentifier</strong>.</p>
+<p><em>ExternalBatchId</em> has been changed to <strong>ExternalBatchIdentifier</strong>.<br><em>OrderId</em> has been changed to <strong>OrderIdentifier</strong>.</p>
+<p>The following property, enum, and ... names have been changed  </p>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Old Name</th>
+<th>New Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>PtzPaymentRequest</em></td>
+<td>ExternalBatchId</td>
+<td>ExernalBatchIdentifier</td>
+</tr>
+<tr>
+<td><em>PtzPaymentRequest</em></td>
+<td>OrderId</td>
+<td>OrderIdentifier</td>
+</tr>
+<tr>
+<td>public enum</td>
+<td>PTtzPosEntryMode</td>
+<td>PtzPosEntryMode</td>
+</tr>
+</tbody>
+</table>
 <h4 id="miscellaneous">Miscellaneous</h4>
 <p>Terminal <em>HardReset</em> has been removed.
-Terminal <em>SoftReset</em> has been changed to <strong>ResetDevice</strong> and is accessed directly from the terminal instance.</p>
+Terminal <em>SoftReset</em> has been changed to <strong>ResetDevice</strong> and is accessed directly from the terminal instance.
+The <em>PTZMiuraTerminal.Driver</em> property has been removed.  Any required functionality is available directly from <em>PTZMiuraTerminal</em>.</p>
+<p>There is a new <em>PtzPosEntryMode</em> for receipts.  This will be returned as mode <strong>3</strong> and in code it is <em>PtzPosEntryMode.PtzPosEntryModeFallback</em>.  It will be returned in the receipt data when there was a card fallback.</p>
+<h3 id="configuration-file">Configuration File</h3>
+<p>There is a new config file which can be used to set the PowerTranz Gateway URL and configure log4net logging parameters.  The file must be in the same folder as PowerTranzSDK.dll and must be called *PowerTranzSDK.dll.config.  Note that app.config can no longer be used.  This means that the configuration file for the SDK is completely separated from the POS application.</p>
+<p>The following is a sample PowerTranzSDK.dll.config:</p>
+<pre><code class="lang-html">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+&lt;configuration&gt;
+  &lt;configSections&gt;
+    &lt;section name=&quot;log4net&quot; type=&quot;log4net.Config.Log4NetConfigurationSectionHandler, log4net&quot;/&gt;
+  &lt;/configSections&gt;
+
+  &lt;appSettings&gt;
+    &lt;add key=&quot;PowerTranzUrl&quot; value=&quot;https://staging.ptranz.com/api&quot;/&gt;
+  &lt;/appSettings&gt;
+
+  &lt;log4net&gt;
+    &lt;logger name=&quot;PowerTranzSDKLogger&quot;&gt;
+      &lt;level value=&quot;DEBUG&quot;/&gt;
+      &lt;appender-ref ref=&quot;RollingFileAppender&quot;/&gt;
+      &lt;appender-ref ref=&quot;Console&quot;/&gt;
+    &lt;/logger&gt;
+
+    &lt;appender name=&quot;RollingFileAppender&quot; type=&quot;log4net.Appender.RollingFileAppender&quot;&gt;
+      &lt;file value=&quot;ptzsdk.win.samples.console.log&quot;/&gt;
+      &lt;appendToFile value=&quot;true&quot;/&gt;
+      &lt;rollingStyle value=&quot;Size&quot;/&gt;
+      &lt;maxSizeRollBackups value=&quot;5&quot;/&gt;
+      &lt;maximumFileSize value=&quot;5MB&quot;/&gt;
+      &lt;staticLogFileName value=&quot;true&quot;/&gt;
+      &lt;layout type=&quot;log4net.Layout.PatternLayout&quot;&gt;
+        &lt;conversionPattern value=&quot;%date %level  - %message%newline&quot;/&gt;
+      &lt;/layout&gt;
+    &lt;/appender&gt;
+
+    &lt;appender name=&quot;Console&quot; type=&quot;log4net.Appender.ConsoleAppender&quot;&gt;
+      &lt;layout type=&quot;log4net.Layout.PatternLayout&quot;&gt;
+        &lt;conversionPattern value=&quot;%date %-5level: %message%newline&quot;/&gt;
+      &lt;/layout&gt;
+    &lt;/appender&gt;
+
+  &lt;/log4net&gt;
+&lt;/configuration&gt;
+</code></pre><p>The PowerTranz URL can be set in the configuration file or by passing it into the PtzApi constructor.  Note that if it is provided via the constructor, the configuration file url if present will be ignored.</p>
+<h3 id="non-breaking-changes">Non-Breaking Changes</h3>
+<ul>
+<li>Bluetooth connection improvements and fixes.  Note that the terminal <em>must</em> be paired with the device before attempting to connect.  The Bluetooth paired name must be used to connect.</li>
+<li>SDK no longer gets &quot;stuck&quot; after certain transaction failures</li>
+<li>More logging has been added, duplicate logging lines were removed.</li>
+<li>Fixed receipt ApplicationLabel formatting</li>
+<li>Receipt ApplicationLabel now comes from the Gateway for MSR or fallback</li>
+<li></li>
+</ul>
 <h2 id="version-106">Version 1.0.6</h2>
 <p>First release.</p>
 </article>
