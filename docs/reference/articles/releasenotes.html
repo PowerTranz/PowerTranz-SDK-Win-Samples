@@ -130,12 +130,15 @@
 </tr>
 </tbody>
 </table>
-<h4 id="miscellaneous">Miscellaneous</h4>
+<h4 id="other-changes">Other changes</h4>
 <p>Terminal <em>HardReset</em> has been removed.
 Terminal <em>SoftReset</em> has been changed to <strong>ResetDevice</strong> and is accessed directly from the terminal instance.
 The <em>PTZMiuraTerminal.Driver</em> property has been removed.  Any required functionality is available directly from <em>PTZMiuraTerminal</em>.</p>
 <p>There is a new <em>PtzPosEntryMode</em> for receipts.  This will be returned as mode <strong>3</strong> and in code it is <em>PtzPosEntryMode.PtzPosEntryModeFallback</em>.  It will be returned in the receipt data when there was a card fallback.</p>
-<p>TransactionSearch response model has been extensively modified and a new OrderSearch method has been added which returns an order (<em>PtzOrderResponse</em>) and all its related transactions.  See reference documentation for details.</p>
+<p>Transaction search (<a class="xref" href="../api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_TransactionSearchAsync_PowerTranzSDK_Requests_PtzTransactionRequest_">TransactionSearchAsync</a>) 
+response model (<a class="xref" href="../api/PowerTranzSDK.Responses.PtzTransactionResponse.html">PtzTransactionResponse</a>) has been extensively modified 
+and a new Order search (<a class="xref" href="../api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_OrderDetailsAsync_System_String_">OrderDetailsAsync</a>) method has been added which returns 
+an order (<a class="xref" href="../api/PowerTranzSDK.Responses.PtzOrderResponse.html">PtzOrderResponse</a>) and all its related transactions.  Transaction details retrieval has been similarly modified.</p>
 <h3 id="configuration-file">Configuration File</h3>
 <p>There is a new config file which can be used to set the PowerTranz Gateway URL and configure log4net logging parameters.  The file must be in the same folder as PowerTranzSDK.dll and must be called *PowerTranzSDK.dll.config.  Note that app.config can no longer be used.  This means that the configuration file for the SDK is completely separated from the POS application.</p>
 <p>The following is a sample PowerTranzSDK.dll.config:</p>
