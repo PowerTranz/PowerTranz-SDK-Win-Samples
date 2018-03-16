@@ -2,7 +2,7 @@
 
 # PowerTranz-SDK-Win-Samples
 
-These samples illustrate integration with the PowerTranz SDK for Windows. 
+Samples for integration to the .NET PowerTranz SDK for Windows. 
 
 ## New Version 2.0, March 2018
 
