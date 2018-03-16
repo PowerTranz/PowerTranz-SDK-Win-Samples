@@ -70,11 +70,10 @@
 <h1 id="release-notes">Release Notes</h1>
 
 <h2 id="version-200">Version 2.0.0</h2>
-<p>Note that as there are breaking changes, this version is not backwards compatible with 1.0.6.</p>
+<p>Please see the PowerTranz SDK Reference Documentation for more details. Note that as there are breaking changes, this version is not backwards compatible with 1.0.6.</p>
 <h3 id="breaking-changes">Breaking Changes</h3>
 <h4 id="model-changes">Model changes</h4>
-<p><em>ExternalBatchId</em> has been changed to <strong>ExternalBatchIdentifier</strong>.<br><em>OrderId</em> has been changed to <strong>OrderIdentifier</strong>.</p>
-<p>The following property, enum, and ... names have been changed  </p>
+<p>The following object property names have been changed or added:</p>
 <table>
 <thead>
 <tr>
@@ -95,8 +94,38 @@
 <td>OrderIdentifier</td>
 </tr>
 <tr>
+<td><em>PtzPaymentRequest</em></td>
+<td>* new *</td>
+<td>TerminalSerialNumber</td>
+</tr>
+<tr>
+<td><em>PtzPaymentRequest</em></td>
+<td>moved from Source.CardholderAddress</td>
+<td>BillingAddress</td>
+</tr>
+<tr>
+<td><em>PtzPaymentResponse</em></td>
+<td>* new *</td>
+<td>TransactionType</td>
+</tr>
+<tr>
+<td><em>PtzPaymentResponse</em></td>
+<td>* new *</td>
+<td>CardBrand</td>
+</tr>
+<tr>
+<td><em>PtzTransactionResponse</em></td>
+<td>* extensive changes *</td>
+<td>see reference docs</td>
+</tr>
+<tr>
+<td><em>PtzOrderResponse</em></td>
+<td>* new *</td>
+<td>see reference docs</td>
+</tr>
+<tr>
 <td>public enum</td>
-<td>PTtzPosEntryMode</td>
+<td>PTtzPosEntryMode (typo)</td>
 <td>PtzPosEntryMode</td>
 </tr>
 </tbody>
@@ -106,6 +135,7 @@
 Terminal <em>SoftReset</em> has been changed to <strong>ResetDevice</strong> and is accessed directly from the terminal instance.
 The <em>PTZMiuraTerminal.Driver</em> property has been removed.  Any required functionality is available directly from <em>PTZMiuraTerminal</em>.</p>
 <p>There is a new <em>PtzPosEntryMode</em> for receipts.  This will be returned as mode <strong>3</strong> and in code it is <em>PtzPosEntryMode.PtzPosEntryModeFallback</em>.  It will be returned in the receipt data when there was a card fallback.</p>
+<p>TransactionSearch response model has been extensively modified and a new OrderSearch method has been added which returns an order (<em>PtzOrderResponse</em>) and all its related transactions.  See reference documentation for details.</p>
 <h3 id="configuration-file">Configuration File</h3>
 <p>There is a new config file which can be used to set the PowerTranz Gateway URL and configure log4net logging parameters.  The file must be in the same folder as PowerTranzSDK.dll and must be called *PowerTranzSDK.dll.config.  Note that app.config can no longer be used.  This means that the configuration file for the SDK is completely separated from the POS application.</p>
 <p>The following is a sample PowerTranzSDK.dll.config:</p>
@@ -150,11 +180,18 @@ The <em>PTZMiuraTerminal.Driver</em> property has been removed.  Any required fu
 <h3 id="non-breaking-changes">Non-Breaking Changes</h3>
 <ul>
 <li>Bluetooth connection improvements and fixes.  Note that the terminal <em>must</em> be paired with the device before attempting to connect.  The Bluetooth paired name must be used to connect.</li>
-<li>SDK no longer gets &quot;stuck&quot; after certain transaction failures</li>
+<li>SDK no longer gets &quot;stuck&quot; after certain transaction failures.</li>
 <li>More logging has been added, duplicate logging lines were removed.</li>
-<li>Fixed receipt ApplicationLabel formatting</li>
-<li>Receipt ApplicationLabel now comes from the Gateway for MSR or fallback</li>
-<li></li>
+<li>Fixed receipt ApplicationLabel formatting.</li>
+<li>Receipt ApplicationLabel now comes from the Gateway for MSR or fallback. </li>
+<li>Terminal Serial Number is now retrieved from the terminal and sent to the Gateway in every transaction (this is not TerminalId).  TerminalId no longer defaults to the terminal serial number if not supplied.</li>
+<li><em>PTZMiuraTerminal.GetSerialNumber</em> fixed.</li>
+<li>New IsProduction property of <em>PTZMiuraTerminal</em> defaults to true.  Setting it to false raises additional events (<em>DidReceiveResponse</em> and <em>WillSendRequest</em>) for diagnostic purposes.</li>
+<li><em>DidFailWithError</em> event will be be raised if a transaction other than a Credit or an Auth is sent to the terminal.</li>
+<li><em>TerminalResult</em> was not always being set properly in the DidReceiveResponse response object. This has been fixed.</li>
+<li>Async versions of <em>PtzApi</em> methods are now available and should be used for all <em>PtzApi</em> requests.</li>
+<li>Exception handline improvements</li>
+<li>Various stability improvements</li>
 </ul>
 <h2 id="version-106">Version 1.0.6</h2>
 <p>First release.</p>
