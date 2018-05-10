@@ -211,12 +211,6 @@ references:
   commentId: T:PowerTranzSDK.CardTerminals.Miura.OnBatteryPercentage
   fullName: PowerTranzSDK.CardTerminals.Miura.OnBatteryPercentage
   nameWithType: OnBatteryPercentage
-- uid: PowerTranzSDK.CardTerminals.Miura.PaymentCompletion
-  name: PaymentCompletion
-  href: api/PowerTranzSDK.CardTerminals.Miura.PaymentCompletion.html
-  commentId: T:PowerTranzSDK.CardTerminals.Miura.PaymentCompletion
-  fullName: PowerTranzSDK.CardTerminals.Miura.PaymentCompletion
-  nameWithType: PaymentCompletion
 - uid: PowerTranzSDK.CardTerminals.Miura.PromptCanceled
   name: PromptCanceled
   href: api/PowerTranzSDK.CardTerminals.Miura.PromptCanceled.html
@@ -676,24 +670,12 @@ references:
   commentId: T:PowerTranzSDK.CardTerminals.Miura.TerminalDidReceiveKeypadInput
   fullName: PowerTranzSDK.CardTerminals.Miura.TerminalDidReceiveKeypadInput
   nameWithType: TerminalDidReceiveKeypadInput
-- uid: PowerTranzSDK.CardTerminals.Miura.TerminalDidRequestTransactionAmount
-  name: TerminalDidRequestTransactionAmount
-  href: api/PowerTranzSDK.CardTerminals.Miura.TerminalDidRequestTransactionAmount.html
-  commentId: T:PowerTranzSDK.CardTerminals.Miura.TerminalDidRequestTransactionAmount
-  fullName: PowerTranzSDK.CardTerminals.Miura.TerminalDidRequestTransactionAmount
-  nameWithType: TerminalDidRequestTransactionAmount
 - uid: PowerTranzSDK.CardTerminals.Miura.TerminalStateChanged
   name: TerminalStateChanged
   href: api/PowerTranzSDK.CardTerminals.Miura.TerminalStateChanged.html
   commentId: T:PowerTranzSDK.CardTerminals.Miura.TerminalStateChanged
   fullName: PowerTranzSDK.CardTerminals.Miura.TerminalStateChanged
   nameWithType: TerminalStateChanged
-- uid: PowerTranzSDK.CardTerminals.Miura.WillConnectTerminal
-  name: WillConnectTerminal
-  href: api/PowerTranzSDK.CardTerminals.Miura.WillConnectTerminal.html
-  commentId: T:PowerTranzSDK.CardTerminals.Miura.WillConnectTerminal
-  fullName: PowerTranzSDK.CardTerminals.Miura.WillConnectTerminal
-  nameWithType: WillConnectTerminal
 - uid: PowerTranzSDK.CardTerminals.Miura.WillSendRequest
   name: WillSendRequest
   href: api/PowerTranzSDK.CardTerminals.Miura.WillSendRequest.html

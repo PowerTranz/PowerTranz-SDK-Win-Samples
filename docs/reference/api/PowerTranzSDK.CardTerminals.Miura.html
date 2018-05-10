@@ -126,23 +126,14 @@ string to have the terminal display default text.</p>
       <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.OnBatteryPercentage.html">OnBatteryPercentage</a></h4>
       <section><p>This delegate method is called when the terminal sends a battery percentage event;</p>
 </section>
-      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.PaymentCompletion.html">PaymentCompletion</a></h4>
-      <section><p>Internal delegate used by the application</p>
-</section>
       <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.PromptCanceled.html">PromptCanceled</a></h4>
       <section><p>This delegate function is called when a user presses cancel on the keypad.</p>
 </section>
       <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.TerminalDidReceiveKeypadInput.html">TerminalDidReceiveKeypadInput</a></h4>
       <section><p>This method is called when a key is pressed on a supported device (Miura).  For EMV / PIN security, the key press will not be relayed to the delegate and therefore this message is only useful if the application cares about keypad presses for whatever reason.</p>
 </section>
-      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.TerminalDidRequestTransactionAmount.html">TerminalDidRequestTransactionAmount</a></h4>
-      <section><p>This delegate method is called by Anywhere Commerce devices if an EMV transaction is started without an amount set. In general, this should only be used in testing as the EMV spec wants you to start the transaction after the final amount is set.</p>
-</section>
       <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.TerminalStateChanged.html">TerminalStateChanged</a></h4>
       <section><p>Indicates an internal SDK state change occurred (state machine transition)</p>
-</section>
-      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.WillConnectTerminal.html">WillConnectTerminal</a></h4>
-      <section><p>This delegate function is called when the communication channel to the credit card terminal could not be opened, but will be reattempted.</p>
 </section>
       <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.WillSendRequest.html">WillSendRequest</a></h4>
       <section><p>This method is used to convey the request headers and body to be sent to the server</p>

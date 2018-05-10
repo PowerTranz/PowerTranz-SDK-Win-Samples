@@ -71,7 +71,7 @@
           "hash": "QYP/9Gj6V2Nq4Bygp8tllA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -128,7 +128,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.CardStateChanged.html",
-          "hash": "IHL/lbF061LHcd0FbJAAxQ=="
+          "hash": "nQ4RJ/GK0bokvOQAaVXo+Q=="
         }
       },
       "is_incremental": false,
@@ -152,7 +152,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidConnectTerminal.html",
-          "hash": "TuIvjfOtevzJsk08dvKe5w=="
+          "hash": "bIQ5zRVnTrgrOpHtKhc5xA=="
         }
       },
       "is_incremental": false,
@@ -164,7 +164,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidDisconnectTerminal.html",
-          "hash": "FdpmwfoWdpcKUPpChmtn6w=="
+          "hash": "/rcbYY90zjU450XG0HKLAQ=="
         }
       },
       "is_incremental": false,
@@ -176,7 +176,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidFail.html",
-          "hash": "lJx/TXQeXtL3IJ0Vkw1fnA=="
+          "hash": "NDE8tQnOwbeHN2OprL8XUA=="
         }
       },
       "is_incremental": false,
@@ -188,7 +188,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidFailToConnectTerminal.html",
-          "hash": "h2cliNmrh+5/TzU/FAxyZQ=="
+          "hash": "VQUzVUyty5HCiaz/pxHEjg=="
         }
       },
       "is_incremental": false,
@@ -200,7 +200,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidFailWithReversal.html",
-          "hash": "iOBCnPPnUyZe1NqYJrh17g=="
+          "hash": "HRaG00xBZDdm1hXHdhz/3w=="
         }
       },
       "is_incremental": false,
@@ -212,7 +212,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidFinish.html",
-          "hash": "c/W5yncoZS/J9ee3PZlkLw=="
+          "hash": "1R3yL+nduiu1/xcpIbPsWQ=="
         }
       },
       "is_incremental": false,
@@ -224,7 +224,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidFinishWithReversal.html",
-          "hash": "chSZi6K9X3h3QU3yjnFRcQ=="
+          "hash": "PnXTB4xBRj2Jz2RndsU4yw=="
         }
       },
       "is_incremental": false,
@@ -236,7 +236,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidReceiveCardEvent.html",
-          "hash": "AKOnAJ2z/ZA0cqI+f7hNfQ=="
+          "hash": "NDTf+VSU3Ec9PrAK1HXDQA=="
         }
       },
       "is_incremental": false,
@@ -248,7 +248,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidReceiveResponse.html",
-          "hash": "XHzhh3c+UqC0+UhIpOPlbg=="
+          "hash": "3Sim4CQ3MMCIs0KrDG9Z5g=="
         }
       },
       "is_incremental": false,
@@ -260,7 +260,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidRequestDevicePromptText.html",
-          "hash": "18ew0j3hU1YYzHNzoqyhqw=="
+          "hash": "Nwb5X1js933DIHFuGzHFXg=="
         }
       },
       "is_incremental": false,
@@ -272,7 +272,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.OnBatteryLow.html",
-          "hash": "BSP8MPQIq+H06kT5VE8D3g=="
+          "hash": "CyHVLr1yxI8gtBZTd3xQqw=="
         }
       },
       "is_incremental": false,
@@ -284,7 +284,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.OnBatteryPercentage.html",
-          "hash": "iL9XK2FuhQgiOJmeGC1OMg=="
+          "hash": "Bws6RJrd8glonHCY4+NZJQ=="
         }
       },
       "is_incremental": false,
@@ -304,23 +304,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.Miura.PaymentCompletion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.PaymentCompletion.html",
-          "hash": "lsfcjit2aiOBJBOg5jqkDQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.Miura.PromptCanceled.yml",
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.PromptCanceled.html",
-          "hash": "gDrnpHEVfP02qedRmILbww=="
+          "hash": "oAZtR+IGpxt54kFb0ad4YQ=="
         }
       },
       "is_incremental": false,
@@ -332,19 +320,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.TerminalDidReceiveKeypadInput.html",
-          "hash": "QLfn8aqMLPCz1o8qNp+wlw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.Miura.TerminalDidRequestTransactionAmount.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.TerminalDidRequestTransactionAmount.html",
-          "hash": "Y9YlzCw9t126znlcFzfZIw=="
+          "hash": "UJzn33nOl/d6Nf1QMZRggg=="
         }
       },
       "is_incremental": false,
@@ -356,19 +332,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.TerminalStateChanged.html",
-          "hash": "ORLDHz8ay4En5BHdYewFHg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.Miura.WillConnectTerminal.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.WillConnectTerminal.html",
-          "hash": "3rs3kXeZABwIcSn+ERukeg=="
+          "hash": "oheEiOV1h7BQQaJyaKtCqw=="
         }
       },
       "is_incremental": false,
@@ -380,7 +344,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.WillSendRequest.html",
-          "hash": "nN2vfO3c9tiIDyv4x2N/8g=="
+          "hash": "InswwlHO3s+Uds54vAhxPQ=="
         }
       },
       "is_incremental": false,
@@ -392,7 +356,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.html",
-          "hash": "vVCQXGKFvlSFGr1QIJai5Q=="
+          "hash": "YdLTEtcirfzV/BJRd4AIQQ=="
         }
       },
       "is_incremental": false,
@@ -872,7 +836,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "L//2c1JpT0FRdQuxCjx9Dg=="
+          "hash": "HPjWvpql3RG/BLqfEpoc3A=="
         }
       },
       "is_incremental": false,
@@ -884,7 +848,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "gyrMQTv+o/boYjnktH4vyQ=="
+          "hash": "okEnFyszSP3dbyyI+eqHOw=="
         }
       },
       "is_incremental": false,
