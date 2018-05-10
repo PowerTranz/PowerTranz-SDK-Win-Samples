@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enum TransactionType
+    <title>Delegate SdkStateChanged
    | PowerTranz SDK 3.0.0 Reference Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum TransactionType
+    <meta name="title" content="Delegate SdkStateChanged
    | PowerTranz SDK 3.0.0 Reference Documentation ">
     <meta name="generator" content="docfx 2.32.2.0">
     
@@ -68,76 +68,37 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PowerTranzSDK.TransactionType">
+            <article class="content wrap" id="_content" data-uid="PowerTranzSDK.CardTerminals.Miura.SdkStateChanged">
   
   
-  <h1 id="PowerTranzSDK_TransactionType" data-uid="PowerTranzSDK.TransactionType" class="text-break">Enum TransactionType
+  <h1 id="PowerTranzSDK_CardTerminals_Miura_SdkStateChanged" data-uid="PowerTranzSDK.CardTerminals.Miura.SdkStateChanged" class="text-break">Delegate SdkStateChanged
   </h1>
-  <div class="markdown level0 summary"><p>The different types of transactions that may exist on the server</p>
+  <div class="markdown level0 summary"><p>Indicates an internal SDK state change occurred (state machine transition)</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PowerTranzSDK.html">PowerTranzSDK</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PowerTranzSDK.CardTerminals.Miura.html">PowerTranzSDK.CardTerminals.Miura</a></h6>
   <h6><strong>Assembly</strong>: PowerTranzSDK.dll</h6>
-  <h5 id="PowerTranzSDK_TransactionType_syntax">Syntax</h5>
+  <h5 id="PowerTranzSDK_CardTerminals_Miura_SdkStateChanged_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum TransactionType</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void SdkStateChanged(string state);</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
+        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
-    <thead>
+    </thead>
     <tbody>
       <tr>
-        <td id="PowerTranzSDK_TransactionType_Auth">Auth</td>
-        <td><p>Auth</p>
-</td>
-      </tr>
-      <tr>
-        <td id="PowerTranzSDK_TransactionType_Capture">Capture</td>
-        <td><p>Capture</p>
-</td>
-      </tr>
-      <tr>
-        <td id="PowerTranzSDK_TransactionType_Credit">Credit</td>
-        <td><p>Credit</p>
-</td>
-      </tr>
-      <tr>
-        <td id="PowerTranzSDK_TransactionType_Network">Network</td>
-        <td><p>Network</p>
-</td>
-      </tr>
-      <tr>
-        <td id="PowerTranzSDK_TransactionType_None">None</td>
-        <td><p>Unknown or invalid transaction type</p>
-</td>
-      </tr>
-      <tr>
-        <td id="PowerTranzSDK_TransactionType_Refund">Refund</td>
-        <td><p>Refund</p>
-</td>
-      </tr>
-      <tr>
-        <td id="PowerTranzSDK_TransactionType_Sale">Sale</td>
-        <td><p>Sale</p>
-</td>
-      </tr>
-      <tr>
-        <td id="PowerTranzSDK_TransactionType_Void">Void</td>
-        <td><p>Void</p>
-</td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
       </tr>
     </tbody>
-  </thead></thead></table>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="PowerTranzSDK.Utilities.Extensions.html#PowerTranzSDK_Utilities_Extensions_Description_System_Enum_">Extensions.Description()</a>
-  </div>
+  </table>
 </article>
           </div>
           
@@ -146,10 +107,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/new/2.0.0-StateMachine/apiSpec/new?filename=PowerTranzSDK_TransactionType.md&amp;value=---%0Auid%3A%20PowerTranzSDK.TransactionType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/new/2.0.0-StateMachine/apiSpec/new?filename=PowerTranzSDK_CardTerminals_Miura_SdkStateChanged.md&amp;value=---%0Auid%3A%20PowerTranzSDK.CardTerminals.Miura.SdkStateChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK/Enumerations.cs/#L236" class="contribution-link">View Source</a>
+                    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK/CardTerminals/PTZCardTerminal.cs/#L110" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -595,6 +595,12 @@ references:
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.ReversalResponseCodes
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.ReversalResponseCodes
   nameWithType: PTZMiuraTerminal.ReversalResponseCodes
+- uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.SdkStateChanged
+  name: SdkStateChanged
+  href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_SdkStateChanged
+  commentId: E:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.SdkStateChanged
+  fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.SdkStateChanged
+  nameWithType: PTZMiuraTerminal.SdkStateChanged
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.StreamToFile(System.Byte[],System.String,PowerTranzSDK.Miura.Commands.Miura.CommandEnums.InternalFileMode)
   name: StreamToFile(Byte[], String, CommandEnums.InternalFileMode)
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_StreamToFile_System_Byte___System_String_PowerTranzSDK_Miura_Commands_Miura_CommandEnums_InternalFileMode_
@@ -652,30 +658,24 @@ references:
   commentId: E:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.TerminalDidReceiveKeypadInput
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.TerminalDidReceiveKeypadInput
   nameWithType: PTZMiuraTerminal.TerminalDidReceiveKeypadInput
-- uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.TerminalStateChanged
-  name: TerminalStateChanged
-  href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_TerminalStateChanged
-  commentId: E:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.TerminalStateChanged
-  fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.TerminalStateChanged
-  nameWithType: PTZMiuraTerminal.TerminalStateChanged
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.WillSendRequest
   name: WillSendRequest
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_WillSendRequest
   commentId: E:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.WillSendRequest
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.WillSendRequest
   nameWithType: PTZMiuraTerminal.WillSendRequest
+- uid: PowerTranzSDK.CardTerminals.Miura.SdkStateChanged
+  name: SdkStateChanged
+  href: api/PowerTranzSDK.CardTerminals.Miura.SdkStateChanged.html
+  commentId: T:PowerTranzSDK.CardTerminals.Miura.SdkStateChanged
+  fullName: PowerTranzSDK.CardTerminals.Miura.SdkStateChanged
+  nameWithType: SdkStateChanged
 - uid: PowerTranzSDK.CardTerminals.Miura.TerminalDidReceiveKeypadInput
   name: TerminalDidReceiveKeypadInput
   href: api/PowerTranzSDK.CardTerminals.Miura.TerminalDidReceiveKeypadInput.html
   commentId: T:PowerTranzSDK.CardTerminals.Miura.TerminalDidReceiveKeypadInput
   fullName: PowerTranzSDK.CardTerminals.Miura.TerminalDidReceiveKeypadInput
   nameWithType: TerminalDidReceiveKeypadInput
-- uid: PowerTranzSDK.CardTerminals.Miura.TerminalStateChanged
-  name: TerminalStateChanged
-  href: api/PowerTranzSDK.CardTerminals.Miura.TerminalStateChanged.html
-  commentId: T:PowerTranzSDK.CardTerminals.Miura.TerminalStateChanged
-  fullName: PowerTranzSDK.CardTerminals.Miura.TerminalStateChanged
-  nameWithType: TerminalStateChanged
 - uid: PowerTranzSDK.CardTerminals.Miura.WillSendRequest
   name: WillSendRequest
   href: api/PowerTranzSDK.CardTerminals.Miura.WillSendRequest.html

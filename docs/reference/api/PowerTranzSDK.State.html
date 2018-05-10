@@ -73,7 +73,7 @@
   
   <h1 id="PowerTranzSDK_State" data-uid="PowerTranzSDK.State" class="text-break">Enum State
   </h1>
-  <div class="markdown level0 summary"><p>Possible states for the PowerTranz SDK State Machine</p>
+  <div class="markdown level0 summary"><p>Possible states for the PowerTranz SDK State Machine.  These states are optional information only regarding internal state and are not intended to be used for official responses.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="PowerTranzSDK.html">PowerTranzSDK</a></h6>
@@ -94,39 +94,48 @@
     <tbody>
       <tr>
         <td id="PowerTranzSDK_State_Approved">Approved</td>
-        <td></td>
+        <td><p>Transaction was approved.  Preparing response.</p>
+</td>
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_AwaitingAccountType">AwaitingAccountType</td>
-        <td></td>
+        <td><p>Waiting for the cardholder to select the account type (Credit or Debit)</p>
+</td>
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_AwaitingCard">AwaitingCard</td>
-        <td></td>
+        <td><p>Waiting for the cardholder to swipe or insert a card</p>
+</td>
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_AwaitingCashbackAmount">AwaitingCashbackAmount</td>
-        <td></td>
+        <td><p>Waiting for the cardholder to enter a cashback amount.  Only if cashback was requested.</p>
+</td>
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_AwaitingOnlinePin">AwaitingOnlinePin</td>
-        <td></td>
+        <td><p>Waiting for the cardholder to enter an online PIN.  Only for debit with the appropriate service code.  Offline PIN is handled by the terminal and is not controlled by the SDK.</p>
+</td>
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_AwaitingTip">AwaitingTip</td>
-        <td></td>
+        <td><p>Waiting for the cardholder to enter a tip amount.  Only if tip was requested.</p>
+</td>
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_AwaitingTotalConfirmation">AwaitingTotalConfirmation</td>
-        <td></td>
+        <td><p>Waiting for the cardholder to confirm the total amount.</p>
+</td>
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_Canceled">Canceled</td>
-        <td></td>
+        <td><p>Transaction was canceled.  Preparing response and auto-reversal.</p>
+</td>
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_CardError">CardError</td>
-        <td></td>
+        <td><p>Card presented was not valid.  Awaiting a card retry.</p>
+</td>
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_Connected">Connected</td>
@@ -138,23 +147,28 @@
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_Declined">Declined</td>
-        <td></td>
+        <td><p>Transaction was declined.  Preparing response and optional auto-reversal.</p>
+</td>
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_DeviceArqcResponse">DeviceArqcResponse</td>
-        <td></td>
+        <td><p>Terminal is processing ARQC response </p>
+</td>
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_DeviceContinuing">DeviceContinuing</td>
-        <td></td>
+        <td><p>Terminal is continuing an EMV transaction after receiving amounts, total confirmation, and pin where required</p>
+</td>
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_DeviceEmvTrxnStarted">DeviceEmvTrxnStarted</td>
-        <td></td>
+        <td><p>Terminal has started processing a new transaction</p>
+</td>
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_DeviceNfcTrxnStarted">DeviceNfcTrxnStarted</td>
-        <td></td>
+        <td><p>Terminal has started processing a new NFC transaction</p>
+</td>
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_Disconnected">Disconnected</td>
@@ -166,19 +180,23 @@
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_EmvTrxnRequested">EmvTrxnRequested</td>
-        <td></td>
+        <td><p>A new transaction has been requested.  This can be an EMV or MSR transaction, but not NFC.</p>
+</td>
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_Failed">Failed</td>
-        <td></td>
+        <td><p>Transaction failed with exception.  Preparing response and auto-reversal.</p>
+</td>
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_Idle">Idle</td>
-        <td></td>
+        <td><p>SDK switches to Idle state after a transaction is completed</p>
+</td>
       </tr>
       <tr>
         <td id="PowerTranzSDK_State_ProcessingOnline">ProcessingOnline</td>
-        <td></td>
+        <td><p>Transaction is being sent to the Gateway for online processing</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

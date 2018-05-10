@@ -40,11 +40,35 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/releasenotes.md",
+      "source_relative_path": "articles/releasenotes-v1.0.6.md",
       "output": {
         ".html": {
-          "relative_path": "articles/releasenotes.html",
-          "hash": "HR37NL/6aHQ1nt6FVVB5Mg=="
+          "relative_path": "articles/releasenotes-v1.0.6.html",
+          "hash": "w79qVfbPfjuQfM4QD0Pkiw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/releasenotes-v2.0.0.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/releasenotes-v2.0.0.html",
+          "hash": "cBgHSYG4VyrIbBKU40wlIA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/releasenotes-v3.0.0.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/releasenotes-v3.0.0.html",
+          "hash": "UyX9qSdbxrSeaUbKNDL4gA=="
         }
       },
       "is_incremental": false,
@@ -56,7 +80,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "2eaJvdQE054bFUop+BfC1Q=="
+          "hash": "Sx/e3eL3PtqwwU05JsXAGQ=="
         }
       },
       "is_incremental": false,
@@ -68,10 +92,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "OGBI95cxpjLxZ22KVIf6cw=="
+          "hash": "5Dq2gyFPfq4TAVXVqkWUhg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -80,7 +104,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardEvent.html",
-          "hash": "yQLeqlPWwPTubWG531H3bQ=="
+          "hash": "z84IK+Xw0KT51vOAGEI6SA=="
         }
       },
       "is_incremental": false,
@@ -92,7 +116,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardSource.html",
-          "hash": "m07RRAxUK20eFwEXFu94hQ=="
+          "hash": "lpo/d6cpuTCXUzpk0/e97g=="
         }
       },
       "is_incremental": false,
@@ -104,7 +128,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminalBatteryStatus.html",
-          "hash": "aNuqL6uwcRZBQYJvSOjORA=="
+          "hash": "KueHSEdlmzMuYlKMIHltRg=="
         }
       },
       "is_incremental": false,
@@ -116,7 +140,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminalInputType.html",
-          "hash": "+nZR4PvS3PR2CFd5KAHAkw=="
+          "hash": "4dLRv2UD5gxcdRJpfl06gQ=="
         }
       },
       "is_incremental": false,
@@ -176,7 +200,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidFail.html",
-          "hash": "NDE8tQnOwbeHN2OprL8XUA=="
+          "hash": "ZMImusQ5yBbR0W/p9wKBVg=="
         }
       },
       "is_incremental": true,
@@ -200,7 +224,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidFailWithReversal.html",
-          "hash": "HRaG00xBZDdm1hXHdhz/3w=="
+          "hash": "EPq6RAHo8Iw7DSvItD80Zg=="
         }
       },
       "is_incremental": false,
@@ -212,7 +236,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidFinish.html",
-          "hash": "1R3yL+nduiu1/xcpIbPsWQ=="
+          "hash": "k5GQH3qqSQ8TSXtq4qv68w=="
         }
       },
       "is_incremental": true,
@@ -224,7 +248,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidFinishWithReversal.html",
-          "hash": "PnXTB4xBRj2Jz2RndsU4yw=="
+          "hash": "MbH0eyBp/whHtOMayqKOBw=="
         }
       },
       "is_incremental": false,
@@ -296,7 +320,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html",
-          "hash": "yDqVkXRPUauPOQXv18lCAw=="
+          "hash": "WnNTstZ4uVF9S2F8Q3Br/A=="
         }
       },
       "is_incremental": false,
@@ -316,11 +340,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.Miura.TerminalDidReceiveKeypadInput.yml",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.Miura.SdkStateChanged.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.TerminalDidReceiveKeypadInput.html",
-          "hash": "UJzn33nOl/d6Nf1QMZRggg=="
+          "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.SdkStateChanged.html",
+          "hash": "fmoURknVGqZ8MPKuU+56MQ=="
         }
       },
       "is_incremental": true,
@@ -328,11 +352,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.Miura.TerminalStateChanged.yml",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.Miura.TerminalDidReceiveKeypadInput.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.TerminalStateChanged.html",
-          "hash": "oheEiOV1h7BQQaJyaKtCqw=="
+          "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.TerminalDidReceiveKeypadInput.html",
+          "hash": "UJzn33nOl/d6Nf1QMZRggg=="
         }
       },
       "is_incremental": true,
@@ -356,7 +380,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.html",
-          "hash": "YdLTEtcirfzV/BJRd4AIQQ=="
+          "hash": "0W8TVqaS4xr+1zKbK/YrNw=="
         }
       },
       "is_incremental": false,
@@ -500,10 +524,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.PtzApi.html",
-          "hash": "3nxHmJ0CsAMm35UmrvosnQ=="
+          "hash": "os/K6f4s1TmO3Md0GHbuwQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -716,7 +740,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.ReversalReason.html",
-          "hash": "2HbJZ/yqKXbcgZkh41tSpQ=="
+          "hash": "KhND2MXIo84sdmoyNGBhDQ=="
         }
       },
       "is_incremental": false,
@@ -728,7 +752,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.State.html",
-          "hash": "ref+I5ZW8mLkhU6OXBvzow=="
+          "hash": "nbiwP19kJTgVcGEkTKUUmg=="
         }
       },
       "is_incremental": false,
@@ -740,7 +764,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.TerminalState.html",
-          "hash": "Z4o02lQzxXFPWMD4jIAhqg=="
+          "hash": "GTfYQWHZ+edmigKXqiMD2w=="
         }
       },
       "is_incremental": false,
@@ -752,7 +776,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.TransactionResult.html",
-          "hash": "6MKFFdkWjzZnUCSN2U5GOQ=="
+          "hash": "kxxBoTWRcvWzehTg1kgM7Q=="
         }
       },
       "is_incremental": false,
@@ -764,7 +788,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.TransactionType.html",
-          "hash": "B5bwwpgQbLs8d27GHqU1Ag=="
+          "hash": "zrpJ5Ojmuy3JYox0LA9dIg=="
         }
       },
       "is_incremental": false,
@@ -776,7 +800,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Trigger.html",
-          "hash": "84jDqfhjSbv96KYDuBt4eA=="
+          "hash": "nR0lE5ZAtXRrepnkr+VFaw=="
         }
       },
       "is_incremental": false,
@@ -824,7 +848,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.html",
-          "hash": "1yw7RikBmxtlxFsQS1YnLQ=="
+          "hash": "2x2/cppIgAWro6Ec1etOcg=="
         }
       },
       "is_incremental": false,
@@ -836,7 +860,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "HPjWvpql3RG/BLqfEpoc3A=="
+          "hash": "NDSLtYvNlVLxlIf3F91Iyw=="
         }
       },
       "is_incremental": false,
@@ -848,7 +872,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "okEnFyszSP3dbyyI+eqHOw=="
+          "hash": "+0MnIgXZIhCbfVUI8xiqGg=="
         }
       },
       "is_incremental": false,

@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Release Notes | PowerTranz SDK 3.0.0 Reference Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Release Notes | PowerTranz SDK 3.0.0 Reference Documentation ">
+    <meta name="generator" content="docfx 2.32.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../Powertranz-Logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="release-notes">Release Notes</h1>
+
+<h2 id="version-200">Version 2.0.0</h2>
+<p>Please see the PowerTranz SDK Reference Documentation for more details. Note that as there are breaking changes, this version is not backwards compatible with 1.0.6.</p>
+<h3 id="breaking-changes">Breaking Changes</h3>
+<h4 id="model-changes">Model changes</h4>
+<p>The following object property names have been changed or added:</p>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Old Name</th>
+<th>New Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>PtzPaymentRequest</em></td>
+<td>ExternalBatchId</td>
+<td>ExernalBatchIdentifier</td>
+</tr>
+<tr>
+<td><em>PtzPaymentRequest</em></td>
+<td>OrderId</td>
+<td>OrderIdentifier</td>
+</tr>
+<tr>
+<td><em>PtzPaymentRequest</em></td>
+<td>* new *</td>
+<td>TerminalSerialNumber</td>
+</tr>
+<tr>
+<td><em>PtzPaymentRequest</em></td>
+<td>moved from Source.CardholderAddress</td>
+<td>BillingAddress</td>
+</tr>
+<tr>
+<td><em>PtzPaymentResponse</em></td>
+<td>* new *</td>
+<td>TransactionType</td>
+</tr>
+<tr>
+<td><em>PtzPaymentResponse</em></td>
+<td>* new *</td>
+<td>CardBrand</td>
+</tr>
+<tr>
+<td><em>PtzTransactionResponse</em></td>
+<td>* extensive changes *</td>
+<td>see reference docs</td>
+</tr>
+<tr>
+<td><em>PtzOrderResponse</em></td>
+<td>* new *</td>
+<td>see reference docs</td>
+</tr>
+<tr>
+<td>public enum</td>
+<td>PTtzPosEntryMode (typo)</td>
+<td>PtzPosEntryMode</td>
+</tr>
+</tbody>
+</table>
+<h4 id="other-changes">Other changes</h4>
+<p>Terminal <em>HardReset</em> has been removed.
+Terminal <em>SoftReset</em> has been changed to <strong>ResetDevice</strong> and is accessed directly from the terminal instance.
+The <em>PTZMiuraTerminal.Driver</em> property has been removed.  Any required functionality is available directly from <em>PTZMiuraTerminal</em>.</p>
+<p>There is a new <em>PtzPosEntryMode</em> for receipts.  This will be returned as mode <strong>3</strong> and in code it is <em>PtzPosEntryMode.PtzPosEntryModeFallback</em>.  It will be returned in the receipt data when there was a card fallback.</p>
+<p>Transaction search (<a class="xref" href="../api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_TransactionSearchAsync_PowerTranzSDK_Requests_PtzTransactionRequest_">TransactionSearchAsync</a>) 
+response model (<a class="xref" href="../api/PowerTranzSDK.Responses.PtzTransactionResponse.html">PtzTransactionResponse</a>) has been extensively modified 
+and a new Order search (<a class="xref" href="../api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_OrderDetailsAsync_System_String_">OrderDetailsAsync</a>) method has been added which returns 
+an order (<a class="xref" href="../api/PowerTranzSDK.Responses.PtzOrderResponse.html">PtzOrderResponse</a>) and all its related transactions.  Transaction details retrieval has been similarly modified.</p>
+<h3 id="configuration-file">Configuration File</h3>
+<p>There is a new config file which can be used to set the PowerTranz Gateway URL and configure log4net logging parameters.  The file must be in the same folder as PowerTranzSDK.dll and must be called *PowerTranzSDK.dll.config.  Note that app.config can no longer be used.  This means that the configuration file for the SDK is completely separated from the POS application.</p>
+<p>The following is a sample PowerTranzSDK.dll.config:</p>
+<pre><code class="lang-html">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+&lt;configuration&gt;
+  &lt;configSections&gt;
+    &lt;section name=&quot;log4net&quot; type=&quot;log4net.Config.Log4NetConfigurationSectionHandler, log4net&quot;/&gt;
+  &lt;/configSections&gt;
+
+  &lt;appSettings&gt;
+    &lt;add key=&quot;PowerTranzUrl&quot; value=&quot;https://staging.ptranz.com/api&quot;/&gt;
+  &lt;/appSettings&gt;
+
+  &lt;log4net&gt;
+    &lt;logger name=&quot;PowerTranzSDKLogger&quot;&gt;
+      &lt;level value=&quot;DEBUG&quot;/&gt;
+      &lt;appender-ref ref=&quot;RollingFileAppender&quot;/&gt;
+      &lt;appender-ref ref=&quot;Console&quot;/&gt;
+    &lt;/logger&gt;
+
+    &lt;appender name=&quot;RollingFileAppender&quot; type=&quot;log4net.Appender.RollingFileAppender&quot;&gt;
+      &lt;file value=&quot;ptzsdk.win.samples.console.log&quot;/&gt;
+      &lt;appendToFile value=&quot;true&quot;/&gt;
+      &lt;rollingStyle value=&quot;Size&quot;/&gt;
+      &lt;maxSizeRollBackups value=&quot;5&quot;/&gt;
+      &lt;maximumFileSize value=&quot;5MB&quot;/&gt;
+      &lt;staticLogFileName value=&quot;true&quot;/&gt;
+      &lt;layout type=&quot;log4net.Layout.PatternLayout&quot;&gt;
+        &lt;conversionPattern value=&quot;%date %level  - %message%newline&quot;/&gt;
+      &lt;/layout&gt;
+    &lt;/appender&gt;
+
+    &lt;appender name=&quot;Console&quot; type=&quot;log4net.Appender.ConsoleAppender&quot;&gt;
+      &lt;layout type=&quot;log4net.Layout.PatternLayout&quot;&gt;
+        &lt;conversionPattern value=&quot;%date %-5level: %message%newline&quot;/&gt;
+      &lt;/layout&gt;
+    &lt;/appender&gt;
+
+  &lt;/log4net&gt;
+&lt;/configuration&gt;
+</code></pre><p>The PowerTranz URL can be set in the configuration file or by passing it into the PtzApi constructor.  Note that if it is provided via the constructor, the configuration file url if present will be ignored.</p>
+<h3 id="non-breaking-changes">Non-Breaking Changes</h3>
+<ul>
+<li>Bluetooth connection improvements and fixes.  Note that the terminal <em>must</em> be paired with the device before attempting to connect.  The Bluetooth paired name must be used to connect.</li>
+<li>SDK no longer gets &quot;stuck&quot; after certain transaction failures.</li>
+<li>More logging has been added, duplicate logging lines were removed.</li>
+<li>Fixed receipt ApplicationLabel formatting.</li>
+<li>Receipt ApplicationLabel now comes from the Gateway for MSR or fallback. </li>
+<li>Terminal Serial Number is now retrieved from the terminal and sent to the Gateway in every transaction (this is not TerminalId).  TerminalId no longer defaults to the terminal serial number if not supplied.</li>
+<li><em>PTZMiuraTerminal.GetSerialNumber</em> fixed.</li>
+<li>New IsProduction property of <em>PTZMiuraTerminal</em> defaults to true.  Setting it to false raises additional events (<em>DidReceiveResponse</em> and <em>WillSendRequest</em>) for diagnostic purposes.</li>
+<li><em>DidFailWithError</em> event will be be raised if a transaction other than a Credit or an Auth is sent to the terminal.</li>
+<li><em>TerminalResult</em> was not always being set properly in the DidReceiveResponse response object. This has been fixed.</li>
+<li>Async versions of <em>PtzApi</em> methods are now available and should be used for all <em>PtzApi</em> requests.</li>
+<li>Exception handline improvements</li>
+<li>Various stability improvements</li>
+</ul>
+<h2 id="version-106">Version 1.0.6</h2>
+<p>First release.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK.Documentation/articles/releasenotes-v2.0.0.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; 2018 PowerTranz</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
