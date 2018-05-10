@@ -47,7 +47,7 @@
           "hash": "HR37NL/6aHQ1nt6FVVB5Mg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -71,7 +71,7 @@
           "hash": "OGBI95cxpjLxZ22KVIf6cw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -80,10 +80,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardEvent.html",
-          "hash": "VZg5xwRA4iMItYj5Au6zHg=="
+          "hash": "yQLeqlPWwPTubWG531H3bQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -92,10 +92,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardSource.html",
-          "hash": "WsJyBxtvuSL8DyWaQ+4K1A=="
+          "hash": "m07RRAxUK20eFwEXFu94hQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -104,10 +104,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminalBatteryStatus.html",
-          "hash": "gXrE//G+gIZtUmqEZ84kew=="
+          "hash": "aNuqL6uwcRZBQYJvSOjORA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -116,10 +116,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminalInputType.html",
-          "hash": "9n63AOb8vA5Au8fk7SQyTA=="
+          "hash": "+nZR4PvS3PR2CFd5KAHAkw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -203,7 +203,7 @@
           "hash": "HRaG00xBZDdm1hXHdhz/3w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -227,7 +227,7 @@
           "hash": "PnXTB4xBRj2Jz2RndsU4yw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -239,7 +239,7 @@
           "hash": "NDTf+VSU3Ec9PrAK1HXDQA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -275,7 +275,7 @@
           "hash": "CyHVLr1yxI8gtBZTd3xQqw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -299,7 +299,7 @@
           "hash": "yDqVkXRPUauPOQXv18lCAw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -359,7 +359,7 @@
           "hash": "YdLTEtcirfzV/BJRd4AIQQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -407,7 +407,7 @@
           "hash": "1A7q8kux5gL0kyay81hB4Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -431,7 +431,7 @@
           "hash": "Qr35ysx4g5uNGsALh6cF0g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -500,10 +500,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.PtzApi.html",
-          "hash": "xkGKtr9jg6AH6Ic4Rdvsbw=="
+          "hash": "3nxHmJ0CsAMm35UmrvosnQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -659,7 +659,7 @@
           "hash": "rVT57NUMtQzssafMXSvi1w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -671,7 +671,7 @@
           "hash": "vBAFkc17c0lIc56ojXQTxA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -683,7 +683,7 @@
           "hash": "U3Ou6fp91MpGmlY3iN0f6w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -707,7 +707,7 @@
           "hash": "c6LN/GjC0tIDo3Xd956B0A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -716,10 +716,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.ReversalReason.html",
-          "hash": "11J0C2EJQCe8OFu4blAyqw=="
+          "hash": "2HbJZ/yqKXbcgZkh41tSpQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -728,10 +728,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.State.html",
-          "hash": "jjadtUpdh8449aZD8HJlFw=="
+          "hash": "ref+I5ZW8mLkhU6OXBvzow=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -740,10 +740,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.TerminalState.html",
-          "hash": "cDEF3mUJEAmWpjPv9rv8qA=="
+          "hash": "Z4o02lQzxXFPWMD4jIAhqg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -752,10 +752,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.TransactionResult.html",
-          "hash": "Y9iBXzfGvPwE15/8RS0I7g=="
+          "hash": "6MKFFdkWjzZnUCSN2U5GOQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -764,10 +764,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.TransactionType.html",
-          "hash": "chGmq/KdspnHLamqFSl73A=="
+          "hash": "B5bwwpgQbLs8d27GHqU1Ag=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -776,10 +776,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Trigger.html",
-          "hash": "3f54JDZSbPkkMLA5tM+BnQ=="
+          "hash": "84jDqfhjSbv96KYDuBt4eA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -827,7 +827,7 @@
           "hash": "1yw7RikBmxtlxFsQS1YnLQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -862,11 +862,6 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -878,6 +873,11 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
