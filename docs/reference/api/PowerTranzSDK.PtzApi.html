@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class PtzApi
-   | PowerTranz SDK 2.0.0 Reference Documentation </title>
+   | PowerTranz SDK 3.0.0 Reference Documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PtzApi
-   | PowerTranz SDK 2.0.0 Reference Documentation ">
+   | PowerTranz SDK 3.0.0 Reference Documentation ">
     <meta name="generator" content="docfx 2.32.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -87,10 +87,19 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class PtzApi</code></pre>
   </div>
+  <h5 id="PowerTranzSDK_PtzApi_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>If there is an issue communicating with the Gateway a PtzApiException will be thrown. It contains an Http Response Code.  504 indicates that the 
+Gateway timed out, and 503 indicates that there was some other communications issue. This exception and response code is provided in the TerminalPaymentFailed event.</p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/new/2.0.0-StateMachine/apiSpec/new?filename=PowerTranzSDK_PtzApi__ctor_System_String_System_String_System_String_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20PowerTranzSDK.PtzApi.%23ctor(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK/PtzApi.cs/#L51">View Source</a>
+  </span>
   <a id="PowerTranzSDK_PtzApi__ctor_" data-uid="PowerTranzSDK.PtzApi.#ctor*"></a>
   <h4 id="PowerTranzSDK_PtzApi__ctor_System_String_System_String_System_String_System_String_System_String_System_Int32_" data-uid="PowerTranzSDK.PtzApi.#ctor(System.String,System.String,System.String,System.String,System.String,System.Int32)">PtzApi(String, String, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>The API constructor</p>
@@ -113,39 +122,50 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">applicationId</span></td>
-        <td></td>
+        <td><p>Assigned by PowerTranz for each POS application.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">gatewayKey</span></td>
-        <td></td>
+        <td><p>TBD For future use.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">powerTranzId</span></td>
-        <td></td>
+        <td><p>Assigned by PowerTranz.  Merchant identifier for the merchant’s account with PowerTranz.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">powerTranzPassword</span></td>
-        <td></td>
+        <td><p>Assigned by PowerTrans. Unique processing token.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">powerTranzUrl</span></td>
-        <td></td>
+        <td><p>PowerTranz Gateway URL.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">timeoutInterval</span></td>
-        <td></td>
+        <td><p>TPowerTranz Gateway timeout in seconds.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/new/2.0.0-StateMachine/apiSpec/new?filename=PowerTranzSDK_PtzApi_OrderDetailsAsync_System_String_.md&amp;value=---%0Auid%3A%20PowerTranzSDK.PtzApi.OrderDetailsAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK/PtzApi.cs/#L278">View Source</a>
+  </span>
   <a id="PowerTranzSDK_PtzApi_OrderDetailsAsync_" data-uid="PowerTranzSDK.PtzApi.OrderDetailsAsync*"></a>
   <h4 id="PowerTranzSDK_PtzApi_OrderDetailsAsync_System_String_" data-uid="PowerTranzSDK.PtzApi.OrderDetailsAsync(System.String)">OrderDetailsAsync(String)</h4>
   <div class="markdown level1 summary"><p>Retrieve details of a single order asynchronously</p>
@@ -187,51 +207,13 @@
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="PowerTranzSDK_PtzApi_PaymentAuthorize_" data-uid="PowerTranzSDK.PtzApi.PaymentAuthorize*"></a>
-  <h4 id="PowerTranzSDK_PtzApi_PaymentAuthorize_PowerTranzSDK_Requests_PtzPaymentAuth_" data-uid="PowerTranzSDK.PtzApi.PaymentAuthorize(PowerTranzSDK.Requests.PtzPaymentAuth)">PaymentAuthorize(PtzPaymentAuth)</h4>
-  <div class="markdown level1 summary"><p>Perform an auth  (ASYNC VERSION RECOMMENDED)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PtzPaymentResponse PaymentAuthorize(PtzPaymentAuth ptzPaymentRequest)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentAuth.html">PtzPaymentAuth</a></td>
-        <td><span class="parametername">ptzPaymentRequest</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/new/2.0.0-StateMachine/apiSpec/new?filename=PowerTranzSDK_PtzApi_PaymentAuthorizeAsync_PowerTranzSDK_Requests_PtzPaymentAuth_.md&amp;value=---%0Auid%3A%20PowerTranzSDK.PtzApi.PaymentAuthorizeAsync(PowerTranzSDK.Requests.PtzPaymentAuth)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK/PtzApi.cs/#L112">View Source</a>
+  </span>
   <a id="PowerTranzSDK_PtzApi_PaymentAuthorizeAsync_" data-uid="PowerTranzSDK.PtzApi.PaymentAuthorizeAsync*"></a>
   <h4 id="PowerTranzSDK_PtzApi_PaymentAuthorizeAsync_PowerTranzSDK_Requests_PtzPaymentAuth_" data-uid="PowerTranzSDK.PtzApi.PaymentAuthorizeAsync(PowerTranzSDK.Requests.PtzPaymentAuth)">PaymentAuthorizeAsync(PtzPaymentAuth)</h4>
   <div class="markdown level1 summary"><p>Perform an auth asynchronously</p>
@@ -273,51 +255,13 @@
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="PowerTranzSDK_PtzApi_PaymentCapture_" data-uid="PowerTranzSDK.PtzApi.PaymentCapture*"></a>
-  <h4 id="PowerTranzSDK_PtzApi_PaymentCapture_PowerTranzSDK_Requests_PtzPaymentCapture_" data-uid="PowerTranzSDK.PtzApi.PaymentCapture(PowerTranzSDK.Requests.PtzPaymentCapture)">PaymentCapture(PtzPaymentCapture)</h4>
-  <div class="markdown level1 summary"><p>Perform a capture  (ASYNC VERSION RECOMMENDED)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PtzPaymentResponse PaymentCapture(PtzPaymentCapture ptzPaymentRequest)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentCapture.html">PtzPaymentCapture</a></td>
-        <td><span class="parametername">ptzPaymentRequest</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/new/2.0.0-StateMachine/apiSpec/new?filename=PowerTranzSDK_PtzApi_PaymentCaptureAsync_PowerTranzSDK_Requests_PtzPaymentCapture_.md&amp;value=---%0Auid%3A%20PowerTranzSDK.PtzApi.PaymentCaptureAsync(PowerTranzSDK.Requests.PtzPaymentCapture)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK/PtzApi.cs/#L140">View Source</a>
+  </span>
   <a id="PowerTranzSDK_PtzApi_PaymentCaptureAsync_" data-uid="PowerTranzSDK.PtzApi.PaymentCaptureAsync*"></a>
   <h4 id="PowerTranzSDK_PtzApi_PaymentCaptureAsync_PowerTranzSDK_Requests_PtzPaymentCapture_" data-uid="PowerTranzSDK.PtzApi.PaymentCaptureAsync(PowerTranzSDK.Requests.PtzPaymentCapture)">PaymentCaptureAsync(PtzPaymentCapture)</h4>
   <div class="markdown level1 summary"><p>Perform a capture asynchronously</p>
@@ -359,51 +303,13 @@
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="PowerTranzSDK_PtzApi_PaymentCredit_" data-uid="PowerTranzSDK.PtzApi.PaymentCredit*"></a>
-  <h4 id="PowerTranzSDK_PtzApi_PaymentCredit_PowerTranzSDK_Requests_PtzPaymentCredit_" data-uid="PowerTranzSDK.PtzApi.PaymentCredit(PowerTranzSDK.Requests.PtzPaymentCredit)">PaymentCredit(PtzPaymentCredit)</h4>
-  <div class="markdown level1 summary"><p>Perform a credit.  Internal to the SDK only.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PtzPaymentResponse PaymentCredit(PtzPaymentCredit ptzPaymentRequest)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentCredit.html">PtzPaymentCredit</a></td>
-        <td><span class="parametername">ptzPaymentRequest</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/new/2.0.0-StateMachine/apiSpec/new?filename=PowerTranzSDK_PtzApi_PaymentCreditAsync_PowerTranzSDK_Requests_PtzPaymentCredit_.md&amp;value=---%0Auid%3A%20PowerTranzSDK.PtzApi.PaymentCreditAsync(PowerTranzSDK.Requests.PtzPaymentCredit)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK/PtzApi.cs/#L160">View Source</a>
+  </span>
   <a id="PowerTranzSDK_PtzApi_PaymentCreditAsync_" data-uid="PowerTranzSDK.PtzApi.PaymentCreditAsync*"></a>
   <h4 id="PowerTranzSDK_PtzApi_PaymentCreditAsync_PowerTranzSDK_Requests_PtzPaymentCredit_" data-uid="PowerTranzSDK.PtzApi.PaymentCreditAsync(PowerTranzSDK.Requests.PtzPaymentCredit)">PaymentCreditAsync(PtzPaymentCredit)</h4>
   <div class="markdown level1 summary"><p>Perform a credit.  Internal to the SDK only.</p>
@@ -445,51 +351,13 @@
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="PowerTranzSDK_PtzApi_PaymentRefund_" data-uid="PowerTranzSDK.PtzApi.PaymentRefund*"></a>
-  <h4 id="PowerTranzSDK_PtzApi_PaymentRefund_PowerTranzSDK_Requests_PtzPaymentRefund_" data-uid="PowerTranzSDK.PtzApi.PaymentRefund(PowerTranzSDK.Requests.PtzPaymentRefund)">PaymentRefund(PtzPaymentRefund)</h4>
-  <div class="markdown level1 summary"><p>Perform a refund  (ASYNC VERSION RECOMMENDED)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PtzPaymentResponse PaymentRefund(PtzPaymentRefund ptzPaymentRequest)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentRefund.html">PtzPaymentRefund</a></td>
-        <td><span class="parametername">ptzPaymentRequest</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/new/2.0.0-StateMachine/apiSpec/new?filename=PowerTranzSDK_PtzApi_PaymentRefundAsync_PowerTranzSDK_Requests_PtzPaymentRefund_.md&amp;value=---%0Auid%3A%20PowerTranzSDK.PtzApi.PaymentRefundAsync(PowerTranzSDK.Requests.PtzPaymentRefund)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK/PtzApi.cs/#L184">View Source</a>
+  </span>
   <a id="PowerTranzSDK_PtzApi_PaymentRefundAsync_" data-uid="PowerTranzSDK.PtzApi.PaymentRefundAsync*"></a>
   <h4 id="PowerTranzSDK_PtzApi_PaymentRefundAsync_PowerTranzSDK_Requests_PtzPaymentRefund_" data-uid="PowerTranzSDK.PtzApi.PaymentRefundAsync(PowerTranzSDK.Requests.PtzPaymentRefund)">PaymentRefundAsync(PtzPaymentRefund)</h4>
   <div class="markdown level1 summary"><p>Perform a refund</p>
@@ -531,51 +399,13 @@
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="PowerTranzSDK_PtzApi_PaymentSale_" data-uid="PowerTranzSDK.PtzApi.PaymentSale*"></a>
-  <h4 id="PowerTranzSDK_PtzApi_PaymentSale_PowerTranzSDK_Requests_PtzPaymentAuth_" data-uid="PowerTranzSDK.PtzApi.PaymentSale(PowerTranzSDK.Requests.PtzPaymentAuth)">PaymentSale(PtzPaymentAuth)</h4>
-  <div class="markdown level1 summary"><p>Perform a sale  (ASYNC VERSION RECOMMENDED)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PtzPaymentResponse PaymentSale(PtzPaymentAuth ptzPaymentRequest)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentAuth.html">PtzPaymentAuth</a></td>
-        <td><span class="parametername">ptzPaymentRequest</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/new/2.0.0-StateMachine/apiSpec/new?filename=PowerTranzSDK_PtzApi_PaymentSaleAsync_PowerTranzSDK_Requests_PtzPaymentAuth_.md&amp;value=---%0Auid%3A%20PowerTranzSDK.PtzApi.PaymentSaleAsync(PowerTranzSDK.Requests.PtzPaymentAuth)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK/PtzApi.cs/#L204">View Source</a>
+  </span>
   <a id="PowerTranzSDK_PtzApi_PaymentSaleAsync_" data-uid="PowerTranzSDK.PtzApi.PaymentSaleAsync*"></a>
   <h4 id="PowerTranzSDK_PtzApi_PaymentSaleAsync_PowerTranzSDK_Requests_PtzPaymentAuth_" data-uid="PowerTranzSDK.PtzApi.PaymentSaleAsync(PowerTranzSDK.Requests.PtzPaymentAuth)">PaymentSaleAsync(PtzPaymentAuth)</h4>
   <div class="markdown level1 summary"><p>Perform a sale asynchronously</p>
@@ -617,51 +447,13 @@
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="PowerTranzSDK_PtzApi_PaymentVoid_" data-uid="PowerTranzSDK.PtzApi.PaymentVoid*"></a>
-  <h4 id="PowerTranzSDK_PtzApi_PaymentVoid_PowerTranzSDK_Requests_PtzPaymentVoid_" data-uid="PowerTranzSDK.PtzApi.PaymentVoid(PowerTranzSDK.Requests.PtzPaymentVoid)">PaymentVoid(PtzPaymentVoid)</h4>
-  <div class="markdown level1 summary"><p>Perform a void (ASYNC VERSION RECOMMENDED)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PtzPaymentResponse PaymentVoid(PtzPaymentVoid ptzPaymentRequest)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PowerTranzSDK.Requests.PtzPaymentVoid.html">PtzPaymentVoid</a></td>
-        <td><span class="parametername">ptzPaymentRequest</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PowerTranzSDK.Responses.PtzPaymentResponse.html">PtzPaymentResponse</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/new/2.0.0-StateMachine/apiSpec/new?filename=PowerTranzSDK_PtzApi_PaymentVoidAsync_PowerTranzSDK_Requests_PtzPaymentVoid_.md&amp;value=---%0Auid%3A%20PowerTranzSDK.PtzApi.PaymentVoidAsync(PowerTranzSDK.Requests.PtzPaymentVoid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK/PtzApi.cs/#L224">View Source</a>
+  </span>
   <a id="PowerTranzSDK_PtzApi_PaymentVoidAsync_" data-uid="PowerTranzSDK.PtzApi.PaymentVoidAsync*"></a>
   <h4 id="PowerTranzSDK_PtzApi_PaymentVoidAsync_PowerTranzSDK_Requests_PtzPaymentVoid_" data-uid="PowerTranzSDK.PtzApi.PaymentVoidAsync(PowerTranzSDK.Requests.PtzPaymentVoid)">PaymentVoidAsync(PtzPaymentVoid)</h4>
   <div class="markdown level1 summary"><p>Perform a void asynchronously</p>
@@ -703,8 +495,13 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/new/2.0.0-StateMachine/apiSpec/new?filename=PowerTranzSDK_PtzApi_TransactionDetailsAsync_System_String_.md&amp;value=---%0Auid%3A%20PowerTranzSDK.PtzApi.TransactionDetailsAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK/PtzApi.cs/#L264">View Source</a>
+  </span>
   <a id="PowerTranzSDK_PtzApi_TransactionDetailsAsync_" data-uid="PowerTranzSDK.PtzApi.TransactionDetailsAsync*"></a>
   <h4 id="PowerTranzSDK_PtzApi_TransactionDetailsAsync_System_String_" data-uid="PowerTranzSDK.PtzApi.TransactionDetailsAsync(System.String)">TransactionDetailsAsync(String)</h4>
   <div class="markdown level1 summary"><p>Retrieve details of a single transaction asynchronously</p>
@@ -746,8 +543,13 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/new/2.0.0-StateMachine/apiSpec/new?filename=PowerTranzSDK_PtzApi_TransactionSearchAsync_PowerTranzSDK_Requests_PtzTransactionRequest_.md&amp;value=---%0Auid%3A%20PowerTranzSDK.PtzApi.TransactionSearchAsync(PowerTranzSDK.Requests.PtzTransactionRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK/PtzApi.cs/#L244">View Source</a>
+  </span>
   <a id="PowerTranzSDK_PtzApi_TransactionSearchAsync_" data-uid="PowerTranzSDK.PtzApi.TransactionSearchAsync*"></a>
   <h4 id="PowerTranzSDK_PtzApi_TransactionSearchAsync_PowerTranzSDK_Requests_PtzTransactionRequest_" data-uid="PowerTranzSDK.PtzApi.TransactionSearchAsync(PowerTranzSDK.Requests.PtzTransactionRequest)">TransactionSearchAsync(PtzTransactionRequest)</h4>
   <div class="markdown level1 summary"><p>Search for transactions asynchronously</p>
@@ -796,6 +598,12 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/new/2.0.0-StateMachine/apiSpec/new?filename=PowerTranzSDK_PtzApi.md&amp;value=---%0Auid%3A%20PowerTranzSDK.PtzApi%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK/PtzApi.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

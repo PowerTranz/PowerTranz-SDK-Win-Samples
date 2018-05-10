@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Namespace PowerTranzSDK.CardTerminals.Miura
-   | PowerTranz SDK 2.0.0 Reference Documentation </title>
+   | PowerTranz SDK 3.0.0 Reference Documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace PowerTranzSDK.CardTerminals.Miura
-   | PowerTranz SDK 2.0.0 Reference Documentation ">
+   | PowerTranz SDK 3.0.0 Reference Documentation ">
     <meta name="generator" content="docfx 2.32.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -79,6 +79,73 @@
   </h3>
       <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html">PTZMiuraTerminal</a></h4>
       <section><p>An instance of the Miura terminal</p>
+</section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.CardStateChanged.html">CardStateChanged</a></h4>
+      <section><p>Indicates an internal card state changed (state machine transition)</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.DeviceTextCompletion.html">DeviceTextCompletion</a></h4>
+      <section><p>Internal delegate used by the SDK</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.DidConnectTerminal.html">DidConnectTerminal</a></h4>
+      <section><p>This delegate function is called when a communication channel has been opened with the credit card terminal.</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.DidDisconnectTerminal.html">DidDisconnectTerminal</a></h4>
+      <section><p>This delegate function is called when the communication channel to the credit card terminal has been closed.</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.DidFail.html">DidFail</a></h4>
+      <section><p>This delegate function is called when an error has been detected when performing a requested task.</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.DidFailToConnectTerminal.html">DidFailToConnectTerminal</a></h4>
+      <section><p>This delegate function is called when the connection to the Terminal hardware fails to be created.</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.DidFailWithReversal.html">DidFailWithReversal</a></h4>
+      <section><p>This method is called when a reversal is performed on a transaction with an error or exception</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.DidFinish.html">DidFinish</a></h4>
+      <section><p>This delegate function is called after the terminal has generated the Transaction Certificate or Application Authentication Cryptogram and no more online requests are pending.</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.DidFinishWithReversal.html">DidFinishWithReversal</a></h4>
+      <section><p>This method is called when a reversal is performed </p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.DidReceiveCardEvent.html">DidReceiveCardEvent</a></h4>
+      <section><p>This delegate method is called when the terminal receives a card event.  It does not return the card data and therefore is called in the event that the card data is not going to be returned for whatever reason.For instance, a card swipe does not return data if the card is IC capable and was swiped.</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.DidReceiveResponse.html">DidReceiveResponse</a></h4>
+      <section><p>This method is used to convey the response body that was sent from the server</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.DidRequestDevicePromptText.html">DidRequestDevicePromptText</a></h4>
+      <section><p>This delegate method is called when the terminal would like text displayed by the user.  If the terminal is capable of displaying text (terminalCanDisplayText)
+and this method is implemented, then the terminal should be sent a text string to display to the user.  This can be done via the completion handler, with a NIL
+string to have the terminal display default text.</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.OnBatteryLow.html">OnBatteryLow</a></h4>
+      <section><p>This delegate method is called when the terminal sends a low battery status message.</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.OnBatteryPercentage.html">OnBatteryPercentage</a></h4>
+      <section><p>This delegate method is called when the terminal sends a battery percentage event;</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.PaymentCompletion.html">PaymentCompletion</a></h4>
+      <section><p>Internal delegate used by the application</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.PromptCanceled.html">PromptCanceled</a></h4>
+      <section><p>This delegate function is called when a user presses cancel on the keypad.</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.TerminalDidReceiveKeypadInput.html">TerminalDidReceiveKeypadInput</a></h4>
+      <section><p>This method is called when a key is pressed on a supported device (Miura).  For EMV / PIN security, the key press will not be relayed to the delegate and therefore this message is only useful if the application cares about keypad presses for whatever reason.</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.TerminalDidRequestTransactionAmount.html">TerminalDidRequestTransactionAmount</a></h4>
+      <section><p>This delegate method is called by Anywhere Commerce devices if an EMV transaction is started without an amount set. In general, this should only be used in testing as the EMV spec wants you to start the transaction after the final amount is set.</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.TerminalStateChanged.html">TerminalStateChanged</a></h4>
+      <section><p>Indicates an internal SDK state change occurred (state machine transition)</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.WillConnectTerminal.html">WillConnectTerminal</a></h4>
+      <section><p>This delegate function is called when the communication channel to the credit card terminal could not be opened, but will be reattempted.</p>
+</section>
+      <h4><a class="xref" href="PowerTranzSDK.CardTerminals.Miura.WillSendRequest.html">WillSendRequest</a></h4>
+      <section><p>This method is used to convey the request headers and body to be sent to the server</p>
 </section>
 </article>
           </div>

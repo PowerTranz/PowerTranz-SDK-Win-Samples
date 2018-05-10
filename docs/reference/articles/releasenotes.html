@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Release Notes | PowerTranz SDK 2.0.0 Reference Documentation </title>
+    <title>Release Notes | PowerTranz SDK 3.0.0 Reference Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Release Notes | PowerTranz SDK 2.0.0 Reference Documentation ">
+    <meta name="title" content="Release Notes | PowerTranz SDK 3.0.0 Reference Documentation ">
     <meta name="generator" content="docfx 2.32.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -69,10 +69,25 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="release-notes">Release Notes</h1>
 
+<h2 id="version-300">Version 3.0.0</h2>
+<p>Please see the PowerTranz SDK Reference Documentation for more details. Note that as there are breaking changes, this version is not backwards compatible with 1.0.6 or 2.0.0</p>
+<h3 id="breaking-changes">Breaking Changes</h3>
+<p>Note that due to the number of changes the major version number was incremented even though version 2.0.0 was only released as a pre-release. </p>
+<h3 id="structure-changes">Structure changes</h3>
+<ul>
+<li>The dependency on BerTlv.dll was removed</li>
+</ul>
+<h3 id="configuration-changes">Configuration Changes</h3>
+<ul>
+<li>Addition of configurable ReversalResponseCodes: a comma-delimited list of online response codes for which to generate an auto-reversal for a decline.</li>
+</ul>
+<h3 id="receipt-changes">Receipt Changes</h3>
+<h3 id="model-changes">Model Changes</h3>
+<p>PtzPaymentResponse has been changed to include an OnlineResponse sub-object which contains all the response data from the online processing step.</p>
 <h2 id="version-200">Version 2.0.0</h2>
 <p>Please see the PowerTranz SDK Reference Documentation for more details. Note that as there are breaking changes, this version is not backwards compatible with 1.0.6.</p>
-<h3 id="breaking-changes">Breaking Changes</h3>
-<h4 id="model-changes">Model changes</h4>
+<h3 id="breaking-changes-1">Breaking Changes</h3>
+<h4 id="model-changes-1">Model changes</h4>
 <p>The following object property names have been changed or added:</p>
 <table>
 <thead>
@@ -205,6 +220,9 @@ an order (<a class="xref" href="../api/PowerTranzSDK.Responses.PtzOrderResponse.
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK.Documentation/articles/releasenotes.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Delegate DidFailWithReversal
-   | PowerTranz SDK 2.0.0 Reference Documentation </title>
+   | PowerTranz SDK 3.0.0 Reference Documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Delegate DidFailWithReversal
-   | PowerTranz SDK 2.0.0 Reference Documentation ">
+   | PowerTranz SDK 3.0.0 Reference Documentation ">
     <meta name="generator" content="docfx 2.32.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -73,14 +73,14 @@
   
   <h1 id="PowerTranzSDK_CardTerminals_DidFailWithReversal" data-uid="PowerTranzSDK.CardTerminals.DidFailWithReversal" class="text-break">Delegate DidFailWithReversal
   </h1>
-  <div class="markdown level0 summary"><p>This method is called when a reversal is performed</p>
+  <div class="markdown level0 summary"><p>This method is called when a reversal is performed on a transaction with an error or exception</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="PowerTranzSDK.CardTerminals.html">PowerTranzSDK.CardTerminals</a></h6>
   <h6><strong>Assembly</strong>: PowerTranzSDK.dll</h6>
   <h5 id="PowerTranzSDK_CardTerminals_DidFailWithReversal_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void DidFailWithReversal(PtzPaymentResponse response, Enumerations.ReversalReason reason);</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void DidFailWithReversal(PtzPaymentResponse response, ReversalReason reason, bool reversalApproved, Exception exception);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -98,8 +98,19 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="PowerTranzSDK.Enumerations.ReversalReason.html">Enumerations.ReversalReason</a></td>
+        <td><a class="xref" href="PowerTranzSDK.ReversalReason.html">ReversalReason</a></td>
         <td><span class="parametername">reason</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">reversalApproved</span></td>
+        <td><p>Will be true if the reversal was sent to the host and an approval received</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -111,6 +122,12 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/new/2.0.0-StateMachine/apiSpec/new?filename=PowerTranzSDK_CardTerminals_DidFailWithReversal.md&amp;value=---%0Auid%3A%20PowerTranzSDK.CardTerminals.DidFailWithReversal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK/CardTerminals/PTZCardTerminal.cs/#L99" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
