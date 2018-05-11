@@ -512,7 +512,15 @@ code snippet illustrates searching all approved transactions within specific
 dates processed through a terminal ID.</p>
 <p>Where possible it’s suggested to include date/time limits to reduce the amount
 of returned data when deemed necessary.</p>
-<pre><code class="lang-C#">var request = new PtzTransactionRequest { &quot;startDateTime&quot;: &quot;2018-02-20&quot;, &quot;endDateTime&quot;: &quot;2018-02-27&quot;, &quot;externalBatchIdentifier&quot;: null, &quot;terminalId&quot;: &quot;01956879&quot;, &quot;orderIdentifier&quot;: null, &quot;groupIdentifier&quot;: null, &quot;authorizationCode&quot;: null, &quot;approved&quot;: True }; 
+<pre><code class="lang-C#">var request = new PtzTransactionRequest()
+{
+    StartDateTime = DateTime.Now.AddDays(-1.0),
+    EndDateTime = DateTime.Now,
+    ExternalBatchIdentifier = null,
+    TerminalId = &quot;01956879&quot;,
+    OrderIdentifier = null,
+    Approved = true
+}
 ptzApi.TransactionSearch( request ); 
 </code></pre><p>Order Search</p>
 <p>The SDK also provides support for extended PowerTranz gateway functionalities
@@ -520,7 +528,7 @@ such as retrieving summary and transaction details of an order (Auth, Sale or
 Credit). This query will include any corresponding transactions tied to the
 order such as a Void, Capture or Refund. The following code snippet illustrates
 how to search an order with a specific TransactionIdentifier.</p>
-<pre><code class="lang-C#">var request = new PtzTransactionRequest { TransactionIdendifier = “12345678” }; 
+<pre><code class="lang-C#">var request = new PtzTransactionRequest() { TransactionIdentifier = “12345678” }; 
 ptzApi.OrderSearch( request );
 </code></pre></article>
           </div>
