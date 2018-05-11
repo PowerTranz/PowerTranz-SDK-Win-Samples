@@ -73,7 +73,7 @@
 <h2 id="user-guide---windows">User Guide - Windows</h2>
 <h2 id="driving-payment-innovation">Driving Payment Innovation</h2>
 <p><strong>Version: 1.0.4 (in progress)</strong></p>
-<p><strong>March 29, 2018</strong></p>
+<p><strong>May 11, 2018</strong></p>
 <p>Document Control</p>
 <p>Document version numbering is represented by major and minor revisions of this
 document. The number to the left of the period describes the number of major
@@ -321,32 +321,19 @@ connect the terminal.</p>
 device. The device will need to be configured with your Wi-Fi settings. Your
 terminal provider may require the following to initially configure the device
 for your environment and location.</p>
-<p>| If dhcp is true the following parameters are ignored If dhcp is false they are all mandatory except for dns                                                                                                                                                                                                       |
-|                                                                                                                                                                                                                                                                                                                   |
-| dhcp = False                                                                                                                                                                                                                                                                                                      |
-| address = 192.168.1.22                                                                                                                                                                                                                                                                                            |
-| netmask = 255.255.255.0                                                                                                                                                                                                                                                                                           |
-| gateway = 192.168.1.1                                                                                                                                                                                                                                                                                             |
-| dns = 192.168.1.1                                                                                                                                                                                                                                                                                                 |
-|                                                                                                                                                                                                                                                                                                                   |
-| server_address = 192.168.1.100                                                                                                                                                                                                                                                                                    |
-|                                                                                                                                                                                                                                                                                                                   |
-| server_port = 1234                                                                                                                                                                                                                                                                                                |
-| listen_port = 4567                                                                                                                                                                                                                                                                                                |
-|                                                                                                                                                                                                                                                                                                                   |</p>
-<table>
-<thead>
-<tr>
-<th>ssid = &quot;wifisid&quot; psk = &quot;wifipassword&quot;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><em>Programmatically connect the terminal - Wi-Fi</em></p>
+<p>If dhcp is true the following parameters are ignored If dhcp is false they are all mandatory except for dns                                                      </p>
+<pre><code>dhcp =False
+address=192.168.1.22
+netmask = 255.255.255.0
+gateway = 192.168.1.1
+dns = 192.168.1.1
+
+server_address = 192.168.1.100
+server_port = 1234
+listen_port = 4567
+ssid = &quot;wifisid&quot;
+psk = &quot;wifipassword&quot;
+</code></pre><p><em>Programmatically connect the terminal - Wi-Fi</em></p>
 <p>If you have a Wi-Fi terminal it can be logically connected using Wi-Fi. The
 following code illustrates how to implement this.</p>
 <pre><code class="lang-C#">terminal.ConnectTerminalWithInputTypeAsync (CardTerminalInputType. CardTerminalTypeTcpIp, “127.000.000.001” ); 
