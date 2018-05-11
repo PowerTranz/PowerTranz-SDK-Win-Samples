@@ -39,6 +39,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "articles/m010_pairing.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/m010_pairing.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "articles/releasenotes-v1.0.6.md",
       "output": {
@@ -68,10 +79,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/releasenotes-v3.0.0.html",
-          "hash": "HFzn7/naEIbz++iG7v+GKg=="
+          "hash": "AdWzaubeQqATgiCZfm3N/Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -80,7 +91,30 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "Sx/e3eL3PtqwwU05JsXAGQ=="
+          "hash": "5kfUtf/9OxTRLrqKm5Jvbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/user_guide_logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/user_guide_logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/win_user_guide.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/win_user_guide.html",
+          "hash": "bX921WomcpP6JQl7wxleYQ=="
         }
       },
       "is_incremental": false,
@@ -92,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "5Dq2gyFPfq4TAVXVqkWUhg=="
+          "hash": "b5rCx3PpW31cB4E4i1iHXg=="
         }
       },
       "is_incremental": false,
@@ -320,7 +354,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html",
-          "hash": "WnNTstZ4uVF9S2F8Q3Br/A=="
+          "hash": "mFN2TVkBP2Dj2Ptzo9WxfA=="
         }
       },
       "is_incremental": true,
@@ -524,7 +558,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.PtzApi.html",
-          "hash": "os/K6f4s1TmO3Md0GHbuwQ=="
+          "hash": "BUOZ9KHWZVw2dSJ23KiSDA=="
         }
       },
       "is_incremental": true,
@@ -891,11 +925,11 @@
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },

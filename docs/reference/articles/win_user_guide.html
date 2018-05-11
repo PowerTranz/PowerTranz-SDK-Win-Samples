@@ -1,0 +1,592 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Software Development Kit (SDK) | PowerTranz SDK 3.0.0 Reference Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Software Development Kit (SDK) | PowerTranz SDK 3.0.0 Reference Documentation ">
+    <meta name="generator" content="docfx 2.32.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../Powertranz-Logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p><img src="user_guide_logo.png" alt=""></p>
+<h1 id="software-development-kit-sdk">Software Development Kit (SDK)</h1>
+<h2 id="user-guide---windows">User Guide - Windows</h2>
+<h2 id="driving-payment-innovation">Driving Payment Innovation</h2>
+<p><strong>Version: 1.0.4 (in progress)</strong></p>
+<p><strong>March 29, 2018</strong></p>
+<p>Document Control</p>
+<p>Document version numbering is represented by major and minor revisions of this
+document. The number to the left of the period describes the number of major
+reviews (including both scheduled and unscheduled) from the date of original
+issue. The numbers to the right of the period description are the number of
+minor reviews or amendments from the time of issue, or the last major review.</p>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Description</th>
+<th>Author</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>First version of the document. [DRAFT] For revision.</td>
+<td></td>
+</tr>
+<tr>
+<td>1.0.1</td>
+<td>Updated 5.3.4 – Added extra notes to WiFi Connectivity; Updated 5.3.5 &amp; 5.4.6 – Parameter OrderID to OrderIdentifier</td>
+<td>RMailhot</td>
+</tr>
+<tr>
+<td>1.0.2</td>
+<td>Updated branding; Updated 5.4.8 to enhance verbiage and add Orders and Single Searches; Updated 5.3.1 to include connectivity for Wi-Fi and USB</td>
+<td>RMailhot</td>
+</tr>
+<tr>
+<td>1.0.3</td>
+<td>Added 3.4.2 Clearing text to avoid burn-in</td>
+<td>RMailhot</td>
+</tr>
+<tr>
+<td>1.0.4</td>
+<td>Revisions for SDK v3.0.0 ***** in progress *****</td>
+<td>RM, IE</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Copyright &amp; Trademark © 2017 PowerTranz</strong>. All rights reserved. No part of the
+contents of this book may be transmitted or reproduced in any form or by any
+means without the written permission of PowerTranz.</p>
+<p><em>This document contains proprietary and confidential information. All data
+submitted provided in reliance upon its consent not to use or disclose any
+information contained herein except in the context of its business dealings with
+PowerTranz (“PTZ”). The recipient of this document agrees to inform present and
+future employees, contractors, etc. of recipient of the proposal who view or
+have access to its content of its confidential nature.</em></p>
+<p><em>The recipient agrees to instruct each employee that they must not disclose any
+information concerning this document to others except to the extent that such
+matter is generally known to, and are available for use by the public. The
+recipient also agrees not to duplicate or distribute or permit others to
+duplicate or distribute any material contained herein without PTZ’s express
+written consent.</em></p>
+<h2 id="1--introduction">1.  Introduction</h2>
+<p>PowerTranz SDK is a complete solution for mobile payment acceptance. It provides
+card present (EMV compliant and contactless capable) and modification types of
+transactions as well (Void, Refund and Capture). It effectively abstracts all
+the payment related complexity allowing developers and integrators to focus on
+their distinctive business logic and added value.</p>
+<p>This document is designed to guide system development and application design
+from early stages.</p>
+<h3 id="11-document-structure">1.1 Document Structure</h3>
+<p>This document presents an initial overview of the logical architecture
+highlighting the SDK and the related components.</p>
+<p>It also presents the typical operation flows and details the SDK interface and
+data dictionary.</p>
+<h3 id="12-terms-and-concepts">1.2 Terms and Concepts</h3>
+<hr>
+<p>The following table describes the terms and acronyms used throughout this
+document.</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Acronym</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Application Programming Interface</td>
+<td>API</td>
+<td>A set of calling conventions that defines how a service is invoked through software. An API enables programs written by users or third parties to communicate with certain vendor-supplied software.</td>
+</tr>
+<tr>
+<td>Europay™ Mastercard™ Visa™</td>
+<td>EMV</td>
+<td>An acronym describing the set of specifications developed by the consortium EMVCo™, which is promoting the global standardization of electronic financial transactions – in particular, the global interoperability of chip cards. The consortium now includes JCB, Amex and China Union Pay. Europay™ is now part of Mastercard.</td>
+</tr>
+<tr>
+<td>Integrated Circuit Card</td>
+<td>ICC</td>
+<td>A card into which one or more integrated circuits are inserted to perform processing and memory functions.</td>
+</tr>
+<tr>
+<td>Magnetic Stripe</td>
+<td>MSR</td>
+<td>The stripe recorded in the card containing magnetically encoded information.</td>
+</tr>
+<tr>
+<td>Point of Sale</td>
+<td>POS</td>
+<td>The terminal where the customer and card acceptor are located at the time a card is used for purchase or cash.</td>
+</tr>
+<tr>
+<td>Software Development Kit</td>
+<td>SDK</td>
+<td>A set of <a href="http://en.wikipedia.org/wiki/Software_development">software development</a> tools that allows for the creation of <a href="http://en.wikipedia.org/wiki/Application_software">applications</a> for a certain <a href="http://en.wikipedia.org/wiki/Software">software</a> package.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13-support-resources">1.3 Support Resources</h3>
+<p>Additional support regarding the SDK usage is available at the PowerTranz portal
+or by contacting a PowerTranz support representative.</p>
+<h2 id="2--powertranz-sdk-artifacts-overview">2.  PowerTranz SDK Artifacts Overview</h2>
+<p>The following sections describe the contents of the Windows SDK release package.</p>
+<h3 id="21-documentation">2.1 Documentation</h3>
+<p>The following documents are provided with the SDK and are referenced across this
+user guide:</p>
+<p><strong>PowerTranz SDK – Functional Specification</strong></p>
+<p>This document provides an initial context over the architecture and describes
+the Application Programming interface to use the SDK. This is a high-level
+document focusing on the interactions between the Payment Application and the
+SDK.</p>
+<p><strong><a class="xref" href="../api/PowerTranzSDK.html">PowerTranz SDK 3.0.0 Reference Documentation</a></strong></p>
+<p>The HTML documentation automatically generated based on the SDK software. It
+provides a reference for developers describing the exact syntax of methods,
+event handlers and interface objects.</p>
+<h3 id="22-sdk-libraries">2.2 SDK Libraries</h3>
+<p>The SDK libraries are provided in DLL format to be used in .NET projects. The
+interface for these libraries conforms to the companion technical documentation.</p>
+<h3 id="23-sample-project">2.3 Sample Project</h3>
+<p>The SDK release includes a sample project to illustrate the SDK integration in a
+simple application. Some of the code examples in this user guide are similar to
+the code found in the sample application project but presented in a simplified
+way.</p>
+<h2 id="3--getting-started">3.  Getting Started</h2>
+<p>The following sections describe the step-by-step procedures on how to create a
+project for a simple Windows application that includes the SDK.</p>
+<h3 id="31-setting-up-the-application-project">3.1 Setting up the Application Project</h3>
+<p>The initial tasks to get the Windows SDK integrated are those necessary to
+create a Windows .NET project referencing the SDK libraries and including the
+required header files where necessary. The libraries are in the form of DLLs,
+and the following 2 must be referenced from the Visual Studio project:</p>
+<ul>
+<li><p>PowerTranzSDK_Miura.dll</p>
+</li>
+<li><p>PowerTranzSDK.dll</p>
+</li>
+</ul>
+<h3 id="32-creating-the-application">3.2 Creating the Application</h3>
+<p>The following sections dive into the details of the Application design and how
+it makes use of the SDK functionality. The SDK requires some initial
+configuration to adapt it to the target project. The application using the SDK
+also requires some code to make it work, namely to allow for device discovery
+over Bluetooth and user selection of the Bluetooth device name to be used. The
+Miura device does not require any specific OS device drivers, but while using
+the Bluetooth connection, the device running the POS application needs to
+support Bluetooth.</p>
+<p>The following sections show a step-by-step SDK integration.</p>
+<h3 id="setting-up-the-gateway-connection">Setting up the gateway connection</h3>
+<p>The PtzApi class implements the main interface to the SDK. This class controls
+both the gateway access and the terminal interactions.</p>
+<p>The PowerTranz gateway access parameters need to be provided in the constructor
+as shown in the following code snippet.</p>
+<pre><code class="lang-C#">PtzApi ptzApi; 
+ptzApi = new PtzApi( ApplicationId, GatewayKey, PowerTranzId, PowerTranzPassword, PowerTranzUrl, TimeoutInterval );
+</code></pre><p>Please refer to the functional and technical documentation for more information
+on the parameters.</p>
+<h3 id="setting-up-the-payment-terminal">Setting up the payment terminal</h3>
+<p>The PTZMiuraTerminal class implements the interface defining the set of payment
+terminal related functionalities. The initialization of this class is as
+follows:</p>
+<pre><code class="lang-C#">PTZMiuraTerminal terminal; 
+terminal = new PTZMiuraTerminal( ptzApi ); 
+</code></pre><p>The terminal object requires a reference to the PtzApi object and the formal
+specification of the timeout value (to be used in detecting connectivity
+failures during operation).</p>
+<h3 id="hooking-up-the-general-terminal-events">Hooking up the general terminal events</h3>
+<p>During the processing of an operation, the SDK informs the application of
+specific events by firing event handlers that execute application code. This
+allows the mobile application to be asynchronously informed regarding the
+transaction progress. The following code illustrates how the application defines
+the event handlers and hooks them in the SDK:</p>
+<pre><code class="lang-C#"> private void RegisterListeners(PTZMiuraTerminal terminal)
+        {
+            terminal.DidConnectTerminal += DidConnectTerminalHandler;
+            terminal.DidDisconnectTerminal += DidDisconnectTerminalHandler;
+            terminal.DidFailToConnectTerminal += DidFailToConnectTerminalHandler; ;
+            terminal.OnBatteryLow += OnBatteryLowHandler;
+            terminal.OnBatteryPercentage += OnBatteryPercentageHandler;
+            terminal.DidRequestDevicePromptText += DidRequestDevicePromptTextHandler;
+            terminal.DidReceiveCardEvent += DidReceiveCardEventHandler;
+            terminal.TerminalDidReceiveKeypadInput += TerminalDidReceiveKeypadInputHandler;
+            terminal.PromptCanceled += PromptCanceledHandler;
+            terminal.SdkStateChanged += SdkStateChangedHandler;
+            terminal.CardStateChanged += CardStateChangedHandler;
+
+            //Response events
+            terminal.DidFail += DidFailHandler;
+            terminal.DidFinish += DidFinishHandler;
+            terminal.DidFailWithReversal += DidFailWithReversalHandler;
+            terminal.DidFinishWithReversal += DidFinishWithReversalHandler;
+        }
+</code></pre><p>Additionally, to illustrate the terminal connection result handling, the
+following handler method is described:</p>
+<pre><code class="lang-C#">private void DidConnectTerminalHandler ( ) 
+{ //Do something } 
+</code></pre><p>The above handler is asynchronously called by the SDK when the terminal is
+successfully connected at logical level.</p>
+<h2 id="performing-a-sale-operation">Performing a Sale Operation</h2>
+<p>In order to perform a Sale operation, the payment terminal first needs to be
+connected to the device running the POS application. The POS application can
+then be set to communicate to the device and programmatically trigger the
+operation.</p>
+<h3 id="connecting-the-payment-terminal">Connecting the payment terminal</h3>
+<p>With Windows, you have the option to support Bluetooth, Wi-Fi and USB
+connectivity. It is important to note however that you must have the device
+preconfigured to support the connection type required along with the specific
+device hardware (Wi-Fi device versus Bluetooth device).</p>
+<p>Connecting with Bluetooth</p>
+<p>In order to connect via Bluetooth you will need to use a preconfigured Miura
+Bluetooth device. The terminal must first be paired to the POS device prior to
+connecting the application.</p>
+<p><em>Pairing the payment terminal</em></p>
+<p>When using the Bluetooth connection mode, the terminal needs to be paired
+initially to the device running the POS application. In order to achieve this,
+with a charged device press and hold the Bluetooth button for 6 seconds to
+initiate the discovery process. The Miura terminal should become visible on the
+Bluetooth settings of the device running the POS application. Perform the
+pairing and acknowledge the pairing code on both devices.</p>
+<p><img src="m010_pairing.png" alt=""></p>
+<p><em>Programmatically connect the terminal - Bluetooth</em></p>
+<p>Once a Bluetooth terminal is powered on and paired at OS level, the SDK needs to
+be logically connected to the terminal. The following code illustrates how to
+connect the terminal.</p>
+<pre><code class="lang-C#">terminal.ConnectTerminalWithInputTypeAsync (CardTerminalInputType.CardTerminalTypeBluetooth, “Miura567” );
+</code></pre><p><strong>NOTE:</strong> This is only possible if you have “Miura Bluetooth” terminal</p>
+<p>Connecting with Wi-Fi</p>
+<p>In order to connect via Wi-Fi you will need to use a preconfigured Miura Wi-Fi
+device. The device will need to be configured with your Wi-Fi settings. Your
+terminal provider may require the following to initially configure the device
+for your environment and location.</p>
+<p>| If dhcp is true the following parameters are ignored If dhcp is false they are all mandatory except for dns                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                   |
+| dhcp = False                                                                                                                                                                                                                                                                                                      |
+| address = 192.168.1.22                                                                                                                                                                                                                                                                                            |
+| netmask = 255.255.255.0                                                                                                                                                                                                                                                                                           |
+| gateway = 192.168.1.1                                                                                                                                                                                                                                                                                             |
+| dns = 192.168.1.1                                                                                                                                                                                                                                                                                                 |
+|                                                                                                                                                                                                                                                                                                                   |
+| server_address = 192.168.1.100                                                                                                                                                                                                                                                                                    |
+|                                                                                                                                                                                                                                                                                                                   |
+| server_port = 1234                                                                                                                                                                                                                                                                                                |
+| listen_port = 4567                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                   |</p>
+<table>
+<thead>
+<tr>
+<th>ssid = &quot;wifisid&quot; psk = &quot;wifipassword&quot;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Programmatically connect the terminal - Wi-Fi</em></p>
+<p>If you have a Wi-Fi terminal it can be logically connected using Wi-Fi. The
+following code illustrates how to implement this.</p>
+<pre><code class="lang-C#">terminal.ConnectTerminalWithInputTypeAsync (CardTerminalInputType. CardTerminalTypeTcpIp, “127.000.000.001” ); 
+</code></pre><p><strong>NOTE:</strong></p>
+<ul>
+<li><p>This is only possible if you have “Miura Wi-Fi” terminal</p>
+</li>
+<li><p>Wi-Fi terminals need to have Wi-Fi configuration settings set on the
+terminal issued/distributed.</p>
+</li>
+</ul>
+<p>Connecting with USB</p>
+<p>In order to connect via USB you will need to use a preconfigured Miura device.
+The device configured for USB will no longer be usable as a serial device and
+limit its capability to be updated (configuration changes). The following
+illustrates how to implement this.</p>
+<p><em>Programmatically connect the terminal - Wi-Fi</em></p>
+<p>You will need to identify the serial port which the device is connected in order
+to connect programmatically as described below.</p>
+<pre><code class="lang-C#">terminal.ConnectTerminalWithInputTypeAsync (CardTerminalInputType.CardTerminalTypeUSB, “COM3” ); 
+</code></pre><h3 id="programmatically-start-the-operation">Programmatically start the operation</h3>
+<p>The Sale operation is implemented as an authorization with capture. The
+following code illustrates how to trigger the operation as an EMV contact
+transaction.</p>
+<pre><code class="lang-C#">var authRequest = new PtzPaymentAuth { 
+    TotalAmount = 10.00, //Amount requested; Amount requested may not be the final approved amount 
+    OtherAmount = 0.00, 
+    TipAmount = 0.00,  
+    CurrencyCode = “840”, 
+    CurrencyExponent = 2, 
+    TerminalId = “12345678”, 
+    OrderIdentifier = “Test Order Id”, 
+    ExternalIdentifier = “Test External Id”, 
+    ExternalBatchIdentifier = “Test External Batch Id”, 
+    ExternalGroupIdentifier = “Test External Group Id”, 
+    Capture = true, //This indicates that the transaction will be a Sale (automatically captured) 
+    EnableCashback = false, 
+    InlineTipType = PtzPaymentAuth.PTZTipType.PTZTipTypeDisabled 
+}; 
+terminal.BeginEMVTransactionWithRequest( authRequest ); |
+</code></pre><h3 id="handle-transaction-response">Handle Transaction Response</h3>
+<p>The following code illustrates the event handlers to support all possible
+transaction outcomes. The response object contains the useful data elements to
+produce a receipt and log the transaction in the POS application if required. A
+unique transaction identifier is returned as part of the responses. This
+identifier should be used to refer to the transaction for modification types of
+transactions.</p>
+<p>Please refer to the functional and technical documentation for detailed
+information regarding the PtzPaymentResponse data structure.</p>
+<pre><code class="lang-C#">//This handler is called when the transaction is processed without errors 
+private void DidFinish( PtzPaymentResponse response ) 
+{ 
+    var approved = response.Approved ? &quot;Approved&quot; : &quot;Declined&quot;; //Do something 
+} 
+//This handler is called when the transaction originated a reversal 
+private void DidFinishWithReversal(PtzPaymentResponse response,  ReversalReason reason, bool reversalApproved)
+{ 
+//Do something 
+} 
+//This handler is called when the transaction failed
+private void DidFail(PtzPaymentResponse response, Exception exception)
+{ 
+//Do something 
+} 
+// This handler is called when the payment failed and a reversal was sent 
+private void DidFailWithReversal(PtzPaymentResponse response,  ReversalReason reason, bool reversalApproved, Exception exception) 
+{ 
+//Do something 
+} 
+</code></pre><h2 id="other-operations">Other Operations</h2>
+<p>The SDK offers a lot more functionality other than performing Sale operations.
+The following sections illustrate a few more useful features provided by the SDK
+including operations that do not involve the terminal.</p>
+<h3 id="displaying-something-on-the-terminal">Displaying Something on the Terminal</h3>
+<p>The PTZMiuraTerminal class supports direct driving of the terminal display. The
+following code snippet illustrates this. Note that the terminal may not allow
+this command in certain conditions due to PCI requirements.</p>
+<pre><code class="lang-C#">terminal.DisplayText( “Some text” ); 
+</code></pre><h3 id="clearing-text-on-the-terminal">Clearing Text on the Terminal</h3>
+<p>The PTZMiuraTerminal class supports direct driving of the terminal display. The
+following code snippet illustrates clearing the screen. <strong>It is highly
+recommended to do when device is not in use for a prolonged period to avoid
+screen burn-in.</strong></p>
+<pre><code class="lang-C#">terminal. TerminalClearDisplay(); 
+</code></pre><h3 id="cancelling-the-execution-of-a-transaction">Cancelling the execution of a transaction</h3>
+<p>The PTZMiuraTerminal class supports cancelling an ongoing transaction. The
+following code snippet illustrates this.</p>
+<pre><code class="lang-C#">terminal.CancelTransaction(); 
+</code></pre><h3 id="performing-a-void-operation">Performing a Void Operation</h3>
+<p>The SDK allows the POS application to perform voids over previously approved
+transactions. This operation does not require the card to be physically read and
+therefore the terminal is not involved. The only required data element is the
+original transaction ID (to be voided).</p>
+<pre><code class="lang-C#">var voidRequest = new PtzPaymentVoid { 
+    TransactionIdentifier = “1234567” //Transaction ID of transaction to be Voided 
+}; 
+var response = await ptzApi.PaymentVoidAsync( voidRequest ); 
+</code></pre><h3 id="performing-a-capture-operation">Performing a Capture Operation</h3>
+<p>The SDK supports capturing transactions after the authorization was approved in
+a dual step way. The Capture operation does not require the card to be
+physically read and therefore the terminal is not involved.</p>
+<pre><code class="lang-C#">var captureRequest = new PtzPaymentCapture { 
+    TransactionIdentifier = “1234567”, //The transaction ID for the original approved transaction 
+    TotalAmount = 10.00, //Total amount to be captured 
+}; 
+var response = await ptzApi.PaymentCaptureAsync( captureRequest ); |
+</code></pre><h3 id="performing-a-refund-operation">Performing a Refund Operation</h3>
+<p>The SDK includes a feature to perform refunds over previously captured
+transactions. This operation does not require the card to be physically read and
+therefore the terminal is not involved. Because the Refund is a modification
+type of transaction, the original transaction identifier is required.</p>
+<pre><code class="lang-C#">var refundRequest = new PtzPaymentRefund 
+{ 
+    TotalAmount = 10.00, // Total amount to be refunded 
+    CurrencyCode = “840”, 
+    CurrencyExponent = 2, 
+    TerminalId = “12345678”, 
+    Refund = true, //flag the transaction as a Refund not a Credit 
+    TransactionIdentifier = “1234567” //Transaction ID of original approved transaction to be refunded 
+}; 
+var response = await ptzApi.PaymentRefundAsync( refundRequest ); |
+</code></pre><h3 id="performing-a-credit-operation">Performing a Credit Operation</h3>
+<p>The SDK allows executing credit transactions. The Credit operation requires the
+card to be physically read and therefore the terminal is involved.</p>
+<pre><code class="lang-C#">var refundRequest = new PtzPaymentRefund 
+{ 
+    TotalAmount = 10.00, //Total amount to be credited 
+    CurrencyCode = “840”, 
+    CurrencyExponent = 2, 
+    TerminalId = “12345678”, 
+    Refund = false, // Flag the request as a Credit (not a Refund) 
+}; 
+terminal.BeginEMVTransactionWithRequest( refundRequest ); |
+</code></pre><h3 id="handling-the-terminal-battery-level-information">Handling the terminal battery level information</h3>
+<p>The SDK provides the POS application with the battery level information from the
+payment terminal. The following code snippet illustrates how to handle this
+information.</p>
+<table>
+<thead>
+<tr>
+<th>private void OnBatteryLowHandler( Enumerations.CardTerminalBatteryStatus batteryStatus ) { var message = string.Empty; switch( batteryStatus ) { case Enumerations.CardTerminalBatteryStatus.CardTerminalBatteryStatusLow: message = &quot;Battery Low&quot;; //Do something else on Battery low break; case Enumerations.CardTerminalBatteryStatus.CardTerminalBatteryStatusCriticallyLow: message = &quot;Battery Critically Low!&quot;; //Do something else on Battery Critically low break; } }</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="searching-for-transactions">Searching for Transactions</h3>
+<p>Single Search</p>
+<p>The SDK also provides support for extended PowerTranz gateway functionalities
+such as retrieving details for previously processed transactions. The following
+code snippet illustrates how to search an Auth, Sale, Credit, Void, Capture or
+Refund with it’s corresponding TransactionIdentifier.</p>
+<table>
+<thead>
+<tr>
+<th>var request = new PtzTransactionRequest { TransactionIdendifier = “12345678” }; ptzApi.TransactionDetails( request );</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Group Search</p>
+<p>The SDK also provides support for extended PowerTranz gateway functionalities
+such as retrieving details for previously processed transactions. The following
+code snippet illustrates searching all approved transactions within specific
+dates processed through a terminal ID.</p>
+<p>Where possible it’s suggested to include date/time limits to reduce the amount
+of returned data when deemed necessary.</p>
+<table>
+<thead>
+<tr>
+<th>var request = new PtzTransactionRequest { &quot;startDateTime&quot;: &quot;2018-02-20&quot;, &quot;endDateTime&quot;: &quot;2018-02-27&quot;, &quot;externalBatchIdentifier&quot;: null, &quot;terminalId&quot;: &quot;01956879&quot;, &quot;orderIdentifier&quot;: null, &quot;groupIdentifier&quot;: null, &quot;authorizationCode&quot;: null, &quot;approved&quot;: True }; ptzApi.TransactionSearch( request );</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Order Search</p>
+<p>The SDK also provides support for extended PowerTranz gateway functionalities
+such as retrieving summary and transaction details of an order (Auth, Sale or
+Credit). This query will include any corresponding transactions tied to the
+order such as a Void, Capture or Refund. The following code snippet illustrates
+how to search an order with a specific TransactionIdentifier.</p>
+<table>
+<thead>
+<tr>
+<th>var request = new PtzTransactionRequest { TransactionIdendifier = “12345678” }; ptzApi.OrderSearch( request );</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK.Documentation/articles/win_user_guide.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; 2018 PowerTranz</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

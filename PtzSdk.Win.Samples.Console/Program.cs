@@ -15,12 +15,14 @@ namespace PtzSdk.Win.Samples.Console
 
         static void Main(string[] args)
         {
-
+            //This is a console application and by default the logging is directed to the console as well so the console will receive
+            //transaction events, prompts, and logging details.  Normally the logging is directed to a file only.  Logging is configured in 
+            //PowerTranzSDK.dll.config.
 
             try
             {
 
-                sdk = new PtzSdkLibrary //This is basically a proxy object and hides the SDK integration details.  It is not necessary and is used only to provide the same processing functionality to other sample applications.
+                sdk = new PtzSdkLibrary //This is basically a proxy object and encapsulates the SDK integration details.  It is not necessary and is used only to provide the same processing functionality to other sample applications.
                 {
                     ApplicationId = "9eb64949-2fbc-4ef0-947f-c148469d37bb", //dedicated ApplicationId for PtzSdk.Win.Samples.Console
                     GatewayKey = Properties.Settings.Default.GatewayKey,
@@ -30,6 +32,7 @@ namespace PtzSdk.Win.Samples.Console
                 };
 
                 sdk.TerminalAddress = "COM6";  //Set this to the correct COM port if using USB, or to the Bluetooth paired name if using bluetooth
+
 
 
                 var request = new PtzPaymentAuth
@@ -60,7 +63,7 @@ namespace PtzSdk.Win.Samples.Console
                     sdk.StartTransaction(request);  //Send the transaction
                 };
 
-                sdk.Terminal.DidFinishTransactionWithResponse += (PtzPaymentResponse r) =>
+                sdk.Terminal.DidFinish += (PtzPaymentResponse r) =>
                 {
                     //Transaction is complete. Note that the other error events should also be checked as this event may not fire. 
 
@@ -70,7 +73,7 @@ namespace PtzSdk.Win.Samples.Console
                     var tsk = Task.Run(async () =>
                     {
                         await Task.Delay(1000); //just to allow logging to finish in the other handler before prompting
-                        System.Console.Write($"\r\n\r\n{r.ResponseMessage}.  Press any key...\r\n");
+                        System.Console.Write($"\r\n\r\n{r?.OnlineResponse?.ResponseMessage}.  Press any key...\r\n");
                         System.Console.ReadKey();
                         sdk.ClearScreen();
                         System.Console.Write($"\r\n\r\nPress any key to exit...\r\n");

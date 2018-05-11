@@ -48,23 +48,23 @@ namespace PtzSdk.Win.Samples.Library
                 //Note that the url is specified in the PowerTranzSDK.dll.config file in this example
                 PtzApi = new PtzApi(ApplicationId, GatewayKey, PowerTranzId, PowerTranzPassword, null, 20);
 
-                Terminal = new PTZMiuraTerminal(PtzApi, 20);
+                Terminal = new PTZMiuraTerminal(PtzApi);
 
                 RegisterListeners(Terminal);
 
                 if (TerminalAddress.StartsWith("COM"))
                 {
                     CommonUtility.LogInfo("Connecting via USB");
-                    var tsk = Terminal.ConnectTerminalWithInputTypeAsync(Enumerations.CardTerminalInputType.CardTerminalTypeUsb, TerminalAddress);
+                    var tsk = Terminal.ConnectTerminalWithInputTypeAsync(CardTerminalInputType.CardTerminalTypeUsb, TerminalAddress);
                 }
                 else
                 {
                     CommonUtility.LogInfo("Connecting via BlueTooth");
-                    var tsk = Terminal.ConnectTerminalWithInputTypeAsync(Enumerations.CardTerminalInputType.CardTerminalTypeBluetooth, TerminalAddress);
+                    var tsk = Terminal.ConnectTerminalWithInputTypeAsync(CardTerminalInputType.CardTerminalTypeBluetooth, TerminalAddress);
                 }
-                
 
-                
+
+
             }
             catch (Exception x)
             {
@@ -110,14 +110,14 @@ namespace PtzSdk.Win.Samples.Library
             if (terminalConnected) Terminal.CancelTransaction();
         }
 
-        
+
 
         public void SoftReset()
         {
             if (terminalConnected) Terminal.ResetDevice();
         }
 
-        
+
         public void ClearScreen()
         {
             if (terminalConnected) Terminal.DisplayText(TerminalIdleMessage);
@@ -134,7 +134,7 @@ namespace PtzSdk.Win.Samples.Library
             if (endDate != null) req.EndDateTime = endDate;
 
             req.Approved = approved;
-            
+
             var trxns = await ptzapi.TransactionSearchAsync(req);
             return trxns.Transactions.ToList();
         }
@@ -147,46 +147,108 @@ namespace PtzSdk.Win.Samples.Library
             terminal.DidConnectTerminal += DidConnectTerminalHandler;
             terminal.DidDisconnectTerminal += DidDisconnectTerminalHandler;
             terminal.DidFailToConnectTerminal += Terminal_DidFailToConnectTerminal; ;
-            terminal.WillConnectTerminal += WillConnectTerminalHandler;
-            terminal.DidFailWithError += Terminal_DidFailWithError;
-            terminal.DidFinishTransactionWithResponse += DidFinishTransactionWithResponseHandler;
-            terminal.TerminalPaymentFailed += TerminalPaymentFailedHandler;
-            terminal.DidRequestAccountTypeSelection += DidRequestAccountTypeSelectionHandler;
-            terminal.DidReturnAmountConfirmation += DidReturnAmountConfirmationHandler;
+
+            terminal.DidFail += DidFail;
+            terminal.DidFinish += DidFinish;
+            terminal.DidFailWithReversal += DidFailWithReversal;
+            terminal.DidFinishWithReversal += DidFinishWithReversal;
+
             terminal.OnBatteryLow += OnBatteryLowHandler;
-            terminal.TerminalDidRequestTransactionAmount += TerminalDidRequestTransactionAmountHandler;
-            terminal.DidRequestSelectEMVApplication += DidRequestSelectEMVApplicationHandler;
-            terminal.TerminalDidRequestFinalConfirmation += TerminalDidRequestFinalConfirmationHandler;
+            terminal.OnBatteryPercentage += OnBatteryPercentage;
+
+
             terminal.DidRequestDevicePromptText += DidRequestDevicePromptTextHandler;
             terminal.DidReceiveCardEvent += DidReceiveCardEventHandler;
-            terminal.SelectDevice += SelectDeviceHandler;
             terminal.TerminalDidReceiveKeypadInput += TerminalDidReceiveKeypadInputHandler;
-
             terminal.PromptCanceled += TerminalOnPromptCanceled;
-            terminal.DidFailWithReversal += Terminal_DidFailWithReversal;
+
+            terminal.SdkStateChanged += SdkStateChanged;
+
         }
 
-        private void Terminal_DidFailWithReversal(PtzPaymentResponse response, Enumerations.ReversalReason reason)
+        private void SdkStateChanged(string state)
         {
-            var responseString = "TRANSACTION FAILED\r\n\r\n" + JsonConvert.SerializeObject(response, Formatting.Indented);
-            responseString = responseString + $"\r\n Reversal reason {reason}";
-
-            CommonUtility.LogInfo(responseString);
-            CurrentTransactionId = response.TransactionIdentifier;
-
+            CommonUtility.LogInfo($"New Internal SDK state: {state}\r\n");
         }
 
-        private void Terminal_DidFailToConnectTerminal(Exception error)
+        private void OnBatteryPercentage(int batteryPercentage)
         {
-            CommonUtility.LogInfo($"Terminal_DidFailToConnectTerminal- {error.ToString()}\r\n");
-            terminalConnected = false;
+            CommonUtility.LogInfo($"Battery level: {batteryPercentage.ToString()}%\r\n");
         }
 
-        private void Terminal_DidFailWithError(Exception error)
+        private void DidFinish(PtzPaymentResponse response)
         {
             try
             {
-                CommonUtility.LogInfo($"Terminal_DidFailWithError - {error.ToString()}\r\n");
+                IsActiveTransaction = false;
+
+                var responseString = "TRANSACTION COMPLETE\r\n\r\n" + JsonConvert.SerializeObject(response, Formatting.Indented);
+                responseString += $"\r\n TerminalResult: {response?.TerminalResult.ToString()}";
+
+                CommonUtility.LogInfo(responseString);
+                CurrentTransactionId = response.TransactionIdentifier;
+
+            }
+            catch (Exception x)
+            {
+                CommonUtility.LogInfo($"{x.ToString()}\r\n");
+            }
+
+        }
+
+
+        private void DidFinishWithReversal(PtzPaymentResponse response, ReversalReason reason, bool reversalApproved)
+        {
+            try
+            {
+                var responseString = "TRANSACTION COMPLETE\r\n\r\n" + JsonConvert.SerializeObject(response, Formatting.Indented);
+                responseString += $"\r\n Reversal reason {reason}";
+                responseString += $"\r\n Reversal approved: {reversalApproved}";
+                responseString += $"\r\n TerminalResult: {response?.TerminalResult.ToString()}";
+
+                CommonUtility.LogInfo(responseString);
+                CurrentTransactionId = response.TransactionIdentifier;
+                IsActiveTransaction = false;
+            }
+            catch (Exception x)
+            {
+                CommonUtility.LogInfo($"{x.ToString()}\r\n");
+            }
+
+        }
+
+        private void DidFailWithReversal(PtzPaymentResponse response, ReversalReason reason, bool reversalApproved, Exception exception)
+        {
+            try
+            {
+                var responseString = "TRANSACTION FAILED\r\n\r\n" + JsonConvert.SerializeObject(response, Formatting.Indented);
+                responseString += $"\r\n Reversal reason {reason}";
+                responseString += $"\r\n Reversal approved: {reversalApproved}";
+                responseString += $"\r\n TerminalResult: {response?.TerminalResult.ToString()}";
+                responseString += $"\r\n Exception: {exception?.Message}";
+
+                CommonUtility.LogInfo(responseString);
+                CurrentTransactionId = response.TransactionIdentifier;
+
+                IsActiveTransaction = false;
+            }
+            catch (Exception x)
+            {
+                CommonUtility.LogInfo($"{x.ToString()}\r\n");
+            }
+        }
+
+
+        private void DidFail(PtzPaymentResponse response, Exception exception)
+        {
+            try
+            {
+                var responseString = "TRANSACTION FAILED\r\n\r\n" + JsonConvert.SerializeObject(response, Formatting.Indented);
+                responseString += $"\r\n TerminalResult: {response?.TerminalResult.ToString()}";
+                responseString += $"\r\n Exception: {exception?.Message}";
+
+                CommonUtility.LogInfo(responseString);
+
                 Terminal.DisplayText(TerminalIdleMessage);
                 IsActiveTransaction = false;
             }
@@ -196,6 +258,13 @@ namespace PtzSdk.Win.Samples.Library
             }
 
         }
+
+        private void Terminal_DidFailToConnectTerminal(Exception error)
+        {
+            CommonUtility.LogInfo($"Terminal_DidFailToConnectTerminal- {error.ToString()}\r\n");
+            terminalConnected = false;
+        }
+
 
         private void TerminalOnPromptCanceled()
         {
@@ -232,81 +301,31 @@ namespace PtzSdk.Win.Samples.Library
         }
 
 
-        private void DidFinishTransactionWithResponseHandler(PtzPaymentResponse response)
-        {
-            try
-            {
-                IsActiveTransaction = false;
-
-                var responseString = JsonConvert.SerializeObject(response, Formatting.Indented);
-
-                CommonUtility.LogInfo($"Transaction complete\r\n{responseString}");
-
-                CurrentTransactionId = response.TransactionIdentifier;
-
-            }
-            catch (Exception x)
-            {
-                CommonUtility.LogInfo($"{x.ToString()}\r\n");
-            }
-
-        }
-
-        private void TerminalPaymentFailedHandler(PtzPaymentRequest request, string error)
-        {
-            try
-            {
-                CommonUtility.LogInfo($"Transaction Failed: reason - {error}\r\n");
-                Terminal.DisplayText("Declined");
-                IsActiveTransaction = false;
-            }
-            catch (Exception x)
-            {
-                CommonUtility.LogInfo($"{x.ToString()}\r\n");
-            }
-        }
-
-        private void DidRequestAccountTypeSelectionHandler(int[] accountType)
-        {
-            CommonUtility.LogInfo($"DidRequestAccountTypeSelectionHandler {accountType.ToString()}");
-        }
-
-        private void DidReturnAmountConfirmationHandler(bool confirmed)
-        {
-            CommonUtility.LogInfo($"DidRequestAccountTypeSelectionHandler {confirmed.ToString()}");
-        }
-
-        private void OnBatteryLowHandler(Enumerations.CardTerminalBatteryStatus batteryStatus)
+        
+        
+        
+        private void OnBatteryLowHandler(CardTerminalBatteryStatus batteryStatus)
         {
 
             switch (batteryStatus)
             {
-                case Enumerations.CardTerminalBatteryStatus.CardTerminalBatteryStatusLow:
+                case CardTerminalBatteryStatus.CardTerminalBatteryStatusLow:
                     CommonUtility.LogInfo($"BATTERY LOW");
                     break;
-                case Enumerations.CardTerminalBatteryStatus.CardTerminalBatteryStatusCriticallyLow:
+                case CardTerminalBatteryStatus.CardTerminalBatteryStatusCriticallyLow:
                     CommonUtility.LogInfo($"BATTERY CRITICALLY LOW");
                     break;
             }
 
         }
 
-        private void TerminalDidRequestTransactionAmountHandler()
-        { }
-
-        private void DidRequestSelectEMVApplicationHandler(List<string> applications)
-        { }
-
-        private void TerminalDidRequestFinalConfirmationHandler()
-        { }
-
+        
         private void DidRequestDevicePromptTextHandler(CommandEnums.DevicePrompt prompt)
         { }
 
-        private void DidReceiveCardEventHandler(Enumerations.CardEvent eventType)
+        private void DidReceiveCardEventHandler(CardEvent eventType)
         {
             CommonUtility.LogInfo($"DidReceiveCardEventHandler {eventType.ToString()}");
-
         }
 
         private void SelectDeviceHandler(List<string> devices)
