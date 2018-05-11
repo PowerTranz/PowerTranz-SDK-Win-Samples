@@ -4,9 +4,9 @@
 
 Samples for integration to the .NET PowerTranz SDK for Windows. 
 
-## New Version 2.0, March 2018
+## New Version 3.0, May 2018
 
-We are happy to annnounce RC availability of SDK version 2.0. The prerelease rc1 version is on NuGet. 
+The sample code has been updated for pre-release 3.0 RC version of the SDK. 
 
 [Release Notes and Reference Documentation](https://rawgit.com/PowerTranz/PowerTranz-SDK-Win-Samples/master/docs/reference/index.html)
 
