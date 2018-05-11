@@ -484,74 +484,45 @@ terminal.BeginEMVTransactionWithRequest( refundRequest ); |
 <p>The SDK provides the POS application with the battery level information from the
 payment terminal. The following code snippet illustrates how to handle this
 information.</p>
-<table>
-<thead>
-<tr>
-<th>private void OnBatteryLowHandler( Enumerations.CardTerminalBatteryStatus batteryStatus ) { var message = string.Empty; switch( batteryStatus ) { case Enumerations.CardTerminalBatteryStatus.CardTerminalBatteryStatusLow: message = &quot;Battery Low&quot;; //Do something else on Battery low break; case Enumerations.CardTerminalBatteryStatus.CardTerminalBatteryStatusCriticallyLow: message = &quot;Battery Critically Low!&quot;; //Do something else on Battery Critically low break; } }</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h3 id="searching-for-transactions">Searching for Transactions</h3>
+<pre><code class="lang-C#">private void OnBatteryLowHandler( Enumerations.CardTerminalBatteryStatus batteryStatus ) 
+{ 
+    var message = string.Empty; 
+    switch( batteryStatus ) 
+    { 
+        case Enumerations.CardTerminalBatteryStatus.CardTerminalBatteryStatusLow: 
+            message = &quot;Battery Low&quot;; //Do something else on Battery low 
+            break; 
+        case Enumerations.CardTerminalBatteryStatus.CardTerminalBatteryStatusCriticallyLow: 
+            message = &quot;Battery Critically Low!&quot;; //Do something else on Battery Critically low 
+            break; 
+    } 
+} 
+</code></pre><h3 id="searching-for-transactions">Searching for Transactions</h3>
 <p>Single Search</p>
 <p>The SDK also provides support for extended PowerTranz gateway functionalities
 such as retrieving details for previously processed transactions. The following
 code snippet illustrates how to search an Auth, Sale, Credit, Void, Capture or
 Refund with it’s corresponding TransactionIdentifier.</p>
-<table>
-<thead>
-<tr>
-<th>var request = new PtzTransactionRequest { TransactionIdendifier = “12345678” }; ptzApi.TransactionDetails( request );</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>Group Search</p>
+<pre><code class="lang-C#">var request = new PtzTransactionRequest { TransactionIdendifier = “12345678” }; 
+ptzApi.TransactionDetails( request ); 
+</code></pre><p>Group Search</p>
 <p>The SDK also provides support for extended PowerTranz gateway functionalities
 such as retrieving details for previously processed transactions. The following
 code snippet illustrates searching all approved transactions within specific
 dates processed through a terminal ID.</p>
 <p>Where possible it’s suggested to include date/time limits to reduce the amount
 of returned data when deemed necessary.</p>
-<table>
-<thead>
-<tr>
-<th>var request = new PtzTransactionRequest { &quot;startDateTime&quot;: &quot;2018-02-20&quot;, &quot;endDateTime&quot;: &quot;2018-02-27&quot;, &quot;externalBatchIdentifier&quot;: null, &quot;terminalId&quot;: &quot;01956879&quot;, &quot;orderIdentifier&quot;: null, &quot;groupIdentifier&quot;: null, &quot;authorizationCode&quot;: null, &quot;approved&quot;: True }; ptzApi.TransactionSearch( request );</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>Order Search</p>
+<pre><code class="lang-C#">var request = new PtzTransactionRequest { &quot;startDateTime&quot;: &quot;2018-02-20&quot;, &quot;endDateTime&quot;: &quot;2018-02-27&quot;, &quot;externalBatchIdentifier&quot;: null, &quot;terminalId&quot;: &quot;01956879&quot;, &quot;orderIdentifier&quot;: null, &quot;groupIdentifier&quot;: null, &quot;authorizationCode&quot;: null, &quot;approved&quot;: True }; 
+ptzApi.TransactionSearch( request ); 
+</code></pre><p>Order Search</p>
 <p>The SDK also provides support for extended PowerTranz gateway functionalities
 such as retrieving summary and transaction details of an order (Auth, Sale or
 Credit). This query will include any corresponding transactions tied to the
 order such as a Void, Capture or Refund. The following code snippet illustrates
 how to search an order with a specific TransactionIdentifier.</p>
-<table>
-<thead>
-<tr>
-<th>var request = new PtzTransactionRequest { TransactionIdendifier = “12345678” }; ptzApi.OrderSearch( request );</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-</article>
+<pre><code class="lang-C#">var request = new PtzTransactionRequest { TransactionIdendifier = “12345678” }; 
+ptzApi.OrderSearch( request );
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
