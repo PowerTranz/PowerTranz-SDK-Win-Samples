@@ -114,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/win_user_guide.html",
-          "hash": "pT9OvIyVKxw9ygwY4y5gdg=="
+          "hash": "IL6wdXXrifalAVYC77Ql5w=="
         }
       },
       "is_incremental": false,
@@ -930,11 +930,11 @@
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         }

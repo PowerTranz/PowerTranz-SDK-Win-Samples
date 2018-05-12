@@ -122,7 +122,7 @@ means without the written permission of PowerTranz.</p>
 <p><em>This document contains proprietary and confidential information. All data
 submitted provided in reliance upon its consent not to use or disclose any
 information contained herein except in the context of its business dealings with
-PowerTranz (“PTZ”). The recipient of this document agrees to inform present and
+PowerTranz (&quot;PTZ&quot;). The recipient of this document agrees to inform present and
 future employees, contractors, etc. of recipient of the proposal who view or
 have access to its content of its confidential nature.</em></p>
 <p><em>The recipient agrees to instruct each employee that they must not disclose any
@@ -314,8 +314,8 @@ pairing and acknowledge the pairing code on both devices.</p>
 <p>Once a Bluetooth terminal is powered on and paired at OS level, the SDK needs to
 be logically connected to the terminal. The following code illustrates how to
 connect the terminal.</p>
-<pre><code class="lang-C#">terminal.ConnectTerminalWithInputTypeAsync (CardTerminalInputType.CardTerminalTypeBluetooth, “Miura567” );
-</code></pre><p><strong>NOTE:</strong> This is only possible if you have “Miura Bluetooth” terminal</p>
+<pre><code class="lang-C#">terminal.ConnectTerminalWithInputTypeAsync (CardTerminalInputType.CardTerminalTypeBluetooth, &quot;Miura567&quot; );
+</code></pre><p><strong>NOTE:</strong> This is only possible if you have &quot;Miura Bluetooth&quot; terminal</p>
 <p>Connecting with Wi-Fi</p>
 <p>In order to connect via Wi-Fi you will need to use a preconfigured Miura Wi-Fi
 device. The device will need to be configured with your Wi-Fi settings. Your
@@ -336,10 +336,10 @@ psk = &quot;wifipassword&quot;
 </code></pre><p><em>Programmatically connect the terminal - Wi-Fi</em></p>
 <p>If you have a Wi-Fi terminal it can be logically connected using Wi-Fi. The
 following code illustrates how to implement this.</p>
-<pre><code class="lang-C#">terminal.ConnectTerminalWithInputTypeAsync (CardTerminalInputType. CardTerminalTypeTcpIp, “127.000.000.001” ); 
+<pre><code class="lang-C#">terminal.ConnectTerminalWithInputTypeAsync (CardTerminalInputType. CardTerminalTypeTcpIp, &quot;192.168.1.22&quot; ); 
 </code></pre><p><strong>NOTE:</strong></p>
 <ul>
-<li><p>This is only possible if you have “Miura Wi-Fi” terminal</p>
+<li><p>This is only possible if you have &quot;Miura Wi-Fi&quot; terminal</p>
 </li>
 <li><p>Wi-Fi terminals need to have Wi-Fi configuration settings set on the
 terminal issued/distributed.</p>
@@ -353,7 +353,7 @@ illustrates how to implement this.</p>
 <p><em>Programmatically connect the terminal - Wi-Fi</em></p>
 <p>You will need to identify the serial port which the device is connected in order
 to connect programmatically as described below.</p>
-<pre><code class="lang-C#">terminal.ConnectTerminalWithInputTypeAsync (CardTerminalInputType.CardTerminalTypeUSB, “COM3” ); 
+<pre><code class="lang-C#">terminal.ConnectTerminalWithInputTypeAsync (CardTerminalInputType.CardTerminalTypeUSB, &quot;COM3&quot; ); 
 </code></pre><h3 id="programmatically-start-the-operation">Programmatically start the operation</h3>
 <p>The Sale operation is implemented as an authorization with capture. The
 following code illustrates how to trigger the operation as an EMV contact
@@ -362,13 +362,13 @@ transaction.</p>
     TotalAmount = 10.00, //Amount requested; Amount requested may not be the final approved amount 
     OtherAmount = 0.00, 
     TipAmount = 0.00,  
-    CurrencyCode = “840”, 
+    CurrencyCode = &quot;840&quot;, 
     CurrencyExponent = 2, 
-    TerminalId = “12345678”, 
-    OrderIdentifier = “Test Order Id”, 
-    ExternalIdentifier = “Test External Id”, 
-    ExternalBatchIdentifier = “Test External Batch Id”, 
-    ExternalGroupIdentifier = “Test External Group Id”, 
+    TerminalId = &quot;12345678&quot;, 
+    OrderIdentifier = &quot;Test Order Id&quot;, 
+    ExternalIdentifier = &quot;Test External Id&quot;, 
+    ExternalBatchIdentifier = &quot;Test External Batch Id&quot;, 
+    ExternalGroupIdentifier = &quot;Test External Group Id&quot;, 
     Capture = true, //This indicates that the transaction will be a Sale (automatically captured) 
     EnableCashback = false, 
     InlineTipType = PtzPaymentAuth.PTZTipType.PTZTipTypeDisabled 
@@ -411,7 +411,7 @@ including operations that do not involve the terminal.</p>
 <p>The PTZMiuraTerminal class supports direct driving of the terminal display. The
 following code snippet illustrates this. Note that the terminal may not allow
 this command in certain conditions due to PCI requirements.</p>
-<pre><code class="lang-C#">terminal.DisplayText( “Some text” ); 
+<pre><code class="lang-C#">terminal.DisplayText( &quot;Some text&quot; ); 
 </code></pre><h3 id="clearing-text-on-the-terminal">Clearing Text on the Terminal</h3>
 <p>The PTZMiuraTerminal class supports direct driving of the terminal display. The
 following code snippet illustrates clearing the screen. <strong>It is highly
@@ -428,7 +428,7 @@ transactions. This operation does not require the card to be physically read and
 therefore the terminal is not involved. The only required data element is the
 original transaction ID (to be voided).</p>
 <pre><code class="lang-C#">var voidRequest = new PtzPaymentVoid { 
-    TransactionIdentifier = “1234567” //Transaction ID of transaction to be Voided 
+    TransactionIdentifier = &quot;1234567&quot; //Transaction ID of transaction to be Voided 
 }; 
 var response = await ptzApi.PaymentVoidAsync( voidRequest ); 
 </code></pre><h3 id="performing-a-capture-operation">Performing a Capture Operation</h3>
@@ -436,7 +436,7 @@ var response = await ptzApi.PaymentVoidAsync( voidRequest );
 a dual step way. The Capture operation does not require the card to be
 physically read and therefore the terminal is not involved.</p>
 <pre><code class="lang-C#">var captureRequest = new PtzPaymentCapture { 
-    TransactionIdentifier = “1234567”, //The transaction ID for the original approved transaction 
+    TransactionIdentifier = &quot;1234567&quot;, //The transaction ID for the original approved transaction 
     TotalAmount = 10.00, //Total amount to be captured 
 }; 
 var response = await ptzApi.PaymentCaptureAsync( captureRequest ); |
@@ -448,11 +448,11 @@ type of transaction, the original transaction identifier is required.</p>
 <pre><code class="lang-C#">var refundRequest = new PtzPaymentRefund 
 { 
     TotalAmount = 10.00, // Total amount to be refunded 
-    CurrencyCode = “840”, 
+    CurrencyCode = &quot;840&quot;, 
     CurrencyExponent = 2, 
-    TerminalId = “12345678”, 
+    TerminalId = &quot;12345678&quot;, 
     Refund = true, //flag the transaction as a Refund not a Credit 
-    TransactionIdentifier = “1234567” //Transaction ID of original approved transaction to be refunded 
+    TransactionIdentifier = &quot;1234567&quot; //Transaction ID of original approved transaction to be refunded 
 }; 
 var response = await ptzApi.PaymentRefundAsync( refundRequest ); |
 </code></pre><h3 id="performing-a-credit-operation">Performing a Credit Operation</h3>
@@ -461,9 +461,9 @@ card to be physically read and therefore the terminal is involved.</p>
 <pre><code class="lang-C#">var refundRequest = new PtzPaymentRefund 
 { 
     TotalAmount = 10.00, //Total amount to be credited 
-    CurrencyCode = “840”, 
+    CurrencyCode = &quot;840&quot;, 
     CurrencyExponent = 2, 
-    TerminalId = “12345678”, 
+    TerminalId = &quot;12345678&quot;, 
     Refund = false, // Flag the request as a Credit (not a Refund) 
 }; 
 terminal.BeginEMVTransactionWithRequest( refundRequest ); |
@@ -490,7 +490,7 @@ information.</p>
 such as retrieving details for previously processed transactions. The following
 code snippet illustrates how to search an Auth, Sale, Credit, Void, Capture or
 Refund with it’s corresponding TransactionIdentifier.</p>
-<pre><code class="lang-C#">var request = new PtzTransactionRequest { TransactionIdendifier = “12345678” }; 
+<pre><code class="lang-C#">var request = new PtzTransactionRequest { TransactionIdendifier = &quot;12345678&quot; }; 
 ptzApi.TransactionDetails( request ); 
 </code></pre><p>Group Search</p>
 <p>The SDK also provides support for extended PowerTranz gateway functionalities
@@ -515,7 +515,7 @@ such as retrieving summary and transaction details of an order (Auth, Sale or
 Credit). This query will include any corresponding transactions tied to the
 order such as a Void, Capture or Refund. The following code snippet illustrates
 how to search an order with a specific TransactionIdentifier.</p>
-<pre><code class="lang-C#">var request = new PtzTransactionRequest() { TransactionIdentifier = “12345678” }; 
+<pre><code class="lang-C#">var request = new PtzTransactionRequest() { TransactionIdentifier = &quot;12345678&quot; }; 
 ptzApi.OrderSearch( request );
 </code></pre></article>
           </div>
