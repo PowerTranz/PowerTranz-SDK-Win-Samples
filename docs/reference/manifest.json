@@ -666,7 +666,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Requests.PtzPaymentRequest.html",
-          "hash": "7/r4JjWGQBxMKkrQ/sRmsw=="
+          "hash": "H1+etMFkLmDPgPS/dNN1gA=="
         }
       },
       "is_incremental": false,
@@ -957,17 +957,17 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ConceptualDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "TocDocumentProcessor": {
