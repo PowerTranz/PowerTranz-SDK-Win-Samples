@@ -233,6 +233,7 @@ references:
   name: PTZMiuraTerminal
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal__ctor_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.#ctor
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.PTZMiuraTerminal
   nameWithType: PTZMiuraTerminal.PTZMiuraTerminal
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.BeginEMVTransactionWithRequest(PowerTranzSDK.Requests.PtzPaymentRequest)
@@ -245,6 +246,7 @@ references:
   name: BeginEMVTransactionWithRequest
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_BeginEMVTransactionWithRequest_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.BeginEMVTransactionWithRequest
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.BeginEMVTransactionWithRequest
   nameWithType: PTZMiuraTerminal.BeginEMVTransactionWithRequest
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.BeginNFCTransactionWithRequest(PowerTranzSDK.Requests.PtzPaymentRequest)
@@ -257,6 +259,7 @@ references:
   name: BeginNFCTransactionWithRequest
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_BeginNFCTransactionWithRequest_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.BeginNFCTransactionWithRequest
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.BeginNFCTransactionWithRequest
   nameWithType: PTZMiuraTerminal.BeginNFCTransactionWithRequest
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.BluetoothSupported
@@ -269,6 +272,7 @@ references:
   name: BluetoothSupported
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_BluetoothSupported_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.BluetoothSupported
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.BluetoothSupported
   nameWithType: PTZMiuraTerminal.BluetoothSupported
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.CancelCheckForCard
@@ -281,6 +285,7 @@ references:
   name: CancelCheckForCard
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_CancelCheckForCard_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.CancelCheckForCard
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.CancelCheckForCard
   nameWithType: PTZMiuraTerminal.CancelCheckForCard
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.CancelTransaction
@@ -293,6 +298,7 @@ references:
   name: CancelTransaction
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_CancelTransaction_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.CancelTransaction
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.CancelTransaction
   nameWithType: PTZMiuraTerminal.CancelTransaction
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.CardStateChanged
@@ -311,6 +317,7 @@ references:
   name: CheckForCard
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_CheckForCard_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.CheckForCard
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.CheckForCard
   nameWithType: PTZMiuraTerminal.CheckForCard
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.ConnectionState
@@ -323,6 +330,7 @@ references:
   name: ConnectionState
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_ConnectionState_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.ConnectionState
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.ConnectionState
   nameWithType: PTZMiuraTerminal.ConnectionState
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.ConnectTerminalWithInputTypeAsync(PowerTranzSDK.CardTerminalInputType,System.String)
@@ -335,6 +343,7 @@ references:
   name: ConnectTerminalWithInputTypeAsync
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_ConnectTerminalWithInputTypeAsync_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.ConnectTerminalWithInputTypeAsync
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.ConnectTerminalWithInputTypeAsync
   nameWithType: PTZMiuraTerminal.ConnectTerminalWithInputTypeAsync
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.DeleteFile(System.String,PowerTranzSDK.Miura.Commands.Miura.CommandEnums.DeleteMode,PowerTranzSDK.Miura.Commands.Miura.CommandEnums.FolderLocation)
@@ -347,6 +356,7 @@ references:
   name: DeleteFile
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_DeleteFile_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.DeleteFile
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.DeleteFile
   nameWithType: PTZMiuraTerminal.DeleteFile
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.DidConnectTerminal
@@ -419,6 +429,7 @@ references:
   name: DisconnectTerminal
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_DisconnectTerminal_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.DisconnectTerminal
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.DisconnectTerminal
   nameWithType: PTZMiuraTerminal.DisconnectTerminal
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.DisplayText(System.String)
@@ -431,6 +442,7 @@ references:
   name: DisplayText
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_DisplayText_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.DisplayText
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.DisplayText
   nameWithType: PTZMiuraTerminal.DisplayText
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GenerateDeviceLog
@@ -443,6 +455,7 @@ references:
   name: GenerateDeviceLog
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_GenerateDeviceLog_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GenerateDeviceLog
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GenerateDeviceLog
   nameWithType: PTZMiuraTerminal.GenerateDeviceLog
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetDeviceInfo
@@ -455,6 +468,7 @@ references:
   name: GetDeviceInfo
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_GetDeviceInfo_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetDeviceInfo
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetDeviceInfo
   nameWithType: PTZMiuraTerminal.GetDeviceInfo
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetFirmwareVersion
@@ -467,6 +481,7 @@ references:
   name: GetFirmwareVersion
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_GetFirmwareVersion_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetFirmwareVersion
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetFirmwareVersion
   nameWithType: PTZMiuraTerminal.GetFirmwareVersion
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetHardwareId
@@ -479,6 +494,7 @@ references:
   name: GetHardwareId
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_GetHardwareId_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetHardwareId
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetHardwareId
   nameWithType: PTZMiuraTerminal.GetHardwareId
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetP2PEStatus
@@ -491,6 +507,7 @@ references:
   name: GetP2PEStatus
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_GetP2PEStatus_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetP2PEStatus
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetP2PEStatus
   nameWithType: PTZMiuraTerminal.GetP2PEStatus
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetSerialNumber
@@ -503,6 +520,7 @@ references:
   name: GetSerialNumber
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_GetSerialNumber_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetSerialNumber
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetSerialNumber
   nameWithType: PTZMiuraTerminal.GetSerialNumber
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetStateMachineDetails
@@ -515,6 +533,7 @@ references:
   name: GetStateMachineDetails
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_GetStateMachineDetails_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetStateMachineDetails
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.GetStateMachineDetails
   nameWithType: PTZMiuraTerminal.GetStateMachineDetails
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.IsProduction
@@ -527,6 +546,7 @@ references:
   name: IsProduction
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_IsProduction_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.IsProduction
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.IsProduction
   nameWithType: PTZMiuraTerminal.IsProduction
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.ManualEntrySupported
@@ -539,6 +559,7 @@ references:
   name: ManualEntrySupported
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_ManualEntrySupported_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.ManualEntrySupported
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.ManualEntrySupported
   nameWithType: PTZMiuraTerminal.ManualEntrySupported
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.NfcSupported
@@ -551,6 +572,7 @@ references:
   name: NfcSupported
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_NfcSupported_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.NfcSupported
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.NfcSupported
   nameWithType: PTZMiuraTerminal.NfcSupported
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.OnBatteryLow
@@ -581,6 +603,7 @@ references:
   name: ResetDevice
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_ResetDevice_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.ResetDevice
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.ResetDevice
   nameWithType: PTZMiuraTerminal.ResetDevice
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.ReversalResponseCodes
@@ -593,6 +616,7 @@ references:
   name: ReversalResponseCodes
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_ReversalResponseCodes_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.ReversalResponseCodes
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.ReversalResponseCodes
   nameWithType: PTZMiuraTerminal.ReversalResponseCodes
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.SdkStateChanged
@@ -614,6 +638,7 @@ references:
   name: StreamToFile
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_StreamToFile_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.StreamToFile
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.StreamToFile
   nameWithType: PTZMiuraTerminal.StreamToFile
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.TcpIpSupported
@@ -626,6 +651,7 @@ references:
   name: TcpIpSupported
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_TcpIpSupported_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.TcpIpSupported
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.TcpIpSupported
   nameWithType: PTZMiuraTerminal.TcpIpSupported
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.TerminalCanDisplayText
@@ -638,6 +664,7 @@ references:
   name: TerminalCanDisplayText
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_TerminalCanDisplayText_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.TerminalCanDisplayText
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.TerminalCanDisplayText
   nameWithType: PTZMiuraTerminal.TerminalCanDisplayText
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.TerminalClearDisplay
@@ -650,6 +677,7 @@ references:
   name: TerminalClearDisplay
   href: api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_TerminalClearDisplay_
   commentId: Overload:PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.TerminalClearDisplay
+  isSpec: "True"
   fullName: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.TerminalClearDisplay
   nameWithType: PTZMiuraTerminal.TerminalClearDisplay
 - uid: PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.TerminalDidReceiveKeypadInput
@@ -704,6 +732,7 @@ references:
   name: City
   href: api/PowerTranzSDK.DataModel.PtzAddress.html#PowerTranzSDK_DataModel_PtzAddress_City_
   commentId: Overload:PowerTranzSDK.DataModel.PtzAddress.City
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzAddress.City
   nameWithType: PtzAddress.City
 - uid: PowerTranzSDK.DataModel.PtzAddress.CountryCode
@@ -716,6 +745,7 @@ references:
   name: CountryCode
   href: api/PowerTranzSDK.DataModel.PtzAddress.html#PowerTranzSDK_DataModel_PtzAddress_CountryCode_
   commentId: Overload:PowerTranzSDK.DataModel.PtzAddress.CountryCode
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzAddress.CountryCode
   nameWithType: PtzAddress.CountryCode
 - uid: PowerTranzSDK.DataModel.PtzAddress.County
@@ -728,6 +758,7 @@ references:
   name: County
   href: api/PowerTranzSDK.DataModel.PtzAddress.html#PowerTranzSDK_DataModel_PtzAddress_County_
   commentId: Overload:PowerTranzSDK.DataModel.PtzAddress.County
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzAddress.County
   nameWithType: PtzAddress.County
 - uid: PowerTranzSDK.DataModel.PtzAddress.EmailAddress
@@ -740,6 +771,7 @@ references:
   name: EmailAddress
   href: api/PowerTranzSDK.DataModel.PtzAddress.html#PowerTranzSDK_DataModel_PtzAddress_EmailAddress_
   commentId: Overload:PowerTranzSDK.DataModel.PtzAddress.EmailAddress
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzAddress.EmailAddress
   nameWithType: PtzAddress.EmailAddress
 - uid: PowerTranzSDK.DataModel.PtzAddress.FirstName
@@ -752,6 +784,7 @@ references:
   name: FirstName
   href: api/PowerTranzSDK.DataModel.PtzAddress.html#PowerTranzSDK_DataModel_PtzAddress_FirstName_
   commentId: Overload:PowerTranzSDK.DataModel.PtzAddress.FirstName
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzAddress.FirstName
   nameWithType: PtzAddress.FirstName
 - uid: PowerTranzSDK.DataModel.PtzAddress.LastName
@@ -764,6 +797,7 @@ references:
   name: LastName
   href: api/PowerTranzSDK.DataModel.PtzAddress.html#PowerTranzSDK_DataModel_PtzAddress_LastName_
   commentId: Overload:PowerTranzSDK.DataModel.PtzAddress.LastName
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzAddress.LastName
   nameWithType: PtzAddress.LastName
 - uid: PowerTranzSDK.DataModel.PtzAddress.Line1
@@ -776,6 +810,7 @@ references:
   name: Line1
   href: api/PowerTranzSDK.DataModel.PtzAddress.html#PowerTranzSDK_DataModel_PtzAddress_Line1_
   commentId: Overload:PowerTranzSDK.DataModel.PtzAddress.Line1
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzAddress.Line1
   nameWithType: PtzAddress.Line1
 - uid: PowerTranzSDK.DataModel.PtzAddress.Line2
@@ -788,6 +823,7 @@ references:
   name: Line2
   href: api/PowerTranzSDK.DataModel.PtzAddress.html#PowerTranzSDK_DataModel_PtzAddress_Line2_
   commentId: Overload:PowerTranzSDK.DataModel.PtzAddress.Line2
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzAddress.Line2
   nameWithType: PtzAddress.Line2
 - uid: PowerTranzSDK.DataModel.PtzAddress.PhoneNumber
@@ -800,6 +836,7 @@ references:
   name: PhoneNumber
   href: api/PowerTranzSDK.DataModel.PtzAddress.html#PowerTranzSDK_DataModel_PtzAddress_PhoneNumber_
   commentId: Overload:PowerTranzSDK.DataModel.PtzAddress.PhoneNumber
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzAddress.PhoneNumber
   nameWithType: PtzAddress.PhoneNumber
 - uid: PowerTranzSDK.DataModel.PtzAddress.PostalCode
@@ -812,6 +849,7 @@ references:
   name: PostalCode
   href: api/PowerTranzSDK.DataModel.PtzAddress.html#PowerTranzSDK_DataModel_PtzAddress_PostalCode_
   commentId: Overload:PowerTranzSDK.DataModel.PtzAddress.PostalCode
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzAddress.PostalCode
   nameWithType: PtzAddress.PostalCode
 - uid: PowerTranzSDK.DataModel.PtzAddress.State
@@ -824,6 +862,7 @@ references:
   name: State
   href: api/PowerTranzSDK.DataModel.PtzAddress.html#PowerTranzSDK_DataModel_PtzAddress_State_
   commentId: Overload:PowerTranzSDK.DataModel.PtzAddress.State
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzAddress.State
   nameWithType: PtzAddress.State
 - uid: PowerTranzSDK.DataModel.PtzErrors
@@ -842,6 +881,7 @@ references:
   name: Code
   href: api/PowerTranzSDK.DataModel.PtzErrors.html#PowerTranzSDK_DataModel_PtzErrors_Code_
   commentId: Overload:PowerTranzSDK.DataModel.PtzErrors.Code
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzErrors.Code
   nameWithType: PtzErrors.Code
 - uid: PowerTranzSDK.DataModel.PtzErrors.Message
@@ -854,6 +894,7 @@ references:
   name: Message
   href: api/PowerTranzSDK.DataModel.PtzErrors.html#PowerTranzSDK_DataModel_PtzErrors_Message_
   commentId: Overload:PowerTranzSDK.DataModel.PtzErrors.Message
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzErrors.Message
   nameWithType: PtzErrors.Message
 - uid: PowerTranzSDK.DataModel.PtzExtendedData
@@ -872,6 +913,7 @@ references:
   name: CustomData
   href: api/PowerTranzSDK.DataModel.PtzExtendedData.html#PowerTranzSDK_DataModel_PtzExtendedData_CustomData_
   commentId: Overload:PowerTranzSDK.DataModel.PtzExtendedData.CustomData
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzExtendedData.CustomData
   nameWithType: PtzExtendedData.CustomData
 - uid: PowerTranzSDK.DataModel.PtzExtendedData.Level2CustomData
@@ -884,6 +926,7 @@ references:
   name: Level2CustomData
   href: api/PowerTranzSDK.DataModel.PtzExtendedData.html#PowerTranzSDK_DataModel_PtzExtendedData_Level2CustomData_
   commentId: Overload:PowerTranzSDK.DataModel.PtzExtendedData.Level2CustomData
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzExtendedData.Level2CustomData
   nameWithType: PtzExtendedData.Level2CustomData
 - uid: PowerTranzSDK.DataModel.PtzExtendedData.Level3CustomData
@@ -896,6 +939,7 @@ references:
   name: Level3CustomData
   href: api/PowerTranzSDK.DataModel.PtzExtendedData.html#PowerTranzSDK_DataModel_PtzExtendedData_Level3CustomData_
   commentId: Overload:PowerTranzSDK.DataModel.PtzExtendedData.Level3CustomData
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzExtendedData.Level3CustomData
   nameWithType: PtzExtendedData.Level3CustomData
 - uid: PowerTranzSDK.DataModel.PtzExtendedData.SecondaryAddress
@@ -908,6 +952,7 @@ references:
   name: SecondaryAddress
   href: api/PowerTranzSDK.DataModel.PtzExtendedData.html#PowerTranzSDK_DataModel_PtzExtendedData_SecondaryAddress_
   commentId: Overload:PowerTranzSDK.DataModel.PtzExtendedData.SecondaryAddress
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzExtendedData.SecondaryAddress
   nameWithType: PtzExtendedData.SecondaryAddress
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource
@@ -926,6 +971,7 @@ references:
   name: ApplicationId
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_ApplicationId_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.ApplicationId
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.ApplicationId
   nameWithType: PtzPaymentSource.ApplicationId
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.CardCvv
@@ -938,6 +984,7 @@ references:
   name: CardCvv
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_CardCvv_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.CardCvv
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.CardCvv
   nameWithType: PtzPaymentSource.CardCvv
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.CardEMVCapable
@@ -950,6 +997,7 @@ references:
   name: CardEMVCapable
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_CardEMVCapable_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.CardEMVCapable
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.CardEMVCapable
   nameWithType: PtzPaymentSource.CardEMVCapable
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.CardEmvData
@@ -962,6 +1010,7 @@ references:
   name: CardEmvData
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_CardEmvData_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.CardEmvData
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.CardEmvData
   nameWithType: PtzPaymentSource.CardEmvData
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.CardEmvFallback
@@ -974,6 +1023,7 @@ references:
   name: CardEmvFallback
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_CardEmvFallback_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.CardEmvFallback
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.CardEmvFallback
   nameWithType: PtzPaymentSource.CardEmvFallback
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.CardExpiration
@@ -986,6 +1036,7 @@ references:
   name: CardExpiration
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_CardExpiration_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.CardExpiration
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.CardExpiration
   nameWithType: PtzPaymentSource.CardExpiration
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.CardHolderName
@@ -998,6 +1049,7 @@ references:
   name: CardHolderName
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_CardHolderName_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.CardHolderName
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.CardHolderName
   nameWithType: PtzPaymentSource.CardHolderName
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.CardMaskedTrack2
@@ -1010,6 +1062,7 @@ references:
   name: CardMaskedTrack2
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_CardMaskedTrack2_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.CardMaskedTrack2
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.CardMaskedTrack2
   nameWithType: PtzPaymentSource.CardMaskedTrack2
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.CardPan
@@ -1022,6 +1075,7 @@ references:
   name: CardPan
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_CardPan_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.CardPan
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.CardPan
   nameWithType: PtzPaymentSource.CardPan
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.CardPresent
@@ -1034,6 +1088,7 @@ references:
   name: CardPresent
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_CardPresent_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.CardPresent
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.CardPresent
   nameWithType: PtzPaymentSource.CardPresent
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.CardSource
@@ -1046,6 +1101,7 @@ references:
   name: CardSource
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_CardSource_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.CardSource
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.CardSource
   nameWithType: PtzPaymentSource.CardSource
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.CardSwiped
@@ -1058,6 +1114,7 @@ references:
   name: CardSwiped
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_CardSwiped_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.CardSwiped
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.CardSwiped
   nameWithType: PtzPaymentSource.CardSwiped
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.CardTrack1Data
@@ -1070,6 +1127,7 @@ references:
   name: CardTrack1Data
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_CardTrack1Data_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.CardTrack1Data
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.CardTrack1Data
   nameWithType: PtzPaymentSource.CardTrack1Data
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.CardTrack2Data
@@ -1082,6 +1140,7 @@ references:
   name: CardTrack2Data
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_CardTrack2Data_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.CardTrack2Data
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.CardTrack2Data
   nameWithType: PtzPaymentSource.CardTrack2Data
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.CardTrack3Data
@@ -1094,6 +1153,7 @@ references:
   name: CardTrack3Data
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_CardTrack3Data_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.CardTrack3Data
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.CardTrack3Data
   nameWithType: PtzPaymentSource.CardTrack3Data
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.CardTrackData
@@ -1106,6 +1166,7 @@ references:
   name: CardTrackData
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_CardTrackData_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.CardTrackData
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.CardTrackData
   nameWithType: PtzPaymentSource.CardTrackData
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.Contactless
@@ -1118,6 +1179,7 @@ references:
   name: Contactless
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_Contactless_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.Contactless
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.Contactless
   nameWithType: PtzPaymentSource.Contactless
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.Debit
@@ -1130,6 +1192,7 @@ references:
   name: Debit
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_Debit_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.Debit
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.Debit
   nameWithType: PtzPaymentSource.Debit
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrack1Data
@@ -1142,6 +1205,7 @@ references:
   name: EncryptedCardTrack1Data
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_EncryptedCardTrack1Data_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrack1Data
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrack1Data
   nameWithType: PtzPaymentSource.EncryptedCardTrack1Data
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrack2Data
@@ -1154,6 +1218,7 @@ references:
   name: EncryptedCardTrack2Data
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_EncryptedCardTrack2Data_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrack2Data
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrack2Data
   nameWithType: PtzPaymentSource.EncryptedCardTrack2Data
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrack3Data
@@ -1166,6 +1231,7 @@ references:
   name: EncryptedCardTrack3Data
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_EncryptedCardTrack3Data_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrack3Data
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrack3Data
   nameWithType: PtzPaymentSource.EncryptedCardTrack3Data
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrackData
@@ -1178,6 +1244,7 @@ references:
   name: EncryptedCardTrackData
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_EncryptedCardTrackData_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrackData
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedCardTrackData
   nameWithType: PtzPaymentSource.EncryptedCardTrackData
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedPinBlock
@@ -1190,6 +1257,7 @@ references:
   name: EncryptedPinBlock
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_EncryptedPinBlock_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedPinBlock
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.EncryptedPinBlock
   nameWithType: PtzPaymentSource.EncryptedPinBlock
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.Ksn
@@ -1202,6 +1270,7 @@ references:
   name: Ksn
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_Ksn_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.Ksn
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.Ksn
   nameWithType: PtzPaymentSource.Ksn
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.MaskedPan
@@ -1214,6 +1283,7 @@ references:
   name: MaskedPan
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_MaskedPan_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.MaskedPan
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.MaskedPan
   nameWithType: PtzPaymentSource.MaskedPan
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.PinBlockKsn
@@ -1226,6 +1296,7 @@ references:
   name: PinBlockKsn
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_PinBlockKsn_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.PinBlockKsn
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.PinBlockKsn
   nameWithType: PtzPaymentSource.PinBlockKsn
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.ServiceCode
@@ -1238,6 +1309,7 @@ references:
   name: ServiceCode
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_ServiceCode_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.ServiceCode
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.ServiceCode
   nameWithType: PtzPaymentSource.ServiceCode
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.Token
@@ -1250,6 +1322,7 @@ references:
   name: Token
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_Token_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.Token
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.Token
   nameWithType: PtzPaymentSource.Token
 - uid: PowerTranzSDK.DataModel.PtzPaymentSource.TokenType
@@ -1262,6 +1335,7 @@ references:
   name: TokenType
   href: api/PowerTranzSDK.DataModel.PtzPaymentSource.html#PowerTranzSDK_DataModel_PtzPaymentSource_TokenType_
   commentId: Overload:PowerTranzSDK.DataModel.PtzPaymentSource.TokenType
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzPaymentSource.TokenType
   nameWithType: PtzPaymentSource.TokenType
 - uid: PowerTranzSDK.DataModel.PtzReceipt
@@ -1280,6 +1354,7 @@ references:
   name: ApplicationId
   href: api/PowerTranzSDK.DataModel.PtzReceipt.html#PowerTranzSDK_DataModel_PtzReceipt_ApplicationId_
   commentId: Overload:PowerTranzSDK.DataModel.PtzReceipt.ApplicationId
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzReceipt.ApplicationId
   nameWithType: PtzReceipt.ApplicationId
 - uid: PowerTranzSDK.DataModel.PtzReceipt.ApplicationLabel
@@ -1292,6 +1367,7 @@ references:
   name: ApplicationLabel
   href: api/PowerTranzSDK.DataModel.PtzReceipt.html#PowerTranzSDK_DataModel_PtzReceipt_ApplicationLabel_
   commentId: Overload:PowerTranzSDK.DataModel.PtzReceipt.ApplicationLabel
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzReceipt.ApplicationLabel
   nameWithType: PtzReceipt.ApplicationLabel
 - uid: PowerTranzSDK.DataModel.PtzReceipt.ApplicationPreferredName
@@ -1304,6 +1380,7 @@ references:
   name: ApplicationPreferredName
   href: api/PowerTranzSDK.DataModel.PtzReceipt.html#PowerTranzSDK_DataModel_PtzReceipt_ApplicationPreferredName_
   commentId: Overload:PowerTranzSDK.DataModel.PtzReceipt.ApplicationPreferredName
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzReceipt.ApplicationPreferredName
   nameWithType: PtzReceipt.ApplicationPreferredName
 - uid: PowerTranzSDK.DataModel.PtzReceipt.ApplicationResponseCode
@@ -1316,6 +1393,7 @@ references:
   name: ApplicationResponseCode
   href: api/PowerTranzSDK.DataModel.PtzReceipt.html#PowerTranzSDK_DataModel_PtzReceipt_ApplicationResponseCode_
   commentId: Overload:PowerTranzSDK.DataModel.PtzReceipt.ApplicationResponseCode
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzReceipt.ApplicationResponseCode
   nameWithType: PtzReceipt.ApplicationResponseCode
 - uid: PowerTranzSDK.DataModel.PtzReceipt.AuthorizationMode
@@ -1328,6 +1406,7 @@ references:
   name: AuthorizationMode
   href: api/PowerTranzSDK.DataModel.PtzReceipt.html#PowerTranzSDK_DataModel_PtzReceipt_AuthorizationMode_
   commentId: Overload:PowerTranzSDK.DataModel.PtzReceipt.AuthorizationMode
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzReceipt.AuthorizationMode
   nameWithType: PtzReceipt.AuthorizationMode
 - uid: PowerTranzSDK.DataModel.PtzReceipt.CvmMethod
@@ -1340,6 +1419,7 @@ references:
   name: CvmMethod
   href: api/PowerTranzSDK.DataModel.PtzReceipt.html#PowerTranzSDK_DataModel_PtzReceipt_CvmMethod_
   commentId: Overload:PowerTranzSDK.DataModel.PtzReceipt.CvmMethod
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzReceipt.CvmMethod
   nameWithType: PtzReceipt.CvmMethod
 - uid: PowerTranzSDK.DataModel.PtzReceipt.IssuerApplicationData
@@ -1352,6 +1432,7 @@ references:
   name: IssuerApplicationData
   href: api/PowerTranzSDK.DataModel.PtzReceipt.html#PowerTranzSDK_DataModel_PtzReceipt_IssuerApplicationData_
   commentId: Overload:PowerTranzSDK.DataModel.PtzReceipt.IssuerApplicationData
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzReceipt.IssuerApplicationData
   nameWithType: PtzReceipt.IssuerApplicationData
 - uid: PowerTranzSDK.DataModel.PtzReceipt.MaskedPan
@@ -1364,6 +1445,7 @@ references:
   name: MaskedPan
   href: api/PowerTranzSDK.DataModel.PtzReceipt.html#PowerTranzSDK_DataModel_PtzReceipt_MaskedPan_
   commentId: Overload:PowerTranzSDK.DataModel.PtzReceipt.MaskedPan
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzReceipt.MaskedPan
   nameWithType: PtzReceipt.MaskedPan
 - uid: PowerTranzSDK.DataModel.PtzReceipt.PosEntryMode
@@ -1376,6 +1458,7 @@ references:
   name: PosEntryMode
   href: api/PowerTranzSDK.DataModel.PtzReceipt.html#PowerTranzSDK_DataModel_PtzReceipt_PosEntryMode_
   commentId: Overload:PowerTranzSDK.DataModel.PtzReceipt.PosEntryMode
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzReceipt.PosEntryMode
   nameWithType: PtzReceipt.PosEntryMode
 - uid: PowerTranzSDK.DataModel.PtzReceipt.TerminalVerificationResults
@@ -1388,6 +1471,7 @@ references:
   name: TerminalVerificationResults
   href: api/PowerTranzSDK.DataModel.PtzReceipt.html#PowerTranzSDK_DataModel_PtzReceipt_TerminalVerificationResults_
   commentId: Overload:PowerTranzSDK.DataModel.PtzReceipt.TerminalVerificationResults
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzReceipt.TerminalVerificationResults
   nameWithType: PtzReceipt.TerminalVerificationResults
 - uid: PowerTranzSDK.DataModel.PtzReceipt.TransactionStatusIndicator
@@ -1400,6 +1484,7 @@ references:
   name: TransactionStatusIndicator
   href: api/PowerTranzSDK.DataModel.PtzReceipt.html#PowerTranzSDK_DataModel_PtzReceipt_TransactionStatusIndicator_
   commentId: Overload:PowerTranzSDK.DataModel.PtzReceipt.TransactionStatusIndicator
+  isSpec: "True"
   fullName: PowerTranzSDK.DataModel.PtzReceipt.TransactionStatusIndicator
   nameWithType: PtzReceipt.TransactionStatusIndicator
 - uid: PowerTranzSDK.Exceptions
@@ -1430,6 +1515,7 @@ references:
   name: InvalidRequestException
   href: api/PowerTranzSDK.Exceptions.InvalidRequestException.html#PowerTranzSDK_Exceptions_InvalidRequestException__ctor_
   commentId: Overload:PowerTranzSDK.Exceptions.InvalidRequestException.#ctor
+  isSpec: "True"
   fullName: PowerTranzSDK.Exceptions.InvalidRequestException.InvalidRequestException
   nameWithType: InvalidRequestException.InvalidRequestException
 - uid: PowerTranzSDK.Exceptions.PtzApiException
@@ -1466,6 +1552,7 @@ references:
   name: PtzApiException
   href: api/PowerTranzSDK.Exceptions.PtzApiException.html#PowerTranzSDK_Exceptions_PtzApiException__ctor_
   commentId: Overload:PowerTranzSDK.Exceptions.PtzApiException.#ctor
+  isSpec: "True"
   fullName: PowerTranzSDK.Exceptions.PtzApiException.PtzApiException
   nameWithType: PtzApiException.PtzApiException
 - uid: PowerTranzSDK.Exceptions.PtzApiException.StatusCode
@@ -1478,6 +1565,7 @@ references:
   name: StatusCode
   href: api/PowerTranzSDK.Exceptions.PtzApiException.html#PowerTranzSDK_Exceptions_PtzApiException_StatusCode_
   commentId: Overload:PowerTranzSDK.Exceptions.PtzApiException.StatusCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Exceptions.PtzApiException.StatusCode
   nameWithType: PtzApiException.StatusCode
 - uid: PowerTranzSDK.Exceptions.SredException
@@ -1496,6 +1584,7 @@ references:
   name: SredException
   href: api/PowerTranzSDK.Exceptions.SredException.html#PowerTranzSDK_Exceptions_SredException__ctor_
   commentId: Overload:PowerTranzSDK.Exceptions.SredException.#ctor
+  isSpec: "True"
   fullName: PowerTranzSDK.Exceptions.SredException.SredException
   nameWithType: SredException.SredException
 - uid: PowerTranzSDK.Exceptions.TransactionInProgressException
@@ -1514,6 +1603,7 @@ references:
   name: TransactionInProgressException
   href: api/PowerTranzSDK.Exceptions.TransactionInProgressException.html#PowerTranzSDK_Exceptions_TransactionInProgressException__ctor_
   commentId: Overload:PowerTranzSDK.Exceptions.TransactionInProgressException.#ctor
+  isSpec: "True"
   fullName: PowerTranzSDK.Exceptions.TransactionInProgressException.TransactionInProgressException
   nameWithType: TransactionInProgressException.TransactionInProgressException
 - uid: PowerTranzSDK.PtzApi
@@ -1532,6 +1622,7 @@ references:
   name: PtzApi
   href: api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi__ctor_
   commentId: Overload:PowerTranzSDK.PtzApi.#ctor
+  isSpec: "True"
   fullName: PowerTranzSDK.PtzApi.PtzApi
   nameWithType: PtzApi.PtzApi
 - uid: PowerTranzSDK.PtzApi.OrderDetailsAsync(System.String)
@@ -1544,6 +1635,7 @@ references:
   name: OrderDetailsAsync
   href: api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_OrderDetailsAsync_
   commentId: Overload:PowerTranzSDK.PtzApi.OrderDetailsAsync
+  isSpec: "True"
   fullName: PowerTranzSDK.PtzApi.OrderDetailsAsync
   nameWithType: PtzApi.OrderDetailsAsync
 - uid: PowerTranzSDK.PtzApi.PaymentAuthorizeAsync(PowerTranzSDK.Requests.PtzPaymentAuth)
@@ -1556,6 +1648,7 @@ references:
   name: PaymentAuthorizeAsync
   href: api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_PaymentAuthorizeAsync_
   commentId: Overload:PowerTranzSDK.PtzApi.PaymentAuthorizeAsync
+  isSpec: "True"
   fullName: PowerTranzSDK.PtzApi.PaymentAuthorizeAsync
   nameWithType: PtzApi.PaymentAuthorizeAsync
 - uid: PowerTranzSDK.PtzApi.PaymentCaptureAsync(PowerTranzSDK.Requests.PtzPaymentCapture)
@@ -1568,6 +1661,7 @@ references:
   name: PaymentCaptureAsync
   href: api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_PaymentCaptureAsync_
   commentId: Overload:PowerTranzSDK.PtzApi.PaymentCaptureAsync
+  isSpec: "True"
   fullName: PowerTranzSDK.PtzApi.PaymentCaptureAsync
   nameWithType: PtzApi.PaymentCaptureAsync
 - uid: PowerTranzSDK.PtzApi.PaymentCreditAsync(PowerTranzSDK.Requests.PtzPaymentCredit)
@@ -1580,6 +1674,7 @@ references:
   name: PaymentCreditAsync
   href: api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_PaymentCreditAsync_
   commentId: Overload:PowerTranzSDK.PtzApi.PaymentCreditAsync
+  isSpec: "True"
   fullName: PowerTranzSDK.PtzApi.PaymentCreditAsync
   nameWithType: PtzApi.PaymentCreditAsync
 - uid: PowerTranzSDK.PtzApi.PaymentRefundAsync(PowerTranzSDK.Requests.PtzPaymentRefund)
@@ -1592,6 +1687,7 @@ references:
   name: PaymentRefundAsync
   href: api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_PaymentRefundAsync_
   commentId: Overload:PowerTranzSDK.PtzApi.PaymentRefundAsync
+  isSpec: "True"
   fullName: PowerTranzSDK.PtzApi.PaymentRefundAsync
   nameWithType: PtzApi.PaymentRefundAsync
 - uid: PowerTranzSDK.PtzApi.PaymentSaleAsync(PowerTranzSDK.Requests.PtzPaymentAuth)
@@ -1604,6 +1700,7 @@ references:
   name: PaymentSaleAsync
   href: api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_PaymentSaleAsync_
   commentId: Overload:PowerTranzSDK.PtzApi.PaymentSaleAsync
+  isSpec: "True"
   fullName: PowerTranzSDK.PtzApi.PaymentSaleAsync
   nameWithType: PtzApi.PaymentSaleAsync
 - uid: PowerTranzSDK.PtzApi.PaymentVoidAsync(PowerTranzSDK.Requests.PtzPaymentVoid)
@@ -1616,6 +1713,7 @@ references:
   name: PaymentVoidAsync
   href: api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_PaymentVoidAsync_
   commentId: Overload:PowerTranzSDK.PtzApi.PaymentVoidAsync
+  isSpec: "True"
   fullName: PowerTranzSDK.PtzApi.PaymentVoidAsync
   nameWithType: PtzApi.PaymentVoidAsync
 - uid: PowerTranzSDK.PtzApi.TransactionDetailsAsync(System.String)
@@ -1628,6 +1726,7 @@ references:
   name: TransactionDetailsAsync
   href: api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_TransactionDetailsAsync_
   commentId: Overload:PowerTranzSDK.PtzApi.TransactionDetailsAsync
+  isSpec: "True"
   fullName: PowerTranzSDK.PtzApi.TransactionDetailsAsync
   nameWithType: PtzApi.TransactionDetailsAsync
 - uid: PowerTranzSDK.PtzApi.TransactionSearchAsync(PowerTranzSDK.Requests.PtzTransactionRequest)
@@ -1640,8 +1739,99 @@ references:
   name: TransactionSearchAsync
   href: api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_TransactionSearchAsync_
   commentId: Overload:PowerTranzSDK.PtzApi.TransactionSearchAsync
+  isSpec: "True"
   fullName: PowerTranzSDK.PtzApi.TransactionSearchAsync
   nameWithType: PtzApi.TransactionSearchAsync
+- uid: PowerTranzSDK.PtzAuthorizationMode
+  name: PtzAuthorizationMode
+  href: api/PowerTranzSDK.PtzAuthorizationMode.html
+  commentId: T:PowerTranzSDK.PtzAuthorizationMode
+  fullName: PowerTranzSDK.PtzAuthorizationMode
+  nameWithType: PtzAuthorizationMode
+- uid: PowerTranzSDK.PtzAuthorizationMode.PtzAuthorizationModeCard
+  name: PtzAuthorizationModeCard
+  href: api/PowerTranzSDK.PtzAuthorizationMode.html#PowerTranzSDK_PtzAuthorizationMode_PtzAuthorizationModeCard
+  commentId: F:PowerTranzSDK.PtzAuthorizationMode.PtzAuthorizationModeCard
+  fullName: PowerTranzSDK.PtzAuthorizationMode.PtzAuthorizationModeCard
+  nameWithType: PtzAuthorizationMode.PtzAuthorizationModeCard
+- uid: PowerTranzSDK.PtzAuthorizationMode.PtzAuthorizationModeIssuer
+  name: PtzAuthorizationModeIssuer
+  href: api/PowerTranzSDK.PtzAuthorizationMode.html#PowerTranzSDK_PtzAuthorizationMode_PtzAuthorizationModeIssuer
+  commentId: F:PowerTranzSDK.PtzAuthorizationMode.PtzAuthorizationModeIssuer
+  fullName: PowerTranzSDK.PtzAuthorizationMode.PtzAuthorizationModeIssuer
+  nameWithType: PtzAuthorizationMode.PtzAuthorizationModeIssuer
+- uid: PowerTranzSDK.PtzAuthorizationMode.PtzAuthorizationModeNone
+  name: PtzAuthorizationModeNone
+  href: api/PowerTranzSDK.PtzAuthorizationMode.html#PowerTranzSDK_PtzAuthorizationMode_PtzAuthorizationModeNone
+  commentId: F:PowerTranzSDK.PtzAuthorizationMode.PtzAuthorizationModeNone
+  fullName: PowerTranzSDK.PtzAuthorizationMode.PtzAuthorizationModeNone
+  nameWithType: PtzAuthorizationMode.PtzAuthorizationModeNone
+- uid: PowerTranzSDK.PtzCvmMethod
+  name: PtzCvmMethod
+  href: api/PowerTranzSDK.PtzCvmMethod.html
+  commentId: T:PowerTranzSDK.PtzCvmMethod
+  fullName: PowerTranzSDK.PtzCvmMethod
+  nameWithType: PtzCvmMethod
+- uid: PowerTranzSDK.PtzCvmMethod.PtzCvmMethodNoCvm
+  name: PtzCvmMethodNoCvm
+  href: api/PowerTranzSDK.PtzCvmMethod.html#PowerTranzSDK_PtzCvmMethod_PtzCvmMethodNoCvm
+  commentId: F:PowerTranzSDK.PtzCvmMethod.PtzCvmMethodNoCvm
+  fullName: PowerTranzSDK.PtzCvmMethod.PtzCvmMethodNoCvm
+  nameWithType: PtzCvmMethod.PtzCvmMethodNoCvm
+- uid: PowerTranzSDK.PtzCvmMethod.PtzCvmMethodOfflinePin
+  name: PtzCvmMethodOfflinePin
+  href: api/PowerTranzSDK.PtzCvmMethod.html#PowerTranzSDK_PtzCvmMethod_PtzCvmMethodOfflinePin
+  commentId: F:PowerTranzSDK.PtzCvmMethod.PtzCvmMethodOfflinePin
+  fullName: PowerTranzSDK.PtzCvmMethod.PtzCvmMethodOfflinePin
+  nameWithType: PtzCvmMethod.PtzCvmMethodOfflinePin
+- uid: PowerTranzSDK.PtzCvmMethod.PtzCvmMethodOnlinePin
+  name: PtzCvmMethodOnlinePin
+  href: api/PowerTranzSDK.PtzCvmMethod.html#PowerTranzSDK_PtzCvmMethod_PtzCvmMethodOnlinePin
+  commentId: F:PowerTranzSDK.PtzCvmMethod.PtzCvmMethodOnlinePin
+  fullName: PowerTranzSDK.PtzCvmMethod.PtzCvmMethodOnlinePin
+  nameWithType: PtzCvmMethod.PtzCvmMethodOnlinePin
+- uid: PowerTranzSDK.PtzCvmMethod.PtzCvmMethodSignature
+  name: PtzCvmMethodSignature
+  href: api/PowerTranzSDK.PtzCvmMethod.html#PowerTranzSDK_PtzCvmMethod_PtzCvmMethodSignature
+  commentId: F:PowerTranzSDK.PtzCvmMethod.PtzCvmMethodSignature
+  fullName: PowerTranzSDK.PtzCvmMethod.PtzCvmMethodSignature
+  nameWithType: PtzCvmMethod.PtzCvmMethodSignature
+- uid: PowerTranzSDK.PtzPosEntryMode
+  name: PtzPosEntryMode
+  href: api/PowerTranzSDK.PtzPosEntryMode.html
+  commentId: T:PowerTranzSDK.PtzPosEntryMode
+  fullName: PowerTranzSDK.PtzPosEntryMode
+  nameWithType: PtzPosEntryMode
+- uid: PowerTranzSDK.PtzPosEntryMode.PtzPosEntryModeContact
+  name: PtzPosEntryModeContact
+  href: api/PowerTranzSDK.PtzPosEntryMode.html#PowerTranzSDK_PtzPosEntryMode_PtzPosEntryModeContact
+  commentId: F:PowerTranzSDK.PtzPosEntryMode.PtzPosEntryModeContact
+  fullName: PowerTranzSDK.PtzPosEntryMode.PtzPosEntryModeContact
+  nameWithType: PtzPosEntryMode.PtzPosEntryModeContact
+- uid: PowerTranzSDK.PtzPosEntryMode.PtzPosEntryModeContactless
+  name: PtzPosEntryModeContactless
+  href: api/PowerTranzSDK.PtzPosEntryMode.html#PowerTranzSDK_PtzPosEntryMode_PtzPosEntryModeContactless
+  commentId: F:PowerTranzSDK.PtzPosEntryMode.PtzPosEntryModeContactless
+  fullName: PowerTranzSDK.PtzPosEntryMode.PtzPosEntryModeContactless
+  nameWithType: PtzPosEntryMode.PtzPosEntryModeContactless
+- uid: PowerTranzSDK.PtzPosEntryMode.PtzPosEntryModeFallback
+  name: PtzPosEntryModeFallback
+  href: api/PowerTranzSDK.PtzPosEntryMode.html#PowerTranzSDK_PtzPosEntryMode_PtzPosEntryModeFallback
+  commentId: F:PowerTranzSDK.PtzPosEntryMode.PtzPosEntryModeFallback
+  fullName: PowerTranzSDK.PtzPosEntryMode.PtzPosEntryModeFallback
+  nameWithType: PtzPosEntryMode.PtzPosEntryModeFallback
+- uid: PowerTranzSDK.PtzPosEntryMode.PtzPosEntryModeManual
+  name: PtzPosEntryModeManual
+  href: api/PowerTranzSDK.PtzPosEntryMode.html#PowerTranzSDK_PtzPosEntryMode_PtzPosEntryModeManual
+  commentId: F:PowerTranzSDK.PtzPosEntryMode.PtzPosEntryModeManual
+  fullName: PowerTranzSDK.PtzPosEntryMode.PtzPosEntryModeManual
+  nameWithType: PtzPosEntryMode.PtzPosEntryModeManual
+- uid: PowerTranzSDK.PtzPosEntryMode.PtzPosEntryModeMsr
+  name: PtzPosEntryModeMsr
+  href: api/PowerTranzSDK.PtzPosEntryMode.html#PowerTranzSDK_PtzPosEntryMode_PtzPosEntryModeMsr
+  commentId: F:PowerTranzSDK.PtzPosEntryMode.PtzPosEntryModeMsr
+  fullName: PowerTranzSDK.PtzPosEntryMode.PtzPosEntryModeMsr
+  nameWithType: PtzPosEntryMode.PtzPosEntryModeMsr
 - uid: PowerTranzSDK.Requests
   name: PowerTranzSDK.Requests
   href: api/PowerTranzSDK.Requests.html
@@ -1664,6 +1854,7 @@ references:
   name: Capture
   href: api/PowerTranzSDK.Requests.PtzPaymentAuth.html#PowerTranzSDK_Requests_PtzPaymentAuth_Capture_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentAuth.Capture
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentAuth.Capture
   nameWithType: PtzPaymentAuth.Capture
 - uid: PowerTranzSDK.Requests.PtzPaymentAuth.EnableCashback
@@ -1676,6 +1867,7 @@ references:
   name: EnableCashback
   href: api/PowerTranzSDK.Requests.PtzPaymentAuth.html#PowerTranzSDK_Requests_PtzPaymentAuth_EnableCashback_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentAuth.EnableCashback
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentAuth.EnableCashback
   nameWithType: PtzPaymentAuth.EnableCashback
 - uid: PowerTranzSDK.Requests.PtzPaymentAuth.InlineTipType
@@ -1688,6 +1880,7 @@ references:
   name: InlineTipType
   href: api/PowerTranzSDK.Requests.PtzPaymentAuth.html#PowerTranzSDK_Requests_PtzPaymentAuth_InlineTipType_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentAuth.InlineTipType
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentAuth.InlineTipType
   nameWithType: PtzPaymentAuth.InlineTipType
 - uid: PowerTranzSDK.Requests.PtzPaymentAuth.PTZTipType
@@ -1742,6 +1935,7 @@ references:
   name: Refund
   href: api/PowerTranzSDK.Requests.PtzPaymentRefund.html#PowerTranzSDK_Requests_PtzPaymentRefund_Refund_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRefund.Refund
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRefund.Refund
   nameWithType: PtzPaymentRefund.Refund
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest
@@ -1760,6 +1954,7 @@ references:
   name: PtzPaymentRequest
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest__ctor_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.#ctor
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.PtzPaymentRequest
   nameWithType: PtzPaymentRequest.PtzPaymentRequest
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.BillingAddress
@@ -1772,6 +1967,7 @@ references:
   name: BillingAddress
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_BillingAddress_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.BillingAddress
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.BillingAddress
   nameWithType: PtzPaymentRequest.BillingAddress
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.CurrencyCode
@@ -1784,6 +1980,7 @@ references:
   name: CurrencyCode
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_CurrencyCode_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.CurrencyCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.CurrencyCode
   nameWithType: PtzPaymentRequest.CurrencyCode
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.CurrencyExponent
@@ -1796,6 +1993,7 @@ references:
   name: CurrencyExponent
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_CurrencyExponent_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.CurrencyExponent
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.CurrencyExponent
   nameWithType: PtzPaymentRequest.CurrencyExponent
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.EmvData
@@ -1808,6 +2006,7 @@ references:
   name: EmvData
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_EmvData_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.EmvData
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.EmvData
   nameWithType: PtzPaymentRequest.EmvData
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.ExtendedData
@@ -1820,6 +2019,7 @@ references:
   name: ExtendedData
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_ExtendedData_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.ExtendedData
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.ExtendedData
   nameWithType: PtzPaymentRequest.ExtendedData
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.ExternalBatchIdentifier
@@ -1832,6 +2032,7 @@ references:
   name: ExternalBatchIdentifier
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_ExternalBatchIdentifier_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.ExternalBatchIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.ExternalBatchIdentifier
   nameWithType: PtzPaymentRequest.ExternalBatchIdentifier
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.ExternalGroupIdentifier
@@ -1844,6 +2045,7 @@ references:
   name: ExternalGroupIdentifier
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_ExternalGroupIdentifier_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.ExternalGroupIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.ExternalGroupIdentifier
   nameWithType: PtzPaymentRequest.ExternalGroupIdentifier
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.ExternalIdentifier
@@ -1856,6 +2058,7 @@ references:
   name: ExternalIdentifier
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_ExternalIdentifier_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.ExternalIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.ExternalIdentifier
   nameWithType: PtzPaymentRequest.ExternalIdentifier
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.OrderIdentifier
@@ -1868,6 +2071,7 @@ references:
   name: OrderIdentifier
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_OrderIdentifier_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.OrderIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.OrderIdentifier
   nameWithType: PtzPaymentRequest.OrderIdentifier
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.OtherAmount
@@ -1880,6 +2084,7 @@ references:
   name: OtherAmount
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_OtherAmount_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.OtherAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.OtherAmount
   nameWithType: PtzPaymentRequest.OtherAmount
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.Source
@@ -1892,6 +2097,7 @@ references:
   name: Source
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_Source_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.Source
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.Source
   nameWithType: PtzPaymentRequest.Source
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.TaxAmount
@@ -1904,6 +2110,7 @@ references:
   name: TaxAmount
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_TaxAmount_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.TaxAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.TaxAmount
   nameWithType: PtzPaymentRequest.TaxAmount
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.TerminalCode
@@ -1916,6 +2123,7 @@ references:
   name: TerminalCode
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_TerminalCode_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.TerminalCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.TerminalCode
   nameWithType: PtzPaymentRequest.TerminalCode
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.TerminalId
@@ -1928,6 +2136,7 @@ references:
   name: TerminalId
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_TerminalId_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.TerminalId
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.TerminalId
   nameWithType: PtzPaymentRequest.TerminalId
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.TerminalSerialNumber
@@ -1940,6 +2149,7 @@ references:
   name: TerminalSerialNumber
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_TerminalSerialNumber_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.TerminalSerialNumber
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.TerminalSerialNumber
   nameWithType: PtzPaymentRequest.TerminalSerialNumber
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.TipAmount
@@ -1952,6 +2162,7 @@ references:
   name: TipAmount
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_TipAmount_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.TipAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.TipAmount
   nameWithType: PtzPaymentRequest.TipAmount
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.TotalAmount
@@ -1964,6 +2175,7 @@ references:
   name: TotalAmount
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_TotalAmount_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.TotalAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.TotalAmount
   nameWithType: PtzPaymentRequest.TotalAmount
 - uid: PowerTranzSDK.Requests.PtzPaymentRequest.TransactionIdentifier
@@ -1976,6 +2188,7 @@ references:
   name: TransactionIdentifier
   href: api/PowerTranzSDK.Requests.PtzPaymentRequest.html#PowerTranzSDK_Requests_PtzPaymentRequest_TransactionIdentifier_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentRequest.TransactionIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentRequest.TransactionIdentifier
   nameWithType: PtzPaymentRequest.TransactionIdentifier
 - uid: PowerTranzSDK.Requests.PtzPaymentVoid
@@ -1994,6 +2207,7 @@ references:
   name: Type
   href: api/PowerTranzSDK.Requests.PtzPaymentVoid.html#PowerTranzSDK_Requests_PtzPaymentVoid_Type_
   commentId: Overload:PowerTranzSDK.Requests.PtzPaymentVoid.Type
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzPaymentVoid.Type
   nameWithType: PtzPaymentVoid.Type
 - uid: PowerTranzSDK.Requests.PtzTransactionRequest
@@ -2012,6 +2226,7 @@ references:
   name: Approved
   href: api/PowerTranzSDK.Requests.PtzTransactionRequest.html#PowerTranzSDK_Requests_PtzTransactionRequest_Approved_
   commentId: Overload:PowerTranzSDK.Requests.PtzTransactionRequest.Approved
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzTransactionRequest.Approved
   nameWithType: PtzTransactionRequest.Approved
 - uid: PowerTranzSDK.Requests.PtzTransactionRequest.AuthorizationCode
@@ -2024,6 +2239,7 @@ references:
   name: AuthorizationCode
   href: api/PowerTranzSDK.Requests.PtzTransactionRequest.html#PowerTranzSDK_Requests_PtzTransactionRequest_AuthorizationCode_
   commentId: Overload:PowerTranzSDK.Requests.PtzTransactionRequest.AuthorizationCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzTransactionRequest.AuthorizationCode
   nameWithType: PtzTransactionRequest.AuthorizationCode
 - uid: PowerTranzSDK.Requests.PtzTransactionRequest.EndDateTime
@@ -2036,6 +2252,7 @@ references:
   name: EndDateTime
   href: api/PowerTranzSDK.Requests.PtzTransactionRequest.html#PowerTranzSDK_Requests_PtzTransactionRequest_EndDateTime_
   commentId: Overload:PowerTranzSDK.Requests.PtzTransactionRequest.EndDateTime
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzTransactionRequest.EndDateTime
   nameWithType: PtzTransactionRequest.EndDateTime
 - uid: PowerTranzSDK.Requests.PtzTransactionRequest.ExternalBatchIdentifier
@@ -2048,6 +2265,7 @@ references:
   name: ExternalBatchIdentifier
   href: api/PowerTranzSDK.Requests.PtzTransactionRequest.html#PowerTranzSDK_Requests_PtzTransactionRequest_ExternalBatchIdentifier_
   commentId: Overload:PowerTranzSDK.Requests.PtzTransactionRequest.ExternalBatchIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzTransactionRequest.ExternalBatchIdentifier
   nameWithType: PtzTransactionRequest.ExternalBatchIdentifier
 - uid: PowerTranzSDK.Requests.PtzTransactionRequest.GroupIdentifier
@@ -2060,6 +2278,7 @@ references:
   name: GroupIdentifier
   href: api/PowerTranzSDK.Requests.PtzTransactionRequest.html#PowerTranzSDK_Requests_PtzTransactionRequest_GroupIdentifier_
   commentId: Overload:PowerTranzSDK.Requests.PtzTransactionRequest.GroupIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzTransactionRequest.GroupIdentifier
   nameWithType: PtzTransactionRequest.GroupIdentifier
 - uid: PowerTranzSDK.Requests.PtzTransactionRequest.OrderIdentifier
@@ -2072,6 +2291,7 @@ references:
   name: OrderIdentifier
   href: api/PowerTranzSDK.Requests.PtzTransactionRequest.html#PowerTranzSDK_Requests_PtzTransactionRequest_OrderIdentifier_
   commentId: Overload:PowerTranzSDK.Requests.PtzTransactionRequest.OrderIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzTransactionRequest.OrderIdentifier
   nameWithType: PtzTransactionRequest.OrderIdentifier
 - uid: PowerTranzSDK.Requests.PtzTransactionRequest.QueryItems
@@ -2084,6 +2304,7 @@ references:
   name: QueryItems
   href: api/PowerTranzSDK.Requests.PtzTransactionRequest.html#PowerTranzSDK_Requests_PtzTransactionRequest_QueryItems_
   commentId: Overload:PowerTranzSDK.Requests.PtzTransactionRequest.QueryItems
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzTransactionRequest.QueryItems
   nameWithType: PtzTransactionRequest.QueryItems
 - uid: PowerTranzSDK.Requests.PtzTransactionRequest.StartDateTime
@@ -2096,6 +2317,7 @@ references:
   name: StartDateTime
   href: api/PowerTranzSDK.Requests.PtzTransactionRequest.html#PowerTranzSDK_Requests_PtzTransactionRequest_StartDateTime_
   commentId: Overload:PowerTranzSDK.Requests.PtzTransactionRequest.StartDateTime
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzTransactionRequest.StartDateTime
   nameWithType: PtzTransactionRequest.StartDateTime
 - uid: PowerTranzSDK.Requests.PtzTransactionRequest.TerminalId
@@ -2108,6 +2330,7 @@ references:
   name: TerminalId
   href: api/PowerTranzSDK.Requests.PtzTransactionRequest.html#PowerTranzSDK_Requests_PtzTransactionRequest_TerminalId_
   commentId: Overload:PowerTranzSDK.Requests.PtzTransactionRequest.TerminalId
+  isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzTransactionRequest.TerminalId
   nameWithType: PtzTransactionRequest.TerminalId
 - uid: PowerTranzSDK.Responses
@@ -2132,6 +2355,7 @@ references:
   name: Approved
   href: api/PowerTranzSDK.Responses.PtzOnlineResponse.html#PowerTranzSDK_Responses_PtzOnlineResponse_Approved_
   commentId: Overload:PowerTranzSDK.Responses.PtzOnlineResponse.Approved
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOnlineResponse.Approved
   nameWithType: PtzOnlineResponse.Approved
 - uid: PowerTranzSDK.Responses.PtzOnlineResponse.AuthorizationCode
@@ -2144,6 +2368,7 @@ references:
   name: AuthorizationCode
   href: api/PowerTranzSDK.Responses.PtzOnlineResponse.html#PowerTranzSDK_Responses_PtzOnlineResponse_AuthorizationCode_
   commentId: Overload:PowerTranzSDK.Responses.PtzOnlineResponse.AuthorizationCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOnlineResponse.AuthorizationCode
   nameWithType: PtzOnlineResponse.AuthorizationCode
 - uid: PowerTranzSDK.Responses.PtzOnlineResponse.AvsResponseCode
@@ -2156,6 +2381,7 @@ references:
   name: AvsResponseCode
   href: api/PowerTranzSDK.Responses.PtzOnlineResponse.html#PowerTranzSDK_Responses_PtzOnlineResponse_AvsResponseCode_
   commentId: Overload:PowerTranzSDK.Responses.PtzOnlineResponse.AvsResponseCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOnlineResponse.AvsResponseCode
   nameWithType: PtzOnlineResponse.AvsResponseCode
 - uid: PowerTranzSDK.Responses.PtzOnlineResponse.CardBrand
@@ -2168,6 +2394,7 @@ references:
   name: CardBrand
   href: api/PowerTranzSDK.Responses.PtzOnlineResponse.html#PowerTranzSDK_Responses_PtzOnlineResponse_CardBrand_
   commentId: Overload:PowerTranzSDK.Responses.PtzOnlineResponse.CardBrand
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOnlineResponse.CardBrand
   nameWithType: PtzOnlineResponse.CardBrand
 - uid: PowerTranzSDK.Responses.PtzOnlineResponse.CustomData
@@ -2180,6 +2407,7 @@ references:
   name: CustomData
   href: api/PowerTranzSDK.Responses.PtzOnlineResponse.html#PowerTranzSDK_Responses_PtzOnlineResponse_CustomData_
   commentId: Overload:PowerTranzSDK.Responses.PtzOnlineResponse.CustomData
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOnlineResponse.CustomData
   nameWithType: PtzOnlineResponse.CustomData
 - uid: PowerTranzSDK.Responses.PtzOnlineResponse.CvvResponseCode
@@ -2192,6 +2420,7 @@ references:
   name: CvvResponseCode
   href: api/PowerTranzSDK.Responses.PtzOnlineResponse.html#PowerTranzSDK_Responses_PtzOnlineResponse_CvvResponseCode_
   commentId: Overload:PowerTranzSDK.Responses.PtzOnlineResponse.CvvResponseCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOnlineResponse.CvvResponseCode
   nameWithType: PtzOnlineResponse.CvvResponseCode
 - uid: PowerTranzSDK.Responses.PtzOnlineResponse.EmvIssuerAuthenticationData
@@ -2204,6 +2433,7 @@ references:
   name: EmvIssuerAuthenticationData
   href: api/PowerTranzSDK.Responses.PtzOnlineResponse.html#PowerTranzSDK_Responses_PtzOnlineResponse_EmvIssuerAuthenticationData_
   commentId: Overload:PowerTranzSDK.Responses.PtzOnlineResponse.EmvIssuerAuthenticationData
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOnlineResponse.EmvIssuerAuthenticationData
   nameWithType: PtzOnlineResponse.EmvIssuerAuthenticationData
 - uid: PowerTranzSDK.Responses.PtzOnlineResponse.EmvIssuerScripts
@@ -2216,6 +2446,7 @@ references:
   name: EmvIssuerScripts
   href: api/PowerTranzSDK.Responses.PtzOnlineResponse.html#PowerTranzSDK_Responses_PtzOnlineResponse_EmvIssuerScripts_
   commentId: Overload:PowerTranzSDK.Responses.PtzOnlineResponse.EmvIssuerScripts
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOnlineResponse.EmvIssuerScripts
   nameWithType: PtzOnlineResponse.EmvIssuerScripts
 - uid: PowerTranzSDK.Responses.PtzOnlineResponse.Errors
@@ -2228,6 +2459,7 @@ references:
   name: Errors
   href: api/PowerTranzSDK.Responses.PtzOnlineResponse.html#PowerTranzSDK_Responses_PtzOnlineResponse_Errors_
   commentId: Overload:PowerTranzSDK.Responses.PtzOnlineResponse.Errors
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOnlineResponse.Errors
   nameWithType: PtzOnlineResponse.Errors
 - uid: PowerTranzSDK.Responses.PtzOnlineResponse.IsoResponseCode
@@ -2240,6 +2472,7 @@ references:
   name: IsoResponseCode
   href: api/PowerTranzSDK.Responses.PtzOnlineResponse.html#PowerTranzSDK_Responses_PtzOnlineResponse_IsoResponseCode_
   commentId: Overload:PowerTranzSDK.Responses.PtzOnlineResponse.IsoResponseCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOnlineResponse.IsoResponseCode
   nameWithType: PtzOnlineResponse.IsoResponseCode
 - uid: PowerTranzSDK.Responses.PtzOnlineResponse.PanToken
@@ -2252,6 +2485,7 @@ references:
   name: PanToken
   href: api/PowerTranzSDK.Responses.PtzOnlineResponse.html#PowerTranzSDK_Responses_PtzOnlineResponse_PanToken_
   commentId: Overload:PowerTranzSDK.Responses.PtzOnlineResponse.PanToken
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOnlineResponse.PanToken
   nameWithType: PtzOnlineResponse.PanToken
 - uid: PowerTranzSDK.Responses.PtzOnlineResponse.ResponseMessage
@@ -2264,6 +2498,7 @@ references:
   name: ResponseMessage
   href: api/PowerTranzSDK.Responses.PtzOnlineResponse.html#PowerTranzSDK_Responses_PtzOnlineResponse_ResponseMessage_
   commentId: Overload:PowerTranzSDK.Responses.PtzOnlineResponse.ResponseMessage
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOnlineResponse.ResponseMessage
   nameWithType: PtzOnlineResponse.ResponseMessage
 - uid: PowerTranzSDK.Responses.PtzOrder
@@ -2282,6 +2517,7 @@ references:
   name: CaptureCount
   href: api/PowerTranzSDK.Responses.PtzOrder.html#PowerTranzSDK_Responses_PtzOrder_CaptureCount_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrder.CaptureCount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrder.CaptureCount
   nameWithType: PtzOrder.CaptureCount
 - uid: PowerTranzSDK.Responses.PtzOrder.CreditCount
@@ -2294,6 +2530,7 @@ references:
   name: CreditCount
   href: api/PowerTranzSDK.Responses.PtzOrder.html#PowerTranzSDK_Responses_PtzOrder_CreditCount_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrder.CreditCount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrder.CreditCount
   nameWithType: PtzOrder.CreditCount
 - uid: PowerTranzSDK.Responses.PtzOrder.CurrencyCode
@@ -2306,6 +2543,7 @@ references:
   name: CurrencyCode
   href: api/PowerTranzSDK.Responses.PtzOrder.html#PowerTranzSDK_Responses_PtzOrder_CurrencyCode_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrder.CurrencyCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrder.CurrencyCode
   nameWithType: PtzOrder.CurrencyCode
 - uid: PowerTranzSDK.Responses.PtzOrder.LastCaptureDateTime
@@ -2318,6 +2556,7 @@ references:
   name: LastCaptureDateTime
   href: api/PowerTranzSDK.Responses.PtzOrder.html#PowerTranzSDK_Responses_PtzOrder_LastCaptureDateTime_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrder.LastCaptureDateTime
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrder.LastCaptureDateTime
   nameWithType: PtzOrder.LastCaptureDateTime
 - uid: PowerTranzSDK.Responses.PtzOrder.LastCreditDateTime
@@ -2330,6 +2569,7 @@ references:
   name: LastCreditDateTime
   href: api/PowerTranzSDK.Responses.PtzOrder.html#PowerTranzSDK_Responses_PtzOrder_LastCreditDateTime_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrder.LastCreditDateTime
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrder.LastCreditDateTime
   nameWithType: PtzOrder.LastCreditDateTime
 - uid: PowerTranzSDK.Responses.PtzOrder.OrderIdentifier
@@ -2342,6 +2582,7 @@ references:
   name: OrderIdentifier
   href: api/PowerTranzSDK.Responses.PtzOrder.html#PowerTranzSDK_Responses_PtzOrder_OrderIdentifier_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrder.OrderIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrder.OrderIdentifier
   nameWithType: PtzOrder.OrderIdentifier
 - uid: PowerTranzSDK.Responses.PtzOrder.OriginalTrxnDateTime
@@ -2354,6 +2595,7 @@ references:
   name: OriginalTrxnDateTime
   href: api/PowerTranzSDK.Responses.PtzOrder.html#PowerTranzSDK_Responses_PtzOrder_OriginalTrxnDateTime_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrder.OriginalTrxnDateTime
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrder.OriginalTrxnDateTime
   nameWithType: PtzOrder.OriginalTrxnDateTime
 - uid: PowerTranzSDK.Responses.PtzOrder.OriginalTrxnIdentifier
@@ -2366,6 +2608,7 @@ references:
   name: OriginalTrxnIdentifier
   href: api/PowerTranzSDK.Responses.PtzOrder.html#PowerTranzSDK_Responses_PtzOrder_OriginalTrxnIdentifier_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrder.OriginalTrxnIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrder.OriginalTrxnIdentifier
   nameWithType: PtzOrder.OriginalTrxnIdentifier
 - uid: PowerTranzSDK.Responses.PtzOrder.SettledAmount
@@ -2378,6 +2621,7 @@ references:
   name: SettledAmount
   href: api/PowerTranzSDK.Responses.PtzOrder.html#PowerTranzSDK_Responses_PtzOrder_SettledAmount_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrder.SettledAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrder.SettledAmount
   nameWithType: PtzOrder.SettledAmount
 - uid: PowerTranzSDK.Responses.PtzOrder.TotalCaptureAmount
@@ -2390,6 +2634,7 @@ references:
   name: TotalCaptureAmount
   href: api/PowerTranzSDK.Responses.PtzOrder.html#PowerTranzSDK_Responses_PtzOrder_TotalCaptureAmount_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrder.TotalCaptureAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrder.TotalCaptureAmount
   nameWithType: PtzOrder.TotalCaptureAmount
 - uid: PowerTranzSDK.Responses.PtzOrder.TotalCreditAmount
@@ -2402,6 +2647,7 @@ references:
   name: TotalCreditAmount
   href: api/PowerTranzSDK.Responses.PtzOrder.html#PowerTranzSDK_Responses_PtzOrder_TotalCreditAmount_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrder.TotalCreditAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrder.TotalCreditAmount
   nameWithType: PtzOrder.TotalCreditAmount
 - uid: PowerTranzSDK.Responses.PtzOrder.VoidDateTime
@@ -2414,6 +2660,7 @@ references:
   name: VoidDateTime
   href: api/PowerTranzSDK.Responses.PtzOrder.html#PowerTranzSDK_Responses_PtzOrder_VoidDateTime_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrder.VoidDateTime
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrder.VoidDateTime
   nameWithType: PtzOrder.VoidDateTime
 - uid: PowerTranzSDK.Responses.PtzOrderResponse
@@ -2432,6 +2679,7 @@ references:
   name: CaptureCount
   href: api/PowerTranzSDK.Responses.PtzOrderResponse.html#PowerTranzSDK_Responses_PtzOrderResponse_CaptureCount_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderResponse.CaptureCount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderResponse.CaptureCount
   nameWithType: PtzOrderResponse.CaptureCount
 - uid: PowerTranzSDK.Responses.PtzOrderResponse.CreditCount
@@ -2444,6 +2692,7 @@ references:
   name: CreditCount
   href: api/PowerTranzSDK.Responses.PtzOrderResponse.html#PowerTranzSDK_Responses_PtzOrderResponse_CreditCount_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderResponse.CreditCount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderResponse.CreditCount
   nameWithType: PtzOrderResponse.CreditCount
 - uid: PowerTranzSDK.Responses.PtzOrderResponse.CurrencyCode
@@ -2456,6 +2705,7 @@ references:
   name: CurrencyCode
   href: api/PowerTranzSDK.Responses.PtzOrderResponse.html#PowerTranzSDK_Responses_PtzOrderResponse_CurrencyCode_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderResponse.CurrencyCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderResponse.CurrencyCode
   nameWithType: PtzOrderResponse.CurrencyCode
 - uid: PowerTranzSDK.Responses.PtzOrderResponse.LastCaptureDateTime
@@ -2468,6 +2718,7 @@ references:
   name: LastCaptureDateTime
   href: api/PowerTranzSDK.Responses.PtzOrderResponse.html#PowerTranzSDK_Responses_PtzOrderResponse_LastCaptureDateTime_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderResponse.LastCaptureDateTime
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderResponse.LastCaptureDateTime
   nameWithType: PtzOrderResponse.LastCaptureDateTime
 - uid: PowerTranzSDK.Responses.PtzOrderResponse.LastCreditDateTime
@@ -2480,6 +2731,7 @@ references:
   name: LastCreditDateTime
   href: api/PowerTranzSDK.Responses.PtzOrderResponse.html#PowerTranzSDK_Responses_PtzOrderResponse_LastCreditDateTime_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderResponse.LastCreditDateTime
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderResponse.LastCreditDateTime
   nameWithType: PtzOrderResponse.LastCreditDateTime
 - uid: PowerTranzSDK.Responses.PtzOrderResponse.OrderIdentifier
@@ -2492,6 +2744,7 @@ references:
   name: OrderIdentifier
   href: api/PowerTranzSDK.Responses.PtzOrderResponse.html#PowerTranzSDK_Responses_PtzOrderResponse_OrderIdentifier_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderResponse.OrderIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderResponse.OrderIdentifier
   nameWithType: PtzOrderResponse.OrderIdentifier
 - uid: PowerTranzSDK.Responses.PtzOrderResponse.OriginalTrxnDateTime
@@ -2504,6 +2757,7 @@ references:
   name: OriginalTrxnDateTime
   href: api/PowerTranzSDK.Responses.PtzOrderResponse.html#PowerTranzSDK_Responses_PtzOrderResponse_OriginalTrxnDateTime_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderResponse.OriginalTrxnDateTime
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderResponse.OriginalTrxnDateTime
   nameWithType: PtzOrderResponse.OriginalTrxnDateTime
 - uid: PowerTranzSDK.Responses.PtzOrderResponse.OriginalTrxnIdentifier
@@ -2516,6 +2770,7 @@ references:
   name: OriginalTrxnIdentifier
   href: api/PowerTranzSDK.Responses.PtzOrderResponse.html#PowerTranzSDK_Responses_PtzOrderResponse_OriginalTrxnIdentifier_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderResponse.OriginalTrxnIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderResponse.OriginalTrxnIdentifier
   nameWithType: PtzOrderResponse.OriginalTrxnIdentifier
 - uid: PowerTranzSDK.Responses.PtzOrderResponse.SettledAmount
@@ -2528,6 +2783,7 @@ references:
   name: SettledAmount
   href: api/PowerTranzSDK.Responses.PtzOrderResponse.html#PowerTranzSDK_Responses_PtzOrderResponse_SettledAmount_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderResponse.SettledAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderResponse.SettledAmount
   nameWithType: PtzOrderResponse.SettledAmount
 - uid: PowerTranzSDK.Responses.PtzOrderResponse.TotalCaptureAmount
@@ -2540,6 +2796,7 @@ references:
   name: TotalCaptureAmount
   href: api/PowerTranzSDK.Responses.PtzOrderResponse.html#PowerTranzSDK_Responses_PtzOrderResponse_TotalCaptureAmount_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderResponse.TotalCaptureAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderResponse.TotalCaptureAmount
   nameWithType: PtzOrderResponse.TotalCaptureAmount
 - uid: PowerTranzSDK.Responses.PtzOrderResponse.TotalCreditAmount
@@ -2552,6 +2809,7 @@ references:
   name: TotalCreditAmount
   href: api/PowerTranzSDK.Responses.PtzOrderResponse.html#PowerTranzSDK_Responses_PtzOrderResponse_TotalCreditAmount_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderResponse.TotalCreditAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderResponse.TotalCreditAmount
   nameWithType: PtzOrderResponse.TotalCreditAmount
 - uid: PowerTranzSDK.Responses.PtzOrderResponse.Transactions
@@ -2564,6 +2822,7 @@ references:
   name: Transactions
   href: api/PowerTranzSDK.Responses.PtzOrderResponse.html#PowerTranzSDK_Responses_PtzOrderResponse_Transactions_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderResponse.Transactions
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderResponse.Transactions
   nameWithType: PtzOrderResponse.Transactions
 - uid: PowerTranzSDK.Responses.PtzOrderResponse.VoidDateTime
@@ -2576,6 +2835,7 @@ references:
   name: VoidDateTime
   href: api/PowerTranzSDK.Responses.PtzOrderResponse.html#PowerTranzSDK_Responses_PtzOrderResponse_VoidDateTime_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderResponse.VoidDateTime
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderResponse.VoidDateTime
   nameWithType: PtzOrderResponse.VoidDateTime
 - uid: PowerTranzSDK.Responses.PtzOrderTransaction
@@ -2594,6 +2854,7 @@ references:
   name: Approved
   href: api/PowerTranzSDK.Responses.PtzOrderTransaction.html#PowerTranzSDK_Responses_PtzOrderTransaction_Approved_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderTransaction.Approved
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderTransaction.Approved
   nameWithType: PtzOrderTransaction.Approved
 - uid: PowerTranzSDK.Responses.PtzOrderTransaction.AuthorizationCode
@@ -2606,6 +2867,7 @@ references:
   name: AuthorizationCode
   href: api/PowerTranzSDK.Responses.PtzOrderTransaction.html#PowerTranzSDK_Responses_PtzOrderTransaction_AuthorizationCode_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderTransaction.AuthorizationCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderTransaction.AuthorizationCode
   nameWithType: PtzOrderTransaction.AuthorizationCode
 - uid: PowerTranzSDK.Responses.PtzOrderTransaction.AvsResponseCode
@@ -2618,6 +2880,7 @@ references:
   name: AvsResponseCode
   href: api/PowerTranzSDK.Responses.PtzOrderTransaction.html#PowerTranzSDK_Responses_PtzOrderTransaction_AvsResponseCode_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderTransaction.AvsResponseCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderTransaction.AvsResponseCode
   nameWithType: PtzOrderTransaction.AvsResponseCode
 - uid: PowerTranzSDK.Responses.PtzOrderTransaction.CustomData
@@ -2630,6 +2893,7 @@ references:
   name: CustomData
   href: api/PowerTranzSDK.Responses.PtzOrderTransaction.html#PowerTranzSDK_Responses_PtzOrderTransaction_CustomData_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderTransaction.CustomData
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderTransaction.CustomData
   nameWithType: PtzOrderTransaction.CustomData
 - uid: PowerTranzSDK.Responses.PtzOrderTransaction.CvvResponseCode
@@ -2642,6 +2906,7 @@ references:
   name: CvvResponseCode
   href: api/PowerTranzSDK.Responses.PtzOrderTransaction.html#PowerTranzSDK_Responses_PtzOrderTransaction_CvvResponseCode_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderTransaction.CvvResponseCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderTransaction.CvvResponseCode
   nameWithType: PtzOrderTransaction.CvvResponseCode
 - uid: PowerTranzSDK.Responses.PtzOrderTransaction.ExternalBatchIdentifier
@@ -2654,6 +2919,7 @@ references:
   name: ExternalBatchIdentifier
   href: api/PowerTranzSDK.Responses.PtzOrderTransaction.html#PowerTranzSDK_Responses_PtzOrderTransaction_ExternalBatchIdentifier_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderTransaction.ExternalBatchIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderTransaction.ExternalBatchIdentifier
   nameWithType: PtzOrderTransaction.ExternalBatchIdentifier
 - uid: PowerTranzSDK.Responses.PtzOrderTransaction.ExternalGroupIdentifier
@@ -2666,6 +2932,7 @@ references:
   name: ExternalGroupIdentifier
   href: api/PowerTranzSDK.Responses.PtzOrderTransaction.html#PowerTranzSDK_Responses_PtzOrderTransaction_ExternalGroupIdentifier_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderTransaction.ExternalGroupIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderTransaction.ExternalGroupIdentifier
   nameWithType: PtzOrderTransaction.ExternalGroupIdentifier
 - uid: PowerTranzSDK.Responses.PtzOrderTransaction.ExternalIdentifier
@@ -2678,6 +2945,7 @@ references:
   name: ExternalIdentifier
   href: api/PowerTranzSDK.Responses.PtzOrderTransaction.html#PowerTranzSDK_Responses_PtzOrderTransaction_ExternalIdentifier_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderTransaction.ExternalIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderTransaction.ExternalIdentifier
   nameWithType: PtzOrderTransaction.ExternalIdentifier
 - uid: PowerTranzSDK.Responses.PtzOrderTransaction.IsoResponseCode
@@ -2690,6 +2958,7 @@ references:
   name: IsoResponseCode
   href: api/PowerTranzSDK.Responses.PtzOrderTransaction.html#PowerTranzSDK_Responses_PtzOrderTransaction_IsoResponseCode_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderTransaction.IsoResponseCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderTransaction.IsoResponseCode
   nameWithType: PtzOrderTransaction.IsoResponseCode
 - uid: PowerTranzSDK.Responses.PtzOrderTransaction.OtherAmount
@@ -2702,6 +2971,7 @@ references:
   name: OtherAmount
   href: api/PowerTranzSDK.Responses.PtzOrderTransaction.html#PowerTranzSDK_Responses_PtzOrderTransaction_OtherAmount_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderTransaction.OtherAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderTransaction.OtherAmount
   nameWithType: PtzOrderTransaction.OtherAmount
 - uid: PowerTranzSDK.Responses.PtzOrderTransaction.TaxAmount
@@ -2714,6 +2984,7 @@ references:
   name: TaxAmount
   href: api/PowerTranzSDK.Responses.PtzOrderTransaction.html#PowerTranzSDK_Responses_PtzOrderTransaction_TaxAmount_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderTransaction.TaxAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderTransaction.TaxAmount
   nameWithType: PtzOrderTransaction.TaxAmount
 - uid: PowerTranzSDK.Responses.PtzOrderTransaction.TipAmount
@@ -2726,6 +2997,7 @@ references:
   name: TipAmount
   href: api/PowerTranzSDK.Responses.PtzOrderTransaction.html#PowerTranzSDK_Responses_PtzOrderTransaction_TipAmount_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderTransaction.TipAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderTransaction.TipAmount
   nameWithType: PtzOrderTransaction.TipAmount
 - uid: PowerTranzSDK.Responses.PtzOrderTransaction.TotalAmount
@@ -2738,6 +3010,7 @@ references:
   name: TotalAmount
   href: api/PowerTranzSDK.Responses.PtzOrderTransaction.html#PowerTranzSDK_Responses_PtzOrderTransaction_TotalAmount_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderTransaction.TotalAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderTransaction.TotalAmount
   nameWithType: PtzOrderTransaction.TotalAmount
 - uid: PowerTranzSDK.Responses.PtzOrderTransaction.TransactionDateTime
@@ -2750,6 +3023,7 @@ references:
   name: TransactionDateTime
   href: api/PowerTranzSDK.Responses.PtzOrderTransaction.html#PowerTranzSDK_Responses_PtzOrderTransaction_TransactionDateTime_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderTransaction.TransactionDateTime
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderTransaction.TransactionDateTime
   nameWithType: PtzOrderTransaction.TransactionDateTime
 - uid: PowerTranzSDK.Responses.PtzOrderTransaction.TransactionIdentifier
@@ -2762,6 +3036,7 @@ references:
   name: TransactionIdentifier
   href: api/PowerTranzSDK.Responses.PtzOrderTransaction.html#PowerTranzSDK_Responses_PtzOrderTransaction_TransactionIdentifier_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderTransaction.TransactionIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderTransaction.TransactionIdentifier
   nameWithType: PtzOrderTransaction.TransactionIdentifier
 - uid: PowerTranzSDK.Responses.PtzOrderTransaction.TransactionType
@@ -2774,6 +3049,7 @@ references:
   name: TransactionType
   href: api/PowerTranzSDK.Responses.PtzOrderTransaction.html#PowerTranzSDK_Responses_PtzOrderTransaction_TransactionType_
   commentId: Overload:PowerTranzSDK.Responses.PtzOrderTransaction.TransactionType
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzOrderTransaction.TransactionType
   nameWithType: PtzOrderTransaction.TransactionType
 - uid: PowerTranzSDK.Responses.PtzPaymentResponse
@@ -2792,6 +3068,7 @@ references:
   name: Approved
   href: api/PowerTranzSDK.Responses.PtzPaymentResponse.html#PowerTranzSDK_Responses_PtzPaymentResponse_Approved_
   commentId: Overload:PowerTranzSDK.Responses.PtzPaymentResponse.Approved
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzPaymentResponse.Approved
   nameWithType: PtzPaymentResponse.Approved
 - uid: PowerTranzSDK.Responses.PtzPaymentResponse.CurrencyCode
@@ -2804,6 +3081,7 @@ references:
   name: CurrencyCode
   href: api/PowerTranzSDK.Responses.PtzPaymentResponse.html#PowerTranzSDK_Responses_PtzPaymentResponse_CurrencyCode_
   commentId: Overload:PowerTranzSDK.Responses.PtzPaymentResponse.CurrencyCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzPaymentResponse.CurrencyCode
   nameWithType: PtzPaymentResponse.CurrencyCode
 - uid: PowerTranzSDK.Responses.PtzPaymentResponse.EncodeEmvResponseCode
@@ -2816,6 +3094,7 @@ references:
   name: EncodeEmvResponseCode
   href: api/PowerTranzSDK.Responses.PtzPaymentResponse.html#PowerTranzSDK_Responses_PtzPaymentResponse_EncodeEmvResponseCode_
   commentId: Overload:PowerTranzSDK.Responses.PtzPaymentResponse.EncodeEmvResponseCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzPaymentResponse.EncodeEmvResponseCode
   nameWithType: PtzPaymentResponse.EncodeEmvResponseCode
 - uid: PowerTranzSDK.Responses.PtzPaymentResponse.ExternalIdentifier
@@ -2828,6 +3107,7 @@ references:
   name: ExternalIdentifier
   href: api/PowerTranzSDK.Responses.PtzPaymentResponse.html#PowerTranzSDK_Responses_PtzPaymentResponse_ExternalIdentifier_
   commentId: Overload:PowerTranzSDK.Responses.PtzPaymentResponse.ExternalIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzPaymentResponse.ExternalIdentifier
   nameWithType: PtzPaymentResponse.ExternalIdentifier
 - uid: PowerTranzSDK.Responses.PtzPaymentResponse.OnlineResponse
@@ -2840,6 +3120,7 @@ references:
   name: OnlineResponse
   href: api/PowerTranzSDK.Responses.PtzPaymentResponse.html#PowerTranzSDK_Responses_PtzPaymentResponse_OnlineResponse_
   commentId: Overload:PowerTranzSDK.Responses.PtzPaymentResponse.OnlineResponse
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzPaymentResponse.OnlineResponse
   nameWithType: PtzPaymentResponse.OnlineResponse
 - uid: PowerTranzSDK.Responses.PtzPaymentResponse.OriginalTrxnIdentifier
@@ -2852,6 +3133,7 @@ references:
   name: OriginalTrxnIdentifier
   href: api/PowerTranzSDK.Responses.PtzPaymentResponse.html#PowerTranzSDK_Responses_PtzPaymentResponse_OriginalTrxnIdentifier_
   commentId: Overload:PowerTranzSDK.Responses.PtzPaymentResponse.OriginalTrxnIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzPaymentResponse.OriginalTrxnIdentifier
   nameWithType: PtzPaymentResponse.OriginalTrxnIdentifier
 - uid: PowerTranzSDK.Responses.PtzPaymentResponse.OtherAmount
@@ -2864,6 +3146,7 @@ references:
   name: OtherAmount
   href: api/PowerTranzSDK.Responses.PtzPaymentResponse.html#PowerTranzSDK_Responses_PtzPaymentResponse_OtherAmount_
   commentId: Overload:PowerTranzSDK.Responses.PtzPaymentResponse.OtherAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzPaymentResponse.OtherAmount
   nameWithType: PtzPaymentResponse.OtherAmount
 - uid: PowerTranzSDK.Responses.PtzPaymentResponse.ReceiptData
@@ -2876,6 +3159,7 @@ references:
   name: ReceiptData
   href: api/PowerTranzSDK.Responses.PtzPaymentResponse.html#PowerTranzSDK_Responses_PtzPaymentResponse_ReceiptData_
   commentId: Overload:PowerTranzSDK.Responses.PtzPaymentResponse.ReceiptData
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzPaymentResponse.ReceiptData
   nameWithType: PtzPaymentResponse.ReceiptData
 - uid: PowerTranzSDK.Responses.PtzPaymentResponse.TerminalResult
@@ -2888,6 +3172,7 @@ references:
   name: TerminalResult
   href: api/PowerTranzSDK.Responses.PtzPaymentResponse.html#PowerTranzSDK_Responses_PtzPaymentResponse_TerminalResult_
   commentId: Overload:PowerTranzSDK.Responses.PtzPaymentResponse.TerminalResult
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzPaymentResponse.TerminalResult
   nameWithType: PtzPaymentResponse.TerminalResult
 - uid: PowerTranzSDK.Responses.PtzPaymentResponse.TipAmount
@@ -2900,6 +3185,7 @@ references:
   name: TipAmount
   href: api/PowerTranzSDK.Responses.PtzPaymentResponse.html#PowerTranzSDK_Responses_PtzPaymentResponse_TipAmount_
   commentId: Overload:PowerTranzSDK.Responses.PtzPaymentResponse.TipAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzPaymentResponse.TipAmount
   nameWithType: PtzPaymentResponse.TipAmount
 - uid: PowerTranzSDK.Responses.PtzPaymentResponse.TotalAmount
@@ -2912,6 +3198,7 @@ references:
   name: TotalAmount
   href: api/PowerTranzSDK.Responses.PtzPaymentResponse.html#PowerTranzSDK_Responses_PtzPaymentResponse_TotalAmount_
   commentId: Overload:PowerTranzSDK.Responses.PtzPaymentResponse.TotalAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzPaymentResponse.TotalAmount
   nameWithType: PtzPaymentResponse.TotalAmount
 - uid: PowerTranzSDK.Responses.PtzPaymentResponse.TransactionIdentifier
@@ -2924,6 +3211,7 @@ references:
   name: TransactionIdentifier
   href: api/PowerTranzSDK.Responses.PtzPaymentResponse.html#PowerTranzSDK_Responses_PtzPaymentResponse_TransactionIdentifier_
   commentId: Overload:PowerTranzSDK.Responses.PtzPaymentResponse.TransactionIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzPaymentResponse.TransactionIdentifier
   nameWithType: PtzPaymentResponse.TransactionIdentifier
 - uid: PowerTranzSDK.Responses.PtzPaymentResponse.TransactionType
@@ -2936,6 +3224,7 @@ references:
   name: TransactionType
   href: api/PowerTranzSDK.Responses.PtzPaymentResponse.html#PowerTranzSDK_Responses_PtzPaymentResponse_TransactionType_
   commentId: Overload:PowerTranzSDK.Responses.PtzPaymentResponse.TransactionType
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzPaymentResponse.TransactionType
   nameWithType: PtzPaymentResponse.TransactionType
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse
@@ -2954,6 +3243,7 @@ references:
   name: Approved
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_Approved_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.Approved
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.Approved
   nameWithType: PtzTransactionResponse.Approved
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse.AuthorizationCode
@@ -2966,6 +3256,7 @@ references:
   name: AuthorizationCode
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_AuthorizationCode_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.AuthorizationCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.AuthorizationCode
   nameWithType: PtzTransactionResponse.AuthorizationCode
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse.AvsResponseCode
@@ -2978,6 +3269,7 @@ references:
   name: AvsResponseCode
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_AvsResponseCode_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.AvsResponseCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.AvsResponseCode
   nameWithType: PtzTransactionResponse.AvsResponseCode
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse.CurrencyCode
@@ -2990,6 +3282,7 @@ references:
   name: CurrencyCode
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_CurrencyCode_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.CurrencyCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.CurrencyCode
   nameWithType: PtzTransactionResponse.CurrencyCode
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse.CustomData
@@ -3002,6 +3295,7 @@ references:
   name: CustomData
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_CustomData_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.CustomData
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.CustomData
   nameWithType: PtzTransactionResponse.CustomData
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse.CvvResponseCode
@@ -3014,6 +3308,7 @@ references:
   name: CvvResponseCode
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_CvvResponseCode_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.CvvResponseCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.CvvResponseCode
   nameWithType: PtzTransactionResponse.CvvResponseCode
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse.ExternalBatchIdentifier
@@ -3026,6 +3321,7 @@ references:
   name: ExternalBatchIdentifier
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_ExternalBatchIdentifier_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.ExternalBatchIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.ExternalBatchIdentifier
   nameWithType: PtzTransactionResponse.ExternalBatchIdentifier
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse.ExternalGroupIdentifier
@@ -3038,6 +3334,7 @@ references:
   name: ExternalGroupIdentifier
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_ExternalGroupIdentifier_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.ExternalGroupIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.ExternalGroupIdentifier
   nameWithType: PtzTransactionResponse.ExternalGroupIdentifier
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse.ExternalIdentifier
@@ -3050,6 +3347,7 @@ references:
   name: ExternalIdentifier
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_ExternalIdentifier_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.ExternalIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.ExternalIdentifier
   nameWithType: PtzTransactionResponse.ExternalIdentifier
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse.IsoResponseCode
@@ -3062,6 +3360,7 @@ references:
   name: IsoResponseCode
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_IsoResponseCode_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.IsoResponseCode
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.IsoResponseCode
   nameWithType: PtzTransactionResponse.IsoResponseCode
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse.OrderSummary
@@ -3074,6 +3373,7 @@ references:
   name: OrderSummary
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_OrderSummary_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.OrderSummary
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.OrderSummary
   nameWithType: PtzTransactionResponse.OrderSummary
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse.OtherAmount
@@ -3086,6 +3386,7 @@ references:
   name: OtherAmount
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_OtherAmount_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.OtherAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.OtherAmount
   nameWithType: PtzTransactionResponse.OtherAmount
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse.TaxAmount
@@ -3098,6 +3399,7 @@ references:
   name: TaxAmount
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_TaxAmount_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.TaxAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.TaxAmount
   nameWithType: PtzTransactionResponse.TaxAmount
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse.TipAmount
@@ -3110,6 +3412,7 @@ references:
   name: TipAmount
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_TipAmount_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.TipAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.TipAmount
   nameWithType: PtzTransactionResponse.TipAmount
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse.TotalAmount
@@ -3122,6 +3425,7 @@ references:
   name: TotalAmount
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_TotalAmount_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.TotalAmount
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.TotalAmount
   nameWithType: PtzTransactionResponse.TotalAmount
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse.TransactionDateTime
@@ -3134,6 +3438,7 @@ references:
   name: TransactionDateTime
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_TransactionDateTime_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.TransactionDateTime
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.TransactionDateTime
   nameWithType: PtzTransactionResponse.TransactionDateTime
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse.TransactionIdentifier
@@ -3146,6 +3451,7 @@ references:
   name: TransactionIdentifier
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_TransactionIdentifier_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.TransactionIdentifier
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.TransactionIdentifier
   nameWithType: PtzTransactionResponse.TransactionIdentifier
 - uid: PowerTranzSDK.Responses.PtzTransactionResponse.TransactionType
@@ -3158,6 +3464,7 @@ references:
   name: TransactionType
   href: api/PowerTranzSDK.Responses.PtzTransactionResponse.html#PowerTranzSDK_Responses_PtzTransactionResponse_TransactionType_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionResponse.TransactionType
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionResponse.TransactionType
   nameWithType: PtzTransactionResponse.TransactionType
 - uid: PowerTranzSDK.Responses.PtzTransactionsResponse
@@ -3176,6 +3483,7 @@ references:
   name: Transactions
   href: api/PowerTranzSDK.Responses.PtzTransactionsResponse.html#PowerTranzSDK_Responses_PtzTransactionsResponse_Transactions_
   commentId: Overload:PowerTranzSDK.Responses.PtzTransactionsResponse.Transactions
+  isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzTransactionsResponse.Transactions
   nameWithType: PtzTransactionsResponse.Transactions
 - uid: PowerTranzSDK.ReversalReason
@@ -3686,6 +3994,7 @@ references:
   name: AddPath
   href: api/PowerTranzSDK.Utilities.Extensions.html#PowerTranzSDK_Utilities_Extensions_AddPath_
   commentId: Overload:PowerTranzSDK.Utilities.Extensions.AddPath
+  isSpec: "True"
   fullName: PowerTranzSDK.Utilities.Extensions.AddPath
   nameWithType: Extensions.AddPath
 - uid: PowerTranzSDK.Utilities.Extensions.Description(System.Enum)
@@ -3698,6 +4007,7 @@ references:
   name: Description
   href: api/PowerTranzSDK.Utilities.Extensions.html#PowerTranzSDK_Utilities_Extensions_Description_
   commentId: Overload:PowerTranzSDK.Utilities.Extensions.Description
+  isSpec: "True"
   fullName: PowerTranzSDK.Utilities.Extensions.Description
   nameWithType: Extensions.Description
 - uid: PowerTranzSDK.Utilities.Info
@@ -3716,6 +4026,7 @@ references:
   name: GetRevision
   href: api/PowerTranzSDK.Utilities.Info.html#PowerTranzSDK_Utilities_Info_GetRevision_
   commentId: Overload:PowerTranzSDK.Utilities.Info.GetRevision
+  isSpec: "True"
   fullName: PowerTranzSDK.Utilities.Info.GetRevision
   nameWithType: Info.GetRevision
 - uid: PowerTranzSDK.Utilities.Info.GetVersion
@@ -3728,5 +4039,6 @@ references:
   name: GetVersion
   href: api/PowerTranzSDK.Utilities.Info.html#PowerTranzSDK_Utilities_Info_GetVersion_
   commentId: Overload:PowerTranzSDK.Utilities.Info.GetVersion
+  isSpec: "True"
   fullName: PowerTranzSDK.Utilities.Info.GetVersion
   nameWithType: Info.GetVersion

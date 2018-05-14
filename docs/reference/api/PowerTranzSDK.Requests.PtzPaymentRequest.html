@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PtzPaymentRequest
    | PowerTranz SDK 3.0.0 Reference Documentation ">
-    <meta name="generator" content="docfx 2.32.2.0">
+    <meta name="generator" content="docfx 2.35.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -22,7 +22,7 @@
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -402,7 +402,7 @@ payment child class type should be used.</p>
   </span>
   <a id="PowerTranzSDK_Requests_PtzPaymentRequest_OtherAmount_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.OtherAmount*"></a>
   <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_OtherAmount" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.OtherAmount">OtherAmount</h4>
-  <div class="markdown level1 summary"><p>Other Amount that is included in the transaction total</p>
+  <div class="markdown level1 summary"><p>Other Amount that is included in the transaction total. Typically used for cashback.  Where Cashback is enabled and applicable, the amount set by the cardholder at the terminal will take precedence over any prespecified amount in this field (should there be any).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -589,7 +589,7 @@ the SDK will automatically populate this object</p>
   </span>
   <a id="PowerTranzSDK_Requests_PtzPaymentRequest_TipAmount_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TipAmount*"></a>
   <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_TipAmount" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TipAmount">TipAmount</h4>
-  <div class="markdown level1 summary"><p>Tip amount included with the transaction total</p>
+  <div class="markdown level1 summary"><p>Tip amount included with the transaction total. Where inlineTip is enabled, the amount set by the cardholder at the terminal will take precedence over any prespecified amount in this field (should there be any).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -651,7 +651,7 @@ the SDK will automatically populate this object</p>
   </span>
   <a id="PowerTranzSDK_Requests_PtzPaymentRequest_TransactionIdentifier_" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TransactionIdentifier*"></a>
   <h4 id="PowerTranzSDK_Requests_PtzPaymentRequest_TransactionIdentifier" data-uid="PowerTranzSDK.Requests.PtzPaymentRequest.TransactionIdentifier">TransactionIdentifier</h4>
-  <div class="markdown level1 summary"><p>Unique Transaction Identifier used to specify the transaction that should be captured</p>
+  <div class="markdown level1 summary"><p>Unique Transaction Identifier used to specify the transaction that should be captured, canceled (void), or refunded</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
