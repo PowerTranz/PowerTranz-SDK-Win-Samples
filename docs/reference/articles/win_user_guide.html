@@ -350,7 +350,7 @@ terminal issued/distributed.</p>
 The device configured for USB will no longer be usable as a serial device and
 limit its capability to be updated (configuration changes). The following
 illustrates how to implement this.</p>
-<p><em>Programmatically connect the terminal - Wi-Fi</em></p>
+<p><em>Programmatically connect the terminal - USB</em></p>
 <p>You will need to identify the serial port which the device is connected in order
 to connect programmatically as described below.</p>
 <pre><code class="lang-C#">terminal.ConnectTerminalWithInputTypeAsync (CardTerminalInputType.CardTerminalTypeUSB, &quot;COM3&quot; ); 
@@ -485,14 +485,14 @@ information.</p>
     } 
 } 
 </code></pre><h3 id="searching-for-transactions">Searching for Transactions</h3>
-<p>Single Search</p>
+<p><strong>Single Search</strong></p>
 <p>The SDK also provides support for extended PowerTranz gateway functionalities
 such as retrieving details for previously processed transactions. The following
 code snippet illustrates how to search an Auth, Sale, Credit, Void, Capture or
 Refund with it’s corresponding TransactionIdentifier.</p>
 <pre><code class="lang-C#">var request = new PtzTransactionRequest { TransactionIdendifier = &quot;12345678&quot; }; 
 ptzApi.TransactionDetails( request ); 
-</code></pre><p>Group Search</p>
+</code></pre><p><strong>Group Search</strong></p>
 <p>The SDK also provides support for extended PowerTranz gateway functionalities
 such as retrieving details for previously processed transactions. The following
 code snippet illustrates searching all approved transactions within specific
@@ -509,7 +509,7 @@ of returned data when deemed necessary.</p>
     Approved = true
 }
 ptzApi.TransactionSearch( request ); 
-</code></pre><p>Order Search</p>
+</code></pre><p><strong>Order Search</strong></p>
 <p>The SDK also provides support for extended PowerTranz gateway functionalities
 such as retrieving summary and transaction details of an order (Auth, Sale or
 Credit). This query will include any corresponding transactions tied to the
