@@ -39,8 +39,6 @@ namespace PtzSdk.Win.Samples.Console
                 {
                     OrderIdentifier = "123456789",
                     TotalAmount = 10.00m,
-                    TipAmount = 1.56m,
-                    TaxAmount = 2.13m,
                     CurrencyCode = "840",   
                     TerminalId = "01249102",
                     //etc...
