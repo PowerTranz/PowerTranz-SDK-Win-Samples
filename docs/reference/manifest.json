@@ -35,7 +35,7 @@
           "hash": "SY+IpE/pXe02Z8Zslyj8CA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -58,7 +58,7 @@
           "hash": "WbZBkWbaNX45cGo1+AOFWg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -70,7 +70,7 @@
           "hash": "OfKqzEzxV8ppNmh71b8M7g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -82,7 +82,7 @@
           "hash": "3iuRVFM4jIfFEsPHV5msvw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -138,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardEvent.html",
-          "hash": "sY9LMjo2hjbdcLgOhRrDrA=="
+          "hash": "hOj1nyy6VUbxTjOQ2391MQ=="
         }
       },
       "is_incremental": false,
@@ -150,7 +150,19 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardSource.html",
-          "hash": "7TCIMzplzqvN0qkNwV33Zg=="
+          "hash": "7dr+0SsplOvrJuhmUSmw3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardState.html",
+          "hash": "Qgm3/AQePUS70+r9j7uK4A=="
         }
       },
       "is_incremental": false,
@@ -162,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminalBatteryStatus.html",
-          "hash": "UJbG7yMtpAuwuoQXtDBwBA=="
+          "hash": "//yZ3rXCEShVB2aQWL5T5A=="
         }
       },
       "is_incremental": false,
@@ -174,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminalInputType.html",
-          "hash": "miLqNoMrr4kMRtZrk8JRWw=="
+          "hash": "LmlpEGnykY3RnTO6YFuHBQ=="
         }
       },
       "is_incremental": false,
@@ -354,7 +366,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html",
-          "hash": "1PUPhHDir8uFqZa7sBNBFQ=="
+          "hash": "L32ycx+KNXhbLls139cIuw=="
         }
       },
       "is_incremental": false,
@@ -415,6 +427,18 @@
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.html",
           "hash": "UCYlYaRUz2Cny2rbJeMQ2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PowerTranzSDK.CardTrigger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerTranzSDK.CardTrigger.html",
+          "hash": "xXSkT8tzXGERThFetx0tew=="
         }
       },
       "is_incremental": false,
@@ -570,7 +594,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.PtzAuthorizationMode.html",
-          "hash": "eVE1A6SGWtr6YNUsWi9Efg=="
+          "hash": "LawUqv1q7pCMwTVAirMfKw=="
         }
       },
       "is_incremental": false,
@@ -582,7 +606,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.PtzCvmMethod.html",
-          "hash": "+GJ95rr6u+ipnqOOd67ecw=="
+          "hash": "G8DEOzAfFTSV4fFjbiB1eQ=="
         }
       },
       "is_incremental": false,
@@ -594,7 +618,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.PtzPosEntryMode.html",
-          "hash": "OWQta0anVvzJ/yjUoADsTA=="
+          "hash": "8OmDiSCo5dgvxb4X7q/LZw=="
         }
       },
       "is_incremental": false,
@@ -810,7 +834,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.ReversalReason.html",
-          "hash": "Q/n36WyNPx4rv/rj3WT6mA=="
+          "hash": "pC6g10DUETNxfbtqh7Ws1w=="
         }
       },
       "is_incremental": false,
@@ -834,7 +858,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.TerminalState.html",
-          "hash": "rWp0egtHRnCsZSyfK8HB3w=="
+          "hash": "OOW3l0/w0hwaTc922jfjzQ=="
         }
       },
       "is_incremental": false,
@@ -846,7 +870,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.TransactionResult.html",
-          "hash": "sA3aIIPSwvBYKQqc1133Jw=="
+          "hash": "LGZU5oh3oYRy96jHjReKVQ=="
         }
       },
       "is_incremental": false,
@@ -858,7 +882,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.TransactionType.html",
-          "hash": "iBjLEyeu34Gv6xdAda7blA=="
+          "hash": "b8chvIGnPSO13icVvMst4w=="
         }
       },
       "is_incremental": false,
@@ -918,7 +942,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.html",
-          "hash": "UKhLp+aNQiMT/8bDvnFxYA=="
+          "hash": "iEAUKVZviJ2pIf7WAqR4aw=="
         }
       },
       "is_incremental": false,
@@ -930,7 +954,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ipQ/VDU3LueRdHezyHWI3g=="
+          "hash": "6Y5fcMAnpiZdavuA1XXy6w=="
         }
       },
       "is_incremental": false,
@@ -952,8 +976,7 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
+        "can_incremental": true,
         "incrementalPhase": "build"
       },
       "processors": {
@@ -963,11 +986,11 @@
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build"
         },
         "TocDocumentProcessor": {
@@ -979,8 +1002,8 @@
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing"
       },
       "processors": {}

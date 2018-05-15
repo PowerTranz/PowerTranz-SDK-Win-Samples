@@ -73,6 +73,42 @@ references:
   commentId: F:PowerTranzSDK.CardSource.CardSourceNotSet
   fullName: PowerTranzSDK.CardSource.CardSourceNotSet
   nameWithType: CardSource.CardSourceNotSet
+- uid: PowerTranzSDK.CardState
+  name: CardState
+  href: api/PowerTranzSDK.CardState.html
+  commentId: T:PowerTranzSDK.CardState
+  fullName: PowerTranzSDK.CardState
+  nameWithType: CardState
+- uid: PowerTranzSDK.CardState.IccSwiped
+  name: IccSwiped
+  href: api/PowerTranzSDK.CardState.html#PowerTranzSDK_CardState_IccSwiped
+  commentId: F:PowerTranzSDK.CardState.IccSwiped
+  fullName: PowerTranzSDK.CardState.IccSwiped
+  nameWithType: CardState.IccSwiped
+- uid: PowerTranzSDK.CardState.Inserted
+  name: Inserted
+  href: api/PowerTranzSDK.CardState.html#PowerTranzSDK_CardState_Inserted
+  commentId: F:PowerTranzSDK.CardState.Inserted
+  fullName: PowerTranzSDK.CardState.Inserted
+  nameWithType: CardState.Inserted
+- uid: PowerTranzSDK.CardState.NoCard
+  name: NoCard
+  href: api/PowerTranzSDK.CardState.html#PowerTranzSDK_CardState_NoCard
+  commentId: F:PowerTranzSDK.CardState.NoCard
+  fullName: PowerTranzSDK.CardState.NoCard
+  nameWithType: CardState.NoCard
+- uid: PowerTranzSDK.CardState.NonIccInserted
+  name: NonIccInserted
+  href: api/PowerTranzSDK.CardState.html#PowerTranzSDK_CardState_NonIccInserted
+  commentId: F:PowerTranzSDK.CardState.NonIccInserted
+  fullName: PowerTranzSDK.CardState.NonIccInserted
+  nameWithType: CardState.NonIccInserted
+- uid: PowerTranzSDK.CardState.Swiped
+  name: Swiped
+  href: api/PowerTranzSDK.CardState.html#PowerTranzSDK_CardState_Swiped
+  commentId: F:PowerTranzSDK.CardState.Swiped
+  fullName: PowerTranzSDK.CardState.Swiped
+  nameWithType: CardState.Swiped
 - uid: PowerTranzSDK.CardTerminalBatteryStatus
   name: CardTerminalBatteryStatus
   href: api/PowerTranzSDK.CardTerminalBatteryStatus.html
@@ -710,6 +746,42 @@ references:
   commentId: T:PowerTranzSDK.CardTerminals.Miura.WillSendRequest
   fullName: PowerTranzSDK.CardTerminals.Miura.WillSendRequest
   nameWithType: WillSendRequest
+- uid: PowerTranzSDK.CardTrigger
+  name: CardTrigger
+  href: api/PowerTranzSDK.CardTrigger.html
+  commentId: T:PowerTranzSDK.CardTrigger
+  fullName: PowerTranzSDK.CardTrigger
+  nameWithType: CardTrigger
+- uid: PowerTranzSDK.CardTrigger.IccSwiped
+  name: IccSwiped
+  href: api/PowerTranzSDK.CardTrigger.html#PowerTranzSDK_CardTrigger_IccSwiped
+  commentId: F:PowerTranzSDK.CardTrigger.IccSwiped
+  fullName: PowerTranzSDK.CardTrigger.IccSwiped
+  nameWithType: CardTrigger.IccSwiped
+- uid: PowerTranzSDK.CardTrigger.Inserted
+  name: Inserted
+  href: api/PowerTranzSDK.CardTrigger.html#PowerTranzSDK_CardTrigger_Inserted
+  commentId: F:PowerTranzSDK.CardTrigger.Inserted
+  fullName: PowerTranzSDK.CardTrigger.Inserted
+  nameWithType: CardTrigger.Inserted
+- uid: PowerTranzSDK.CardTrigger.NonIccInserted
+  name: NonIccInserted
+  href: api/PowerTranzSDK.CardTrigger.html#PowerTranzSDK_CardTrigger_NonIccInserted
+  commentId: F:PowerTranzSDK.CardTrigger.NonIccInserted
+  fullName: PowerTranzSDK.CardTrigger.NonIccInserted
+  nameWithType: CardTrigger.NonIccInserted
+- uid: PowerTranzSDK.CardTrigger.Removed
+  name: Removed
+  href: api/PowerTranzSDK.CardTrigger.html#PowerTranzSDK_CardTrigger_Removed
+  commentId: F:PowerTranzSDK.CardTrigger.Removed
+  fullName: PowerTranzSDK.CardTrigger.Removed
+  nameWithType: CardTrigger.Removed
+- uid: PowerTranzSDK.CardTrigger.Swiped
+  name: Swiped
+  href: api/PowerTranzSDK.CardTrigger.html#PowerTranzSDK_CardTrigger_Swiped
+  commentId: F:PowerTranzSDK.CardTrigger.Swiped
+  fullName: PowerTranzSDK.CardTrigger.Swiped
+  nameWithType: CardTrigger.Swiped
 - uid: PowerTranzSDK.DataModel
   name: PowerTranzSDK.DataModel
   href: api/PowerTranzSDK.DataModel.html
