@@ -97,6 +97,19 @@
 <h3 id="other-new-events">Other New Events</h3>
 <p>The exact battery percentage is now provided in the <a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.OnBatteryPercentage.html">OnBatteryPercentage</a> event.</p>
 <p>The <a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.CardStateChanged.html">CardStateChanged</a> indicates a change in the card state.  Note that this is very similar to the DidReceiveCardEvent event and it is not normally recommended that both be subscribed to.</p>
+<h3 id="events-removed-from-previous-version">Events Removed from Previous Version</h3>
+<p>With the redesign of the SDK, some events have removed as they no longer fit within the new model.  The delegates within this SDK version have been adapted to account for the removal of the following:  </p>
+<p>::- DeviceTextCompletion
+::- DidFailWithError
+::- DidFinishTransactionWithResponse
+::- DidReturnAmountConfirmation
+::- DidRequestAccountTypeSelection
+::- DidRequestSelectEMVApplication
+::- SelectDevice
+::- TerminalDidRequestFinalConfirmation
+::- TerminalDidRequestTransactionAmount
+::- TerminalPaymentFailed
+::- WillConnectTerminal</p>
 </article>
           </div>
           
