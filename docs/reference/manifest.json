@@ -35,7 +35,7 @@
           "hash": "SY+IpE/pXe02Z8Zslyj8CA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -58,7 +58,7 @@
           "hash": "WbZBkWbaNX45cGo1+AOFWg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -70,7 +70,7 @@
           "hash": "OfKqzEzxV8ppNmh71b8M7g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -82,7 +82,7 @@
           "hash": "3iuRVFM4jIfFEsPHV5msvw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -198,19 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.CardStateChanged.html",
-          "hash": "S8v0Ad0L1TLBbcZeASnp9A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/PowerTranzSDK.CardTerminals.Miura.DeviceTextCompletion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DeviceTextCompletion.html",
-          "hash": "3nZS3LAQ7AfaDGNYalY7Pg=="
+          "hash": "8xg/UaLOaYm1V/fVuJCqiQ=="
         }
       },
       "is_incremental": false,
@@ -222,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidConnectTerminal.html",
-          "hash": "6VT7PqP5u/r/Si2iwFcjxQ=="
+          "hash": "12V8tn+XHkf0ECbT11TtOw=="
         }
       },
       "is_incremental": false,
@@ -234,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidDisconnectTerminal.html",
-          "hash": "nvA55qHiwHjC6WwJK9JCBg=="
+          "hash": "0Clin3FsMtVKsP4t/POsFw=="
         }
       },
       "is_incremental": false,
@@ -246,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidFail.html",
-          "hash": "BbKpq8lqMxbJXtSmtskDZQ=="
+          "hash": "wCrXp4i7IpFoD5LgZQAGCQ=="
         }
       },
       "is_incremental": false,
@@ -258,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidFailToConnectTerminal.html",
-          "hash": "7W0zlmMPAufqZRpASEHkkw=="
+          "hash": "ThY64RuBxOMDnn4jPX18Yg=="
         }
       },
       "is_incremental": false,
@@ -270,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidFailWithReversal.html",
-          "hash": "dvcVmzs59Q3y/xchRmrpHA=="
+          "hash": "1wytCkTwHlFZpP3upPXKVw=="
         }
       },
       "is_incremental": false,
@@ -282,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidFinish.html",
-          "hash": "IEYAzfoc27HioRQlBkNhIA=="
+          "hash": "iqGQe2lwCxYYhvnPBKprdg=="
         }
       },
       "is_incremental": false,
@@ -294,7 +282,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidFinishWithReversal.html",
-          "hash": "mmW0HfcNFZh4wKcJdfH9VA=="
+          "hash": "lB1rItkjCNRL43bbdAMezg=="
         }
       },
       "is_incremental": false,
@@ -306,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidReceiveCardEvent.html",
-          "hash": "xdL0rIvWKQlfLs3d3Bo69Q=="
+          "hash": "1E8jn1Ur59yEPzfDF+99OQ=="
         }
       },
       "is_incremental": false,
@@ -318,7 +306,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidReceiveResponse.html",
-          "hash": "yHKfmdvqZZqMV1skgW5VLA=="
+          "hash": "pDJeRc3bK/usp2KsL/NXPg=="
         }
       },
       "is_incremental": false,
@@ -330,7 +318,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.DidRequestDevicePromptText.html",
-          "hash": "6yv0SlYWhBZOn07EvaYOsg=="
+          "hash": "fqWP2lH0kRZJKqHipIC7Zw=="
         }
       },
       "is_incremental": false,
@@ -342,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.OnBatteryLow.html",
-          "hash": "7mBmI0oQ15vpIIw+h1XzXw=="
+          "hash": "6lrFMTty9AH5l524Nc4bQw=="
         }
       },
       "is_incremental": false,
@@ -354,7 +342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.OnBatteryPercentage.html",
-          "hash": "ymgspNcWSNy3RnUNmE+WPQ=="
+          "hash": "QtEo0ECneCWeLyEp6M5GYg=="
         }
       },
       "is_incremental": false,
@@ -378,7 +366,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.PromptCanceled.html",
-          "hash": "76itdZ3qrUnD9KPgWgh81Q=="
+          "hash": "n1MoP+N4IdoNm8V5WbUrQQ=="
         }
       },
       "is_incremental": false,
@@ -390,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.SdkStateChanged.html",
-          "hash": "TWiDeB8+qgRH2h8ExWkxAw=="
+          "hash": "TmdhjsUZ5EXnJcn+Kd4fVQ=="
         }
       },
       "is_incremental": false,
@@ -402,7 +390,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.TerminalDidReceiveKeypadInput.html",
-          "hash": "EFTEZR6Qa4UBvkBvdT5xRw=="
+          "hash": "lgQG2B+5vsWGLBZWClh9Cw=="
         }
       },
       "is_incremental": false,
@@ -414,7 +402,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.WillSendRequest.html",
-          "hash": "TgcsvoEoux1+Vu4QD/tvqg=="
+          "hash": "DrXd+BKttjrfYJr1v5eNEA=="
         }
       },
       "is_incremental": false,
@@ -426,7 +414,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.CardTerminals.Miura.html",
-          "hash": "UCYlYaRUz2Cny2rbJeMQ2w=="
+          "hash": "am2hZ0YJb7fOVifPTNcTew=="
         }
       },
       "is_incremental": false,
@@ -954,7 +942,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "6Y5fcMAnpiZdavuA1XXy6w=="
+          "hash": "ygjwpR3XlLWIzHvctpQbvw=="
         }
       },
       "is_incremental": false,
@@ -976,7 +964,8 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
         "incrementalPhase": "build"
       },
       "processors": {
@@ -985,12 +974,12 @@
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "TocDocumentProcessor": {
@@ -1002,8 +991,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
         "incrementalPhase": "postProcessing"
       },
       "processors": {}

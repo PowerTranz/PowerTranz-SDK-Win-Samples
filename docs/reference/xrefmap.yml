@@ -169,12 +169,6 @@ references:
   commentId: T:PowerTranzSDK.CardTerminals.Miura.CardStateChanged
   fullName: PowerTranzSDK.CardTerminals.Miura.CardStateChanged
   nameWithType: CardStateChanged
-- uid: PowerTranzSDK.CardTerminals.Miura.DeviceTextCompletion
-  name: DeviceTextCompletion
-  href: api/PowerTranzSDK.CardTerminals.Miura.DeviceTextCompletion.html
-  commentId: T:PowerTranzSDK.CardTerminals.Miura.DeviceTextCompletion
-  fullName: PowerTranzSDK.CardTerminals.Miura.DeviceTextCompletion
-  nameWithType: DeviceTextCompletion
 - uid: PowerTranzSDK.CardTerminals.Miura.DidConnectTerminal
   name: DidConnectTerminal
   href: api/PowerTranzSDK.CardTerminals.Miura.DidConnectTerminal.html
