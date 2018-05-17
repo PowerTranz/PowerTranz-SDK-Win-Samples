@@ -71,10 +71,9 @@
 <p><img src="user_guide_logo.png" alt=""></p>
 <h1 id="software-development-kit-sdk">Software Development Kit (SDK)</h1>
 <h2 id="user-guide---windows">User Guide - Windows</h2>
-<h2 id="driving-payment-innovation">Driving Payment Innovation</h2>
 <p><strong>Version: 1.0.4 (in progress)</strong></p>
 <p><strong>May 11, 2018</strong></p>
-<p>Document Control</p>
+<h2 id="document-control">Document Control</h2>
 <p>Document version numbering is represented by major and minor revisions of this
 document. The number to the left of the period describes the number of major
 reviews (including both scheduled and unscheduled) from the date of original
@@ -131,7 +130,7 @@ matter is generally known to, and are available for use by the public. The
 recipient also agrees not to duplicate or distribute or permit others to
 duplicate or distribute any material contained herein without PTZ’s express
 written consent.</em></p>
-<h2 id="1--introduction">1.  Introduction</h2>
+<h2 id="introduction">Introduction</h2>
 <p>PowerTranz SDK is a complete solution for mobile payment acceptance. It provides
 card present (EMV compliant and contactless capable) and modification types of
 transactions as well (Void, Refund and Capture). It effectively abstracts all
@@ -139,12 +138,12 @@ the payment related complexity allowing developers and integrators to focus on
 their distinctive business logic and added value.</p>
 <p>This document is designed to guide system development and application design
 from early stages.</p>
-<h3 id="11-document-structure">1.1 Document Structure</h3>
+<h3 id="document-structure">Document Structure</h3>
 <p>This document presents an initial overview of the logical architecture
 highlighting the SDK and the related components.</p>
 <p>It also presents the typical operation flows and details the SDK interface and
 data dictionary.</p>
-<h3 id="12-terms-and-concepts">1.2 Terms and Concepts</h3>
+<h3 id="terms-and-concepts">Terms and Concepts</h3>
 <hr>
 <p>The following table describes the terms and acronyms used throughout this
 document.</p>
@@ -189,12 +188,12 @@ document.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="13-support-resources">1.3 Support Resources</h3>
+<h3 id="support-resources">Support Resources</h3>
 <p>Additional support regarding the SDK usage is available at the PowerTranz portal
 or by contacting a PowerTranz support representative.</p>
-<h2 id="2--powertranz-sdk-artifacts-overview">2.  PowerTranz SDK Artifacts Overview</h2>
+<h2 id="powertranz-sdk-artifacts-overview">PowerTranz SDK Artifacts Overview</h2>
 <p>The following sections describe the contents of the Windows SDK release package.</p>
-<h3 id="21-documentation">2.1 Documentation</h3>
+<h3 id="documentation">Documentation</h3>
 <p>The following documents are provided with the SDK and are referenced across this
 user guide:</p>
 <p><strong>PowerTranz SDK – Functional Specification</strong></p>
@@ -206,18 +205,18 @@ SDK.</p>
 <p>The HTML documentation automatically generated based on the SDK software. It
 provides a reference for developers describing the exact syntax of methods,
 event handlers and interface objects.</p>
-<h3 id="22-sdk-libraries">2.2 SDK Libraries</h3>
+<h3 id="sdk-libraries">SDK Libraries</h3>
 <p>The SDK libraries are provided in DLL format to be used in .NET projects. The
 interface for these libraries conforms to the companion technical documentation.</p>
-<h3 id="23-sample-project">2.3 Sample Project</h3>
+<h3 id="sample-project">Sample Project</h3>
 <p>The SDK release includes a sample project to illustrate the SDK integration in a
 simple application. Some of the code examples in this user guide are similar to
 the code found in the sample application project but presented in a simplified
 way.</p>
-<h2 id="3--getting-started">3.  Getting Started</h2>
+<h2 id="getting-started">Getting Started</h2>
 <p>The following sections describe the step-by-step procedures on how to create a
 project for a simple Windows application that includes the SDK.</p>
-<h3 id="31-setting-up-the-application-project">3.1 Setting up the Application Project</h3>
+<h3 id="setting-up-the-application-project">Setting up the Application Project</h3>
 <p>The initial tasks to get the Windows SDK integrated are those necessary to
 create a Windows .NET project referencing the SDK libraries and including the
 required header files where necessary. The libraries are in the form of DLLs,
@@ -228,7 +227,7 @@ and the following 2 must be referenced from the Visual Studio project:</p>
 <li><p>PowerTranzSDK.dll</p>
 </li>
 </ul>
-<h3 id="32-creating-the-application">3.2 Creating the Application</h3>
+<h3 id="creating-the-application">Creating the Application</h3>
 <p>The following sections dive into the details of the Application design and how
 it makes use of the SDK functionality. The SDK requires some initial
 configuration to adapt it to the target project. The application using the SDK
