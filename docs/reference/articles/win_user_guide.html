@@ -95,17 +95,17 @@ minor reviews or amendments from the time of issue, or the last major review.</p
 </tr>
 <tr>
 <td>1.0.1</td>
-<td>Updated 5.3.4 – Added extra notes to WiFi Connectivity; Updated 5.3.5 &amp; 5.4.6 – Parameter OrderID to OrderIdentifier</td>
+<td>Added extra notes to WiFi Connectivity; Parameter OrderID to OrderIdentifier</td>
 <td>RMailhot</td>
 </tr>
 <tr>
 <td>1.0.2</td>
-<td>Updated branding; Updated 5.4.8 to enhance verbiage and add Orders and Single Searches; Updated 5.3.1 to include connectivity for Wi-Fi and USB</td>
+<td>Updated branding; Added Orders and Single Searches; Updated to include connectivity for Wi-Fi and USB</td>
 <td>RMailhot</td>
 </tr>
 <tr>
 <td>1.0.3</td>
-<td>Added 3.4.2 Clearing text to avoid burn-in</td>
+<td>Added Clearing text to avoid burn-in</td>
 <td>RMailhot</td>
 </tr>
 <tr>
@@ -118,18 +118,12 @@ minor reviews or amendments from the time of issue, or the last major review.</p
 <p><strong>Copyright &amp; Trademark © 2017 PowerTranz</strong>. All rights reserved. No part of the
 contents of this book may be transmitted or reproduced in any form or by any
 means without the written permission of PowerTranz.</p>
-<p><em>This document contains proprietary and confidential information. All data
+<p><em>This artivle contains proprietary information. All data
 submitted provided in reliance upon its consent not to use or disclose any
 information contained herein except in the context of its business dealings with
 PowerTranz (&quot;PTZ&quot;). The recipient of this document agrees to inform present and
 future employees, contractors, etc. of recipient of the proposal who view or
 have access to its content of its confidential nature.</em></p>
-<p><em>The recipient agrees to instruct each employee that they must not disclose any
-information concerning this document to others except to the extent that such
-matter is generally known to, and are available for use by the public. The
-recipient also agrees not to duplicate or distribute or permit others to
-duplicate or distribute any material contained herein without PTZ’s express
-written consent.</em></p>
 <h2 id="introduction">Introduction</h2>
 <p>PowerTranz SDK is a complete solution for mobile payment acceptance. It provides
 card present (EMV compliant and contactless capable) and modification types of
@@ -297,7 +291,7 @@ operation.</p>
 connectivity. It is important to note however that you must have the device
 preconfigured to support the connection type required along with the specific
 device hardware (Wi-Fi device versus Bluetooth device).</p>
-<p>Connecting with Bluetooth</p>
+<h4 id="connecting-with-bluetooth">Connecting with Bluetooth</h4>
 <p>In order to connect via Bluetooth you will need to use a preconfigured Miura
 Bluetooth device. The terminal must first be paired to the POS device prior to
 connecting the application.</p>
@@ -315,7 +309,7 @@ be logically connected to the terminal. The following code illustrates how to
 connect the terminal.</p>
 <pre><code class="lang-C#">terminal.ConnectTerminalWithInputTypeAsync (CardTerminalInputType.CardTerminalTypeBluetooth, &quot;Miura567&quot; );
 </code></pre><p><strong>NOTE:</strong> This is only possible if you have &quot;Miura Bluetooth&quot; terminal</p>
-<p>Connecting with Wi-Fi</p>
+<h4 id="connecting-with-wi-fi">Connecting with Wi-Fi</h4>
 <p>In order to connect via Wi-Fi you will need to use a preconfigured Miura Wi-Fi
 device. The device will need to be configured with your Wi-Fi settings. Your
 terminal provider may require the following to initially configure the device
@@ -344,7 +338,7 @@ following code illustrates how to implement this.</p>
 terminal issued/distributed.</p>
 </li>
 </ul>
-<p>Connecting with USB</p>
+<h4 id="connecting-with-usb">Connecting with USB</h4>
 <p>In order to connect via USB you will need to use a preconfigured Miura device.
 The device configured for USB will no longer be usable as a serial device and
 limit its capability to be updated (configuration changes). The following
@@ -353,7 +347,8 @@ illustrates how to implement this.</p>
 <p>You will need to identify the serial port which the device is connected in order
 to connect programmatically as described below.</p>
 <pre><code class="lang-C#">terminal.ConnectTerminalWithInputTypeAsync (CardTerminalInputType.CardTerminalTypeUSB, &quot;COM3&quot; ); 
-</code></pre><h3 id="programmatically-start-the-operation">Programmatically start the operation</h3>
+</code></pre><p><strong>NOTE:</strong>  For Windows implementations using this connection method, should the connection be lost,  it may be necessary for the integrated application to first issue a soft reset or disconnect programmatically prior to reconnecting.  </p>
+<h3 id="programmatically-start-the-operation">Programmatically start the operation</h3>
 <p>The Sale operation is implemented as an authorization with capture. The
 following code illustrates how to trigger the operation as an EMV contact
 transaction.</p>
@@ -414,7 +409,7 @@ this command in certain conditions due to PCI requirements.</p>
 </code></pre><h3 id="clearing-text-on-the-terminal">Clearing Text on the Terminal</h3>
 <p>The PTZMiuraTerminal class supports direct driving of the terminal display. The
 following code snippet illustrates clearing the screen. <strong>It is highly
-recommended to do when device is not in use for a prolonged period to avoid
+recommended to clear the display when device is not in use for a prolonged period to avoid
 screen burn-in.</strong></p>
 <pre><code class="lang-C#">terminal. TerminalClearDisplay(); 
 </code></pre><h3 id="cancelling-the-execution-of-a-transaction">Cancelling the execution of a transaction</h3>
@@ -490,7 +485,7 @@ such as retrieving details for previously processed transactions. The following
 code snippet illustrates how to search an Auth, Sale, Credit, Void, Capture or
 Refund with it’s corresponding TransactionIdentifier.</p>
 <pre><code class="lang-C#">var request = new PtzTransactionRequest { TransactionIdendifier = &quot;12345678&quot; }; 
-ptzApi.TransactionDetails( request ); 
+ptzApi.TransactionDetailsAsync( request ); 
 </code></pre><p><strong>Group Search</strong></p>
 <p>The SDK also provides support for extended PowerTranz gateway functionalities
 such as retrieving details for previously processed transactions. The following
@@ -502,12 +497,14 @@ of returned data when deemed necessary.</p>
 {
     StartDateTime = DateTime.Now.AddDays(-1.0),
     EndDateTime = DateTime.Now,
-    ExternalBatchIdentifier = null,
     TerminalId = &quot;01956879&quot;,
-    OrderIdentifier = null,
+    AuthorizationCode = &quot;A1B2C3&quot;
+    ExternalGroupIdentifier = &quot;Test External Group Id&quot;,
+    ExternalBatchIdentifier = &quot;Test External Batch Id&quot;,
+    OrderIdentifier = &quot;Test Order Id&quot;,
     Approved = true
 }
-ptzApi.TransactionSearch( request ); 
+ptzApi.TransactionSearchAsync( request ); 
 </code></pre><p><strong>Order Search</strong></p>
 <p>The SDK also provides support for extended PowerTranz gateway functionalities
 such as retrieving summary and transaction details of an order (Auth, Sale or
@@ -515,7 +512,7 @@ Credit). This query will include any corresponding transactions tied to the
 order such as a Void, Capture or Refund. The following code snippet illustrates
 how to search an order with a specific TransactionIdentifier.</p>
 <pre><code class="lang-C#">var request = new PtzTransactionRequest() { TransactionIdentifier = &quot;12345678&quot; }; 
-ptzApi.OrderSearch( request );
+ptzApi.OrderSearchAsync( request );
 </code></pre></article>
           </div>
           

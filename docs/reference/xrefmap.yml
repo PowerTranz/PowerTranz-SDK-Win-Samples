@@ -2263,19 +2263,32 @@ references:
   commentId: T:PowerTranzSDK.Requests.PtzPaymentVoid
   fullName: PowerTranzSDK.Requests.PtzPaymentVoid
   nameWithType: PtzPaymentVoid
-- uid: PowerTranzSDK.Requests.PtzPaymentVoid.Type
-  name: Type
-  href: api/PowerTranzSDK.Requests.PtzPaymentVoid.html#PowerTranzSDK_Requests_PtzPaymentVoid_Type
-  commentId: P:PowerTranzSDK.Requests.PtzPaymentVoid.Type
-  fullName: PowerTranzSDK.Requests.PtzPaymentVoid.Type
-  nameWithType: PtzPaymentVoid.Type
-- uid: PowerTranzSDK.Requests.PtzPaymentVoid.Type*
-  name: Type
-  href: api/PowerTranzSDK.Requests.PtzPaymentVoid.html#PowerTranzSDK_Requests_PtzPaymentVoid_Type_
-  commentId: Overload:PowerTranzSDK.Requests.PtzPaymentVoid.Type
+- uid: PowerTranzSDK.Requests.PtzPaymentVoid.AutoReversal
+  name: AutoReversal
+  href: api/PowerTranzSDK.Requests.PtzPaymentVoid.html#PowerTranzSDK_Requests_PtzPaymentVoid_AutoReversal
+  commentId: P:PowerTranzSDK.Requests.PtzPaymentVoid.AutoReversal
+  fullName: PowerTranzSDK.Requests.PtzPaymentVoid.AutoReversal
+  nameWithType: PtzPaymentVoid.AutoReversal
+- uid: PowerTranzSDK.Requests.PtzPaymentVoid.AutoReversal*
+  name: AutoReversal
+  href: api/PowerTranzSDK.Requests.PtzPaymentVoid.html#PowerTranzSDK_Requests_PtzPaymentVoid_AutoReversal_
+  commentId: Overload:PowerTranzSDK.Requests.PtzPaymentVoid.AutoReversal
   isSpec: "True"
-  fullName: PowerTranzSDK.Requests.PtzPaymentVoid.Type
-  nameWithType: PtzPaymentVoid.Type
+  fullName: PowerTranzSDK.Requests.PtzPaymentVoid.AutoReversal
+  nameWithType: PtzPaymentVoid.AutoReversal
+- uid: PowerTranzSDK.Requests.PtzPaymentVoid.CardPresent
+  name: CardPresent
+  href: api/PowerTranzSDK.Requests.PtzPaymentVoid.html#PowerTranzSDK_Requests_PtzPaymentVoid_CardPresent
+  commentId: P:PowerTranzSDK.Requests.PtzPaymentVoid.CardPresent
+  fullName: PowerTranzSDK.Requests.PtzPaymentVoid.CardPresent
+  nameWithType: PtzPaymentVoid.CardPresent
+- uid: PowerTranzSDK.Requests.PtzPaymentVoid.CardPresent*
+  name: CardPresent
+  href: api/PowerTranzSDK.Requests.PtzPaymentVoid.html#PowerTranzSDK_Requests_PtzPaymentVoid_CardPresent_
+  commentId: Overload:PowerTranzSDK.Requests.PtzPaymentVoid.CardPresent
+  isSpec: "True"
+  fullName: PowerTranzSDK.Requests.PtzPaymentVoid.CardPresent
+  nameWithType: PtzPaymentVoid.CardPresent
 - uid: PowerTranzSDK.Requests.PtzTransactionRequest
   name: PtzTransactionRequest
   href: api/PowerTranzSDK.Requests.PtzTransactionRequest.html
@@ -2334,19 +2347,19 @@ references:
   isSpec: "True"
   fullName: PowerTranzSDK.Requests.PtzTransactionRequest.ExternalBatchIdentifier
   nameWithType: PtzTransactionRequest.ExternalBatchIdentifier
-- uid: PowerTranzSDK.Requests.PtzTransactionRequest.GroupIdentifier
-  name: GroupIdentifier
-  href: api/PowerTranzSDK.Requests.PtzTransactionRequest.html#PowerTranzSDK_Requests_PtzTransactionRequest_GroupIdentifier
-  commentId: P:PowerTranzSDK.Requests.PtzTransactionRequest.GroupIdentifier
-  fullName: PowerTranzSDK.Requests.PtzTransactionRequest.GroupIdentifier
-  nameWithType: PtzTransactionRequest.GroupIdentifier
-- uid: PowerTranzSDK.Requests.PtzTransactionRequest.GroupIdentifier*
-  name: GroupIdentifier
-  href: api/PowerTranzSDK.Requests.PtzTransactionRequest.html#PowerTranzSDK_Requests_PtzTransactionRequest_GroupIdentifier_
-  commentId: Overload:PowerTranzSDK.Requests.PtzTransactionRequest.GroupIdentifier
+- uid: PowerTranzSDK.Requests.PtzTransactionRequest.ExternalGroupIdentifier
+  name: ExternalGroupIdentifier
+  href: api/PowerTranzSDK.Requests.PtzTransactionRequest.html#PowerTranzSDK_Requests_PtzTransactionRequest_ExternalGroupIdentifier
+  commentId: P:PowerTranzSDK.Requests.PtzTransactionRequest.ExternalGroupIdentifier
+  fullName: PowerTranzSDK.Requests.PtzTransactionRequest.ExternalGroupIdentifier
+  nameWithType: PtzTransactionRequest.ExternalGroupIdentifier
+- uid: PowerTranzSDK.Requests.PtzTransactionRequest.ExternalGroupIdentifier*
+  name: ExternalGroupIdentifier
+  href: api/PowerTranzSDK.Requests.PtzTransactionRequest.html#PowerTranzSDK_Requests_PtzTransactionRequest_ExternalGroupIdentifier_
+  commentId: Overload:PowerTranzSDK.Requests.PtzTransactionRequest.ExternalGroupIdentifier
   isSpec: "True"
-  fullName: PowerTranzSDK.Requests.PtzTransactionRequest.GroupIdentifier
-  nameWithType: PtzTransactionRequest.GroupIdentifier
+  fullName: PowerTranzSDK.Requests.PtzTransactionRequest.ExternalGroupIdentifier
+  nameWithType: PtzTransactionRequest.ExternalGroupIdentifier
 - uid: PowerTranzSDK.Requests.PtzTransactionRequest.OrderIdentifier
   name: OrderIdentifier
   href: api/PowerTranzSDK.Requests.PtzTransactionRequest.html#PowerTranzSDK_Requests_PtzTransactionRequest_OrderIdentifier
@@ -3189,6 +3202,19 @@ references:
   isSpec: "True"
   fullName: PowerTranzSDK.Responses.PtzPaymentResponse.OnlineResponse
   nameWithType: PtzPaymentResponse.OnlineResponse
+- uid: PowerTranzSDK.Responses.PtzPaymentResponse.OrderIdentifier
+  name: OrderIdentifier
+  href: api/PowerTranzSDK.Responses.PtzPaymentResponse.html#PowerTranzSDK_Responses_PtzPaymentResponse_OrderIdentifier
+  commentId: P:PowerTranzSDK.Responses.PtzPaymentResponse.OrderIdentifier
+  fullName: PowerTranzSDK.Responses.PtzPaymentResponse.OrderIdentifier
+  nameWithType: PtzPaymentResponse.OrderIdentifier
+- uid: PowerTranzSDK.Responses.PtzPaymentResponse.OrderIdentifier*
+  name: OrderIdentifier
+  href: api/PowerTranzSDK.Responses.PtzPaymentResponse.html#PowerTranzSDK_Responses_PtzPaymentResponse_OrderIdentifier_
+  commentId: Overload:PowerTranzSDK.Responses.PtzPaymentResponse.OrderIdentifier
+  isSpec: "True"
+  fullName: PowerTranzSDK.Responses.PtzPaymentResponse.OrderIdentifier
+  nameWithType: PtzPaymentResponse.OrderIdentifier
 - uid: PowerTranzSDK.Responses.PtzPaymentResponse.OriginalTrxnIdentifier
   name: OriginalTrxnIdentifier
   href: api/PowerTranzSDK.Responses.PtzPaymentResponse.html#PowerTranzSDK_Responses_PtzPaymentResponse_OriginalTrxnIdentifier

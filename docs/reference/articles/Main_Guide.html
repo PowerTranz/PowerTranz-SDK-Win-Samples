@@ -1,0 +1,1880 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PowerTranz General Guide | PowerTranz SDK 3.0.0 Reference Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="PowerTranz General Guide | PowerTranz SDK 3.0.0 Reference Documentation ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../Powertranz-Logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p><img src="user_guide_logo.png" alt=""></p>
+<h1 id="powertranz-general-guide">PowerTranz General Guide</h1>
+<p><strong>Author: Renée Mailhot</strong></p>
+<p><strong>Version: 1.0.0 (in progress)</strong></p>
+<p><strong>June 29, 2018</strong></p>
+<p><br>
+<br></p>
+<h2 id="introduction">Introduction</h2>
+<p>PowerTranz SDK is a complete solution for payment acceptance for card present EMV compliant transactions in the mobile space or for stand-alone Point of Sale solutions.  </p>
+<p>The intended audience for this article are business analysts, developers, project management and quality assurance teams.  It provides a high-level blueprint of the SDK and typical operation flows in order to supply the reader with a general understanding of PowerTranz solution along with its design for system development, application design and testing. </p>
+<p><br>
+<br></p>
+<h2 id="context-overview">Context Overview</h2>
+<p>The SDK has one major entry point with the most important functionalities, and several support functions and handlers to complete the offering of payment related processing.  It abstracts all the payment related complexity allowing developers and integrators to focus on their distinctive business logic and added value.</p>
+<p>The following illustrates the major software logical components and how they relate: </p>
+<p>
+<img align="right" src="Images/PTZ%20SDK%20Diagram.png" width="300" height="300">
+</p>
+
+<ul>
+<li><strong>Payment Application</strong> - Represents the application implementing the specific customer business logic and UI. The application uses the SDK to perform all payment related operations. </li>
+<li><strong>PowerTranz Payment Gateway</strong> - Provides the processing capabilities to route transactions for all supported transaction types and associated support operations.  </li>
+<li><strong>Payment Terminal</strong> - Represents the hardware device used for securely capturing card data. The SDK allows addition of future supported payment terminals.</li>
+</ul>
+<p><br>
+<br></p>
+<h3 id="platform-and-delivery-format">Platform and Delivery Format</h3>
+<p>While this article is geared towards Windows implementations, it is important to note that PowerTranz also offers SDKs for iOS and Android. While the functionally is aligned across the three platforms, the implementation and naming conventions are platform specific.</p>
+<p><br></p>
+<p align="center">
+  <img align="centre" src="Images/Windows.png" width="300" height="300">
+</p>
+
+<p><br>
+<br></p>
+<h3 id="supported-terminal---miura-m010">Supported Terminal - Miura M010</h3>
+<table>
+<thead>
+<tr>
+<th><strong>MIURA M010</strong></th>
+<th><p align="center"><img src="Images/M010.png" width="150" height="150"></p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Size</td>
+<td>H 103 mm x W 71 mm x D 18 mm</td>
+</tr>
+<tr>
+<td>Battery</td>
+<td>800 mAh</td>
+</tr>
+<tr>
+<td>Display</td>
+<td>Miura Secure 32bits ARM 9 Linux</td>
+</tr>
+<tr>
+<td>Interfaces</td>
+<td>Bluetooth or Wireless and/or USB (for Windows only)</td>
+</tr>
+<tr>
+<td>Card Interfaces</td>
+<td>ICC, MSR, NFC</td>
+</tr>
+<tr>
+<td>Keyboard</td>
+<td>4 x 3 numeric plus Cancel, Enter and Clear</td>
+</tr>
+<tr>
+<td>Certifications</td>
+<td>PCI PTS V3.0 Certified including Open Protocols and SRED UKCC MasterCard TQM CE, FCC &amp; IC EMV Level I &amp; Level II Certified (Level II off-line / on-line PIN support)</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+<br></p>
+<h3 id="supported-functions">Supported Functions</h3>
+<p><br></p>
+<p>PowerTranz operations fit into one of <strong>three</strong> categories:  </p>
+<p><br></p>
+<p><strong>Standard Payment Transactions</strong> - Card <strong>IS</strong> present and processed through the use of a payment terminal </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auth</td>
+<td>Auth can be set to be used as a &quot;Sale&quot; or &quot;Pre-Authorication&quot;. If set as Sale the approved authorization is automatically sent to the processor for clearing.  If Auth (PtzPaymentAuth) is set as a standard authorization a subsequent action is required to complete transaction (Void/Capture).</td>
+<td>Capture (flag as Sale), InlineTip, CashBack,  Billing Address, Additional Transaction ID(s)</td>
+</tr>
+<tr>
+<td>Refund (Credit)</td>
+<td>Refund can be set as a Credit type as to credit funds to directly to a credit card and is not tied to any previous Sale or Authorization/Capture.</td>
+<td>Billing Address, Additional Transaction ID(s)</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>Transaction Modifications</strong> - Card <strong>IS NOT</strong> present as the transaction is processed against an existing transaction </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Void</td>
+<td>Cancels a previous transaction or used to clear out a potentially erroneous transaction.</td>
+</tr>
+<tr>
+<td>Capture</td>
+<td>Captures a previous pre-authorized for to force it for clearing/settlement.</td>
+</tr>
+<tr>
+<td>Refund</td>
+<td>Refund can be set as a standard refund where funds are returned for to an account previously settled through a Capture or Sale.</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>Search Queries</strong> - Used to retrieve transaction and order data </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transactions (Single Search)</td>
+<td>Returns a single transaction’s specific transaction data along with it&#39;s corresponding order data (if applicable).</td>
+</tr>
+<tr>
+<td>Transactions (Group Search)</td>
+<td>Returns a group of transactions and their corresponding order data based on search criteria supplied in the query string.</td>
+</tr>
+<tr>
+<td>OrdersSearch (Single Order)</td>
+<td>Only applies to successful orders which would be of an approved Auth, Sale or Credit. Order data will be returned along with all its individual corresponding transaction(s).</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+<br></p>
+<h2 id="sdk-usage-scenarios">SDK Usage Scenarios</h2>
+<p>The following sections describe the typical usage of the SDK for the most common operations that it supports.</p>
+<p><br> </p>
+<h3 id="client-credentials">Client Credentials</h3>
+<p>The PowerTranzID, Password, ApplicationID and GatewayID data elements are required when setting up the gateway connection.  Further information on this can be found within the User Guide and Technical Reference Documentation. </p>
+<p>In addition to these credentials, the PowerTranz gateway further validates the transaction and source. The POS application is always required to provide the TerminalID for Card Present type transctions is assigned to a PED. The TerminalID is therefore set in the  payment request (PtzPaymentRequest) parameters for PtzPaymentAuth or PtzPaymentRefund (as a Credit).</p>
+<p>Descriptions of the IDs and their purpose are as follows:</p>
+<ul>
+<li><strong>PowerTranzID</strong> – Merchant identifier for the merchant’s account with PowerTranz.   A merchant may have one or more PowerTranz IDs depending on the number of locations.  For example, a merchant with one location would only have one PowerTranzID. A merchant with 3 physical locations may have 3.</li>
+<li><strong>Password</strong> - This is the merchant’s unique processing password and tied to the PowerTranzID</li>
+<li><strong>ApplicationID</strong> – Each POS application is assigned with a ApplicationID. A merchant with various applicatoins may be assigned multiple applicationIDs.</li>
+<li><strong>GatewayKey</strong> – GatewayID is assigned by PowerTranz and is used by the gateway for internal routing and may be unique to each implementation (TBD).</li>
+<li><strong>TerminalID</strong> -  Each physical card terminal (PED) has a unique Terminal ID. One PowerTranzID can have multiple TerminalIDs associated with it. </li>
+</ul>
+<p><strong>NOTE</strong> : Test credentials are only provided by a PowerTranz Representative in the client onboarding process.</p>
+<p>The following illustration shows the breakdown of how these credentials would be laid out for a merchant with multiple physical stores and multiple POS applications (and versions). The IDs below are not the actual format, for demonstration only.</p>
+<p><br></p>
+<p align="center">
+  <img align="centre" src="Images/ABC%20Store.png" width="600" height="500">
+</p>
+
+<p><br></p>
+<h3 id="transactionidentifiers">TransactionIdentifiers</h3>
+<p>Every transaction processed regardless of transaction type, will be assigned a unique TransactionIdentifier (GUID) by the SDK and will be returned in the response data back to the POS.  <strong>The TransactionIdentifier is always the ID of record within PowerTranz</strong> for the transaction being processed.  Not only is it required for subsequent transaction requests such as Voids, Captures or Refunds but is required for submitting queries on transactions and orders. </p>
+<p><br></p>
+<p>Examples:  </p>
+<ul>
+<li><strong>Capturing an Authorization</strong> – You will need the TransactionIdentifier of the original Authorization</li>
+<li><strong>Refunding an Authorization that was settled (Captured)</strong> - TransactionIdentifier of the original Authorization is required</li>
+<li><strong>Querying a specific Transaction</strong> –TransactionIdentifier of the Authorization, Sale or Credit is required</li>
+<li><strong>Querying an Order</strong> –TransactionIdentifier of the Authorization, Sale, Credit, Void, Capture or Refund is required</li>
+</ul>
+<p><br></p>
+<p align="center">
+  <img src="Images/Important-TrxnID.JPG">
+</p>
+
+<p><br></p>
+<h3 id="other-identifiers">Other Identifiers</h3>
+<p>Other “Order” or “Transaction based” identifiers that can be supplied are optional and are assigned by the POS.   These identifiers (if provided) are stored with the transaction record within PowerTranz system for additional report data and search criteria.  </p>
+<p><br></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OrderIdentifier</td>
+<td>Assigned to a customer order or purchase order. Not applicable with Refunds, Captures or Void.</td>
+</tr>
+<tr>
+<td>ExternalIdentifier</td>
+<td>Unique Identifier assigned to an individual transaction by the POS.  Its purpose is determined by the Merchant or POS.  Can be assigned to all transaction types</td>
+</tr>
+<tr>
+<td>ExternalBatchIdentifier</td>
+<td>Assigned to one or many transactions.  Used to identify a group of transactions for reporting purposes.  Applicable to all transaction types but Voids</td>
+</tr>
+<tr>
+<td>ExternalGroupIdentifier</td>
+<td>Assigned to one or many transactions.  Used to identify a group of transactions for reporting purposes. Applicable to all transaction types</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h3 id="response-handling">Response Handling</h3>
+<p>When processing transaction, the integrated payment application should continue to consider a transaction in a pending or unknown state until the final response is received from the SDK.</p>
+<p>As the PowerTranz solution is an event driven integration, transaction response events are triggered to provide information up to the integrated application on whether the transaction cycle failed/stopped or that it completed with either an Approval or Decline.  This also will include the full transaction response or exception.</p>
+<p>It is important that the integrating application handle and manage all cases (example : failures, an unknown transaction status or transaction that triggers an auto-reversal) </p>
+<p><br>
+<br></p>
+<p>The integrated application will receive <strong>one of following notifications</strong> for the described cases:</p>
+<p><br></p>
+<p>Transaction cycle has <strong>COMPLETED/FINISHED</strong> and the <strong>APPROVAL STATUS IS KNOWN</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DidFinish</strong></td>
+<td>Transaction cycle is completed with a valid approval or decline and there are no online requests pending.<br><br>Returns :<br><ul><li><strong>PtzPaymentResponse</strong> - Contains the full response body (Sample in Annex)</li></ul></td>
+</tr>
+<tr>
+<td><strong>DidFinishWithReversal</strong></td>
+<td>This can potentially occur with an EMV chip card where the transaction cycle did completed with a valid approval from the card Issuer but the chip card makes the final decision to reject the transaction triggering a reversal to cancel the approved authorization. <br><br> Returns : <br><ul><li><strong>PtzPaymentResponse</strong> - Contains the full response body(Sample in Annex)</li></ul><ul><li><strong>ReversalReason</strong> - Reason for the auto-reversal</li></ul><ul><li><strong>ReversalApproved</strong> - Indicator whether the Reversal was successful or not</li></ul></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Transaction is <strong>CANCELED</strong> or an <strong>ERROR</strong> has occurred causing an interruption or error in the transaction cycle</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DidFail</strong></td>
+<td>Occurs when an there is an exception <strong>before</strong> the transaction goes out to the Gateway for online processing.<br><br> Returns : <br><ul><li><strong>PtzPaymentResponse</strong> - Contains the full response body (Sample in Annex)</li></ul><ul><li><strong>Exception</strong> - Raw output of the actual exception</li></ul></td>
+</tr>
+<tr>
+<td><strong>DidFailWithReversal</strong></td>
+<td>Occurs when an there is an exception <strong>after</strong> the transaction has gone out to the Gateway for online processing.  The transaction status is considered unknown therefore an auto-reversal is performed to attempt to clear out the possible transaction upstream.  Recommended that the transaction status be verified.<br><br> Returns : <br><ul><li><strong>PtzPaymentResponse</strong> - Contains the full response body (Sample in Annex)</li></ul><ul><li><strong>ReversalReason</strong> - Reason for the auto-reversal</li></ul><ul><li><strong>ReversalApproved</strong> - Indicator whether the Reversal was successful or not</li></ul><ul><li><strong>Exception</strong> - Raw output of the actual exception</li></ul></td>
+</tr>
+</tbody>
+</table>
+<p><br>
+<br></p>
+<p align="center">
+  <img align="left" src="Images/Important.png" width="125" height="125">
+</p>
+
+<p><strong>TRANSACTION STATUS UNKNOWN</strong></p>
+<p>When the final status of the payment is <strong>unknown</strong> due to an error in the integrated application or it timing out prior to receive the response from the Gateway.  In this case, it is recommended that the transaction be verified by a query or reviewing activity through the PowerTranz portal.</p>
+<p><br>
+<br>
+<br></p>
+<h2 id="process-flows">Process Flows</h2>
+<p><br></p>
+<h3 id="card-present-transactions">Card Present Transactions</h3>
+<p><br></p>
+<h4 id="authsale">Auth/Sale</h4>
+<p>The Authorization is a card present transaction processed through the card terminal (as EMV or Swipe). The operation can be used to request a “pre-authorization” or perform a “sale”. The determining factor is using the Capture parameter to enable the transaction to be automatically captured or not. </p>
+<p><br></p>
+<ul>
+<li><strong>Authorization as “pre-authorization”</strong>: only authorizes the card for the transaction amount. It requires a subsequent action to complete the transaction. The possible options are:<ul>
+<li>Void to cancel the Authorization in its entirety (full amount); Issuer releases hold of funds that had been placed on the card during the authorization</li>
+<li>Capture to complete the transaction; settles and debits funds from the card account
+If the Authorization is successful (Approved) and not closed with a subsequent Void or Capture, the cardholder will see “pending charge” on their account statement. Issuers will generally drop the hold on the authorization within 48-72 hours if it is not closed. It is highly recommended that the transaction is closed within that time frame to avoid disputes.</li>
+</ul>
+</li>
+<li><strong>Authorization as “Sale”</strong>: is an authorization and capture within the same transaction (auto-capture). To enable an authorization as a Sale a capture flag will need to be set within the transaction request. There is no need to submit a subsequent transaction to complete the transaction (unless it is decided to cancel the Sale - whereby a Void will have to be issued within 20 minutes of the Sale), otherwise a Refund will be required in order to credit the funds back to the card.</li>
+</ul>
+<p><br></p>
+<p><strong>Summary of options</strong></p>
+<p>The following table describes the main options that can be applied to the Authorization transaction. </p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Capture</td>
+<td>The value of this flag determines if the operation is a “Pre-authorization” or a “Sale”.</td>
+</tr>
+<tr>
+<td>InlineTipType</td>
+<td>This parameter controls if a tip prompt is shown to the cardholder on the card terminal.  If enabled it can be set to take an amount or percentage</td>
+</tr>
+<tr>
+<td>EnableCashBack</td>
+<td>If enabled a Cashback prompt to allow the cardholder to enter a cashback amount on the card terminal.  This is only supported with certain merchant categories.</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>The following diagram illustrates an Auth (pre-authorization) transaction using an EMV card. The SDK handles the gateway connection transparently and provides the application with the response information. During transaction processing, the SDK can provide informative events and status changes triggered to the POS application (as example like the <strong>DidReceiveCardEvent</strong> and  <strong>DeviceEmvTrxnStarted</strong> or <strong>CardEventRemoved</strong> illustrated in the diagram below). </p>
+<p><br></p>
+<p align="center">
+  <img align="centre" src="Images/Authorization.png" width="600" height="600">
+</p>
+
+<p><br></p>
+<p>Once the transaction completes, the final transaction status message will remain on the device display.  It’s recommended that the terminal screen be cleared or that there is a change to custom text to be displayed on the screen rather than the last transaction status be left for the next customer/cardholder to see.  The length of time is determined (or limited) by the integrating point-of-sale software.</p>
+<p><br></p>
+<h4 id="authsale-with-auto-reversal">Auth/Sale with Auto-Reversal</h4>
+<p>The following diagram illustrates an exception situation that is handled automatically by the SDK. In this scenario, an Auth transaction is initiated and an error condition occurs after the authorization has been requested. In these situations, the SDK will automatically void the authorization request.  Depending on how the Auth failed or was successful but subsequently rejected causing an auto-reversal (Void) the application will receive <strong>DidFailWithReversal</strong> or <strong>DidFinishWithReversal</strong> along with the <strong>PtzPaymentResponse</strong> of the original transaction (not that of the void) and whether the auto-reversal (Void) was successful.  </p>
+<p>In addition, it is recommended that provisions be made to further validate the transaction status through a Transaction Query should there be any doubt of the original transaction’s status and/or for assurance.   </p>
+<p><br></p>
+<p align="center">
+  <img align="centre" src="Images/Auto%20Void.png" width="600" height="600">
+</p>
+
+<p><br></p>
+<p>Possible reasons for Auto-Reversal (Auto-Void) :</p>
+<ul>
+<li><strong>Issuer Authentication Error (ICC/Card Decline)</strong></li>
+<li><strong>Device Disconnected while processing</strong></li>
+<li><strong>Transaction Canceled while processing</strong></li>
+<li><strong>Time Out or System Error</strong></li>
+<li><strong>Transaction went for online processing but due to error status is unknown</strong></li>
+</ul>
+<p>Examples where these Auto Void can occur:</p>
+<ul>
+<li><strong>Issuer Authentication Error (ICC/Card Decline)</strong> – In an EMV transaction the card itself can make the final decision to decline a transaction.   Therefore, even though an authorization is approved by the card Issuer, the card can subsequently reject the transaction triggering the subsequent Auto Void to cancel the Approved Authorization.</li>
+<li><strong>Device Disconnected</strong> – Loss of connection of the PED while a transaction is being processed.  The SDK will trigger a Void in attempt to clear out a possible Authorization</li>
+<li><strong>Transaction Canceled</strong> – Card removed prematurely while and Authorization is being processed and prior to the response being returned to the PED. </li>
+<li><strong>Errors</strong> – Certain error scenarios will trigger an Auto Void as an extra precaution to clear out a potential authorization upstream with the Issuer.  </li>
+</ul>
+<p><br></p>
+<h4 id="credit">Credit</h4>
+<p>The Refund operation serves a dual purpose. It can be used not only to issue refunds against an original transaction but also used to initiate a Credit transaction through a card terminal. This distinction is done by setting the Refund parameter to False (Credits) or True (Refunds).  </p>
+<p>Credit transactions are not tied to an original transaction and always require the card to be present at the card terminal. Credits do not require provision of a TransactionIdentifier. 
+The following diagram illustrates a credit transaction. The transaction credits an account without a previously authorized transaction. No transaction identifier needs to be referenced for the credit request.</p>
+<p>Restrictions apply for credits.  Not all merchant accounts allow Credits. Please ask a PowerTranz support representative for further details.</p>
+<p>Important note: Credits should be handled with caution by the Merchant. There is additional risk with a Credit, as this transaction type is not tied to an original transaction to help manage the amount threshold and the card to which it&#39;s being applied to.  It is recommended that there are sufficient internal policies and procedures on issuing credits as a business along with controls in place at the POS level to reduce risk of issuing credits with unintentional human-error or with intentional wrong doing. Examples of why extra attention is warranted are with human-error with accidental over-crediting, issuing credit to the wrong card, rogue employee crediting cards without authorization or permission.</p>
+<p><br></p>
+<p>The following are the typical reasons for a Credit transaction to be denied / rejected:</p>
+<ul>
+<li><strong>Credits are not enabled on the merchant account</strong></li>
+<li><strong>Credit amount exceeds threshold</strong></li>
+</ul>
+<p><br></p>
+<p>The following diagram illustrates the workflow involved in this operation.</p>
+<p><br></p>
+<p align="center">
+  <img align="centre" src="Images/Credit.png" width="600" height="600">
+</p>
+
+
+<p><br></p>
+<h3 id="modification-transactions">Modification Transactions</h3>
+<p><br></p>
+<h4 id="void">Void</h4>
+<p>When a Void is performed, the original transaction is canceled. The transaction is ‘undone’ by the system as though it never occurred. Voids are initiated by the POS application and there is no interaction with the terminal or the customer’s card. </p>
+<p><br></p>
+<p>Examples where this operation can be used:</p>
+<ul>
+<li>To fix a mistake where an order or amount was entered incorrectly and the transaction itself had already completed.</li>
+<li>Where there is a questionable error at the POS causing an interruption with processing the original Authorization and the operator wishes to clear out a possibility of an Authorization having taken place upstream before reattempting.</li>
+</ul>
+<p>The following diagram illustrates the SDK interactions for a void transaction. </p>
+<p><br></p>
+<p align="center">
+  <img align="centre" src="Images/Void.png">
+</p>
+
+<p><br></p>
+<p><strong>Void Requirements</strong></p>
+<p>When is the best time to process a Void for various Authorization scenarios?</p>
+<ul>
+<li><strong>Authorization as Sale (auto-capture)</strong>: On an Authorization (as Sale) that was automatically captured, the Void should be performed within a reasonably short amount of time after the original Authorization (typically within 20 minutes) otherwise the Void might be rejected, as the sale may have already been committed for settlement. </li>
+<li><strong>Authorization with subsequent Capture</strong>: On an Authorization that has been subsequently captured, the Void should be within 20 minutes of the Capture otherwise the Void might be rejected, as the Authorization may have already been committed for settlement.   </li>
+<li><strong>Authorization without subsequent Capture</strong>: Void should be issued well within 2-3 days from the original authorization (Authorization) to remove the pending charge and hold of funds on the customer’s card.   Issuers drop the hold on funds typically after 2-3 days if the Authorization was not met with a Void (or Capture) as to close (or complete) the transaction. 
+To initiate a Void on an Authorization, the <strong>TransactionIdentifier</strong> of the original transaction being canceled is the only required field. Amount is not required if the original transaction will be fully canceled (Full Reversal).</li>
+</ul>
+<p><br></p>
+<p>The following are the typical reasons for a Void transaction to be denied / rejected:</p>
+<ul>
+<li>Void already processed </li>
+<li>Transaction settled and therefore can no longer be reversed</li>
+<li>Invalid <strong>TransactionIdentifier</strong>
+The following diagram illustrates the workflow involved in this operation.</li>
+</ul>
+<p><br></p>
+<h4 id="capture">Capture</h4>
+<p>The Capture operation is used to capture an amount against a previous successfully authorized transaction that has not yet been captured (Authorization only &amp; not Voided).  The transaction is sent to the processor to be settled in real-time.  </p>
+<p>The following diagram illustrates the SDK interactions for an Authorization <strong>followed by a Capture</strong>. In this example it is assumed that the terminal is connected. </p>
+<p><br></p>
+<p align="center">
+  <img align="centre" src="Images/Capture.png">
+</p>
+
+<p><br></p>
+<p><strong>Capture Requirements</strong></p>
+<p><br></p>
+<p>The amount requested cannot exceed the <strong>TotalAmount</strong> from the response of the previously authorized transaction amount unless the merchant account is set to support such circumstances.  </p>
+<p>NOTE: If <strong>InlineTip</strong> or <strong>Cashback</strong> was enabled in the original Authorization, the <strong>TotalAmount</strong> returned in the Authorization response can differ from the TotalAmount supplied in the Authorization Request.   <strong>TotalAmount</strong> will always include the original requested amount and <strong>InlineTip</strong> or <strong>CashBack</strong> amount.</p>
+<p>All accounts have a capture cut-off time which is dictated by the Processor.  Most processors encourage merchants to complete transactions within 2-3 days. Any Captures that are processed beyond the determined cut-off will fail and no funds can be debited from the card. In these circumstances, a new transaction has to be processed (Authorization and Capture or Authorization as Sale).</p>
+<p>Types of Captures &amp; Capture Amounts:</p>
+<ul>
+<li><strong>Full Capture</strong> - If the full amount is captured, then the transaction is closed from further captures. </li>
+<li><strong>Partial Captures</strong> - If the requested capture amount is less than the previously authorized amount, then the transaction is closed from further captures. </li>
+<li><strong>Captures in excess</strong> – Restrictions apply. This is only permitted for merchants in certain industries and merchant accounts. This is generally not supported with a standard merchant account. PowerTranz support representatives can provide more information on these scenarios.</li>
+</ul>
+<p>Should a transaction need to be canceled after a transaction is settled, only Refunds can be used in order to credit the card or return funds to the card.</p>
+<p><br></p>
+<p>The following are the typical reasons for a Capture transaction to be denied / rejected:</p>
+<ul>
+<li>Transaction is already processed or maximum Capture amount exceeded</li>
+<li>Original Authorization transaction has exceeded the Capture cut-off</li>
+<li>Invalid TransactionIdentifier</li>
+</ul>
+<p>The following diagram illustrates the workflow involved in this operation.</p>
+<p><br>
+<br></p>
+<h4 id="refund">Refund</h4>
+<p>When the Refund operation is used to issue refunds against an original transaction the card is not required to be present. Alternatively, the TransactionIdentifier is used. </p>
+<p><br></p>
+<p>The Refund returns funds regarding a transaction that was previously settled through a captured Pre-Authorization or an Authorization (as Sale) on the PowerTranz gateway.  Refunds are sent to the processor to be settled in real-time. </p>
+<p>Refunds need to be set by the POS application to enable the transaction as a true “Refund” where the physical card is not required, otherwise it is considered a straight credit. The TransactionIdentifier of the original Authorization must be included along with the TotalAmount to be refunded. Refunds can be issued for partial or full amounts of the original settled amount. TotalAmount cannot exceed the total amount settled and not yet refunded.</p>
+<p><br></p>
+<p>The following diagram illustrates a refund transaction. The transaction is performed referencing a previously approved transaction that needs to be refunded. </p>
+<p><br></p>
+<p align="center">
+  <img align="centre" src="Images/Refund.png">
+</p>
+
+<p><br></p>
+<p><strong>Refund Requirements</strong></p>
+<p>In cases where an Authorization was partially captured, only the total amount that was captured can be refunded.
+All accounts have a refund cut-off time which is dictated by the card associations.  Some processors may have further limitations on how long a merchant can issue a refund. In general, this time frame is 180 days from the original Authorization. </p>
+<p>Types of Refunds with Captured amounts:</p>
+<ul>
+<li><strong>Full Refund</strong> - If the full amount is captured on an Order then a Refund can be issued against that order for that said amount.</li>
+<li><strong>Partial Refund</strong> – Refunds can be issued to an amount less than the originally captured and settled amount.  Multiple refunds can be issued on the same order but the total cannot exceed the original captured amount nor exceed the remaining balance available for refunds.</li>
+</ul>
+<p>In cases where the amount to be refunded exceeds the original Captured amount or if it happens beyond the cut-off time frame, an 
+alternate payment method may be required (for example, to issue the Refund as Credit if applicable to the merchant account type).</p>
+<p>The following are the typical reasons for a Refund transaction to be denied / rejected:</p>
+<ul>
+<li>Refund amount in excess of the original captured amount</li>
+<li>Refund cut-off time exceeded</li>
+<li>Original order was not captured/settled (only Authorized therefore there was no debit to the card’s account)</li>
+<li>Original order was Voided (canceled) therefore there is nothing to Refund</li>
+<li>Invalid TransactionIdentifier</li>
+</ul>
+<p><br>
+<br></p>
+<h3 id="order-and-transaction-queries">Order and Transaction Queries</h3>
+<p><br></p>
+<p>The following diagram illustrates the SDK search functionality. The gateway bases this functionality on a set of criteria that the application needs to provide through the SDK. The result is a list of matching transactions.</p>
+<p>There are 3 types of Search queries you can initiate:</p>
+<ul>
+<li><strong>Transaction Search (Single)</strong> – Applicable to ALL transaction types. Pull individual transaction data along with any if its corresponding Order Data (if available).</li>
+<li><strong>Transaction Search (by Group)</strong> - Applicable to ALL transaction types and returns all the individual transactions that fall within the parameters indicated in the request.</li>
+<li><strong>Order Summary</strong> – Applicable to an approved Auths, Sales or Credits.  Order Summary Data along with individual transaction data for all transactions tied to the order. </li>
+</ul>
+<p><br></p>
+<p><strong>NOTE:</strong> Data grouping amongst the three options vary to some degree however the data attributes are the same.</p>
+<p><br>
+<br>
+<br></p>
+<h4 id="transactiondetailsasync-single"><strong>TransactionDetailsAsync</strong> (Single)</h4>
+<p><br></p>
+<p>TransactionDetailsAsync is used to retrieve details of a single transaction. Order data relating to the transaction is also included in a data sub-set.</p>
+<p>The <strong>TransactionIdentifier</strong> is the only search parameter for this type of request.</p>
+<p><br></p>
+<p>The following diagram illustrates the search :</p>
+<p align="center">
+  <img align="centre" src="Images/Search_SingleTrxn.png">
+</p>
+
+<p>Please see Annex for the sample of <strong>PtzTransactionResponse</strong>.</p>
+<p><br>
+<br></p>
+<h4 id="transactionsearchasync-group-listing"><strong>TransactionSearchAsync</strong> (Group Listing)</h4>
+<p><br></p>
+<p>TransactionSearchAsync is used to retrieve a listing of transactions based on search criteria used.</p>
+<p>Applicable search parameters are :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Name&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Approved</td>
+<td>Flag indicating whether or not the desired transactions were approved. Set to null to include both approved and declined</td>
+</tr>
+<tr>
+<td style="text-align:left">AuthorizationCode</td>
+<td>Authorization Code associated with the desired transactions. Only applicable to approved authorizations or salses</td>
+</tr>
+<tr>
+<td style="text-align:left">StartDateTime</td>
+<td>For date based search. End Date required if this is specified</td>
+</tr>
+<tr>
+<td style="text-align:left">EndDateTime</td>
+<td>For date based search. Start Date required if this is specified</td>
+</tr>
+<tr>
+<td style="text-align:left">ExternalGroupIdentifier</td>
+<td>ExternalGroup identifier related to the desired transactions</td>
+</tr>
+<tr>
+<td style="text-align:left">ExternalBatchIdentifier</td>
+<td>External batch identifier associated with the group of desired transactions</td>
+</tr>
+<tr>
+<td style="text-align:left">OrderIdentifier</td>
+<td>Order ID of the desired transactions</td>
+</tr>
+<tr>
+<td style="text-align:left">TerminalId</td>
+<td>Terminal ID of the PED associated with the transactions</td>
+</tr>
+</tbody>
+</table>
+<p>The following diagram illustrates the search :</p>
+<p align="center">
+  <img align="centre" src="Images/Search_GroupTrxn_List.png">
+</p>
+
+<p>Please see Annex for the sample of <strong>PtzTransactionsResponse</strong>.</p>
+<p><br>
+<br></p>
+<h4 id="orderdetailsasync-single-order"><strong>OrderDetailsAsync</strong> (Single Order)</h4>
+<p>This query returns order data along with a listing of all transactions associated with the order.</p>
+<p>The <strong>TransactionIdentifier</strong> is the only search parameter for this type of request.</p>
+<p><br></p>
+<p>The following diagram illustrates the search :</p>
+<p align="center">
+  <img align="centre" src="Images/Search_Order.png">
+</p>
+
+<p>Please see Annex for the sample of <strong>PtzOrderResponse</strong>.</p>
+<p><br>
+<br>
+<br></p>
+<h2 id="annex">Annex</h2>
+<p><br></p>
+<h3 id="methods"><strong>Methods</strong></h3>
+<p><br></p>
+<p><strong>PTZApi Class</strong></p>
+<p>The following are communication to the PowerTranz Gateway Api to perform a specific transaction or search request. Links to the Reference Documentation are included in the table.</p>
+<p><br></p>
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">         </div> Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_PaymentAuthorizeAsync_PowerTranzSDK_Requests_PtzPaymentAuth_">PaymentAuthorizeAsync</a></td>
+<td>This function attempts to authorize the payment data provided in the request. On completion, an event handler is called (<strong>DidFinish</strong>, <strong>DidFinishWithReversal</strong>, <strong>DidFail</strong> or <strong>DidFailWithReversal</strong>) with the response PtzPaymentResponse otherwise the exception (for DidFail or DidFailWithReversal)<br><br>Called from: <br><br> <ul><li><strong>BeginEMVTransactionWithRequest</strong></li></ul><ul><li><strong>BeginNFCTransactionWithRequest</strong></li></ul><br><br><p align="center"><strong>DO NOT CALL THIS DIRECTLY</strong></p><br></td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_PaymentCreditAsync_PowerTranzSDK_Requests_PtzPaymentCredit_">PaymentCreditAsync</a></td>
+<td>This function attempts to make a credit directly to a card without the need of a previously approved sale or captured transaction. On completion, an event handler is called (<strong>DidFinish</strong>, <strong>DidFinishWithReversal</strong>, <strong>DidFail</strong> or <strong>DidFailWithReversal</strong>) with the response PtzPaymentResponse otherwise the exception (for DidFail or DidFailWithReversal)<br><br>Called from: <br><br><ul><li><strong>BeginEMVTransactionWithRequest</strong></li></ul><ul><li><strong>BeginNFCTransactionWithRequest</strong></li></ul><br><br><p align="center"><strong>DO NOT CALL THIS DIRECTLY</strong></p><br></td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_PaymentCaptureAsync_PowerTranzSDK_Requests_PtzPaymentCapture_">PaymentCaptureAsync</a></td>
+<td>This function attempts to capture a previously authorized payment.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_PaymentRefundAsync_PowerTranzSDK_Requests_PtzPaymentRefund_">PaymentRefundAsync</a></td>
+<td>This function attempts to capture a previously settled payment(Captured Auth or Sale)</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_PaymentVoidAsync_PowerTranzSDK_Requests_PtzPaymentVoid_">PaymentVoidAsync</a></td>
+<td>This function attempts to void a Auth, Sale of Credit payment request that has not been settled.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_OrderDetailsAsync_System_String_">OrderDetailsAsync</a></td>
+<td>Returns order and corresponding transctions of a successful order (Approved Auth, Sale or Credit)</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_TransactionSearchAsync_PowerTranzSDK_Requests_PtzTransactionRequest_">TransactionSearchAsync</a></td>
+<td>Returns a listing of transcations based on the search criteria used</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.PtzApi.html#PowerTranzSDK_PtzApi_TransactionDetailsAsync_System_String_">TransactionDetailsAsync</a></td>
+<td>Returns details of a single transaction</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+<br></p>
+<p><strong>PTZMiuraTerminal Class</strong></p>
+<p>The following are common functions related with initiating transactions with use of the card terminal and controling some of the terminal&#39;s functions/features. Table includes links to the Reference Documentation.</p>
+<p><br></p>
+<table>
+<thead>
+<tr>
+<th><div style="width:250px">      </div>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_BeginEMVTransactionWithRequest_PowerTranzSDK_Requests_PtzPaymentRequest_">BeginEMVTransactionWithRequest</a><br><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p></td>
+<td>The request object used to initiate and complete an contact (EMV/MSR) transaction request through the terminal<br><br>Applicable to:<br><ul><li>PtzPaymentAuth</li><li> PtzPaymentRefund (as Credit)</li></ul></td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_BeginNFCTransactionWithRequest_PowerTranzSDK_Requests_PtzPaymentRequest_">BeginNFCTransactionWithRequest</a><br></td>
+<td>The request object used to initiate and complete an contactless (EMV/MSR) transaction request through the terminal<br><br>Applicable to:<br><ul><li>PtzPaymentAuth</li><li> PtzPaymentRefund (as Credit)</li></ul></td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_ConnectTerminalWithInputTypeAsync_PowerTranzSDK_CardTerminalInputType_System_String_">ConnectTerminalWithInputTypeAsync</a></td>
+<td>This function attempts to connect the terminal.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_CancelTransaction">CancelTransaction</a></td>
+<td>Used to back out of a transaction.  If the transaction is canceled while a transaaction has already been sent out online for authorization this action will trigger an auto-reversal in attempt to clear out a possible authorization</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_DisconnectTerminal">DisconnectTerminal</a></td>
+<td>Disconnects the currently connected terminal and closes communications from the mobile device.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_DisplayText_System_String_">DisplayText</a></td>
+<td>If the terminal supports it, this function allows displaying custom text. Text formatting should be done accounting for display size.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_GetDeviceInfo">GetDeviceInfo</a></td>
+<td>Gets Terminal information.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_GetFirmwareVersion">GetFirmwareVersion</a></td>
+<td>This function returns the firmware version for the connected terminal.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_GetHardwareId">GetHardwareId</a></td>
+<td>This function will return the Hardware Id of the credit card terminal.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_GetSerialNumber">GetSerialNumber</a></td>
+<td>This function returns the serial number for the connected terminal.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_ManualEntrySupported">ManualEntrySupported</a></td>
+<td>This function returns the indication if the terminal supports manual card entry.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_NfcSupported">NfcSupported</a></td>
+<td>This function returns the indication if NFC is supported or not.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_BluetoothSupported">BluetoothSupported</a></td>
+<td>This function returns the indication if Bluetooth is supported or not.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_ResetDevice">ResetDevice</a></td>
+<td>Performs a soft reset on the terminal. Consider using CancelTransaction instead.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_TcpIpSupported">TcpIpSupported</a></td>
+<td>This function returns the indication if TCP IP is supported or not.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_TerminalCanDisplayText">TerminalCanDisplayText</a></td>
+<td>This function returns the indication if the terminal supports displaying custom text.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/PowerTranzSDK.CardTerminals.Miura.PTZMiuraTerminal.html#PowerTranzSDK_CardTerminals_Miura_PTZMiuraTerminal_TerminalClearDisplay">TerminalClearDisplay</a></td>
+<td>This function clears the display on terminals that allow custom text to be displayed. Highly recommended to clear screen when device is not in use to avoid burn-in</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+<br>
+<br></p>
+<h3 id="data-attributes"><strong>Data Attributes</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align:center">Format</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ApplicationId (EMV Card AID)</td>
+<td style="text-align:center">AN(32)</td>
+<td>Returned in Receipt Data. Only meaningful for chip transactions. Contains the application AID that was used for the transaction.  Separate from the ApplicationId used for authenticaiton with the Gateway.</td>
+</tr>
+<tr>
+<td>ApplicationId (PtzApi.PtzApi)</td>
+<td style="text-align:center">GUID(36)</td>
+<td>Identifier for the application that is using the SDK. Assigned by PowerTranz (per POS application). Example: 822e9bb2-c642-415a-a78e-139c548ec4b9</td>
+</tr>
+<tr>
+<td>ApplicationLabel</td>
+<td style="text-align:center">AN(16)</td>
+<td>Application label as defined by the card issuer for chip transactions. This element should be used whenever the Application Preferred Name is not available or is expressed in a non-supported character code page.</td>
+</tr>
+<tr>
+<td>ApplicationPreferredName</td>
+<td style="text-align:center">AN(16)</td>
+<td>Only meaningful for chip transactions.  Required for EMV receipts.</td>
+</tr>
+<tr>
+<td>ApplicationResponseCode</td>
+<td style="text-align:center">AN(2)</td>
+<td>Only meaningful for chip transactions.  Required for EMV receipts.</td>
+</tr>
+<tr>
+<td>Approved</td>
+<td style="text-align:center">BOOL</td>
+<td>Flag that indicates if the payment has been approved.  This attribute is returned in the response both in the main response body and the sub-object OnlineSummary.  <strong>IMPORTANT</strong> to note that it is the Approved status within the main response body that indicates the OVERALL Approval status of the transaction.</td>
+</tr>
+<tr>
+<td>AuthorizationCode</td>
+<td style="text-align:center">AN(6)</td>
+<td>Authorization code returned by an approved transaction</td>
+</tr>
+<tr>
+<td>AuthorizationMode</td>
+<td style="text-align:center">ENUM</td>
+<td>Indicates if the authorization decision was made by the issuer or by the card (in case of EMV offline authorizations). <br><br> Values can be:<br>0 - None<br>1 - Issuer<br>2 - Card</td>
+</tr>
+<tr>
+<td>AVSResponseCode</td>
+<td style="text-align:center">AN 3</td>
+<td>Address verification response code. Reserved for future use.</td>
+</tr>
+<tr>
+<td>BillingAddress</td>
+<td style="text-align:center">Sub-Object</td>
+<td>Optional data object where the cardholder&#39;s billing address can be supplied</td>
+</tr>
+<tr>
+<td>BluetoothSupported</td>
+<td style="text-align:center">BOOL</td>
+<td>Flag indicating if Bluetooth is supported for connectivity.<br><br> Possible values are: <br>0 - Not supported<br>1 - supported</td>
+</tr>
+<tr>
+<td>Capture</td>
+<td style="text-align:center">BOOL</td>
+<td>Indicates if the transaction should be automatically captured during authorization.<br><br> Possible values are:<br>0 - Do not Capture <br>1 - Capture</td>
+</tr>
+<tr>
+<td>CaptureCount</td>
+<td style="text-align:center">N(2)</td>
+<td>Total number of Captures applied to an Order</td>
+</tr>
+<tr>
+<td>CardBrand</td>
+<td style="text-align:center">AN</td>
+<td>Brad of the card used in a transaction</td>
+</tr>
+<tr>
+<td>City</td>
+<td style="text-align:center">AN(25)</td>
+<td>City associated with an address</td>
+</tr>
+<tr>
+<td>Code</td>
+<td style="text-align:center">AN(4)</td>
+<td>Error code returned by the gateway as described in Response Codes</td>
+</tr>
+<tr>
+<td>CountryCode</td>
+<td style="text-align:center">N(3)</td>
+<td>Country code associated to an address</td>
+</tr>
+<tr>
+<td>CreditCount</td>
+<td style="text-align:center">N(2)</td>
+<td>Total number of refunds (or Credit) applied to an order</td>
+</tr>
+<tr>
+<td>CurrencyCode</td>
+<td style="text-align:center">N(3)</td>
+<td>Currency code used to express the transactions amounts. Defined according to ISO4217.</td>
+</tr>
+<tr>
+<td>CustomData</td>
+<td style="text-align:center">AN(255)</td>
+<td><strong>Host Specific</strong> custom data submitted in a transaction request.</td>
+</tr>
+<tr>
+<td>CustomLevel2Data</td>
+<td style="text-align:center">AN(255)</td>
+<td><strong>Host Specific</strong> custom data submitted in a transaction request.</td>
+</tr>
+<tr>
+<td>CustomLevel3Data</td>
+<td style="text-align:center">AN(255)</td>
+<td><strong>Host Specific</strong> custom data submitted in a transaction request.</td>
+</tr>
+<tr>
+<td>CVMMethod</td>
+<td style="text-align:center">ENUM</td>
+<td>The Cardholder Verification Method that was used for the transaction.<br><br>Possible values are:<br>0 - No CVM<br>1 - Verified PIN Online<br>2 - Verified PIN Offline<br>3 - Signature (Prompt cardholder for signature)</td>
+</tr>
+<tr>
+<td>CVVResponseCode</td>
+<td style="text-align:center">AN(2)</td>
+<td>CVV/CVC validation result code.  Reserved for future use.</td>
+</tr>
+<tr>
+<td>EmailAddress</td>
+<td style="text-align:center">AN(50)</td>
+<td>Email address of the associated person at the address</td>
+</tr>
+<tr>
+<td>EmvIssuerAuthenticationData</td>
+<td style="text-align:center">AN(255)</td>
+<td>EMV Issuer Authentication data. It may be returned for chip transactions, in which case it is automatically made available to the chip.</td>
+</tr>
+<tr>
+<td>EmvIssuerScripts</td>
+<td style="text-align:center">AN(255)</td>
+<td>Issuer scripts that may be returned by the card issuer in the response to chip transactions. When present, these are automatically made available to the chip.</td>
+</tr>
+<tr>
+<td>EnableCashback</td>
+<td style="text-align:center">BOOL</td>
+<td>This flag indicates if Cashback is allowed on the terminal in case the presented card and merchant account supports it. <br><br> Possible values are: <br>0 - Not enabled<br>1 - Enabled</td>
+</tr>
+<tr>
+<td>EndDateTime</td>
+<td style="text-align:center">DT</td>
+<td>The end date and time for a date based transaction search</td>
+</tr>
+<tr>
+<td>Error</td>
+<td style="text-align:center">Sub-Object</td>
+<td>Body of data containing any error codes along with their corresponding descriptive text</td>
+</tr>
+<tr>
+<td>ExtendedData</td>
+<td style="text-align:center">Sub-Object</td>
+<td>Data structure containing optional extended data that the merchant can add to the transaction prior to processing.  Contains secondary address and custom data fields.</td>
+</tr>
+<tr>
+<td>ExternalBatchIdentifier</td>
+<td style="text-align:center">AN(50)</td>
+<td>Optional external batch number supplied by the POS Application. Used for the merchant to associate the transaction to a batch.</td>
+</tr>
+<tr>
+<td>ExternalGroupIdentifier</td>
+<td style="text-align:center">AN(50)</td>
+<td>Optional external group number supplied by the POS Application. Used for the merchant to associate the transaction to a group.</td>
+</tr>
+<tr>
+<td>ExternalIdentifier</td>
+<td style="text-align:center">AN(50)</td>
+<td>Optional unique external identifier generated by the POS Application. <strong>Must be unique</strong></td>
+</tr>
+<tr>
+<td>FirstName</td>
+<td style="text-align:center">AN(30)</td>
+<td>First name of the associated person at the address</td>
+</tr>
+<tr>
+<td>GatewayKey</td>
+<td style="text-align:center">GUID(36)</td>
+<td>Gateway key provided by PowerTranz. This is used to access the gateway. Example:   6993f4c5-3b55-4f8f-98b3-371d9924e6d8</td>
+</tr>
+<tr>
+<td>InlineTipType</td>
+<td style="text-align:center">ENUM</td>
+<td>Indicates whether or not inline tip introduction is enabled in the terminal when the transaction is performed.  <br><br> Possible values are: <br>0 - Not Enabled (Default) <br>1 - Tip Type Amount <br>2 - Tip Type Percentage</td>
+</tr>
+<tr>
+<td>ISOResponseCode</td>
+<td style="text-align:center">AN(3)</td>
+<td>Response code as present in the ISO authorization response message.</td>
+</tr>
+<tr>
+<td>IsProduction</td>
+<td style="text-align:center">BOOL</td>
+<td>This flag to set the SDK into diagnostic mode for additional logging. <br><br> Possible values are: <br>0 - Diagnostic Mode<br>1 - Production Mode (minimal logging)</td>
+</tr>
+<tr>
+<td>IssuerApplicationData</td>
+<td style="text-align:center">AN(255)</td>
+<td>Only meaningful for chip transactions.  Required for EMV receipts.</td>
+</tr>
+<tr>
+<td>LastCaptureDateTime</td>
+<td style="text-align:center">DT</td>
+<td>Date and Time of the most recent Capture applied on an Order</td>
+</tr>
+<tr>
+<td>LastCreditDateTime</td>
+<td style="text-align:center">DT</td>
+<td>Date and Time of the most recent Refund applied to an Order (or that of a Credit)</td>
+</tr>
+<tr>
+<td>LastName</td>
+<td style="text-align:center">AN(30)</td>
+<td>Last name of the associated person at the address</td>
+</tr>
+<tr>
+<td>Line1</td>
+<td style="text-align:center">AN(50)</td>
+<td>First line of the address</td>
+</tr>
+<tr>
+<td>Line2</td>
+<td style="text-align:center">AN(50)</td>
+<td>Second line of the address</td>
+</tr>
+<tr>
+<td>ManualSupported</td>
+<td style="text-align:center">BOOL</td>
+<td>Flag indicating if manual is supported for connectivity.<br><br> Possible values are: <br>0 - Not supported<br>1 - supported<br><br>Currently PowerTranz doesn&#39;t suport manual with Miura M010</td>
+</tr>
+<tr>
+<td>MaskedPAN</td>
+<td style="text-align:center">AN(19)</td>
+<td>The Primary Account Number used for the transaction, obfuscated according to PCI rules.  Used for receipt data</td>
+</tr>
+<tr>
+<td>Message</td>
+<td style="text-align:center">AN(5)</td>
+<td>Error message associated with an error. As informed by the server.</td>
+</tr>
+<tr>
+<td>NFCSupported</td>
+<td style="text-align:center">BOOL</td>
+<td>Flag indicating if Contactless is supported for connectivity.<br><br> Possible values are: <br>0 - Not supported<br>1 - supported</td>
+</tr>
+<tr>
+<td>OnlineSummary</td>
+<td style="text-align:center">Sub-Object</td>
+<td>Data structure in a payment response containing responses and results issued by the Issuer, Processor and Gateway from online processing</td>
+</tr>
+<tr>
+<td>OrderIdentifier</td>
+<td style="text-align:center">AN(50)</td>
+<td>Optional order identifier for the transaction supplied by the POS</td>
+</tr>
+<tr>
+<td>OriginalTrxnDateTime</td>
+<td style="text-align:center">DT</td>
+<td>Date and Time of the original transaction for a payment or of an order</td>
+</tr>
+<tr>
+<td>OriginalTrxnIdentifier</td>
+<td style="text-align:center">GUID(36)</td>
+<td>This is the original transaction identifier for a Transaction Modification</td>
+</tr>
+<tr>
+<td>OtherAmount</td>
+<td style="text-align:center">DEC 18,3</td>
+<td>The other amount (if any). Typically used for cashback transactions</td>
+</tr>
+<tr>
+<td>Password</td>
+<td style="text-align:center">AN(25)</td>
+<td>Merchant unique password to access the gateway. This is included in the header for all requests. Example: m9mOPK@vpUM</td>
+</tr>
+<tr>
+<td>PhoneNumber</td>
+<td style="text-align:center">AN(25)</td>
+<td>Phone number of the associated person at the address (Primary)</td>
+</tr>
+<tr>
+<td>PhoneNumber2</td>
+<td style="text-align:center">AN(25)</td>
+<td>Phone number of the associated person at the address (Optional additional number)</td>
+</tr>
+<tr>
+<td>PhoneNumber3</td>
+<td style="text-align:center">AN(25)</td>
+<td>Phone number of the associated person at the address (Optional additional number)</td>
+</tr>
+<tr>
+<td>PosEntryMode</td>
+<td style="text-align:center">ENUM</td>
+<td>Indicates how the card was presented and readby the terminal. <br><br> Values can be:<br>0 - Chip Read<br>1 - Contactless<br>2 - Swiped (MSR)</td>
+</tr>
+<tr>
+<td>PostalCode</td>
+<td style="text-align:center">AN(10)</td>
+<td>Postal code of an address</td>
+</tr>
+<tr>
+<td>PowerTranzID</td>
+<td style="text-align:center">AN(25)</td>
+<td>The unique PowerTranz Merchant account unique identifier. To be used on all requests to the gateway. Example: 99901066</td>
+</tr>
+<tr>
+<td>ReceiptData</td>
+<td style="text-align:center">Sub-Object</td>
+<td>Data structure in a payment response containing data for receipt printing</td>
+</tr>
+<tr>
+<td>ResponseMessage</td>
+<td style="text-align:center">AN(50)</td>
+<td>Complementary explanation to the response code value (if available).</td>
+</tr>
+<tr>
+<td>SecondaryAddress</td>
+<td style="text-align:center">Sub-Object</td>
+<td>Optional data sub-object where additional cardholder address data can be supplied (ex: shipping, passenger, guest)</td>
+</tr>
+<tr>
+<td>SettledAmount</td>
+<td style="text-align:center">DEC 18,3</td>
+<td>Net amount submitted to the processor for settlement</td>
+</tr>
+<tr>
+<td>StartDateTime</td>
+<td style="text-align:center">DT</td>
+<td>The start date and time for a date based transaction search</td>
+</tr>
+<tr>
+<td>State</td>
+<td style="text-align:center">AN(25)</td>
+<td>State or Province associated with an address</td>
+</tr>
+<tr>
+<td>TaxAmount</td>
+<td style="text-align:center">DEC 18,3</td>
+<td>The Tax amount (if any was provided in the request)</td>
+</tr>
+<tr>
+<td>TCPIPSupported</td>
+<td style="text-align:center">BOOL</td>
+<td>Flag indicating if TCPIP is supported for connectivity.<br><br> Possible values are: <br>0 - Not supported<br>1 - supported</td>
+</tr>
+<tr>
+<td>TerminalID</td>
+<td style="text-align:center">N(8)</td>
+<td>The terminal identifier used to capture the transaction data. This information needs to be provided prior to start the transaction.</td>
+</tr>
+<tr>
+<td>TerminalVerificationResults</td>
+<td style="text-align:center">AN(10)</td>
+<td>Only meaningful for chip transactions.  Required for EMV receipts.</td>
+</tr>
+<tr>
+<td>TipAmount</td>
+<td style="text-align:center">DEC 18,3</td>
+<td>The tip amount (if any).</td>
+</tr>
+<tr>
+<td>TimeoutInterval</td>
+<td style="text-align:center">N(3)</td>
+<td>Time in seconds for the SDK to wait before timing out.  Should be greater than the processors timeout (processor dependent - typically 45-60 seconds)</td>
+</tr>
+<tr>
+<td>TotalAmount</td>
+<td style="text-align:center">DEC 18,3</td>
+<td>Contains the total approved amount (including tip if any)</td>
+</tr>
+<tr>
+<td>TotalCaptureAmount</td>
+<td style="text-align:center">DEC 18,3</td>
+<td>Total amount that captured on an order</td>
+</tr>
+<tr>
+<td>TotalCreditAmount</td>
+<td style="text-align:center">DEC 18,3</td>
+<td>Total amount credited (refunded) on an order</td>
+</tr>
+<tr>
+<td>TransactionDateTime</td>
+<td style="text-align:center">DT</td>
+<td>Date and time for the transaction.</td>
+</tr>
+<tr>
+<td>TransactionIdentifier</td>
+<td style="text-align:center">GUID(36)</td>
+<td>Unique transaction identifier that is used to reference the transaction in the server. It can be used to refer to an original transaction to conduct refunds, voids and captures.</td>
+</tr>
+<tr>
+<td>TransactionStatusIndicator</td>
+<td style="text-align:center">AN(4)</td>
+<td>Only meaningful for chip transactions.  Required for EMV receipts.</td>
+</tr>
+<tr>
+<td>TransactionType</td>
+<td style="text-align:center">ENUM</td>
+<td>Flag to indicate the transaction Type.<br><br> Types are :<br>0 - None<br>1 - Authorization Only<br>2 - Sale<br>3 - Capture<br>4 - Void<br>5 - Refund<br>6 - Credit</td>
+</tr>
+<tr>
+<td>VoidDateTime</td>
+<td style="text-align:center">DT</td>
+<td>Indication that an order was reversed.  Provides the Date and Time of the Void/Reversal</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h3 id="response-codes">Response Codes</h3>
+<p><br>
+<br></p>
+<p>The PowerTranz SDK has the following possible outcomes for transactions:</p>
+<ul>
+<li><strong>Approval</strong> – Transaction was approved, accepted and successful;</li>
+<li><strong>Decline</strong> – Transaction was declined by the issuer or declined by the card (not due to a failure - declines are not errors);</li>
+<li><strong>Failure</strong> – Transaction was not successful as it was either rejected or there was an error at some point during processing.</li>
+</ul>
+<p>There are 5 possible fields that indicate and describe the result of the transaction. The three that will always be populated in all responses regardless of the transaction type or status are Approved, IsoResponseCode and ResponseMessage.  In addition to this, should a transaction fail at the PowerTranz Gateway level (not an Issuer or Processor failure/rejection) then there will be the additional subset of Error data passed back and it will contain Code and Message. This additional error data will provide more defined and descriptive reasons for the failure. Below is a table showing which fields will be populated in the response for the given result status of the transaction.</p>
+<p><br></p>
+<p align="center">
+  <img align="centre" src="Images/TransactionResultStatusPresence.png">
+</p>
+
+<p><br>
+<br>
+<br></p>
+<p><strong>Additional explanation</strong></p>
+<p><strong>Approval</strong>:  When a transaction is successful (approved), the main indicators are that the approved field contains ‘true’.  In addition, the IsoResponseCode field contains ‘00’. The corresponding response code description is returned within the ResponseMessage.  UNo error data is populated. </p>
+<p><strong>Declines or Failures which are Issuer/Processor based</strong>: If a transaction is declined, rejected or there was a failure upstream with the processor or Issuer, PowerTranz always returns ‘false’ within the Approved field along with an IsoResponseCode and its corresponding ResponseMessage. All available codes for the IsoResponseCode listed in the IsoResponseCode section of this appendix. Note that in this context, Error (Code and Message) does not contain any response data for Issuer/Processor denials or failures.   </p>
+<p><strong>Failures which are PowerTranz Gateway based</strong>: Transactions that fail at the PowerTranz gateway level return ‘false’ within the Approved field along with the standard IsoResponseCode and its associated ResponseMessage. In addition to these 3 fields, PowerTranz includes additional data within Error (nested fields namely Code and Message). The Error data is meant to provide descriptive detail on the error(s) that were triggered. It is possible to have more than one set of Error Code and Message returned. </p>
+<p>The following tables outline all the possible statuses and resulting codes:</p>
+<p><strong>Approval</strong></p>
+<p><br></p>
+<p align="center">
+  <img align="centre" src="Images/ApprovalResultsPresence.png">
+</p>
+
+<p><br></p>
+<p><strong>Decline or Failure</strong> (Issuer or Processor based)</p>
+<p><br></p>
+<p align="center">
+  <img align="centre" src="Images/DeclineResultsPresence.png">
+</p>
+
+<p><br></p>
+
+<p><strong>Failure</strong> (at PowerTranz Gateway level)</p>
+<p><br></p>
+<p align="center">
+  <img align="centre" src="Images/ErrorCodes.png">
+</p>
+
+
+<p><br>
+<br></p>
+<h4 id="iso-response-codes">ISO Response Codes</h4>
+<p>The following table describes all the ISO Response codes that can be returned from the SDK.</p>
+<p align="center">
+  <img align="centre" src="Images/ISOResponseCodes.png">
+</p>
+
+<p><br>
+<br>
+<br></p>
+<h3 id="payment---responses">Payment - Responses</h3>
+<h4 id="ptzpaymentresponse-data-model">PtzPaymentResponse Data Model</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align:center">Format</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TransactionType</td>
+<td style="text-align:center">AN(1)</td>
+<td>Indicator of the transaction type</td>
+</tr>
+<tr>
+<td><strong>Approved</strong></td>
+<td style="text-align:center">BOOL</td>
+<td>Flag indicating the <strong>OVERALL</strong> approval status/success of the transation</td>
+</tr>
+<tr>
+<td>TransactionIdentifier</td>
+<td style="text-align:center">GUID (36)</td>
+<td>Unique Identifier generated by PowerTranz.  Ensure this ID is stored within the POS environment for future use and searches</td>
+</tr>
+<tr>
+<td>TotalAmount</td>
+<td style="text-align:center">DEC  18,3</td>
+<td>TotalAmount of the transaction (includes any tip or cachback amounts)</td>
+</tr>
+<tr>
+<td>TipAmount</td>
+<td style="text-align:center">DEC  18,3</td>
+<td>Tip portaion of the TotalAmount of the transaction (where supported)</td>
+</tr>
+<tr>
+<td>OtherAmount</td>
+<td style="text-align:center">DEC  18,3</td>
+<td>Cashback portion of the TotalAmount (where supported)</td>
+</tr>
+<tr>
+<td>CurrencyCode</td>
+<td style="text-align:center">N(3)</td>
+<td>Currency code of the transaction</td>
+</tr>
+<tr>
+<td>ExternalIdentifier</td>
+<td style="text-align:center">AN(150)</td>
+<td>Identifier associated with what waqs provided by the POS in the payment request</td>
+</tr>
+<tr>
+<td>OrderIdentifier</td>
+<td style="text-align:center">AN(150)</td>
+<td>Identifier associated with what waqs provided by the POS in the payment request</td>
+</tr>
+<tr>
+<td>OriginalTrxnIdentifier</td>
+<td style="text-align:center">GUID (36)</td>
+<td>For Transaction Modification type transactions.  TransactionIdentifier of the Original tranaction the Transaction Modification was applied against</td>
+</tr>
+<tr>
+<td><strong>OnlineResponse</strong></td>
+<td style="text-align:center"><strong>sub-object</strong></td>
+<td>Data sub-object of the main response</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;Approved</td>
+<td style="text-align:center">BOOL</td>
+<td>Issuer/Processor response.  This is <strong>NOT</strong> indicative of the overall approval status.  <strong>Refer to the &quot;Approved&quot; in main object for the overall status</strong></td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;AuthorizationCode</td>
+<td style="text-align:center">AN(6)</td>
+<td>Authorization Number provided by the card Issuer on Auth/Sale approvals</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;AvsResponseCode</td>
+<td style="text-align:center">AN(3)</td>
+<td>Reserved for ecommerce</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;CvvResponseCode</td>
+<td style="text-align:center">AN(3)</td>
+<td>Reserved for ecommerce</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;IsoResponseCode</td>
+<td style="text-align:center">AN(3)</td>
+<td>ISO Response Code returned from the Gateway</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;EmvIssuerAuthenticationData</td>
+<td style="text-align:center">AN(255)</td>
+<td>EMV Authenticatoin Data sent to Gateway from Issuer</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;EmvIssuerScripts</td>
+<td style="text-align:center">AN(255)</td>
+<td>EMV scripts sent to Gateway from Issuer</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;ResponseMessage</td>
+<td style="text-align:center">AN(3)</td>
+<td>Response Code descriptive text</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;CustomData</td>
+<td style="text-align:center">AN(255)</td>
+<td>Processor dependent; Custom data returned from the Processor</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;CardBrand</td>
+<td style="text-align:center">AN(25)</td>
+<td>Brand of the card used in the transaction</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;PanToken</td>
+<td style="text-align:center">AN(255)</td>
+<td>PAN token returned if subscribed to the service</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;<strong>Errors</strong></td>
+<td style="text-align:center"><strong>sub-object</strong></td>
+<td>Sub-object of onlineSummary.  Provides a list of Error Codes and Descriptive Text returned from the PowerTranz Gateway in the event of an error.  Depending on the exception there may be more than one instance of Code and Message</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Code</td>
+<td style="text-align:center">AN(2)</td>
+<td>PowerTranz error code</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message</td>
+<td style="text-align:center">AN(50)</td>
+<td>Descriptive text for the error code</td>
+</tr>
+<tr>
+<td><strong>ReceiptData</strong></td>
+<td style="text-align:center"><strong>sub-object</strong></td>
+<td>Data sub-object of the main response</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;ApplicationPreferredName</td>
+<td style="text-align:center">AN(50)</td>
+<td>Must be present on EMV Receipt</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;ApplicationLabel</td>
+<td style="text-align:center">AN(50)</td>
+<td>Must be present if there is no ApplicationPreferredName</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;MaskedPan</td>
+<td style="text-align:center">AN(19)</td>
+<td>Masked PAN</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;PosEntryMode</td>
+<td style="text-align:center">N(2)</td>
+<td>Point of Sale Entry Mode Flag.  Required for all payment receipts.</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;CvmMethod</td>
+<td style="text-align:center">N(2)</td>
+<td>Cardholder Verification Method Flag.  Required for all payment receipts.  Also indicates whether to present/prompt for signature.</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;AuthorizationMode</td>
+<td style="text-align:center">N(2)</td>
+<td>Party who authorized or decline the transaction.  Required for EMV payment receipts.</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;ApplicationId</td>
+<td style="text-align:center">AN(50)</td>
+<td>Must be present and unaltered on EMV Receipt</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;TerminalVerificationResults</td>
+<td style="text-align:center">AN(50)</td>
+<td>Must be present and unaltered on EMV Receipt</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;IssuerApplicationData</td>
+<td style="text-align:center">AN(255)</td>
+<td>Must be present and unaltered on EMV Receipt</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;TransactionStatusIndicator</td>
+<td style="text-align:center">AN(50)</td>
+<td>Must be present and unaltered on EMV Receipt</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;ApplicationResponseCode</td>
+<td style="text-align:center">AN(2)</td>
+<td>Must be present and unaltered on EMV Receipt</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+<br>
+<br></p>
+<h4 id="ptzpaymentresponse-samples">PtzPaymentResponse Samples</h4>
+<p><br></p>
+<h5 id="didfinish---authorization-approved"><strong>DidFinish</strong> - Authorization Approved</h5>
+<pre><code class="lang-C#">{
+  &quot;TransactionType&quot;: 1,
+  &quot;Approved&quot;: true,
+  &quot;TransactionIdentifier&quot;: &quot;2d8c3fe8-e85f-4ed0-a0d3-e757fe887a96&quot;,
+  &quot;TotalAmount&quot;: 80.0,
+  &quot;TipAmount&quot;: 0.0,
+  &quot;OtherAmount&quot;: 0.0,
+  &quot;CurrencyCode&quot;: &quot;840&quot;,
+  &quot;ExternalIdentifier&quot;: &quot;extid 1&quot;,
+  &quot;OriginalTrxnIdentifier&quot;: null,
+  &quot;TerminalResult&quot;: 1,
+  &quot;OnlineResponse&quot;: {
+    &quot;Approved&quot;: true,
+    &quot;AuthorizationCode&quot;: &quot;008328&quot;,
+    &quot;AvsResponseCode&quot;: null,
+    &quot;CvvResponseCode&quot;: null,
+    &quot;IsoResponseCode&quot;: &quot;00&quot;,
+    &quot;EmvIssuerAuthenticationData&quot;: null,
+    &quot;EmvIssuerScripts&quot;: null,
+    &quot;ResponseMessage&quot;: &quot;Transaction is approved.&quot;,
+    &quot;CustomData&quot;: null,
+    &quot;CardBrand&quot;: &quot;MasterCard&quot;,
+    &quot;PanToken&quot;: &quot;2f4qamf4sv2lfnjfgvcsv6694lf0y1em0ojeoak5nklyeubsbs&quot;,
+    &quot;Errors&quot;: null
+  },
+  &quot;ReceiptData&quot;: {
+    &quot;ApplicationPreferredName&quot;: null,
+    &quot;ApplicationLabel&quot;: &quot;MasterCard&quot;,
+    &quot;MaskedPan&quot;: &quot;543211******1234&quot;,
+    &quot;PosEntryMode&quot;: 2,
+    &quot;CvmMethod&quot;: 3,
+    &quot;AuthorizationMode&quot;: 1,
+    &quot;ApplicationId&quot;: null,
+    &quot;TerminalVerificationResults&quot;: null,
+    &quot;IssuerApplicationData&quot;: null,
+    &quot;TransactionStatusIndicator&quot;: null,
+    &quot;ApplicationResponseCode&quot;: null
+  }
+}
+</code></pre><p><br>
+<br></p>
+<h5 id="didfinishwithreversal-----sale-approved-and-auto-reversed-reversal-reason---icc-declined"><strong>DidFinishWithReversal</strong>  -  Sale Approved and Auto-Reversed (Reversal Reason - ICC Declined)</h5>
+<pre><code class="lang-C#">{
+  &quot;TransactionType&quot;: 2,
+  &quot;Approved&quot;: false,
+  &quot;TransactionIdentifier&quot;: &quot;eb66b8e0-acdb-4121-85c3-90251885723c&quot;,
+  &quot;TotalAmount&quot;: 120.0,
+  &quot;TipAmount&quot;: 0.0,
+  &quot;OtherAmount&quot;: 0.0,
+  &quot;CurrencyCode&quot;: &quot;840&quot;,
+  &quot;ExternalIdentifier&quot;: &quot;extid 1&quot;,
+  &quot;OrderIdentifier&quot;: &quot;orderid 1&quot;,
+  &quot;OriginalTrxnIdentifier&quot;: null,
+  &quot;TerminalResult&quot;: 2,
+  &quot;OnlineResponse&quot;: {
+    &quot;Approved&quot;: true,
+    &quot;AuthorizationCode&quot;: &quot;008437&quot;,
+    &quot;AvsResponseCode&quot;: null,
+    &quot;CvvResponseCode&quot;: null,
+    &quot;IsoResponseCode&quot;: &quot;00&quot;,
+    &quot;EmvIssuerAuthenticationData&quot;: &quot;11223344556677883030&quot;,
+    &quot;EmvIssuerScripts&quot;: null,
+    &quot;ResponseMessage&quot;: &quot;Transaction is approved.&quot;,
+    &quot;CustomData&quot;: null,
+    &quot;CardBrand&quot;: &quot;MasterCard&quot;,
+    &quot;PanToken&quot;: &quot;1aigmhm8wblogi1ikr6ea1ayjn88xyl51td1qneqsles1g2p4d&quot;,
+    &quot;Errors&quot;: null
+  },
+  &quot;ReceiptData&quot;: {
+    &quot;ApplicationPreferredName&quot;: &quot;MasterCard&quot;,
+    &quot;ApplicationLabel&quot;: &quot;MASTERCARD&quot;,
+    &quot;MaskedPan&quot;: &quot;541333ffffff0011&quot;,
+    &quot;PosEntryMode&quot;: 0,
+    &quot;CvmMethod&quot;: 2,
+    &quot;AuthorizationMode&quot;: 2,
+    &quot;ApplicationId&quot;: &quot;A0000000041010&quot;,
+    &quot;TerminalVerificationResults&quot;: &quot;0800008000&quot;,
+    &quot;IssuerApplicationData&quot;: &quot;021025100F040400000000000000000000FF&quot;,
+    &quot;TransactionStatusIndicator&quot;: &quot;E800&quot;,
+    &quot;ApplicationResponseCode&quot;: &quot;00&quot;
+  }
+}
+</code></pre><p><br>
+<br></p>
+<h5 id="didfail-----sale-failed-failed-prior-to-online-processing---no-reversal"><strong>DidFail</strong>  -  Sale Failed (Failed prior to online processing - No Reversal)</h5>
+<pre><code class="lang-C#">{
+  &quot;TransactionType&quot;: 2,
+  &quot;Approved&quot;: false,
+  &quot;TransactionIdentifier&quot;: &quot;a77f26a3-32e4-4a90-8c23-068eb4e6418d&quot;,
+  &quot;TotalAmount&quot;: 120.0,
+  &quot;TipAmount&quot;: 0.0,
+  &quot;OtherAmount&quot;: 0.0,
+  &quot;CurrencyCode&quot;: &quot;840&quot;,
+  &quot;ExternalIdentifier&quot;: &quot;extid 1&quot;,
+  &quot;OrderIdentifier&quot;: &quot;orderid 1&quot;,
+  &quot;OriginalTrxnIdentifier&quot;: null,
+  &quot;TerminalResult&quot;: 4,
+  &quot;OnlineResponse&quot;: null,
+  &quot;ReceiptData&quot;: null
+}
+</code></pre><p><br></p>
+<h5 id="didfailwithreversal-----authorization-failed-and-auto-reversed-reversal-reason---transaction-status-unknown"><strong>DidFailWithReversal</strong>  -  Authorization Failed and Auto-Reversed (Reversal Reason - Transaction Status Unknown)</h5>
+<pre><code class="lang-C#">{
+  &quot;TransactionType&quot;: 6,
+  &quot;Approved&quot;: false,
+  &quot;TransactionIdentifier&quot;: &quot;a8490cd5-f3cb-45f6-9228-f3220b4260a3&quot;,
+  &quot;TotalAmount&quot;: 5.0,
+  &quot;TipAmount&quot;: 0.0,
+  &quot;OtherAmount&quot;: 0.0,
+  &quot;CurrencyCode&quot;: &quot;840&quot;,
+  &quot;ExternalIdentifier&quot;: &quot;extid 1&quot;,
+  &quot;OrderIdentifier&quot;: &quot;orderid 1&quot;,
+  &quot;OriginalTrxnIdentifier&quot;: null,
+  &quot;TerminalResult&quot;: 4,
+  &quot;OnlineResponse&quot;: null,
+  &quot;ReceiptData&quot;: {
+    &quot;ApplicationPreferredName&quot;: null,
+    &quot;ApplicationLabel&quot;: &quot;MASTERCARD&quot;,
+    &quot;MaskedPan&quot;: &quot;222300ffffff3730&quot;,
+    &quot;PosEntryMode&quot;: 0,
+    &quot;CvmMethod&quot;: 2,
+    &quot;AuthorizationMode&quot;: 0,
+    &quot;ApplicationId&quot;: &quot;A0000000041010&quot;,
+    &quot;TerminalVerificationResults&quot;: &quot;0800008000&quot;,
+    &quot;IssuerApplicationData&quot;: &quot;0014A50003040000000000000000000000FF&quot;,
+    &quot;TransactionStatusIndicator&quot;: &quot;E800&quot;,
+    &quot;ApplicationResponseCode&quot;: null
+  }
+}
+</code></pre><p><br>
+<br></p>
+<h3 id="query---responses">Query - Responses</h3>
+<p><br>
+<br></p>
+<h4 id="ptztransactionresponse"><strong>PtzTransactionResponse</strong></h4>
+<p><br></p>
+<p>Data for a single transaction is returned along with order summary data.  </p>
+<p>Example below is of authorization that was originally approved but subsequently reversed (Void).</p>
+<p>While the original transaction approved (Approved = True) note VoidDateTime in the OrderSummary data.   The VoidDateTime is an indicator that the transaction was reversed.  It is not returned if there was no Void.</p><p>
+<pre><code class="lang-C#">{
+    &quot;Approved&quot;: true,
+    &quot;AuthorizationCode&quot;: &quot;008437&quot;,
+    &quot;CurrencyCode&quot;: &quot;840&quot;,
+    &quot;ExternalBatchIdentifier&quot;: &quot;extbatchid 1&quot;,
+    &quot;ExternalGroupIdentifier&quot;: &quot;extgrpid 1&quot;,
+    &quot;ExternalIdentifier&quot;: &quot;extid 1&quot;,
+    &quot;IsoResponseCode&quot;: &quot;00&quot;,
+    &quot;OrderSummary&quot;: {
+        &quot;CaptureCount&quot;: 1,
+        &quot;CreditCount&quot;: 0,
+        &quot;CurrencyCode&quot;: &quot;840&quot;,
+        &quot;LastCaptureDateTime&quot;: &quot;2018-06-28T15:41:23.533&quot;,
+        &quot;OrderIdentifier&quot;: &quot;orderid 1&quot;,
+        &quot;OriginalTrxnDateTime&quot;: &quot;2018-06-28T15:41:23.533&quot;,
+        &quot;OriginalTrxnIdentifier&quot;: &quot;eb66b8e0-acdb-4121-85c3-90251885723c&quot;,
+        &quot;SettledAmount&quot;: 0,
+        &quot;TotalCaptureAmount&quot;: 120,
+        &quot;TotalCreditAmount&quot;: 0,
+        &quot;VoidDateTime&quot;: &quot;2018-06-28T15:41:26.893&quot; 
+    },
+    &quot;OtherAmount&quot;: 0,
+    &quot;TaxAmount&quot;: 0,
+    &quot;TipAmount&quot;: 0,
+    &quot;TotalAmount&quot;: 120,
+    &quot;TransactionDateTime&quot;: &quot;2018-06-28T15:41:23.533&quot;,
+    &quot;TransactionIdentifier&quot;: &quot;eb66b8e0-acdb-4121-85c3-90251885723c&quot;,
+    &quot;TransactionType&quot;: 2
+}
+</code></pre><p><br>
+<br></p>
+<h4 id="ptzorderresponse"><strong>PtzOrderResponse</strong></h4>
+<p>Data for the order is returned along with a subset of data containing a list of all corresponding transactions tied to the order. 
+
+Example below is of authorization that was originally approved but subsequently reversed (Void).
+
+Note that while the original transaction approved (Approved = True) you will see VoidDateTime in the main body of the order data (bottom).  The VoidDateTime is an indicator that the transaction was reversed.  It is not returned if there was no Void.</p>
+
+
+
+<pre><code class="lang-C#">{
+    &quot;CaptureCount&quot;: 1,
+    &quot;CreditCount&quot;: 0,
+    &quot;CurrencyCode&quot;: &quot;840&quot;,
+    &quot;LastCaptureDateTime&quot;: &quot;2018-06-28T15:41:23.533&quot;,
+    &quot;OrderIdentifier&quot;: &quot;orderid 1&quot;,
+    &quot;OriginalTrxnDateTime&quot;: &quot;2018-06-28T15:41:23.533&quot;,
+    &quot;OriginalTrxnIdentifier&quot;: &quot;eb66b8e0-acdb-4121-85c3-90251885723c&quot;,
+    &quot;SettledAmount&quot;: 0,
+    &quot;TotalCaptureAmount&quot;: 120,
+    &quot;TotalCreditAmount&quot;: 0,
+    &quot;Transactions&quot;: [
+        {
+            &quot;Approved&quot;: true,
+            &quot;AuthorizationCode&quot;: &quot;008437&quot;,
+            &quot;ExternalBatchIdentifier&quot;: &quot;extbatchid 1&quot;,
+            &quot;ExternalGroupIdentifier&quot;: &quot;extgrpid 1&quot;,
+            &quot;ExternalIdentifier&quot;: &quot;extid 1&quot;,
+            &quot;IsoResponseCode&quot;: &quot;00&quot;,
+            &quot;OtherAmount&quot;: 0,
+            &quot;TaxAmount&quot;: 0,
+            &quot;TipAmount&quot;: 0,
+            &quot;TotalAmount&quot;: 120,
+            &quot;TransactionDateTime&quot;: &quot;2018-06-28T15:41:23.533&quot;,
+            &quot;TransactionIdentifier&quot;: &quot;eb66b8e0-acdb-4121-85c3-90251885723c&quot;,
+            &quot;TransactionType&quot;: 2
+        },
+        {
+            &quot;Approved&quot;: true,
+            &quot;AuthorizationCode&quot;: &quot;008437&quot;,
+            &quot;ExternalGroupIdentifier&quot;: &quot;extgrpid 1&quot;,
+            &quot;ExternalIdentifier&quot;: &quot;extid 1-AR&quot;,
+            &quot;IsoResponseCode&quot;: &quot;00&quot;,
+            &quot;OtherAmount&quot;: 0,
+            &quot;TaxAmount&quot;: 0,
+            &quot;TipAmount&quot;: 0,
+            &quot;TotalAmount&quot;: 120,
+            &quot;TransactionDateTime&quot;: &quot;2018-06-28T15:41:26.893&quot;,
+            &quot;TransactionIdentifier&quot;: &quot;6708a038-eac9-4d2b-9161-2160f5d76f87&quot;,
+            &quot;TransactionType&quot;: 4
+        }
+    ],
+    &quot;VoidDateTime&quot;: &quot;2018-06-28T15:41:26.893&quot;
+}
+</code></pre><p><br>
+<br></p>
+<h4 id="ptztransactionsresponse"><strong>PtzTransactionsResponse</strong></h4>
+<p><br></p>
+<p>Returns a <em>list</em> of transactions based on the search criteria used.</p>
+
+<p><br></p>
+<pre><code class="lang-C#">[
+    {
+        &quot;Approved&quot;: true,
+        &quot;AuthorizationCode&quot;: &quot;008439&quot;,
+        &quot;CurrencyCode&quot;: &quot;840&quot;,
+        &quot;ExternalBatchIdentifier&quot;: &quot;extbatchid 1&quot;,
+        &quot;ExternalGroupIdentifier&quot;: &quot;extgrpid 1&quot;,
+        &quot;ExternalIdentifier&quot;: &quot;extid 1&quot;,
+        &quot;IsoResponseCode&quot;: &quot;00&quot;,
+        &quot;OrderSummary&quot;: {
+            &quot;CaptureCount&quot;: 1,
+            &quot;CreditCount&quot;: 0,
+            &quot;CurrencyCode&quot;: &quot;840&quot;,
+            &quot;LastCaptureDateTime&quot;: &quot;2018-06-28T15:54:25.34&quot;,
+            &quot;OrderIdentifier&quot;: &quot;orderid 1&quot;,
+            &quot;OriginalTrxnDateTime&quot;: &quot;2018-06-28T15:54:25.34&quot;,
+            &quot;OriginalTrxnIdentifier&quot;: &quot;d930f7f5-6675-47e0-a655-d10cff8aea70&quot;,
+            &quot;SettledAmount&quot;: 120,
+            &quot;TotalCaptureAmount&quot;: 120,
+            &quot;TotalCreditAmount&quot;: 0
+        },
+        &quot;OtherAmount&quot;: 0,
+        &quot;TaxAmount&quot;: 0,
+        &quot;TipAmount&quot;: 0,
+        &quot;TotalAmount&quot;: 120,
+        &quot;TransactionDateTime&quot;: &quot;2018-06-28T15:54:25.34&quot;,
+        &quot;TransactionIdentifier&quot;: &quot;d930f7f5-6675-47e0-a655-d10cff8aea70&quot;,
+        &quot;TransactionType&quot;: 2
+    },
+    {
+        &quot;Approved&quot;: true,
+        &quot;AuthorizationCode&quot;: &quot;008438&quot;,
+        &quot;CurrencyCode&quot;: &quot;840&quot;,
+        &quot;ExternalBatchIdentifier&quot;: &quot;extbatchid 1&quot;,
+        &quot;ExternalGroupIdentifier&quot;: &quot;extgrpid 1&quot;,
+        &quot;ExternalIdentifier&quot;: &quot;extid 1&quot;,
+        &quot;IsoResponseCode&quot;: &quot;00&quot;,
+        &quot;OrderSummary&quot;: {
+            &quot;CaptureCount&quot;: 1,
+            &quot;CreditCount&quot;: 0,
+            &quot;CurrencyCode&quot;: &quot;840&quot;,
+            &quot;LastCaptureDateTime&quot;: &quot;2018-06-28T15:53:42.75&quot;,
+            &quot;OrderIdentifier&quot;: &quot;orderid 1&quot;,
+            &quot;OriginalTrxnDateTime&quot;: &quot;2018-06-28T15:53:42.75&quot;,
+            &quot;OriginalTrxnIdentifier&quot;: &quot;4d7d3570-1f6f-4c22-a7c4-7c55dcc26cf4&quot;,
+            &quot;SettledAmount&quot;: 120,
+            &quot;TotalCaptureAmount&quot;: 120,
+            &quot;TotalCreditAmount&quot;: 0
+        },
+        &quot;OtherAmount&quot;: 0,
+        &quot;TaxAmount&quot;: 0,
+        &quot;TipAmount&quot;: 0,
+        &quot;TotalAmount&quot;: 120,
+        &quot;TransactionDateTime&quot;: &quot;2018-06-28T15:53:42.75&quot;,
+        &quot;TransactionIdentifier&quot;: &quot;4d7d3570-1f6f-4c22-a7c4-7c55dcc26cf4&quot;,
+        &quot;TransactionType&quot;: 2
+    },
+    {
+        &quot;Approved&quot;: true,
+        &quot;AuthorizationCode&quot;: &quot;008437&quot;,
+        &quot;CurrencyCode&quot;: &quot;840&quot;,
+        &quot;ExternalGroupIdentifier&quot;: &quot;extgrpid 1&quot;,
+        &quot;ExternalIdentifier&quot;: &quot;extid 1-AR&quot;,
+        &quot;IsoResponseCode&quot;: &quot;00&quot;,
+        &quot;OrderSummary&quot;: {
+            &quot;CaptureCount&quot;: 1,
+            &quot;CreditCount&quot;: 0,
+            &quot;CurrencyCode&quot;: &quot;840&quot;,
+            &quot;LastCaptureDateTime&quot;: &quot;2018-06-28T15:41:23.533&quot;,
+            &quot;OrderIdentifier&quot;: &quot;orderid 1&quot;,
+            &quot;OriginalTrxnDateTime&quot;: &quot;2018-06-28T15:41:23.533&quot;,
+            &quot;OriginalTrxnIdentifier&quot;: &quot;eb66b8e0-acdb-4121-85c3-90251885723c&quot;,
+            &quot;SettledAmount&quot;: 0,
+            &quot;TotalCaptureAmount&quot;: 120,
+            &quot;TotalCreditAmount&quot;: 0,
+            &quot;VoidDateTime&quot;: &quot;2018-06-28T15:41:26.893&quot;
+        },
+        &quot;OtherAmount&quot;: 0,
+        &quot;TaxAmount&quot;: 0,
+        &quot;TipAmount&quot;: 0,
+        &quot;TotalAmount&quot;: 120,
+        &quot;TransactionDateTime&quot;: &quot;2018-06-28T15:41:26.893&quot;,
+        &quot;TransactionIdentifier&quot;: &quot;6708a038-eac9-4d2b-9161-2160f5d76f87&quot;,
+        &quot;TransactionType&quot;: 4
+    },
+    {
+        &quot;Approved&quot;: true,
+        &quot;AuthorizationCode&quot;: &quot;008437&quot;,
+        &quot;CurrencyCode&quot;: &quot;840&quot;,
+        &quot;ExternalBatchIdentifier&quot;: &quot;extbatchid 1&quot;,
+        &quot;ExternalGroupIdentifier&quot;: &quot;extgrpid 1&quot;,
+        &quot;ExternalIdentifier&quot;: &quot;extid 1&quot;,
+        &quot;IsoResponseCode&quot;: &quot;00&quot;,
+        &quot;OrderSummary&quot;: {
+            &quot;CaptureCount&quot;: 1,
+            &quot;CreditCount&quot;: 0,
+            &quot;CurrencyCode&quot;: &quot;840&quot;,
+            &quot;LastCaptureDateTime&quot;: &quot;2018-06-28T15:41:23.533&quot;,
+            &quot;OrderIdentifier&quot;: &quot;orderid 1&quot;,
+            &quot;OriginalTrxnDateTime&quot;: &quot;2018-06-28T15:41:23.533&quot;,
+            &quot;OriginalTrxnIdentifier&quot;: &quot;eb66b8e0-acdb-4121-85c3-90251885723c&quot;,
+            &quot;SettledAmount&quot;: 0,
+            &quot;TotalCaptureAmount&quot;: 120,
+            &quot;TotalCreditAmount&quot;: 0,
+            &quot;VoidDateTime&quot;: &quot;2018-06-28T15:41:26.893&quot;
+        },
+        &quot;OtherAmount&quot;: 0,
+        &quot;TaxAmount&quot;: 0,
+        &quot;TipAmount&quot;: 0,
+        &quot;TotalAmount&quot;: 120,
+        &quot;TransactionDateTime&quot;: &quot;2018-06-28T15:41:23.533&quot;,
+        &quot;TransactionIdentifier&quot;: &quot;eb66b8e0-acdb-4121-85c3-90251885723c&quot;,
+        &quot;TransactionType&quot;: 2
+    }
+]
+</code></pre><p><br>
+<br>
+<br></p>
+<h3 id="receipts">Receipts</h3>
+<p>This section is included to guide POS application development with regards to data that needs to be present in receipts and which data must not be ever present.</p>
+<p>Receipt Data is returned with an Auth, Sale or Credit.  It’s recommended that merchants retain receipts and receipt data for 12 months.  For physical receipts with signature, it is recommended the signed copy be retained for 18 months.  It is advisable that regardless to these recommendations that they contact their acquiring bank.  <strong>Merchants are responsible for ensuring they are following their acquiring bank’s receipt retention policies.</strong>  </p>
+<p><br></p>
+
+<p>The following data elements must never be present in receipts (either merchant, customer or internal logging):</p>
+<ul>
+<li>Full Card PAN</li>
+<li>Card Expiry Date</li>
+<li>CVV / CVV2 / CVVC / CSC</li>
+<li>PIN </li>
+</ul>
+<p><br></p>
+<h4 id="receipt-requirements">Receipt Requirements</h4>
+<p><br></p>
+<p align="center">
+  <img align="centre" src="Images/ReceiptResList.png">
+</p>
+
+<p><br></p>
+<h4 id="receipt-samples">Receipt Samples</h4>
+<p align="center">
+  <img align="centre" src="Images/ReceiptSample1.PNG">
+</p>
+<p align="center">
+  <img align="centre" src="Images/ReceiptSample2.PNG">
+</p>
+<p align="center">
+  <img align="centre" src="Images/ReceiptSample3.PNG">
+</p>
+
+
+<p><br></p>
+<h3 id="testing">Testing</h3>
+<p>The following are required for testing.  Your PowerTranz Representative will assist with this during the client onboarding process:</p>
+<ul>
+<li><strong>Test Credentials</strong></li>
+<li><strong>Test Platform</strong></li>
+<li><strong>Test Cards</strong></li>
+<li><strong>Test Terminal</strong></li>
+<li><strong>Test Scripts</strong> (optional) </li>
+</ul>
+<p><strong>NOTE</strong> :  PowerTranz require Clients and Vendors to self-certify however your PowerTranz Support Representative can provide (upon request) scripts which can be used as a recommended guidline and are a recommended series of tests based on your the merchant type and processing methodologies.  Tests are also dependent and limited to the test cards you have at your disposal.  It is recommended that you acquire an EMV Test Pack to facilitate thorough EMV and Receipt testing.  Speak to our PowerTranz Representative for details.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK.Documentation/articles/Main_Guide.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; 2018 PowerTranz</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -149,19 +149,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/new/2.0.0-StateMachine/apiSpec/new?filename=PowerTranzSDK_Requests_PtzPaymentVoid_Type.md&amp;value=---%0Auid%3A%20PowerTranzSDK.Requests.PtzPaymentVoid.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/new/2.0.0-StateMachine/apiSpec/new?filename=PowerTranzSDK_Requests_PtzPaymentVoid_AutoReversal.md&amp;value=---%0Auid%3A%20PowerTranzSDK.Requests.PtzPaymentVoid.AutoReversal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK/Requests/PtzPaymentVoid.cs/#L11">View Source</a>
   </span>
-  <a id="PowerTranzSDK_Requests_PtzPaymentVoid_Type_" data-uid="PowerTranzSDK.Requests.PtzPaymentVoid.Type*"></a>
-  <h4 id="PowerTranzSDK_Requests_PtzPaymentVoid_Type" data-uid="PowerTranzSDK.Requests.PtzPaymentVoid.Type">Type</h4>
-  <div class="markdown level1 summary"><p>Void type. For internal SDK use only</p>
+  <a id="PowerTranzSDK_Requests_PtzPaymentVoid_AutoReversal_" data-uid="PowerTranzSDK.Requests.PtzPaymentVoid.AutoReversal*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentVoid_AutoReversal" data-uid="PowerTranzSDK.Requests.PtzPaymentVoid.AutoReversal">AutoReversal</h4>
+  <div class="markdown level1 summary"><p>Indicates that this is an AutoReversal</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Type { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool AutoReversal { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -173,11 +173,46 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/new/2.0.0-StateMachine/apiSpec/new?filename=PowerTranzSDK_Requests_PtzPaymentVoid_CardPresent.md&amp;value=---%0Auid%3A%20PowerTranzSDK.Requests.PtzPaymentVoid.CardPresent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PowerTranz/PowerTranz-SDK-Win/blob/2.0.0-StateMachine/PowerTranzSDK/PowerTranzSDK/Requests/PtzPaymentVoid.cs/#L18">View Source</a>
+  </span>
+  <a id="PowerTranzSDK_Requests_PtzPaymentVoid_CardPresent_" data-uid="PowerTranzSDK.Requests.PtzPaymentVoid.CardPresent*"></a>
+  <h4 id="PowerTranzSDK_Requests_PtzPaymentVoid_CardPresent" data-uid="PowerTranzSDK.Requests.PtzPaymentVoid.CardPresent">CardPresent</h4>
+  <div class="markdown level1 summary"><p>CardPresent flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CardPresent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PowerTranzSDK_Requests_PtzPaymentVoid_CardPresent_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that this CardPresent flag has to be in the root object.  We cannot use the PtzPaymentRequest.Source.CardPresent flag because PowerTranz Api doesn&apos;t use that 
+child model for voids.  Technically PtzPaymentVoid should not inherit from PtzPaymentRequest. </p>
+</div>
 </article>
           </div>
           

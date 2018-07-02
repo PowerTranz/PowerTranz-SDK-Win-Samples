@@ -27,6 +27,384 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/ABC Store.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/ABC Store.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/ApprovalResultsPresence.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/ApprovalResultsPresence.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/Authorization.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/Authorization.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/Auto Void.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/Auto Void.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/Capture.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/Capture.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/Credit.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/Credit.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/DeclineResultsPresence.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/DeclineResultsPresence.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/DidConnect.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/DidConnect.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/ErrorCodes.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/ErrorCodes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/ISOResponseCodes.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/ISOResponseCodes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/Important-TrxnID.JPG",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/Important-TrxnID.JPG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/Important.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/Important.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/M010.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/M010.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/Orangeline_Lower.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/Orangeline_Lower.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/Orangeline_Thin.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/Orangeline_Thin.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/PTZ SDK Diagram.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/PTZ SDK Diagram.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/Powertranz-Logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/Powertranz-Logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/ReceiptResList.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/ReceiptResList.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/ReceiptSample1.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/ReceiptSample1.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/ReceiptSample2.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/ReceiptSample2.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/ReceiptSample3.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/ReceiptSample3.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/Refund.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/Refund.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/Search_GroupTrxn_List.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/Search_GroupTrxn_List.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/Search_Order.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/Search_Order.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/Search_SingleTrxn.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/Search_SingleTrxn.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/TransactionResultStatusPresence.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/TransactionResultStatusPresence.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/Void.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/Void.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/Windows.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/Windows.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/onepixel.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/onepixel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/Images/ptz_logo204x48.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/Images/ptz_logo204x48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Main_Guide.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Main_Guide.html",
+          "hash": "7Xh9WRMhT+X80SFjePcPfQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/MarkDown Test/ContextOverview.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/MarkDown Test/ContextOverview.html",
+          "hash": "+hgNeF+rOwJyj6LkTq9Cuw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/MarkDown Test/Introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/MarkDown Test/Introduction.html",
+          "hash": "YUXraDmhpFLH1Bf6zQi4ZA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/MarkDown Test/SupportedFunctions.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/MarkDown Test/SupportedFunctions.html",
+          "hash": "f7TV2LuR9ZJD8rfnUqFuuQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "articles/intro.md",
       "output": {
@@ -114,10 +492,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/win_user_guide.html",
-          "hash": "pw6WAzuKKOcVy7gg30VYTw=="
+          "hash": "ZK81p4oxpU4wdWopYdJlBA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -126,10 +504,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "MSzfHHu5IY4jbWoSJCdD2A=="
+          "hash": "BONfxgGFfzTZqNFd3od8IA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -690,7 +1068,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Requests.PtzPaymentVoid.html",
-          "hash": "/bpH+9jeDMVrgaz1MyopNA=="
+          "hash": "5VovbMv7qvQWiz3CtjToyQ=="
         }
       },
       "is_incremental": true,
@@ -702,7 +1080,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Requests.PtzTransactionRequest.html",
-          "hash": "yvhzwuotAQYHFUgW/+hqVg=="
+          "hash": "cw9SddEZ8btg6uUbrs/jtQ=="
         }
       },
       "is_incremental": true,
@@ -774,7 +1152,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PowerTranzSDK.Responses.PtzPaymentResponse.html",
-          "hash": "p0j/Qk4niP2WoQp8bvS42g=="
+          "hash": "Ay9GHA2xl6QFWglZQG9WRQ=="
         }
       },
       "is_incremental": true,
@@ -968,22 +1346,22 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
