@@ -224,14 +224,14 @@
 <p>The following sections describe the typical usage of the SDK for the most common operations that it supports.</p>
 <p><br> </p>
 <h3 id="client-credentials">Client Credentials</h3>
-<p>The PowerTranzID, Password, ApplicationID and GatewayID data elements are required when setting up the gateway connection.  Further information on this can be found within the User Guide and Technical Reference Documentation. </p>
-<p>In addition to these credentials, the PowerTranz gateway further validates the transaction and source. The POS application is always required to provide the TerminalID for Card Present type transctions is assigned to a PED. The TerminalID is therefore set in the  payment request (PtzPaymentRequest) parameters for PtzPaymentAuth or PtzPaymentRefund (as a Credit).</p>
+<p>The PowerTranzID, Password, ApplicationID and GatewayKey are required when setting up the gateway connection.  Further information on this can be found within the Windows User Guide and Technical Reference Documentation. </p>
+<p>In addition to these credentials, the PowerTranz gateway further validates the transaction and source. The POS application is always required to provide the TerminalID for Card Present type transctions as assigned to the PED. The TerminalID is set in the payment request (PtzPaymentRequest) parameters for PtzPaymentAuth or PtzPaymentRefund (as a Credit).</p>
 <p>Descriptions of the IDs and their purpose are as follows:</p>
 <ul>
 <li><strong>PowerTranzID</strong> – Merchant identifier for the merchant’s account with PowerTranz.   A merchant may have one or more PowerTranz IDs depending on the number of locations.  For example, a merchant with one location would only have one PowerTranzID. A merchant with 3 physical locations may have 3.</li>
 <li><strong>Password</strong> - This is the merchant’s unique processing password and tied to the PowerTranzID</li>
 <li><strong>ApplicationID</strong> – Each POS application is assigned with a ApplicationID. A merchant with various applicatoins may be assigned multiple applicationIDs.</li>
-<li><strong>GatewayKey</strong> – GatewayID is assigned by PowerTranz and is used by the gateway for internal routing and may be unique to each implementation (TBD).</li>
+<li><strong>GatewayKey</strong> – GatewayKey is assigned by PowerTranz and is used by the gateway for internal routing and may be unique to each implementation (TBD).</li>
 <li><strong>TerminalID</strong> -  Each physical card terminal (PED) has a unique Terminal ID. One PowerTranzID can have multiple TerminalIDs associated with it. </li>
 </ul>
 <p><strong>NOTE</strong> : Test credentials are only provided by a PowerTranz Representative in the client onboarding process.</p>
@@ -259,7 +259,7 @@
 
 <p><br></p>
 <h3 id="other-identifiers">Other Identifiers</h3>
-<p>Other “Order” or “Transaction based” identifiers that can be supplied are optional and are assigned by the POS.   These identifiers (if provided) are stored with the transaction record within PowerTranz system for additional report data and search criteria.  </p>
+<p>Other “Order” or “Transaction&quot; based identifiers that can be supplied are optional and are assigned by the POS.   These identifiers (if provided) are stored with the transaction record within PowerTranz system for additional report data and search criteria.  </p>
 <p><br></p>
 <table>
 <thead>
@@ -275,7 +275,7 @@
 </tr>
 <tr>
 <td>ExternalIdentifier</td>
-<td>Unique Identifier assigned to an individual transaction by the POS.  Its purpose is determined by the Merchant or POS.  Can be assigned to all transaction types</td>
+<td>Unique Identifier assigned to an individual transaction by the POS. Its purpose is determined by the Merchant or POS.  Can be assigned to all transaction types</td>
 </tr>
 <tr>
 <td>ExternalBatchIdentifier</td>
@@ -289,9 +289,9 @@
 </table>
 <p><br></p>
 <h3 id="response-handling">Response Handling</h3>
-<p>When processing transaction, the integrated payment application should continue to consider a transaction in a pending or unknown state until the final response is received from the SDK.</p>
+<p>When processing transactions the integrated payment application should continue to consider a transaction in a pending or unknown state until the final response is received from the SDK.</p>
 <p>As the PowerTranz solution is an event driven integration, transaction response events are triggered to provide information up to the integrated application on whether the transaction cycle failed/stopped or that it completed with either an Approval or Decline.  This also will include the full transaction response or exception.</p>
-<p>It is important that the integrating application handle and manage all cases (example : failures, an unknown transaction status or transaction that triggers an auto-reversal) </p>
+<p>It is important that the integrating application handle and manage all cases (example : failures, unknown transaction statuses or transactions that trigger auto-reversals) </p>
 <p><br>
 <br></p>
 <p>The integrated application will receive <strong>one of following notifications</strong> for the described cases:</p>
@@ -342,7 +342,7 @@
 </p>
 
 <p><strong>TRANSACTION STATUS UNKNOWN</strong></p>
-<p>When the final status of the payment is <strong>unknown</strong> due to an error in the integrated application or it timing out prior to receive the response from the Gateway.  In this case, it is recommended that the transaction be verified by a query or reviewing activity through the PowerTranz portal.</p>
+<p>When the final status of the payment is <strong>unknown</strong> due to an error in the integrated application or it timing out prior to receive the response from the Gateway.  In this case, it is recommended that the transaction be verified by a query or reviewing activity through the PowerTranz online merchant portal.</p>
 <p><br>
 <br>
 <br></p>
@@ -357,10 +357,10 @@
 <li><strong>Authorization as “pre-authorization”</strong>: only authorizes the card for the transaction amount. It requires a subsequent action to complete the transaction. The possible options are:<ul>
 <li>Void to cancel the Authorization in its entirety (full amount); Issuer releases hold of funds that had been placed on the card during the authorization</li>
 <li>Capture to complete the transaction; settles and debits funds from the card account
-If the Authorization is successful (Approved) and not closed with a subsequent Void or Capture, the cardholder will see “pending charge” on their account statement. Issuers will generally drop the hold on the authorization within 48-72 hours if it is not closed. It is highly recommended that the transaction is closed within that time frame to avoid disputes.</li>
+If the Authorization is successful (Approved) and not closed with a subsequent Void or Capture, the cardholder will see “pending charge” on their account statement. Issuers will generally drop the hold on the authorization within <strong>48-72 hours</strong> if it is not closed. It is highly recommended that the transaction is closed within that time frame to avoid disputes.</li>
 </ul>
 </li>
-<li><strong>Authorization as “Sale”</strong>: is an authorization and capture within the same transaction (auto-capture). To enable an authorization as a Sale a capture flag will need to be set within the transaction request. There is no need to submit a subsequent transaction to complete the transaction (unless it is decided to cancel the Sale - whereby a Void will have to be issued within 20 minutes of the Sale), otherwise a Refund will be required in order to credit the funds back to the card.</li>
+<li><strong>Authorization as “Sale”</strong>: is an authorization and capture within the same transaction (auto-capture). To enable an authorization as a Sale the capture flag will need to be set within the transaction request. There is no need to submit a subsequent transaction to complete the transaction (unless it is decided to cancel the Sale - whereby a Void will have to be issued within 20 minutes of the original Sale) otherwise a Refund will be required to credit the funds back to the card.</li>
 </ul>
 <p><br></p>
 <p><strong>Summary of options</strong></p>
